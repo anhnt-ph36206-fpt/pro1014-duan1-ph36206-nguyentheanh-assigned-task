@@ -12,7 +12,12 @@ class HomeController
 
     public function home()
     {
-        echo "Đây là trang chủ 1234";
+        // echo "Đây là trang chủ 1234";
+        $listSanPham = $this->modelSanPham->getAllProduct();
+        // echo '<pre>';
+        // var_dump($listSanPham);
+        // echo '</pre>';
+        require_once './views/home.php';
     }
 
     public function trangchu()

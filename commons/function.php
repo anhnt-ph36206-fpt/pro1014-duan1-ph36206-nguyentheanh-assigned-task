@@ -21,6 +21,10 @@ function connectDB() {
         echo ("Connection failed: " . $e->getMessage());
     }
 }
+
+function formatPrice($price) {
+    return number_format($price, 0, '.', ',') . ' VNĐ';
+}
 //thêm file
 //xóa file 
 //debug
