@@ -1,7 +1,7 @@
-<?php 
-
+<?php
+session_start();
 // Require file Common
-require_once '../commons/env.php'; // Khai báo biến môi trường
+require_once '../commons/env.php';      // Khai báo biến môi trường
 require_once '../commons/function.php'; // Hàm hỗ trợ
 
 // Require toàn bộ file Controllers
@@ -10,13 +10,12 @@ require_once './controllers/AdminDanhMucController.php';
 require_once './controllers/AdminTaiKhoanController.php';
 // require_once '/controllers/AdminSanPhamController.php';
 
-
 // Require toàn bộ file Models
- require_once './models/AdminDanhMuc.php';
-  require_once './models/AdminTaiKhoan.php';
+require_once './models/AdminDanhMuc.php';
+require_once './models/AdminTaiKhoan.php';
 
 // require_once './controllers/AdminSanPham.php';
- 
+
 // Route
 $act = $_GET['act'] ?? '/';
 
@@ -24,20 +23,17 @@ $act = $_GET['act'] ?? '/';
 
 match ($act) {
     // route
-    'danh-muc'=>(new AdminDanhMucController())->danhSachDanhMuc(),
+    'danh-muc'           => (new AdminDanhMucController())->danhSachDanhMuc(),
     'form-them-danh-muc' => (new AdminDanhMucController())->formAddDanhMuc(),
-    'them-danh-muc' => (new AdminDanhMucController())->postAddDanhmuc(),
-    'form-sua-danh-muc' => (new AdminDanhMucController())->formEditDanhMuc(),
-    'sua-danh-muc' => (new AdminDanhMucController())->postEditDanhmuc(),
-    'xoa-danh-muc' => (new AdminDanhMucController())->deleteDanhMuc(),
+    'them-danh-muc'      => (new AdminDanhMucController())->postAddDanhmuc(),
+    'form-sua-danh-muc'  => (new AdminDanhMucController())->formEditDanhMuc(),
+    'sua-danh-muc'       => (new AdminDanhMucController())->postEditDanhmuc(),
+    'xoa-danh-muc'       => (new AdminDanhMucController())->deleteDanhMuc(),
 
     //route quản lý tài khoản
     //Quản lý tài khoản quản trị
-    'tai-khoan-quan-tri'=>(new AdminTaiKhoanController())->danhSachQuanTri(),
-    'form-them-quan-tri'=>(new AdminTaiKhoanController())->formAddQuanTri(),
-    'them-quan-tri'=>(new AdminTaiKhoanController())->postAddQuanTri()
+    'tai-khoan-quan-tri' => (new AdminTaiKhoanController())->danhSachQuanTri(),
+    'form-them-quan-tri' => (new AdminTaiKhoanController())->formAddQuanTri(),
+    'them-quan-tri'      => (new AdminTaiKhoanController())->postAddQuanTri()
 
-
-    
-    
 };

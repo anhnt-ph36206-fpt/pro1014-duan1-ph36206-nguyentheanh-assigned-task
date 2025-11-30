@@ -90,44 +90,6 @@
                                                 <a class="btn btn-cart2" href="#">Thêm giỏ hàng</a>
                                             </div>
                                         </div>
-                                        <!-- <div class="pro-size">
-                                            <h6 class="option-title">size :</h6>
-                                            <select class="nice-select">
-                                                <option>S</option>
-                                                <option>M</option>
-                                                <option>L</option>
-                                                <option>XL</option>
-                                            </select>
-                                        </div> -->
-                                        <!-- <div class="color-option">
-                                            <h6 class="option-title">color :</h6>
-                                            <ul class="color-categories">
-                                                <li>
-                                                    <a class="c-lightblue" href="#" title="LightSteelblue"></a>
-                                                </li>
-                                                <li>
-                                                    <a class="c-darktan" href="#" title="Darktan"></a>
-                                                </li>
-                                                <li>
-                                                    <a class="c-grey" href="#" title="Grey"></a>
-                                                </li>
-                                                <li>
-                                                    <a class="c-brown" href="#" title="Brown"></a>
-                                                </li>
-                                            </ul>
-                                        </div> -->
-                                        <!-- <div class="useful-links">
-                                            <a href="#" data-bs-toggle="tooltip" title="Compare"><i
-                                                    class="pe-7s-refresh-2"></i>compare</a>
-                                            <a href="#" data-bs-toggle="tooltip" title="Wishlist"><i
-                                                    class="pe-7s-like"></i>wishlist</a>
-                                        </div>
-                                        <div class="like-icon">
-                                            <a class="facebook" href="#"><i class="fa fa-facebook"></i>like</a>
-                                            <a class="twitter" href="#"><i class="fa fa-twitter"></i>tweet</a>
-                                            <a class="pinterest" href="#"><i class="fa fa-pinterest"></i>save</a>
-                                            <a class="google" href="#"><i class="fa fa-google-plus"></i>share</a>
-                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -187,7 +149,7 @@
                                                         </div>
                                                         <div class="review-box">
                                                             <div class="post-author">
-                                                                <p><span>Khách hàng</span>                                                                                             <?= $binhLuan['ngay_dang'] ?></p>
+                                                                <p><span><?= $binhLuan['ho_ten'] ?> - <?= $binhLuan['ngay_dang'] ?></span>
                                                             </div>
                                                             <p>
                                                                 <?= $binhLuan['noi_dung'] ?>

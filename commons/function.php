@@ -25,6 +25,12 @@ function connectDB() {
 function formatPrice($price) {
     return number_format($price, 0, '.', ',') . ' VNĐ';
 }
+
+function deleteSessionError() {
+    if (isset($_SESSION['error'])) {
+        unset($_SESSION['error']); // Xóa biến session 'error'
+    }
+}
 //thêm file
 //xóa file 
 //debug

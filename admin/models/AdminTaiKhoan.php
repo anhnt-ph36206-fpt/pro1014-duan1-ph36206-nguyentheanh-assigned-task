@@ -1,11 +1,10 @@
-<?php 
+<?php
 
-
-class AdminTaiKhoan{
+class AdminTaiKhoan
+{
     public $coon;
-        public function __construct()
+    public function __construct()
     {
-        // LỖI 1: Sai cú pháp → $this->$conn → phải là $this->conn
         $this->conn = connectDB(); // ĐÚNG
     }
 
@@ -14,29 +13,29 @@ class AdminTaiKhoan{
         try {
             $sql = 'SELECT * FROM tai_khoans WHERE chuc_vu_id = :chuc_vu_id';
 
-            // LỖI 2: Lại viết $this->$conn → phải là $this->conn
+                                                // LỖI 2: Lại viết $this->$conn → phải là $this->conn
             $stmt = $this->conn->prepare($sql); // ĐÚNG
 
-            $stmt->execute([':chuc_vu_id'=>$chuc_vu_id]);
+            $stmt->execute([':chuc_vu_id' => $chuc_vu_id]);
             return $stmt->fetchAll();
         } catch (Exception $e) {
             echo "Lỗi kết nối: " . $e->getMessage();
         }
     }
 
-    public function insertTaiKhoan($ho_ten,$email,$password,$chuc_vu_id)
+    public function insertTaiKhoan($ho_ten, $email, $password, $chuc_vu_id)
     {
         try {
             $sql = 'INSERT INTO tai_khoans (ho_ten,email,mat_khau,chuc_vu_id)
              VALUES (:ho_ten,:email,:password,:chuc_vu_id)';
 
-            // LỖI 2: Lại viết $this->$conn → phải là $this->conn
+                                                // LỖI 2: Lại viết $this->$conn → phải là $this->conn
             $stmt = $this->conn->prepare($sql); // ĐÚNG
 
             $stmt->execute([
-                ':ho_ten' => $ho_ten,
-                ':email' => $email,
-                ':password' => $password,
+                ':ho_ten'     => $ho_ten,
+                ':email'      => $email,
+                ':password'   => $password,
                 ':chuc_vu_id' => $chuc_vu_id,
             ]);
             return true;
@@ -44,6 +43,5 @@ class AdminTaiKhoan{
             echo "Lỗi kết nối: " . $e->getMessage();
         }
     }
-
 
 }

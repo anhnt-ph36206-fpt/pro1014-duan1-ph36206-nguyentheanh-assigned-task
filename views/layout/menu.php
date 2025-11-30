@@ -58,8 +58,8 @@
                                                 <i class="pe-7s-user"></i>
                                             </a>
                                             <ul class="dropdown-list">
-                                                <li><a href="login-register.html">Đăng Nhập</a></li>
-                                                <li><a href="login-register.html">Đăng Ký</a></li>
+                                                <li><a href="<?=  BASE_URL . '?act=login'?>">Đăng Nhập</a></li>
+                                                <li><a href="<?=  BASE_URL . '?act=formRegister'?>">Đăng Ký</a></li>
                                                 <li><a href="my-account.html">Tài Khoản </a></li>
                                             </ul>
                                         </li>

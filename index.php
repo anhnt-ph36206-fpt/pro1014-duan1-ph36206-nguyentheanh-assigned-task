@@ -1,6 +1,7 @@
-<?php 
-// Require file Common
-require_once './commons/env.php'; // Khai báo biến môi trường
+<?php
+session_start();
+// Require file Common                                       
+require_once './commons/env.php';      // Khai báo biến môi trường
 require_once './commons/function.php'; // Hàm hỗ trợ
 
 // Require toàn bộ file Controllers
@@ -9,6 +10,7 @@ require_once './controllers/HomeController.php';
 // Require toàn bộ file Models
 require_once './models/Student.php';
 require_once './models/SanPham.php';
+require_once './models/TaiKhoan.php';
 
 // Route
 $act = $_GET['act'] ?? '/';
@@ -17,12 +19,16 @@ $act = $_GET['act'] ?? '/';
 
 match ($act) {
     // route
-    '/'=>(new HomeController())->home(),//trường hợp đặc biệt 
-    'trangchu'=>(new HomeController())-> trangchu(),
+    '/'                  => (new HomeController())->home(), //trường hợp đặc biệt
+    'trangchu'           => (new HomeController())->trangchu(),
     //BASE_URL/?act=trangchu
-    'danh-sach-san-pham'=>(new HomeController())->danhSachSanPham(),
+    'danh-sach-san-pham' => (new HomeController())->danhSachSanPham(),
 
     //  Chi tiết sản phẩm
-    'chi-tiet-san-pham'=>(new HomeController())->chiTietSanPham(),
-    
+    'chi-tiet-san-pham'  => (new HomeController())->chiTietSanPham(),
+
+    //  Authen
+    'login'              => (new HomeController())->formLogin(),
+    'check-login'        => (new HomeController())->postLogin(),
+
 };
