@@ -24,10 +24,18 @@
                with font-awesome or any other icon font library -->
 
                  <li class="nav-item">
-                     <a href="../widgets.html" class="nav-link">
+                     <a href="<?= BASE_URL_ADMIN . '?act=trang-chu' ?>" class="nav-link">
                          <i class="nav-icon fas fa-tachometer-alt"></i>
                          <p>
-                             Dashboard
+                             Trang chủ Admin
+                         </p>
+                     </a>
+                 </li>
+                  <li class="nav-item">
+                     <a href="<?= BASE_URL?>" class="nav-link">
+                         <i class="nav-icon fas fa-tachometer-alt"></i>
+                         <p>
+                             Trang chủ Client
                          </p>
                      </a>
                  </li>
@@ -36,7 +44,7 @@
                      <a href="<?= BASE_URL_ADMIN . '?act=danh-muc' ?>" class="nav-link">
                          <i class="nav-icon fas fa-th"></i>
                          <p>
-                             Danh mục
+                             Danh mục sản phẩm
                          </p>
                      </a>
                  </li>
@@ -58,6 +66,35 @@
                          </p>
                      </a>
                  </li>
+                  <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-user"></i>
+              <p>
+                Quản lý tài khoản
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="<?= BASE_URL_ADMIN . '?act=tai-khoan-quan-tri' ?>" class="nav-link">
+                  <i class="far fa-user nav-icon"></i>
+                  <p>Tài khoản quản trị</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?= BASE_URL_ADMIN . '?act=tai-khoan-khach-hang' ?>" class="nav-link">
+                  <i class="far fa-user nav-icon"></i>
+                  <p>Tài khoản khách hàng</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/tables/jsgrid.html" class="nav-link">
+                  <i class="far fa-user nav-icon"></i>
+                  <p>Tài khoản cá nhân</p>
+                </a>
+              </li>
+            </ul>
+          </li>
              </ul>
          </nav>
          <!-- /.sidebar-menu -->
