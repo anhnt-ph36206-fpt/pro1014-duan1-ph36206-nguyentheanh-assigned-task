@@ -58,7 +58,7 @@ class AdminSanPham
     public function insertAlbumAnhSanPham($san_pham_id, $hinh_anh)
     {
         try {
-            $sql = 'INSERT INTO album_anh_san_phams (san_pham_id, link_hinh_anh)
+            $sql = 'INSERT INTO hinh_anh_san_phams (san_pham_id, link_hinh_anh)
                     VALUES (:id_san_pham, :link_hinh_anh)';
 
             $stmt = $this->conn->prepare($sql);
@@ -113,12 +113,15 @@ class AdminSanPham
     public function updateSanPham($san_pham_id, $ten_san_pham, $gia_san_pham, $gia_khuyen_mai, $so_luong, $ngay_nhap, $danh_muc_id, $trang_thai, $mo_ta, $hinh_anh)
     {
         try {
-            $sql = 'UPDATE san_phams SET ten_san_pham = :ten_san_pham, gia_san_pham = :gia_san_pham, gia_khuyen_mai = :gia_khuyen_mai, so_luong = :so_luong, ngay_nhap = :ngay_nhap, danh_muc_id = :danh_muc_id, trang_thai = :trang_thai, mo_ta = :mo_ta, hinh_anh = :hinh_anh WHERE id = :id';
+            $sql = 'UPDATE san_phams 
+            SET ten_san_pham = :ten_san_pham, gia_san_pham = :gia_san_pham, gia_khuyen_mai = :gia_khuyen_mai, 
+                so_luong = :so_luong, ngay_nhap = :ngay_nhap, danh_muc_id = :danh_muc_id, trang_thai = :trang_thai, 
+                mo_ta = :mo_ta, hinh_anh = :hinh_anh 
+            WHERE id = :id';
 
             $stmt = $this->conn->prepare($sql);
 
             $stmt->execute([
-                ':san_pham_id'    => $san_pham_id,
                 ':ten_san_pham'   => $ten_san_pham,
                 ':gia_san_pham'   => $gia_san_pham,
                 ':gia_khuyen_mai' => $gia_khuyen_mai,
@@ -128,6 +131,7 @@ class AdminSanPham
                 ':trang_thai'     => $trang_thai,
                 ':mo_ta'          => $mo_ta,
                 ':hinh_anh'       => $hinh_anh,
+                ':id'    => $san_pham_id,
             ]);
             //  Lấy id sản phẩm vừa thêm
             return true;
@@ -139,13 +143,13 @@ class AdminSanPham
     public function updateAlbumAnhSanPham($album_anh_san_pham_id, $link_hinh_anh)
     {
         try {
-            $sql = 'UPDATE album_anh_san_phams SET link_hinh_anh = :link_hinh_anh WHERE id = :id';
+            $sql = 'UPDATE hinh_anh_san_phams SET link_hinh_anh = :link_hinh_anh WHERE id = :id';
 
             $stmt = $this->conn->prepare($sql);
 
             $stmt->execute([
-                ':album_anh_san_pham_id' => $album_anh_san_pham_id,
-                ':link_hinh_anh'         => $link_hinh_anh,
+                ':id'             => $album_anh_san_pham_id,
+                ':link_hinh_anh'  => $link_hinh_anh,
             ]);
             return true;
         } catch (Exception $e) {
@@ -285,4 +289,5 @@ class AdminSanPham
             echo "Lỗi kết nối: " . $e->getMessage();
         }
     }
+    
 }
