@@ -40,6 +40,25 @@ function deleteSessionError()
         unset($_SESSION['error']); // Xóa biến session 'error'
     }
 }
+function uploadFile($file, $folderUpload) {
+    $pathStorage = $folderUpload . time() . '-' . $file['name'];
+
+    $from = $file['tmp_name'];
+    $to = PATH_ROOT . $pathStorage;
+
+    if (move_uploaded_file($from, $to)) {
+        # return path storage
+        return $pathStorage;
+    }
+    return null;
+}
+
+function deleteFile($file) {
+    $pathDelete = PATH_ROOT . $file;
+    if (file_exists($pathDelete)) {
+        unlink($pathDelete);
+    }
+}
 //thêm file
 //xóa file 
 //debug

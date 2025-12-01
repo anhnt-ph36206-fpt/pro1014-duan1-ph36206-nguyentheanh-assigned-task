@@ -9,12 +9,13 @@ require_once './controllers/AdminDanhMucController.php';
 require_once './controllers/AdminDonHangController.php';
 
 require_once './controllers/AdminTaiKhoanController.php';
-// require_once '/controllers/AdminSanPhamController.php';
+require_once './controllers/AdminSanPhamController.php';
 
 // Require toàn bộ file Models
 require_once './models/AdminDanhMuc.php';
 require_once './models/AdminTaiKhoan.php';
 require_once './models/AdminDonHang.php';
+require_once './models/AdminSanPham.php';
 
 // require_once './controllers/AdminSanPham.php';
 
@@ -24,7 +25,8 @@ $act = $_GET['act'] ?? '/';
 // Để bảo bảo tính chất chỉ gọi 1 hàm Controller để xử lý request thì mình sử dụng match
 
 match ($act) {
-    // route
+    // Route quản lý danh mục
+    //  Quản lý danh mục
     'danh-muc'           => (new AdminDanhMucController())->danhSachDanhMuc(),
     'form-them-danh-muc' => (new AdminDanhMucController())->formAddDanhMuc(),
     'them-danh-muc'      => (new AdminDanhMucController())->postAddDanhmuc(),
@@ -32,15 +34,25 @@ match ($act) {
     'sua-danh-muc'       => (new AdminDanhMucController())->postEditDanhmuc(),
     'xoa-danh-muc'       => (new AdminDanhMucController())->deleteDanhMuc(),
 
-    //route quản lý tài khoản
-    //Quản lý tài khoản quản trị
+    //  Route quản lý tài khoản
+    //  Quản lý tài khoản quản trị
     'tai-khoan-quan-tri' => (new AdminTaiKhoanController())->danhSachQuanTri(),
     'form-them-quan-tri' => (new AdminTaiKhoanController())->formAddQuanTri(),
     'them-quan-tri'      => (new AdminTaiKhoanController())->postAddQuanTri(),
 
-    // route quản lý đơn hàng
-    'don-hang' => (new AdminDonHangController())->danhSachDonHang(),
-    'form-sua-don-hang' => (new AdminDonHangController())->formEditDonHang(),
-    'sua-don-hang' => (new AdminDonHangController())->postEditDonHang(),
-    'chi-tiet-don-hang' => (new AdminDonHangController())->detailDonHang(),
+    //  Route quản lý đơn hàng
+    //  Quản lý đơn hàng
+    'don-hang'           => (new AdminDonHangController())->danhSachDonHang(),
+    'form-sua-don-hang'  => (new AdminDonHangController())->formEditDonHang(),
+    'sua-don-hang'       => (new AdminDonHangController())->postEditDonHang(),
+    'chi-tiet-don-hang'  => (new AdminDonHangController())->detailDonHang(),
+
+    //  Route quản lý sản phẩm
+    //  Quản lý sản phẩm
+    'san-pham'           => (new AdminSanPhamController())->danhSachSanPham(),
+    'form-them-san-pham' => (new AdminSanPhamController())->formAddSanPham(),
+    'them-san-pham'      => (new AdminSanPhamController())->postAddSanPham(),
+    // 'form-sua-san-pham'  => (new AdminSanPhamController())->formEditSanPham(),
+    // 'sua-san-pham'       => (new AdminSanPhamController())->postEditSanPham(),
+    // 'xoa-san-pham'       => (new AdminSanPhamController())->deleteSanPham(),
 };
