@@ -1,6 +1,6 @@
 # pro1014-duan1-ph36206-nguyentheanh-assigned-task
 
--   Tạo thư mục dự án ở www của laragon:
+-   Tạo thư mục dự án ở www của laragon bằng cách tạo thủ công hoặc mở cmd và chạy lệnh:
 ```
     mkdir du_an1
 ```
@@ -14,7 +14,7 @@
 git clone https://github.com/nguyentheanh123456789/pro1014-duan1-ph36206-nguyentheanh-assigned-task.git
 ```
 
--   Đổi tên thủ công hoặc chạy lệnh để đổi tênthư mục dự án vừa clone về:
+-   Đổi tên thủ công hoặc chạy lệnh để đổi tên thư mục dự án vừa clone về:
 ```
     mv pro1014-duan1-ph36206-nguyentheanh-assigned-task du_an1
 ```
