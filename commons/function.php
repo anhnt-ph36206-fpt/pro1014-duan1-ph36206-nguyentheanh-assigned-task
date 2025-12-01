@@ -1,7 +1,8 @@
 <?php
 
 // Kết nối CSDL qua PDO
-function connectDB() {
+function connectDB()
+{
     // Kết nối CSDL
     $host = DB_HOST;
     $port = DB_PORT;
@@ -15,18 +16,26 @@ function connectDB() {
 
         // cài đặt chế độ trả dữ liệu
         $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-    
+
         return $conn;
     } catch (PDOException $e) {
         echo ("Connection failed: " . $e->getMessage());
     }
 }
 
-function formatPrice($price) {
+// format date
+function formatDate($date)
+{
+    return date("d-m-Y", strtotime($date));
+}
+
+function formatPrice($price)
+{
     return number_format($price, 0, '.', ',') . ' VNĐ';
 }
 
-function deleteSessionError() {
+function deleteSessionError()
+{
     if (isset($_SESSION['error'])) {
         unset($_SESSION['error']); // Xóa biến session 'error'
     }
