@@ -20,9 +20,9 @@
 
 <body class="hold-transition sidebar-mini">
 
-  <?php require './views/layout/header.php' ?>
-  <?php include './views/layout/navbar.php' ?>
-  <?php include './views/layout/sidebar.php' ?>
+  <?php require './views/layout/header.php'?>
+  <?php include './views/layout/navbar.php'?>
+  <?php include './views/layout/sidebar.php'?>
 
   <!-- Content Wrapper -->
   <div class="content-wrapper">
@@ -34,7 +34,7 @@
           </div>
           <div class="col-sm-6">
             <!-- Nút thêm danh mục (tuỳ bạn) -->
-            <a href="<?= BASE_URL_ADMIN . '?act=form-them-quan-tri' ?>" class="btn btn-success float-right">
+            <a href="<?php echo BASE_URL_ADMIN . '?act=form-them-quan-tri'?>" class="btn btn-success float-right">
               <i class="fas fa-plus"></i> Thêm tài khoản
             </a>
           </div>
@@ -67,18 +67,18 @@
                   <tbody>
                     <?php foreach ($listQuanTri as $key => $quanTri): ?>
                       <tr>
-                        <td><?= $key + 1 ?></td>
-                        <td><?= $quanTri['ho_ten'] ?></td>
-                        <td><?= $quanTri['email'] ?></td>
-                        <td><?= $quanTri['so_dien_thoai'] ?></td>
-                         <td><?= $quanTri['trang_thai'] ==1 ? 'Actice' : 'Inactive' ?></td>
+                        <td><?php echo $key + 1?></td>
+                        <td><?php echo $quanTri['ho_ten']?></td>
+                        <td><?php echo $quanTri['email']?></td>
+                        <td><?php echo $quanTri['so_dien_thoai']?></td>
+                         <td><?php echo $quanTri['trang_thai'] == 1 ? 'Actice' : 'Inactive'?></td>
 
 
                         <td>
-                          <a href="<?= BASE_URL_ADMIN . '?act=form-sua-quan-tri&id_quan_tri=' . $quanTri['id'] ?>" class="btn btn-warning btn-sm">
+                          <a href="<?php echo BASE_URL_ADMIN . '?act=form-sua-quan-tri&id_quan_tri=' . $quanTri['id']?>" class="btn btn-warning btn-sm">
                             <i class="fas fa-edit"></i> Sửa
                           </a>
-                          
+
                         </td>
                       </tr>
                     <?php endforeach; ?>
