@@ -18,7 +18,22 @@ git clone https://github.com/nguyentheanh123456789/pro1014-duan1-ph36206-nguyent
 
 -   Trong thư mục dự án sẽ chứa các file và folder như sau:
 ```
-    /www/du_an1/du_an1/
+-   Laragon
+    /www/du_an1/
+    ├── .git/
+    ├── admin
+    ├── assets/
+    ├── controllers/
+    ├── models
+    ├── databases/
+    ├── uploads/
+    ├── views/
+    ├── doc.md
+    ├── index.php
+    ├── README.MD
+
+-   Xampp
+    /htdocs/du_an1/
     ├── .git/
     ├── admin
     ├── assets/
