@@ -30,13 +30,11 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Quản lý Tài Khoản Quản Trị Viên</h1>
+            <h1>Quản lý Tài Khoản Khách Hàng</h1>
           </div>
           <div class="col-sm-6">
             <!-- Nút thêm danh mục (tuỳ bạn) -->
-            <a href="<?php echo BASE_URL_ADMIN . '?act=form-them-quan-tri' ?>" class="btn btn-success float-right">
-              <i class="fas fa-plus"></i> Thêm tài khoản
-            </a>
+
           </div>
         </div>
       </div>
@@ -49,7 +47,7 @@
           <div class="col-12">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Danh sách Tài Khoản Quản Trị Viên</h3>
+                <h3 class="card-title">Danh sách danh mục sản phẩm</h3>
               </div>
               <div class="card-body">
                 <table id="example1" class="table table-bordered table-striped">
@@ -57,41 +55,59 @@
                     <tr>
                       <th>STT</th>
                       <th>Họ tên</th>
+                      <th>Ảnh đại diện</th>
                       <th>Email</th>
                       <th>Só điện thoại</th>
-                      <th>Trạng thái</th>
-                      <th>Thao tác</th>
+                    <th>Trạng thái</th>
+                    <th>Thao tác</th>
+
                     </tr>
                   </thead>
                   <tbody>
-                    <?php foreach ($listQuanTri as $key => $quanTri): ?>
+                    <?php foreach ($listKhachHang as $key => $khachHang): ?>
                       <tr>
-                        <td><?php echo $key + 1 ?></td>
-                        <td><?php echo $quanTri['ho_ten'] ?></td>
-                        <td><?php echo $quanTri['email'] ?></td>
-                        <td><?php echo $quanTri['so_dien_thoai'] ?></td>
-                        <td><?php echo $quanTri['trang_thai'] == 1 ? 'Actice' : 'Inactive' ?></td>
+                        <td><?php echo $key + 1?></td>
+                        <td><?php echo $khachHang['ho_ten']?></td>
                         <td>
-                            <a href="<?php echo BASE_URL_ADMIN . '?act=form-sua-quan-tri&id_quan_tri=' . $quanTri['id'] ?>" class="btn btn-warning btn-sm">
-                              <i class="fas fa-edit"></i> Sửa
-                            </a>
-                            <a href="<?php echo BASE_URL_ADMIN . '?act=reset-password&id_quan_tri=' . $quanTri['id'] ?>"
-                              onclick="return confirm('Bạn có muốn reset password của tài khoản này không?')"
-                              class="btn btn-danger btn-sm">
+                           <img src="<?php echo BASE_URL . $khachHang['anh_dai_dien']?>" alt="" style="width:100px"
+                           onerror="this.onerror=null;this.src=''">
+                        </td>
+                        <td><?php echo $khachHang['email']?></td>
+                        <td><?php echo $khachHang['so_dien_thoai']?></td>
+                        <td><?php echo $khachHang['trang_thai'] == 1 ? 'Actice' : 'Inactive'?></td>
+
+                        <td>
+                          <div class="btn-group">
+
+                             <a href="<?php echo BASE_URL_ADMIN . '?act=chi-tiet-khach-hang&id_khach_hang=' . $khachHang['id']?>" class="btn btn-primary btn-sm">
+                            <i class="fas fa-edit"></i> Chi tiết
+                          </a>
+
+                          <a href="<?php echo BASE_URL_ADMIN . '?act=form-sua-khach-hang&id_khach_hang=' . $khachHang['id']?>" class="btn btn-warning btn-sm">
+                            <i class="fas fa-edit"></i> Sửa
+                          </a>
+                               <a href="<?php echo BASE_URL_ADMIN . '?act=reset-password&id_quan_tri=' . $khachHang['id']?>"
+                            onclick="return confirm('Bạn có muốn reset password của tài khoản này không?')"
+                            class="btn btn-danger btn-sm">
                             <i class="fas fa-trash"></i> RESET
                           </a>
+
+                          </div>
                         </td>
                       </tr>
                     <?php endforeach; ?>
                   </tbody>
-                    <tfoot>
-                    <tr>
+                  <tfoot>
+
+                   <tr>
                       <th>STT</th>
                       <th>Họ tên</th>
+                      <th>Ảnh đại diện</th>
                       <th>Email</th>
                       <th>Só điện thoại</th>
-                      <th>Trạng thái</th>
-                      <th>Thao tác</th>
+                    <th>Trạng thái</th>
+                    <th>Thao tác</th>
+
                     </tr>
                   </tfoot>
                 </table>
