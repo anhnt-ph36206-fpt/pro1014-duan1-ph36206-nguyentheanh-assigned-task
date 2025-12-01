@@ -3,9 +3,9 @@
 // Biến môi trường, dùng chung toàn hệ thống
 // Khai báo dưới dạng HẰNG SỐ để không phải dùng $GLOBALS
 
-define('BASE_URL'       , 'http://localhost/du_an1/du_an1/');
+define('BASE_URL'       , 'http://localhost/du_an1/');
 //Đường dẫn vào phần Admin
-define('BASE_URL_ADMIN'       , 'http://localhost/du_an1/du_an1/admin/');
+define('BASE_URL_ADMIN'       , 'http://localhost/du_an1/admin/');
 
 
 define('DB_HOST'    , 'localhost');

@@ -1,15 +1,6 @@
 # pro1014-duan1-ph36206-nguyentheanh-assigned-task
 
--   Tạo thư mục dự án ở www của laragon bằng cách tạo thủ công hoặc mở cmd và chạy lệnh:
-```
-    mkdir du_an1
-```
-
--   Di chuyển vào thư mục dự án:
-```
-    cd du_an1
-``` 
-- Clone project từ github về:
+- Clone project từ github về gốc www laragon:
 ```
 git clone https://github.com/nguyentheanh123456789/pro1014-duan1-ph36206-nguyentheanh-assigned-task.git
 ```
@@ -21,7 +12,8 @@ git clone https://github.com/nguyentheanh123456789/pro1014-duan1-ph36206-nguyent
 
 -   Ta sẽ có path như sau:
 ```
-    /www/du_an1/du_an1
+    /www/du_an1
+    /htdocs/du_an1
 ```
 
 -   Trong thư mục dự án sẽ chứa các file và folder như sau:
@@ -45,6 +37,6 @@ git clone https://github.com/nguyentheanh123456789/pro1014-duan1-ph36206-nguyent
     + define('DB_NAME'    , 'du_an1');  // Tên database
 
 -   Lưu ý:
-    + Bật laragon và truy cập vào đường dẫn http://localhost/du_an1/du_an1/
+    + Bật laragon và truy cập vào đường dẫn http://localhost/du_an1/
     + Mặc định apache cổng ```80```
     + Mysql cổng ```3306```
