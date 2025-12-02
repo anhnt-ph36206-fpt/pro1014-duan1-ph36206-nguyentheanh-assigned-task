@@ -263,84 +263,84 @@ class AdminSanPhamController
     //     + Thêm ảnh mới 
     //     + Không thêm ảnh mới 
 
-    public function postEditAnhSanPham()
-    {
-        // Hàm này dùng để xử lý thêm ảnh vào album sản phẩm
-        // Kiểm tra xem dữ liệu có phải được submit lên không
-        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            //  Lấy dữ liệu
-            $san_pham_id = $_POST['san_pham_id'] ?? '';
+    // public function postEditAnhSanPham()
+    // {
+    //     // Hàm này dùng để xử lý thêm ảnh vào album sản phẩm
+    //     // Kiểm tra xem dữ liệu có phải được submit lên không
+    //     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    //         //  Lấy dữ liệu
+    //         $san_pham_id = $_POST['san_pham_id'] ?? '';
 
-            //  Lấy danh sách ảnh hiện tại của sản phẩm
-            $listAnhSanPham = $this->modelSanPham->getListAnhSanPham($san_pham_id);
+    //         //  Lấy danh sách ảnh hiện tại của sản phẩm
+    //         $listAnhSanPham = $this->modelSanPham->getListAnhSanPham($san_pham_id);
 
-            // //  Xử Lý các ảnh được gửi từ form
-            // $img_array = $_FILES['img_array'];
-            // $img_delete = $_POST['img_delete  '] ?? [];
+    //         // //  Xử Lý các ảnh được gửi từ form
+    //         // $img_array = $_FILES['img_array'];
+    //         // $img_delete = $_POST['img_delete  '] ?? [];
 
-            //  Mảng hình ảnh
-            $img_array = $_FILES['img_array'];
+    //         //  Mảng hình ảnh
+    //         $img_array = $_FILES['img_array'];
 
-            // Xử lý xóa ảnh
-            if (!empty($_POST['img_delete'])) {
-                $img_delete_ids = explode(',', $_POST['img_delete']);
-                foreach ($img_delete_ids as $img_id) {
-                    $img_id = trim($img_id);
-                    if (!empty($img_id)) {
-                        // Lấy thông tin ảnh để xóa file
-                        $anhSanPham = $this->modelSanPham->getDetailAnhSanPham($img_id);
-                        if ($anhSanPham) {
-                            // Xóa file ảnh
-                            deleteFile($anhSanPham['link_hinh_anh']);
-                            // Xóa record trong database
-                            $this->modelSanPham->destroyAnhSanPham($img_id);
-                        }
-                    }
-                }
-            }
+    //         // Xử lý xóa ảnh
+    //         if (!empty($_POST['img_delete'])) {
+    //             $img_delete_ids = explode(',', $_POST['img_delete']);
+    //             foreach ($img_delete_ids as $img_id) {
+    //                 $img_id = trim($img_id);
+    //                 if (!empty($img_id)) {
+    //                     // Lấy thông tin ảnh để xóa file
+    //                     $anhSanPham = $this->modelSanPham->getDetailAnhSanPham($img_id);
+    //                     if ($anhSanPham) {
+    //                         // Xóa file ảnh
+    //                         deleteFile($anhSanPham['link_hinh_anh']);
+    //                         // Xóa record trong database
+    //                         $this->modelSanPham->destroyAnhSanPham($img_id);
+    //                     }
+    //                 }
+    //             }
+    //         }
 
-            // Xử lý cập nhật và thêm ảnh
-            if (!empty($img_array['name'])) {
-                $img_ids = $_POST['img_id'] ?? [];
+    //         // Xử lý cập nhật và thêm ảnh
+    //         if (!empty($img_array['name'])) {
+    //             $img_ids = $_POST['img_id'] ?? [];
 
-                foreach ($img_array['name'] as $key => $value) {
-                    // Nếu có file được chọn
-                    if ($img_array['error'][$key] == UPLOAD_ERR_OK) {
-                        $file = [
-                            'name' => $img_array['name'][$key],
-                            'type' => $img_array['type'][$key],
-                            'tmp_name' => $img_array['tmp_name'][$key],
-                            'error' => $img_array['error'][$key],
-                            'size' => $img_array['size'][$key],
-                        ];
+    //             foreach ($img_array['name'] as $key => $value) {
+    //                 // Nếu có file được chọn
+    //                 if ($img_array['error'][$key] == UPLOAD_ERR_OK) {
+    //                     $file = [
+    //                         'name' => $img_array['name'][$key],
+    //                         'type' => $img_array['type'][$key],
+    //                         'tmp_name' => $img_array['tmp_name'][$key],
+    //                         'error' => $img_array['error'][$key],
+    //                         'size' => $img_array['size'][$key],
+    //                     ];
 
-                        $link_hinh_anh = uploadFile($file, './uploads/');
+    //                     $link_hinh_anh = uploadFile($file, './uploads/');
 
-                        if ($link_hinh_anh) {
-                            // Nếu có img_id thì cập nhật ảnh cũ
-                            if (!empty($img_ids[$key])) {
-                                $img_id = $img_ids[$key];
-                                // Lấy thông tin ảnh cũ để xóa file
-                                $anhSanPhamOld = $this->modelSanPham->getDetailAnhSanPham($img_id);
-                                if ($anhSanPhamOld) {
-                                    // Xóa file ảnh cũ
-                                    deleteFile($anhSanPhamOld['link_hinh_anh']);
-                                    // Cập nhật ảnh mới
-                                    $this->modelSanPham->updateAnhSanPham($img_id, $link_hinh_anh);
-                                }
-                            } else {
-                                // Nếu không có img_id thì thêm ảnh mới
-                                $this->modelSanPham->insertAlbumAnhSanPham($san_pham_id, $link_hinh_anh);
-                            }
-                        }
-                    }
-                }
-            }
+    //                     if ($link_hinh_anh) {
+    //                         // Nếu có img_id thì cập nhật ảnh cũ
+    //                         if (!empty($img_ids[$key])) {
+    //                             $img_id = $img_ids[$key];
+    //                             // Lấy thông tin ảnh cũ để xóa file
+    //                             $anhSanPhamOld = $this->modelSanPham->getDetailAnhSanPham($img_id);
+    //                             if ($anhSanPhamOld) {
+    //                                 // Xóa file ảnh cũ
+    //                                 deleteFile($anhSanPhamOld['link_hinh_anh']);
+    //                                 // Cập nhật ảnh mới
+    //                                 $this->modelSanPham->updateAnhSanPham($img_id, $link_hinh_anh);
+    //                             }
+    //                         } else {
+    //                             // Nếu không có img_id thì thêm ảnh mới
+    //                             $this->modelSanPham->insertAlbumAnhSanPham($san_pham_id, $link_hinh_anh);
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //         }
 
-            // Chuyển hướng về trang sửa sản phẩm
-            header("Location: " . BASE_URL_ADMIN . '?act=form-sua-san-pham&id_san_pham=' . $san_pham_id);
-            exit();
-        }
-    }
+    //         // Chuyển hướng về trang sửa sản phẩm
+    //         header("Location: " . BASE_URL_ADMIN . '?act=form-sua-san-pham&id_san_pham=' . $san_pham_id);
+    //         exit();
+    //     }
+    // }
 
 }
