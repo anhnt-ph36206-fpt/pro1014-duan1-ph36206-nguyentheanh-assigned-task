@@ -166,7 +166,7 @@
                                                 <input type="hidden" name="current_img_ids[]" value="<?php echo $value['id'] ?>">
                                                 <td><img src="<?php echo BASE_URL . $value['link_hinh_anh'] ?>" alt="" style="width: 50px; height: 50px;"></td>
                                                 <td><input type="file" name="img_array[]" class="form-control"></td>
-                                                <td class="mt-10"><button type="button" onclick="removeRow(<?php echo $value['id'] ?>)" class="badge badge-danger"><i class="fa fa-trash"></i> Delete</button></td>
+                                                <td class="mt-10"><button type="button" onclick="removeRow(<?php echo $key ?>, <?php echo $value['id'] ?>  )" class="badge badge-danger"><i class="fa fa-trash"></i> Delete</button></td>
                                             </tr>
                                             <?php endforeach; ?>
                                         </tbody>
@@ -199,7 +199,7 @@
    var faqs_row = <?php echo count($listAnhSanPham) ?>;
 
 function addfaqs() {
-    let html = '<tr id="faqs-row' + faqs_row + '">';
+    var html = '<tr id="faqs-row-' + faqs_row + '">';
     html += '<td><img src="http://localhost/du_an1/uploads/1764629702-instagram-1.jpg" alt="" style="width: 50px; height: 50px;"></td>';
     html += '<td><input type="file" name="img_array[]" class="form-control"></td>';
     html += '<td><button type="button" class="badge badge-danger" onclick="removeRow(' + faqs_row + ', null);"><i class="fa fa-trash"></i> Delete</button></td>';
@@ -210,7 +210,7 @@ function addfaqs() {
 }
 
 function removeRow(rowId, imgId) {
-    $('#faqs-row' + rowId).remove();
+    $('#faqs-row-' + rowId).remove();
     if (imgId !== null) {
         var imgDeleteInput = document.getElementById('img_delete');
         var currentValue = imgDeleteInput.value;
