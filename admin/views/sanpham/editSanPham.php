@@ -160,15 +160,13 @@
                                         </thead>
                                         <tbody>
                                             <input type="hidden" name="san_pham_id" value="<?php echo $sanPham['id'] ?>">
-                                            <input type="hidden" id="img_delete" name="img_delete" value="">
+                                            <input type="hidden" id="img_delete" name="img_delete">
                                             <?php foreach ($listAnhSanPham as $key => $value): ?>
-                                            <tr>
+                                            <tr id="faqs-row-<?php echo $key ?>">
+                                                <input type="hidden" name="current_img_ids[]" value="<?php echo $value['id'] ?>">
                                                 <td><img src="<?php echo BASE_URL . $value['link_hinh_anh'] ?>" alt="" style="width: 50px; height: 50px;"></td>
-                                                <td>
-                                                    <input type="hidden" name="img_id[]" value="<?php echo $value['id'] ?>">
-                                                    <input type="file" name="img_array[]" class="form-control">
-                                                </td>
-                                                <td class="mt-10"><button type="button" onclick="deleteImage(<?php echo $value['id'] ?>)" class="badge badge-danger"><i class="fa fa-trash"></i> Delete</button></td>
+                                                <td><input type="file" name="img_array[]" class="form-control"></td>
+                                                <td class="mt-10"><button type="button" onclick="removeRow(<?php echo $value['id'] ?>)" class="badge badge-danger"><i class="fa fa-trash"></i> Delete</button></td>
                                             </tr>
                                             <?php endforeach; ?>
                                         </tbody>
@@ -198,27 +196,28 @@
 </body>
 <script src="./plugins/jquery/jquery.min.js"></script>
 <script>
-    var faqs_row = 0;
-    var deletedImages = [];
+   var faqs_row = <?php echo count($listAnhSanPham) ?>;
 
-    function addfaqs() {
-        html = '<tr id="faqs-row' + faqs_row + '">';
-        html += '<td></td>';
-        html += '<td><input type="hidden" name="img_id[]" value=""><input type="file" name="img_array[]" class="form-control"></td>';
-        html += '<td class="mt-10"><button type="button" class="badge badge-danger" onclick="$(\'#faqs-row' + faqs_row + '\').remove();"><i class="fa fa-trash"></i> Delete</button></td>';
-        html += '</tr>';
+function addfaqs() {
+    let html = '<tr id="faqs-row' + faqs_row + '">';
+    html += '<td><img src="http://localhost/du_an1/uploads/1764629702-instagram-1.jpg" alt="" style="width: 50px; height: 50px;"></td>';
+    html += '<td><input type="file" name="img_array[]" class="form-control"></td>';
+    html += '<td><button type="button" class="badge badge-danger" onclick="removeRow(' + faqs_row + ', null);"><i class="fa fa-trash"></i> Delete</button></td>';
+    html += '</tr>';
 
-        $('#faqs tbody').append(html);
-        faqs_row++;
+    $('#faqs tbody').append(html);
+    faqs_row++;
+}
+
+function removeRow(rowId, imgId) {
+    $('#faqs-row' + rowId).remove();
+    if (imgId !== null) {
+        var imgDeleteInput = document.getElementById('img_delete');
+        var currentValue = imgDeleteInput.value;
+        imgDeleteInput.value = currentValue ? currentValue  + ',' + imgId : imgId;
     }
-
-    function deleteImage(imageId) {
-        if (confirm('Bạn có chắc chắn muốn xóa ảnh này?')) {
-            deletedImages.push(imageId);
-            document.getElementById('img_delete').value = deletedImages.join(',');
-            event.target.closest('tr').remove();
-        }
-    }
+}
+    
 </script>
 
 </html>

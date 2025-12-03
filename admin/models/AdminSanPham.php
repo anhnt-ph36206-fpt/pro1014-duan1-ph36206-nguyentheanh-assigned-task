@@ -107,7 +107,7 @@ class AdminSanPham
             return $stmt->fetchAll();
         } catch (Exception $e) {
             echo "Lỗi kết nối: " . $e->getMessage();
-        }
+        } 
     }
 
     public function updateSanPham($san_pham_id, $ten_san_pham, $gia_san_pham, $gia_khuyen_mai, $so_luong, $ngay_nhap, $danh_muc_id, $trang_thai, $mo_ta, $hinh_anh)

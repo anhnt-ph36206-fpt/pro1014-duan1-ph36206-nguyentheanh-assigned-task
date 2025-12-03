@@ -118,7 +118,7 @@ class AdminSanPhamController
         // var_dump($sanPham);
         $listSanPham = $this->modelSanPham->getListAnhSanPham($id);
         $listAnhSanPham = $this->modelSanPham->getListAnhSanPham($id);
-        // var_dump($listAnhSanPham);
+        var_dump($listAnhSanPham);
         $listDanhMuc = $this->modelDanhMuc->getAllDanhMuc();
         // echo '<pre>';
         // var_dump($listDanhMuc);
