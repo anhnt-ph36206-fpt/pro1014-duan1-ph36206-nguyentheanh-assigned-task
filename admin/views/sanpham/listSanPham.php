@@ -79,14 +79,20 @@
                         <td><?= $sanPham['ten_danh_muc'] ?></td>
                         <td><?= $sanPham['trang_thai'] == 1 ? 'Còn bán' : 'Dừng bán' ?></td>
                         <td>
-                          <a href="<?= BASE_URL_ADMIN . '?act=form-sua-san-pham&id_san_pham=' . $sanPham['id'] ?>" class="btn btn-warning btn-sm">
-                            <i class="fas fa-edit"></i> Sửa
-                          </a>
-                          <a href="<?= BASE_URL_ADMIN . '?act=xoa-san-pham&id_san_pham=' . $sanPham['id'] ?>"
-                            onclick="return confirm('Bạn chắc chắn xoá sản phẩm này?')"
-                            class="btn btn-danger btn-sm">
-                            <i class="fas fa-trash"></i> Xoá
-                          </a>
+                          <div class="btn-group">
+                            <a href="<?= BASE_URL_ADMIN . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id'] ?>" class="btn btn-warning btn-sm">
+                              <i class="fas fa-warning"></i> <i class="far fa-eye"></i>
+                              </a>
+                              <a href="<?= BASE_URL_ADMIN . '?act=form-sua-san-pham&id_san_pham=' . $sanPham['id'] ?>" class="btn btn-warning btn-sm">
+                                <i class="fas fa-edit"></i> Sửa
+                              </a>
+                              <a href="<?= BASE_URL_ADMIN . '?act=xoa-san-pham&id_san_pham=' . $sanPham['id'] ?>"
+                              onclick="return confirm('Bạn chắc chắn xoá sản phẩm này?')"
+                              class="btn btn-danger btn-sm">
+                              <i class="fas fa-trash"></i> Xoá
+                            </a>
+                          </div>
+                          
                         </td>
                       </tr>
                     <?php endforeach; ?>
