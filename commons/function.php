@@ -36,10 +36,49 @@ function formatPrice($price)
 
 function deleteSessionError()
 {
-    if (isset($_SESSION['error'])) {
-        unset($_SESSION['error']); // Xóa biến session 'error'
+    if (isset($_SESSION['flash'])) {
+        // Huỷ Session sau khi tải trang
+        unset($_SESSION['flash']);
+        session_unset();
+        session_destroy();
     }
 }
+//  Hàm upload file ảnh
+function uploadFile($file, $folderUpload) {
+    $pathStorage = $folderUpload . time() . '-' . $file['name'];
+
+    $from = $file['tmp_name'];
+    $to = PATH_ROOT . $pathStorage;
+
+    if (move_uploaded_file($from, $to)) {
+        # return path storage
+        return $pathStorage;
+    }
+    return null;
+}
+
+// Hàm xóa file ảnh
+function deleteFile($file) {
+    $pathDelete = PATH_ROOT . $file;
+    if (file_exists($pathDelete)) {
+        unlink($pathDelete);
+    }
+}
+
+// Hàm upload album ảnh
+function uploadFileAlbum($file, $folderUpload, $key) {
+    $pathStorage = $folderUpload . time() . '-' . $file['name'][$key];
+
+    $from = $file['tmp_name'][$key];
+    $to = PATH_ROOT . $pathStorage;
+
+    if (move_uploaded_file($from, $to)) {
+        # return path storage
+        return $pathStorage;
+    }
+    return null;
+}
+
 //thêm file
 //xóa file 
 //debug

@@ -6,7 +6,6 @@ class AdminDanhMuc
 
     public function __construct()
     {
-        // LỖI 1: Sai cú pháp → $this->$conn → phải là $this->conn
         $this->conn = connectDB(); // ĐÚNG
     }
 

@@ -11,6 +11,7 @@ class AdminDonHangController
     public function danhSachDonHang() 
     {
         $listDonHang = $this->modelDonHang->getAllDonHang();
+        // var_dump($listDonHang);
         require_once './views/donhang/listDonHang.php';
     }
 

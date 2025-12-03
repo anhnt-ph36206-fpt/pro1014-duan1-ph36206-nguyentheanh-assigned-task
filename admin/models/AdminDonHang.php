@@ -13,7 +13,11 @@ class AdminDonHang
         try {
             $sql = 'SELECT don_hangs.*, trang_thai_don_hangs.ten_trang_thai
             FROM don_hangs
-            INNER JOIN trang_thai_don_hangs ON don_hangs.trang_thai_id = trang_thai_don_hangs.id';
+            INNER JOIN trang_thai_don_hangs 
+            ON don_hangs.trang_thai_id = trang_thai_don_hangs.id
+            ';
+
+            // $sql = 'SELECT * FROM don_hangs';
 
             $stmt = $this->conn->prepare($sql);
 
