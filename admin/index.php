@@ -79,6 +79,11 @@ match ($act) {
     // Route reset password
     'reset-password'         => (new AdminTaiKhoanController())->resetPassword(),
 
+     // route quản lý tài khoản cá nhân
+    'form-sua-thong-tin-ca-nhan-quan-tri'    => (new AdminTaiKhoanController())->formEditCaNhanQuanTri(),
+    // 'sua-thong-tin-ca-nhan-quan-tri'         => (new AdminTaiKhoanController())->postEditCaNhanQuanTri(),
+    'sua-mat-khau-ca-nhan-quan-tri'         => (new AdminTaiKhoanController())->postEditMatKhauCaNhan(),
+
 
     // Route đăng nhập
     'login-admin'          => (new AdminTaiKhoanController())->formLogin(),

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 04, 2025 at 01:59 AM
+-- Generation Time: Dec 02, 2025 at 01:42 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.4.14
 
@@ -157,9 +157,9 @@ CREATE TABLE `don_hangs` (
 --
 
 INSERT INTO `don_hangs` (`id`, `ma_don_hang`, `tai_khoan_id`, `ten_nguoi_nhan`, `email_nguoi_nhan`, `sdt_nguoi_nhan`, `dia_chi_nguoi_nhan`, `ngay_dat`, `tong_tien`, `ghi_chu`, `phuong_thuc_thanh_toan_id`, `trang_thai_id`) VALUES
-(1, 'DH-123', 2, 'Nguyễn Hữu Trungg', 'huutrung123456@gmail.com', '012345678910', 'Nam Từ Liêm - Hà Nộii', '2025-12-01', '900000.00', 'Thanh toán tiền mặt hay chuyển khoảnnn', 1, 9),
-(2, 'DH-1234', 1, 'Nguyễn Hữu Trung', 'huutrung1234@gmail.com', '0123456788', 'Nam Từ Liêm - Hà Nộiiii', '2025-12-01', '100000.00', 'Thanh toán tiền mặt hay chuyển khoản', 1, 2),
-(3, 'DH-12345', 24, 'Nguyễn Hữu Trung 12345', 'huutrung12345@gmail.com', '0123456787', 'Nam Từ Liêm - Hà Nội', '2025-12-01', '800000.00', 'Giao hàng nhanh', 1, 3),
+(1, 'DH-123', 15, 'Nguyễn Hữu Trungg', 'huutrung123456@gmail.com', '012345678910', 'Nam Từ Liêm - Hà Nộii', '2025-12-01', '900000.00', 'Thanh toán tiền mặt hay chuyển khoảnnn', 1, 9),
+(2, 'DH-1234', 15, 'Nguyễn Hữu Trung', 'huutrung1234@gmail.com', '0123456788', 'Nam Từ Liêm - Hà Nội', '2025-12-01', '100000.00', 'Thanh toán tiền mặt hay chuyển khoản', 1, 2),
+(3, 'DH-12345', 18, 'Nguyễn Hữu Trung 12345', 'huutrung12345@gmail.com', '0123456787', 'Nam Từ Liêm - Hà Nội', '2025-12-01', '800000.00', 'Giao hàng nhanh', 1, 3),
 (4, 'DH - 1', 23, 'Nguyễn T.Anhhh', 'tanh123@gmail.com', '0945353843', 'Nam Từ Liêm - Hà Nội', '2025-12-01', '500000.00', 'Giao hàng nhanh ship COD', 1, 4);
 
 -- --------------------------------------------------------
@@ -200,23 +200,31 @@ INSERT INTO `hinh_anh_san_phams` (`id`, `san_pham_id`, `link_hinh_anh`) VALUES
 (8, 8, './uploads/product-8.jpg'),
 (9, 9, './uploads/product-9.jpg'),
 (10, 10, './uploads/product-10.jpg'),
-(11, 1, './uploads/1764734350-cpc.png'),
+(11, 1, './uploads/product-2.jpg'),
 (12, 2, './uploads/product-3.jpg'),
 (13, 1, './uploads/product-3.jpg'),
 (14, 1, './uploads/product-4.jpg'),
 (15, 1, './uploads/product-5.jpg'),
 (16, 1, './uploads/product-6.jpg'),
 (17, 1, './uploads/product-7.jpg'),
-(18, 1, './uploads/1764734350-cpc.png'),
-(19, 1, './uploads/1764734350-cpc.png'),
-(20, 1, './uploads/1764734350-cpc.png'),
+(18, 1, './uploads/1764626418-instagram-5.jpg'),
+(19, 1, './uploads/1764626424-instagram-4.jpg'),
+(20, 1, './uploads/1764626440-instagram-4.jpg'),
 (21, 26, './uploads/1764628535-instagram-1.jpg'),
 (22, 26, './uploads/1764628535-instagram-2.jpg'),
 (23, 26, './uploads/1764628535-instagram-3.jpg'),
 (24, 26, './uploads/1764628535-instagram-4.jpg'),
 (25, 26, './uploads/1764628535-instagram-5.jpg'),
-(36, 1, './uploads/1764731818-cpc.png'),
-(37, 1, './uploads/1764731818-cpc.png');
+(26, 27, './uploads/1764629702-instagram-1.jpg'),
+(27, 27, './uploads/1764629702-instagram-2.jpg'),
+(28, 27, './uploads/1764629702-instagram-3.jpg'),
+(29, 27, './uploads/1764629702-instagram-4.jpg'),
+(30, 27, './uploads/1764629702-instagram-5.jpg'),
+(31, 28, './uploads/1764638130-instagram-1.jpg'),
+(32, 28, './uploads/1764638130-instagram-2.jpg'),
+(33, 28, './uploads/1764638130-instagram-3.jpg'),
+(34, 28, './uploads/1764638130-instagram-4.jpg'),
+(35, 28, './uploads/1764638130-instagram-5.jpg');
 
 -- --------------------------------------------------------
 
@@ -262,7 +270,7 @@ CREATE TABLE `san_phams` (
 --
 
 INSERT INTO `san_phams` (`id`, `ten_san_pham`, `gia_san_pham`, `gia_khuyen_mai`, `hinh_anh`, `so_luong`, `luot_xem`, `ngay_nhap`, `mo_ta`, `danh_muc_id`, `trang_thai`) VALUES
-(1, 'Chó phú quốc 1234', '10000000.00', '9000000.00', './uploads/1764734356-cpc.png', 100, 10, '2025-11-26', 'Chó phú quốc siêu đẹp,siêu hấp dẫn.ádasd', 5, 1),
+(1, 'Chó phú quốc 1234', '10000000.00', '9000000.00', NULL, 100, 10, '2025-11-26', 'Chó phú quốc siêu đẹp,siêu hấp dẫn.ádasd', 4, 1),
 (2, 'Mèo anh lông dài', '23432432.00', '12454354.00', NULL, 23, 22, '2025-11-25', 'Mèo anh lông dài thuần chủng. 4324324', 4, 2),
 (3, 'Mèo Lông Dài Phú Quốc', '5000000.00', '3432432.00', './uploads/1764626451-instagram-1.jpg', 10, 10, '2025-11-29', 'Mèo Lông Dài Siêu Đẹp, Đắt Tiền', 4, 1),
 (4, 'Mèo Lông Dài Phú Quốc Xám', '5000000.00', NULL, 'assets/img/product/product-4.jpg', 19, 8, '2025-11-01', 'Mèo Lông Dài Siêu Đẹp, Đắt Tiền xám', 6, 1),
@@ -287,7 +295,9 @@ INSERT INTO `san_phams` (`id`, `ten_san_pham`, `gia_san_pham`, `gia_khuyen_mai`,
 (23, 'mèo', '123.00', '12.00', './uploads/1764627308-instagram-4.jpg', 1, 0, '2025-12-10', '12', 5, 1),
 (24, 'mèo 23434', '1223.00', '123.00', './uploads/1764627682-instagram-1.jpg', 4, 0, '2025-12-10', '434324', 5, 1),
 (25, 'mèo', '321312.00', '123.00', './uploads/1764627917-instagram-3.jpg', 12, 0, '2025-12-18', '32213213', 4, 1),
-(26, 'Mèo Mun', '5000000.00', '250000.00', './uploads/1764628535-instagram-1.jpg', 12321, 0, '2025-12-10', 'Đẹp', 10, 1);
+(26, 'Mèo Mun', '5000000.00', '250000.00', './uploads/1764628535-instagram-1.jpg', 12321, 0, '2025-12-10', 'Đẹp', 10, 1),
+(27, 'mèo', '213213.00', '13213213.00', './uploads/1764629702-instagram-2.jpg', 12, 0, '2025-12-18', '3213213', 4, 1),
+(28, 'mèo', '50000.00', '4000.00', './uploads/1764638130-instagram-3.jpg', 30, 0, '2025-12-02', '123', 4, 1);
 
 -- --------------------------------------------------------
 
@@ -318,11 +328,11 @@ INSERT INTO `tai_khoans` (`id`, `ho_ten`, `anh_dai_dien`, `ngay_sinh`, `email`, 
 (2, 'Nguyễn Văn A', './uploads/product-2.jpg', '2025-11-19', 'abc@gmail.com', '', 1, '', '$2y$12$Ncbr/eTF1mSHKeQM41avfOYTxoLoDlao62fHh4eP5j9tfqiWbWhoe', 1, 2),
 (9, 'Đỗ Đình Thịnh', './uploads/product-3.jpg', '2025-12-20', 'dodinhthinh124563@gmail.com', '0965765765', 1, 'hnnnn', '$2y$12$bHXcoQcw969XMuoQ6MpwFea6Vg9eH00PhofO7Oki4qSUDKQy4hJSi', 2, 2),
 (10, 'anhhhh', NULL, '2025-12-01', 'anhn12345@fpt.edu.vn', '', 1, '', '123', 1, 1),
-(13, 'anh', NULL, NULL, 'anhnhh12345@fpt.edu.vn', NULL, 1, NULL, '$2y$12$cf7yD1XSCsT10Tmr61gBbuRXs4Jf3hnzmkmsy12guxBPoGw.VUGUq', 1, 1),
+(13, 'anh', NULL, NULL, 'anhnhh12345@fpt.edu.vn', NULL, 1, NULL, '$2y$12$mUHwiwS.gGjoU58bTnoice5nfddEVhnctgVcPak8QMJnrw/Zu9ngO', 1, 1),
 (18, 'theAnhDev', './uploads/product-2.jpg', '2025-12-25', 'theanhdev324324@gmail.com', '0954654654', 1, 'hn ntl', '$2y$12$gBUAtqO12sX.gBBOtfWaAusmDSmOeooRnGzxBT873yvceOLjRl47S', 2, 1),
 (19, 'Đỗ Đình Thịnhhhhh', NULL, NULL, 'adad@gmail.com', '0890980757', 1, NULL, '$2y$12$luCO6qAMIHpKm.zD7s8csOTfFnL7HFrm0bPYaLlekoCdrco9ezbWG', 1, 1),
 (22, 'theAnhDev42432', './uploads/product-2.jpg', NULL, 'theanhdev34324324@gmail.com', NULL, 1, NULL, '$2y$12$xVb9kdvWMzyoMvq17uIzR.b1zpawxcvxlsLwrFrmTQxJmgsoB1raC', 1, 2),
-(23, 'Nguyễn Thế Anh', './uploads/product-3.jpg', '2025-12-25', 'anhhh112233@gmail.com', '096234728', 1, 'Nam Từ Liêm - Hà Nội', '$2y$12$9yDC/v1TOS1NigM4jXYogemss5tCLdObmSF/.32Nog9W11mWSZ.qa', 1, 1),
+(23, 'Nguyễn Thế Anh', './uploads/product-3.jpg', '2025-12-25', 'anhhh112233@gmail.com', '096234728', 1, 'Nam Từ Liêm - Hà Nội', '$2y$12$9yDC/v1TOS1NigM4jXYogemss5tCLdObmSF/.32Nog9W11mWSZ.qa', 2, 1),
 (24, 'trungHIu', NULL, NULL, 'trunghieu123@gmail.com', NULL, 1, NULL, '$2y$12$eoqa6AfFNXGvvxkVC.zcRutF5NCCJts3kjFUb.a6ZR2GQFML0U0rS', 1, 1);
 
 -- --------------------------------------------------------
@@ -480,7 +490,7 @@ ALTER TABLE `gio_hangs`
 -- AUTO_INCREMENT for table `hinh_anh_san_phams`
 --
 ALTER TABLE `hinh_anh_san_phams`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- AUTO_INCREMENT for table `phuong_thuc_thanh_toans`

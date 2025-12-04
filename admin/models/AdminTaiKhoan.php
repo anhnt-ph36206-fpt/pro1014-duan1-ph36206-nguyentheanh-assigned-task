@@ -177,7 +177,7 @@ class AdminTaiKhoan
         }
     }
    
-     public function getTaiKhoanformEmail($email)
+     public function getTaiKhoanFromEmail($email)
     {
         try {
             $sql = 'SELECT * FROM tai_khoans WHERE email = :email';
