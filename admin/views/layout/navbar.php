@@ -128,5 +128,13 @@
         <i class="fas fa-th-large"></i>
       </a>
     </li>
+      <!-- Nút Đăng xuất -->
+    <li class="nav-item">
+      <a href="<?= BASE_URL_ADMIN . '?act=logout-admin'?>" class="nav-link text-danger"title="Đăng xuất" onclick=" return confirm ('Bạn có chắc muốn đăng xuất không?')">
+        <i class="fas fa-sign-out-alt"></i>
+        <span class="d-none d-md-inline ml-1">Đăng xuất</span>
+      </a>
+    </li>
+  </ul>
   </ul>
 </nav>

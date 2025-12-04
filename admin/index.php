@@ -11,6 +11,9 @@ require_once './controllers/AdminDonHangController.php';
 require_once './controllers/AdminTaiKhoanController.php';
 require_once './controllers/AdminSanPhamController.php';
 
+require_once './controllers/AdminBaoCaoThongKeController.php';
+
+
 // Require toàn bộ file Models
 require_once './models/AdminDanhMuc.php';
 require_once './models/AdminTaiKhoan.php';
@@ -19,11 +22,15 @@ require_once './models/AdminSanPham.php';
 
 // Route
 $act = $_GET['act'] ?? '/';
+if ($act !== 'login-admin' && $act !== 'check-login-admin' && $act !== 'logout-admin') {
+    checkLoginAdmin();
+}
 
 // Để bảo bảo tính chất chỉ gọi 1 hàm Controller để xử lý request thì mình sử dụng match
 
 match ($act) {
     // Route trang chủ
+    '/'                    => (new AdminBaoCaoThongKeController())->home(),
     'trang-chu'              => (new AdminTaiKhoanController())->trangChu(),
 
     //  Route quản lý danh mục
@@ -43,9 +50,6 @@ match ($act) {
     'form-sua-san-pham'      => (new AdminSanPhamController())->formEditSanPham(),
     'sua-san-pham'           => (new AdminSanPhamController())->postEditSanPham(),
     'sua-album-anh-san-pham' => (new AdminSanPhamController())->postEditAnhSanPham(),
-
-    // 'xoa-san-pham'       => (new AdminSanPhamController())->deleteSanPham(),
-
     'xoa-san-pham'       => (new AdminSanPhamController())->deleteSanPham(),
     'chi-tiet-san-pham'      => (new AdminSanPhamController())->detailSanPham(),
 
@@ -75,4 +79,11 @@ match ($act) {
     // Route reset password
     'reset-password'         => (new AdminTaiKhoanController())->resetPassword(),
 
+
+    // Route đăng nhập
+    'login-admin'          => (new AdminTaiKhoanController())->formLogin(),
+    'check-login-admin'    => (new AdminTaiKhoanController())->login(),
+
+    // Route đăng xuất
+    'logout-admin'         => (new AdminTaiKhoanController())->logout(),
 };

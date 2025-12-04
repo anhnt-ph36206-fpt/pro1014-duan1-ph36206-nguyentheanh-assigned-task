@@ -39,6 +39,7 @@ function deleteSessionError()
     if (isset($_SESSION['flash'])) {
         // Huỷ Session sau khi tải trang
         unset($_SESSION['flash']);
+        unset($_SESSION['error']); // Xóa biến session 'error'
         session_unset();
         session_destroy();
     }
@@ -79,6 +80,24 @@ function uploadFileAlbum($file, $folderUpload, $key) {
     return null;
 }
 
+function checkLoginAdmin()
+{
+    if(!isset($_SESSION['user_admin'])){ // Không có session thì redirect về trang login
+        // require_once './views/auth/formLogin.php';
+        // var_dump('abc');die();
+        // prettyPrint($_SESSION, 'user_admin');
+        header('Location: ' . BASE_URL_ADMIN . '?act=login-admin');
+        exit();
+
+    }
+}
+
+function prettyPrint($data1, $data2)
+{
+    echo '<pre>';
+    var_dump($data1, $data2);    
+    echo '</pre>';
+}
 //thêm file
 //xóa file 
 //debug

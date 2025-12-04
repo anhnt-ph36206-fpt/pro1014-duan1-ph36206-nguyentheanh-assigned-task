@@ -24,7 +24,7 @@
                with font-awesome or any other icon font library -->
 
                  <li class="nav-item">
-                     <a href="<?= BASE_URL_ADMIN . '?act=trang-chu' ?>" class="nav-link">
+                     <a href="<?= BASE_URL_ADMIN ?>" class="nav-link">
                          <i class="nav-icon fas fa-tachometer-alt"></i>
                          <p>
                              Trang chủ Admin
@@ -44,7 +44,7 @@
                      <a href="<?= BASE_URL_ADMIN . '?act=danh-muc' ?>" class="nav-link">
                          <i class="nav-icon fas fa-th"></i>
                          <p>
-                             Danh mục sản phẩm
+                            Danh Mục Sản Phẩm
                          </p>
                      </a>
                  </li>
@@ -53,7 +53,7 @@
                      <a href="<?= BASE_URL_ADMIN . '?act=san-pham' ?>" class="nav-link">
                          <i class="nav-icon fas fa-cat"></i>
                          <p>
-                             Sản phẩm
+                             Danh sách Sản phẩm
                          </p>
                      </a>
                  </li>
@@ -62,7 +62,7 @@
                      <a href="<?= BASE_URL_ADMIN . '?act=don-hang' ?>" class="nav-link">
                          <i class="nav-icon fas fa-file-invoice-dollar"></i>
                          <p>
-                             Đơn hàng
+                            Danh Sách Đơn hàng
                          </p>
                      </a>
                  </li>
