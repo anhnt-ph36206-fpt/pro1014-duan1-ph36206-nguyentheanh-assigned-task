@@ -4,10 +4,10 @@
 
 | Thành viên | Vai trò | Nhiệm vụ |
 |-----------|---------|----------|
-| **Thịnh** | Trưởng nhóm | - Hoàn thành Video 2 <br> - Đã hoàn thành Video 6.1 -> 6.3  - Đang làm dở 6.4 -> 6.6 |
-| **Trung** | Thành viên | - Hoàn thành Video 3.1 <br> - Hoàn thành Video 5.1 -> 5.3 |
-| **Vũ** | Thành viên | - Hoàn thiện Video 3.2 - Đang làm dở 4.1, 4.2 <br> - Video 3.2 lỗi route đã fix |
-| **Thế Anh** | Thành viên | - Hoàn thành Video 7.1 -> 7.3 - Fix  giúp  Vũ 3.2 và 4.1 - Fix giúp Thịnh 6.3
+| **Thịnh** | Trưởng nhóm | - Hoàn thành ``video 2``<br> - Hoàn thành ``video 6.1,6.2`` <br> - Chưa hoàn thành ``video 6.3``, đang làm nốt phần ***chi tiết bình luận*** <br> - Hoàn thành formLogin và logout ```video 6.4``` <br> - Đang ghép code ``video 6.5 - 6.6`` và fix bug|
+| **Trung** | Thành viên | - Hoàn thành ``video 3.1`` <br> - Hoàn thành ``video 5.1, 5.2, 5.3`` |
+| **Vũ** | Thành viên | - Hoàn thành ``video 3.2``<br> - Hoàn thành ``video 3.2``  <br> - Hoàn thành ``video 4.2`` |
+| **Thế Anh** | Thành viên | - Hoàn thành ``video 7.1, 7.2, 7.3`` <br>- Fix  giúp  Vũ ``video 3.2 và 4.1`` <br>- Fix giúp Thịnh ``video 6.3, 6.4`` |
 --- | 
 
 # ✅ Tiến độ các video (Buổi 4 – 17 video)
@@ -17,15 +17,15 @@
 | **2** | Giới thiệu dựng base, cắt giao diện dự án 1 | ✔ Đã xong |
 | **3.1** | Danh mục sản phẩm | ✔ Đã xong |
 | **3.2** | Quản lý sản phẩm – Thêm sản phẩm | ✔ Đã xong |
-| **4.1** | Hoàn thiện Quản lý Sản phẩm |  ⚠ Sắp xong - fix vài chỗ cơ bản |
-| **4.2** | Hoàn thiện toàn bộ phần Quản lý Sản Phẩm | ⚠ Đã xong code nhưng còn lỗi |
+| **4.1** | Hoàn thiện Quản lý Sản phẩm | ✔ Đã xong |
+| **4.2** | Hoàn thiện toàn bộ phần Quản lý Sản Phẩm | ✔ Đã xong |
 | **5.1** | Phân tích – Danh sách đơn hàng | ✔ Đã xong |
 | **5.2** | Chi tiết đơn hàng | ✔ Đã xong |
 | **5.3** | Hoàn thiện Quản lý Đơn hàng | ✔ Đã xong |
 | **6.1** | Quản lý tài khoản quản trị viên | ✔ Đã xong |
 | **6.2** | Quản lý tài khoản khách hàng | ✔ Đã xong |
 | **6.3** | Quản lý chi tiết tài khoản – Bình luận sản phẩm | ⚠ Sắp xong |
-| **6.4** | Login – Logout | ⏳ Đang làm dở |
+| **6.4** | Login – Logout | ✔ Đã xong |
 | **6.5** | Thay đổi thông tin cá nhân | ⏳ Đang làm dở |
 | **6.6** | Hoàn thiện quản lý tài khoản | ⏳ Đang làm dở |
 | **7.1** | Template view client | ✔ Đã xong |
