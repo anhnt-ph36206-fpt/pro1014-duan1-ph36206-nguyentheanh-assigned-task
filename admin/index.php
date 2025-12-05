@@ -53,6 +53,8 @@ match ($act) {
     'xoa-san-pham'       => (new AdminSanPhamController())->deleteSanPham(),
     'chi-tiet-san-pham'      => (new AdminSanPhamController())->detailSanPham(),
 
+    //  Route bình luận
+    'update-trang-thai-binh-luan'       => (new AdminSanPhamController())->updateTrangThaiBinhLuan(),
 
     //  Route quản lý tài khoản quản trị
     //  Quản lý tài khoản quản trị

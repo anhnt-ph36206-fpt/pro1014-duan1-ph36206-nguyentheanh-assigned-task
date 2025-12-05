@@ -92,7 +92,7 @@
                     </div>
                     <div class="col-12">
                         <hr>
-                        <h2>Thông tin mua hàng</h2>
+                        <h2>Lịch sử mua hàng</h2>
                         <div>
                          <table id="example1" class="table table-bordered table-striped">
                             <thead>
@@ -138,7 +138,7 @@
                         <div>
                             <table id="example2" class="table table-bordered table-striped">
                                     <thead>
-                                        <tr>
+                                        <tr class="text-center">
                                             <th>STT</th>
                                             <th>Sản phẩm</th>
                                             <th>Nội dung sản phẩm</th>
@@ -149,16 +149,20 @@
                                     </thead>
                                     <tbody>
                                         <?php foreach ($listBinhLuan as $key => $binhLuan): ?>
-                                            <tr>
+                                            <tr class="text-center">
                                                 <td><?php echo $key + 1 ?></td>
-                                                <td><a href="<?php echo BASE_URL_ADMIN . '?act=chi-tiet-san-pham&id_san_pham=' . $binhLuan['san_pham_id'] ?>"><?php echo $binhLuan['ten_san_pham'] ?></a></td>
+                                                <td><a target="_blank" href="<?php echo BASE_URL_ADMIN . '?act=chi-tiet-san-pham&id_san_pham=' . $binhLuan['san_pham_id'] ?>"><?php echo $binhLuan['ten_san_pham'] ?></a></td>
                                                 <td><?php echo $binhLuan['noi_dung'] ?></td>
                                                 <td><?php echo $binhLuan['ngay_dang'] ?></td>
-                                                <td><?php echo $binhLuan['trang_thai'] == 1 ? 'Active' : 'Inactive' ?></td>
+                                                <td><?php echo $binhLuan['trang_thai'] == 1 ? 'Hiển thị' : 'Bị ẩn' ?></td>
                                                 <td>
-                                                    <a href="<?php echo BASE_URL_ADMIN . '?act=form-sua-binh-luan&id_binh_luan=' . $binhLuan['id'] ?>" class="btn btn-warning btn-sm">
-                                                        <i class="fas fa-edit"></i> Sửa
-                                                    </a>
+                                                    <form action="<?php echo BASE_URL_ADMIN . '?act=update-trang-thai-binh-luan' ?>" method="post">
+                                                        <input type="hidden" name="id_binh_luan" value="<?php echo $binhLuan['id'] ?>">
+                                                        <input type="hidden" name="name_view" value="detail_khach">
+                                                        <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc chắn muốn ẩn bình luận này không?')">
+                                                           <?php echo $binhLuan['trang_thai'] == 1 ? 'Ẩn' : 'Hiển thị' ?>
+                                                        </button>
+                                                    </form>
                                                 </td>
                                             </tr>
                                         <?php endforeach; ?>
