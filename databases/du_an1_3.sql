@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 05, 2025 at 04:28 AM
+-- Generation Time: Dec 04, 2025 at 01:59 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.4.14
 
@@ -45,10 +45,10 @@ INSERT INTO `binh_luans` (`id`, `san_pham_id`, `tai_khoan_id`, `noi_dung`, `ngay
 (2, 2, 23, 'Ship hoả tốc bao h có ?', '2025-11-30', 1),
 (3, 1, 1, 'Hay hay hay', '2025-11-30', 1),
 (4, 9, 9, 'hay', '2025-11-30', 1),
-(5, 9, 9, 'hay', '2025-11-30', 2),
+(5, 9, 9, 'hay', '2025-11-30', 1),
 (6, 9, 9, 'hay hay hay', '2025-11-30', 1),
-(7, 9, 9, 'hay hay hay hay hay hay ha', '2025-11-30', 2),
-(8, 9, 9, 'hay hay hay hay hay hay hay hay hay', '2025-11-30', 2),
+(7, 9, 9, 'hay hay hay hay hay hay ha', '2025-11-30', 1),
+(8, 9, 9, 'hay hay hay hay hay hay hay hay hay', '2025-11-30', 1),
 (9, 3, 23, 'sản phẩm này còn k shop', '2025-12-10', 1),
 (10, 4, 23, 'Shop ơi rep tin nhắn em', '2025-12-01', 1);
 
@@ -90,16 +90,6 @@ CREATE TABLE `chi_tiet_gio_hangs` (
   `so_luong` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data for table `chi_tiet_gio_hangs`
---
-
-INSERT INTO `chi_tiet_gio_hangs` (`id`, `gio_hang_id`, `san_pham_id`, `so_luong`) VALUES
-(3, 2, 5, 5),
-(4, 2, 6, 10),
-(5, 2, 3, 10),
-(6, 2, 1, 1);
-
 -- --------------------------------------------------------
 
 --
@@ -139,8 +129,7 @@ INSERT INTO `danh_mucs` (`id`, `ten_danh_muc`, `mo_ta`) VALUES
 (4, 'Áo 123', 'Áo Bomber\r\n'),
 (5, 'Quần ', 'Quần âu\r\n'),
 (6, 'Áo Quần 123', 'Áo đẹp'),
-(10, 'Áo Quần 123456', '123215432'),
-(11, 'Mèo Xanh Nước Biển', 'Các loại mèo màu xanh nước biển');
+(10, 'Áo Quần 123456', '123215432');
 
 -- --------------------------------------------------------
 
@@ -168,11 +157,10 @@ CREATE TABLE `don_hangs` (
 --
 
 INSERT INTO `don_hangs` (`id`, `ma_don_hang`, `tai_khoan_id`, `ten_nguoi_nhan`, `email_nguoi_nhan`, `sdt_nguoi_nhan`, `dia_chi_nguoi_nhan`, `ngay_dat`, `tong_tien`, `ghi_chu`, `phuong_thuc_thanh_toan_id`, `trang_thai_id`) VALUES
-(1, 'DH-123', 19, 'Nguyễn Hữu Trungg', 'huutrung123456@gmail.com', '012345678910', 'Nam Từ Liêm - Hà Nộii', '2025-12-01', '900000.00', 'Thanh toán tiền mặt hay chuyển khoảnnn', 1, 9),
-(2, 'DH-1234', 24, 'Nguyễn Hữu Trung', 'huutrung1234@gmail.com', '0123456788', 'Nam Từ Liêm - Hà Nội', '2025-12-01', '100000.00', 'Thanh toán tiền mặt hay chuyển khoản', 1, 2),
-(3, 'DH-12345', 22, 'Nguyễn Hữu Trung 12345', 'huutrung12345@gmail.com', '0123456787', 'Nam Từ Liêm - Hà Nội', '2025-12-01', '800000.00', 'Giao hàng nhanh', 1, 3),
-(4, 'DH - 1', 23, 'Nguyễn T.Anhhh', 'tanh123@gmail.com', '0945353843', 'Nam Từ Liêm - Hà Nội', '2025-12-01', '500000.00', 'Giao hàng nhanh ship COD', 1, 4),
-(5, 'DH-200', 1, 'Đoàn Huy Vũ', 'vuhdph31415@fpt.edu.vn', '0923467324', 'Nam Từ Liêm - Hà Nội', '2025-12-01', '1000000.00', 'Đơn hàng cần giao nhanh trước ngày 3/12/2025', 2, 1);
+(1, 'DH-123', 2, 'Nguyễn Hữu Trungg', 'huutrung123456@gmail.com', '012345678910', 'Nam Từ Liêm - Hà Nộii', '2025-12-01', '900000.00', 'Thanh toán tiền mặt hay chuyển khoảnnn', 1, 9),
+(2, 'DH-1234', 1, 'Nguyễn Hữu Trung', 'huutrung1234@gmail.com', '0123456788', 'Nam Từ Liêm - Hà Nộiiii', '2025-12-01', '100000.00', 'Thanh toán tiền mặt hay chuyển khoản', 1, 2),
+(3, 'DH-12345', 24, 'Nguyễn Hữu Trung 12345', 'huutrung12345@gmail.com', '0123456787', 'Nam Từ Liêm - Hà Nội', '2025-12-01', '800000.00', 'Giao hàng nhanh', 1, 3),
+(4, 'DH - 1', 23, 'Nguyễn T.Anhhh', 'tanh123@gmail.com', '0945353843', 'Nam Từ Liêm - Hà Nội', '2025-12-01', '500000.00', 'Giao hàng nhanh ship COD', 1, 4);
 
 -- --------------------------------------------------------
 
@@ -184,13 +172,6 @@ CREATE TABLE `gio_hangs` (
   `id` int NOT NULL,
   `tai_khoan_id` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `gio_hangs`
---
-
-INSERT INTO `gio_hangs` (`id`, `tai_khoan_id`) VALUES
-(2, 24);
 
 -- --------------------------------------------------------
 
@@ -209,7 +190,8 @@ CREATE TABLE `hinh_anh_san_phams` (
 --
 
 INSERT INTO `hinh_anh_san_phams` (`id`, `san_pham_id`, `link_hinh_anh`) VALUES
-(2, 2, './uploads/1764725730-1764348048-apple-macbook-pro-16-m1-pro-2021.jpg'),
+(1, 1, './uploads/product-1.jpg'),
+(2, 2, './uploads/1764626056-instagram-5.jpg'),
 (3, 3, './uploads/product-3.jpg'),
 (4, 4, './uploads/product-4.jpg'),
 (5, 5, './uploads/product-5.jpg'),
@@ -218,36 +200,23 @@ INSERT INTO `hinh_anh_san_phams` (`id`, `san_pham_id`, `link_hinh_anh`) VALUES
 (8, 8, './uploads/product-8.jpg'),
 (9, 9, './uploads/product-9.jpg'),
 (10, 10, './uploads/product-10.jpg'),
+(11, 1, './uploads/1764734350-cpc.png'),
+(12, 2, './uploads/product-3.jpg'),
+(13, 1, './uploads/product-3.jpg'),
+(14, 1, './uploads/product-4.jpg'),
+(15, 1, './uploads/product-5.jpg'),
+(16, 1, './uploads/product-6.jpg'),
+(17, 1, './uploads/product-7.jpg'),
+(18, 1, './uploads/1764734350-cpc.png'),
+(19, 1, './uploads/1764734350-cpc.png'),
+(20, 1, './uploads/1764734350-cpc.png'),
 (21, 26, './uploads/1764628535-instagram-1.jpg'),
 (22, 26, './uploads/1764628535-instagram-2.jpg'),
 (23, 26, './uploads/1764628535-instagram-3.jpg'),
 (24, 26, './uploads/1764628535-instagram-4.jpg'),
 (25, 26, './uploads/1764628535-instagram-5.jpg'),
-(26, 27, './uploads/1764629702-instagram-1.jpg'),
-(27, 27, './uploads/1764629702-instagram-2.jpg'),
-(28, 27, './uploads/1764629702-instagram-3.jpg'),
-(29, 27, './uploads/1764629702-instagram-4.jpg'),
-(30, 27, './uploads/1764629702-instagram-5.jpg'),
-(31, 28, './uploads/1764638130-instagram-1.jpg'),
-(32, 28, './uploads/1764638130-instagram-2.jpg'),
-(33, 28, './uploads/1764638130-instagram-3.jpg'),
-(34, 28, './uploads/1764638130-instagram-4.jpg'),
-(35, 28, './uploads/1764638130-instagram-5.jpg'),
-(36, 29, './uploads/1764685968-instagram-1.jpg'),
-(37, 29, './uploads/1764685968-instagram-2.jpg'),
-(38, 29, './uploads/1764685968-instagram-3.jpg'),
-(39, 29, './uploads/1764685968-instagram-4.jpg'),
-(40, 29, './uploads/1764685968-instagram-5.jpg'),
-(44, 2, './uploads/1764725719-1764347390-apple-macbook-pro-14-m1-pro-2021jpg.jpg'),
-(45, 2, './uploads/1764725758-imac_24.jpg'),
-(46, 2, './uploads/1764725758-macbook-pro-m5-2.png'),
-(47, 2, './uploads/1764725758-macbook-air-m4.jpg'),
-(48, 2, './uploads/1764725758-macbook-pro-m5-1.png'),
-(49, 2, './uploads/1764725856-MacBook-Pro-M1-14-inch-4.png'),
-(50, 2, './uploads/1764725874-macbook-pr-m4-1.jpg'),
-(53, 1, './uploads/1764804125-1764804117-1764710687-1764347390-apple-macbook-pro-14-m1-pro-2021jpg.jpg'),
-(54, 1, './uploads/1764804117-1764710842-1764351327-1764348048-apple-macbook-pro-16-m1-pro-2021.jpg'),
-(55, 1, './uploads/1764804145-1764624332-instagram-1.jpg');
+(36, 1, './uploads/1764731818-cpc.png'),
+(37, 1, './uploads/1764731818-cpc.png');
 
 -- --------------------------------------------------------
 
@@ -293,8 +262,8 @@ CREATE TABLE `san_phams` (
 --
 
 INSERT INTO `san_phams` (`id`, `ten_san_pham`, `gia_san_pham`, `gia_khuyen_mai`, `hinh_anh`, `so_luong`, `luot_xem`, `ngay_nhap`, `mo_ta`, `danh_muc_id`, `trang_thai`) VALUES
-(1, 'Chó phú quốc lông trắng', '1000000.00', '900000.00', './uploads/1764804187-1764725810-1764704184-1764700350-1764351327-1764348048-apple-macbook-pro-16-m1-pro-2021.jpg', 100, 10, '2025-11-26', 'Chó phú quốc siêu đẹp như gấu bắc cực', 5, 1),
-(2, 'Mèo anh lông dài', '23432432.00', '12454354.00', './uploads/1764725810-1764704184-1764700350-1764351327-1764348048-apple-macbook-pro-16-m1-pro-2021.jpg', 23, 22, '2025-11-25', 'Mèo anh lông dài thuần chủng. 4324324', 4, 2),
+(1, 'Chó phú quốc 1234', '10000000.00', '9000000.00', './uploads/1764734356-cpc.png', 100, 10, '2025-11-26', 'Chó phú quốc siêu đẹp,siêu hấp dẫn.ádasd', 5, 1),
+(2, 'Mèo anh lông dài', '23432432.00', '12454354.00', NULL, 23, 22, '2025-11-25', 'Mèo anh lông dài thuần chủng. 4324324', 4, 2),
 (3, 'Mèo Lông Dài Phú Quốc', '5000000.00', '3432432.00', './uploads/1764626451-instagram-1.jpg', 10, 10, '2025-11-29', 'Mèo Lông Dài Siêu Đẹp, Đắt Tiền', 4, 1),
 (4, 'Mèo Lông Dài Phú Quốc Xám', '5000000.00', NULL, 'assets/img/product/product-4.jpg', 19, 8, '2025-11-01', 'Mèo Lông Dài Siêu Đẹp, Đắt Tiền xám', 6, 1),
 (5, 'Mèo Lông Dài Phú Quốc Đen', '6000000.00', '4600000.00', 'assets/img/product/product-5.jpg', 16, 9, '2025-11-01', 'Mèo Lông Dài Siêu Đẹp, Đắt Tiền đen', 5, 1),
@@ -318,10 +287,7 @@ INSERT INTO `san_phams` (`id`, `ten_san_pham`, `gia_san_pham`, `gia_khuyen_mai`,
 (23, 'mèo', '123.00', '12.00', './uploads/1764627308-instagram-4.jpg', 1, 0, '2025-12-10', '12', 5, 1),
 (24, 'mèo 23434', '1223.00', '123.00', './uploads/1764627682-instagram-1.jpg', 4, 0, '2025-12-10', '434324', 5, 1),
 (25, 'mèo', '321312.00', '123.00', './uploads/1764627917-instagram-3.jpg', 12, 0, '2025-12-18', '32213213', 4, 1),
-(26, 'Mèo Mun', '5000000.00', '250000.00', './uploads/1764628535-instagram-1.jpg', 12321, 0, '2025-12-10', 'Đẹp', 10, 1),
-(27, 'mèo', '213213.00', '13213213.00', './uploads/1764711110-1764351010-apple-macbook-pro-16-m1-pro-2021.jpg', 12, 0, '2025-12-18', '3213213', 5, 1),
-(28, 'mèo', '50000.00', '4000.00', './uploads/1764638130-instagram-3.jpg', 30, 0, '2025-12-02', '123', 4, 1),
-(29, 'mèo đen', '435435.00', '435435.00', './uploads/1764685968-instagram-3.jpg', 5435, 0, '2025-12-11', '5345435435435', 5, 1);
+(26, 'Mèo Mun', '5000000.00', '250000.00', './uploads/1764628535-instagram-1.jpg', 12321, 0, '2025-12-10', 'Đẹp', 10, 1);
 
 -- --------------------------------------------------------
 
@@ -349,15 +315,15 @@ CREATE TABLE `tai_khoans` (
 
 INSERT INTO `tai_khoans` (`id`, `ho_ten`, `anh_dai_dien`, `ngay_sinh`, `email`, `so_dien_thoai`, `gioi_tinh`, `dia_chi`, `mat_khau`, `chuc_vu_id`, `trang_thai`) VALUES
 (1, 'Đỗ Đình Thịnhhhhhhhh', './uploads/product-1.jpg', '2022-11-02', 'dodinhthinh123@gmail.com', '038888888', 1, 'Số 1 Hà Nội', '$2y$12$WZjnN3vYqACgoiONCxlSb.alMXm7jeRJH3hORknWHcjLSoxlOzeWW', 1, 1),
-(2, 'Nguyễn Văn A', './uploads/product-2.jpg', '2025-11-19', 'abc@gmail.com', '', 1, '', '$2y$12$Ncbr/eTF1mSHKeQM41avfOYTxoLoDlao62fHh4eP5j9tfqiWbWhoe', 2, 2),
-(9, 'Đỗ Đình Thịnh', './uploads/product-8.jpg', '2025-12-20', 'dodinhthinh124563@gmail.com', '0965765765', 1, 'hnnnn', '$2y$12$bHXcoQcw969XMuoQ6MpwFea6Vg9eH00PhofO7Oki4qSUDKQy4hJSi', 2, 1),
+(2, 'Nguyễn Văn A', './uploads/product-2.jpg', '2025-11-19', 'abc@gmail.com', '', 1, '', '$2y$12$Ncbr/eTF1mSHKeQM41avfOYTxoLoDlao62fHh4eP5j9tfqiWbWhoe', 1, 2),
+(9, 'Đỗ Đình Thịnh', './uploads/product-3.jpg', '2025-12-20', 'dodinhthinh124563@gmail.com', '0965765765', 1, 'hnnnn', '$2y$12$bHXcoQcw969XMuoQ6MpwFea6Vg9eH00PhofO7Oki4qSUDKQy4hJSi', 2, 2),
 (10, 'anhhhh', NULL, '2025-12-01', 'anhn12345@fpt.edu.vn', '', 1, '', '123', 1, 1),
-(13, 'anh', NULL, NULL, 'anhnhh12345@fpt.edu.vn', NULL, 1, NULL, '$2y$12$mUHwiwS.gGjoU58bTnoice5nfddEVhnctgVcPak8QMJnrw/Zu9ngO', 1, 1),
-(18, 'theAnhDev', './uploads/product-2.jpg', '2025-12-25', 'theanhdev324324@gmail.com', '0954654654', 1, 'hn ntl', '$2y$12$gBUAtqO12sX.gBBOtfWaAusmDSmOeooRnGzxBT873yvceOLjRl47S', 1, 1),
+(13, 'anh', NULL, NULL, 'anhnhh12345@fpt.edu.vn', NULL, 1, NULL, '$2y$12$cf7yD1XSCsT10Tmr61gBbuRXs4Jf3hnzmkmsy12guxBPoGw.VUGUq', 1, 1),
+(18, 'theAnhDev', './uploads/product-2.jpg', '2025-12-25', 'theanhdev324324@gmail.com', '0954654654', 1, 'hn ntl', '$2y$12$gBUAtqO12sX.gBBOtfWaAusmDSmOeooRnGzxBT873yvceOLjRl47S', 2, 1),
 (19, 'Đỗ Đình Thịnhhhhh', NULL, NULL, 'adad@gmail.com', '0890980757', 1, NULL, '$2y$12$luCO6qAMIHpKm.zD7s8csOTfFnL7HFrm0bPYaLlekoCdrco9ezbWG', 1, 1),
-(22, 'theAnhhh', './uploads/product-2.jpg', NULL, 'theanhdev3324@gmail.com', '0965765765', 1, NULL, '$2y$12$N8i3O.yVnxlIx8a3opGRX.jMXMz54LjF3Q3ceC3kEHBXwkSzqIso6', 2, 1),
-(23, 'Nguyễn Thế Anh', './uploads/1764804117-1764710842-1764351327-1764348048-apple-macbook-pro-16-m1-pro-2021.jpg', '2025-12-25', 'anhhh112233@gmail.com', '096234728', 1, 'Nam Từ Liêm - Hà Nội', '$2y$12$9yDC/v1TOS1NigM4jXYogemss5tCLdObmSF/.32Nog9W11mWSZ.qa', 2, 1),
-(24, 'trungHIu', './uploads/product-3.jpg', '2025-12-02', 'trunghieu123@gmail.com', '09887965', 1, 'Bắc Từ Liêm', '$2y$12$btsVdKuUkmgf0gLlQBcFLeFFTN9kBLxw7ry5vRQfBDMIH5vhZb48C', 2, 1);
+(22, 'theAnhDev42432', './uploads/product-2.jpg', NULL, 'theanhdev34324324@gmail.com', NULL, 1, NULL, '$2y$12$xVb9kdvWMzyoMvq17uIzR.b1zpawxcvxlsLwrFrmTQxJmgsoB1raC', 1, 2),
+(23, 'Nguyễn Thế Anh', './uploads/product-3.jpg', '2025-12-25', 'anhhh112233@gmail.com', '096234728', 1, 'Nam Từ Liêm - Hà Nội', '$2y$12$9yDC/v1TOS1NigM4jXYogemss5tCLdObmSF/.32Nog9W11mWSZ.qa', 1, 1),
+(24, 'trungHIu', NULL, NULL, 'trunghieu123@gmail.com', NULL, 1, NULL, '$2y$12$eoqa6AfFNXGvvxkVC.zcRutF5NCCJts3kjFUb.a6ZR2GQFML0U0rS', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -484,7 +450,7 @@ ALTER TABLE `chi_tiet_don_hangs`
 -- AUTO_INCREMENT for table `chi_tiet_gio_hangs`
 --
 ALTER TABLE `chi_tiet_gio_hangs`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `chuc_vus`
@@ -496,25 +462,25 @@ ALTER TABLE `chuc_vus`
 -- AUTO_INCREMENT for table `danh_mucs`
 --
 ALTER TABLE `danh_mucs`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `don_hangs`
 --
 ALTER TABLE `don_hangs`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `gio_hangs`
 --
 ALTER TABLE `gio_hangs`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `hinh_anh_san_phams`
 --
 ALTER TABLE `hinh_anh_san_phams`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT for table `phuong_thuc_thanh_toans`
@@ -526,13 +492,13 @@ ALTER TABLE `phuong_thuc_thanh_toans`
 -- AUTO_INCREMENT for table `san_phams`
 --
 ALTER TABLE `san_phams`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `tai_khoans`
 --
 ALTER TABLE `tai_khoans`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `trang_thai_don_hangs`
