@@ -14,10 +14,10 @@
 
 -   Thế Anh: 
     +   Làm xong từ video 7.1 7.2 7.3 
-    +   Ghép code, fix giao diện của admin + client 6.1-6.2
-    +   6.3 đang làm nốt phần bình luận chi tiết sản phẩm
+    +   Ghép code xong, fix giao diện của admin + client 6.1 - 6.2
+    +   Làm xong 6.3
     +   Fix xong code 6.4 phần Login/Logout
-    +   Đang làm tiếp video 7.4, 7.5
+    +   Đã xong video 7.4, còn 7.5
 
 ## Sắp xong các video: (Buổi 4 - 17 video)
 -   Video 2     
@@ -73,16 +73,16 @@
 
 ##   Đang phân chia các video: (Các buổi tiếp theo - 6 video)
 -   Video 7.4   
-    + (Giao diện Client -  Đăng ký)     - ``Đang làm`` -> Thế Anh 
+    + (Giỏ hàng)     - ``Đã xong`` -> Thế Anh 
 
 -   Video 7.5   
-    + (Giao diện Client -  Giới thiệu)  - ``Đang làm`` -> Thế Anh
+    + (Thanh Toán phần 1)  - ``Đang làm`` -> Thế Anh
 
 -   Video 7.6   
-    + (Giao diện Client -  Liên hệ)     - ``Đang làm`` -> Thế Anh
+    + (Thanh Toán phần 2)     - ``Đang làm`` -> Vũ
 
 -   Video 8.1   
-    + (Thêm Sản Phẩm vào Đơn Hàng)      - ``Đang làm`` -> Thế Anh
+    + (Thêm Sản Phẩm vào Đơn Hàng)      - ``Đang làm`` -> Thịnh
 
 -   Video 8.2   
     + (Lịch sử mua hàng, Huỷ đơn hàng)  - ``Đang làm`` -> Nguyễn Hữu Trung
@@ -92,3 +92,5 @@
 
 
 **TỔNG 23 VIDEO**
+
+- **Hoàn thành 18 video**

@@ -34,6 +34,19 @@ class TaiKhoan
         }
     }
 
+    public function getTaiKhoanFromEmail($email)
+    {
+        try {
+            $sql  = 'SELECT * FROM tai_khoans WHERE email = :email';
+            $stmt = $this->conn->prepare($sql);
+            $stmt->execute([':email' => $email]);
+            $user = $stmt->fetch();
+            return $user;
+        } catch (\Exception $e) {
+            echo "Lỗi kết nối: " . $e->getMessage();
+            return false;
+        }
+    }
     // public function getAllTaiKhoan($chuc_vu_id)
     // {
     //     try {

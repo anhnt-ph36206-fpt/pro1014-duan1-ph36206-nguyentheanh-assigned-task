@@ -10,7 +10,7 @@
                         <!-- start logo area -->
                         <div class="col-lg-2">
                             <div class="logo">
-                                <a href="<?= BASE_URL ?>">
+                                <a href="<?php echo BASE_URL?>">
                                     <img src="assets/img/LOGO.png" alt="Brand Logo">
                                 </a>
                             </div>
@@ -24,7 +24,7 @@
                                     <!-- main menu navbar start -->
                                     <nav class="desktop-menu">
                                         <ul>
-                                            <li><a href="<?= BASE_URL?>">Trang Chủ</a></li>
+                                            <li><a href="<?php echo BASE_URL?>">Trang Chủ</a></li>
                                             <li><a href="blog-left-sidebar.html">Sản Phẩm <i class="fa fa-angle-down"></i></a>
                                                 <ul class="dropdown">
                                                     <li><a href="blog-left-sidebar.html">blog left sidebar</a></li>
@@ -53,14 +53,24 @@
                                 </div>
                                 <div class="header-configure-area">
                                     <ul class="nav justify-content-end">
+                                         <label for="" >
+                                                <?php if (isset($_SESSION['user_client'])): ?>
+                                                    <?php echo $_SESSION['user_client']; ?>
+                                                <?php else: ?>
+                                                    <?php echo 'Chào Mừng'; ?>
+                                                <?php endif; ?>
+                                            </label>
                                         <li class="user-hover">
                                             <a href="#">
                                                 <i class="pe-7s-user"></i>
                                             </a>
                                             <ul class="dropdown-list">
-                                                <li><a href="<?=  BASE_URL . '?act=login'?>">Đăng Nhập</a></li>
-                                                <li><a href="<?=  BASE_URL . '?act=formRegister'?>">Đăng Ký</a></li>
-                                                <li><a href="my-account.html">Tài Khoản </a></li>
+                                                <?php if (! isset($_SESSION['user_client'])) {?>
+                                                    <li><a href="<?php echo BASE_URL . '?act=login'?>">Đăng Nhập</a></li>
+                                                <?php } else {?>
+                                                    <li><a href="my-account.html">Tài Khoản </a></li>
+                                                <?php }?>
+                                                <!-- <li><a href="<?php //  BASE_URL . '?act=formRegister'?>">Đăng Ký</a></li> -->
                                             </ul>
                                         </li>
                                         <li>

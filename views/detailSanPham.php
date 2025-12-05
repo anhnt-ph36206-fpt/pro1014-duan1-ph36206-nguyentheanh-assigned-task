@@ -13,7 +13,7 @@
                         <div class="breadcrumb-wrap">
                             <nav aria-label="breadcrumb">
                                 <ul class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="<?= BASE_URL; ?>"><i class="fa fa-home"></i></a></li>
+                                    <li class="breadcrumb-item"><a href="<?php echo BASE_URL;?>"><i class="fa fa-home"></i></a></li>
                                     <li class="breadcrumb-item"><a href="shop.html">Sản Phẩm</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Chi Tiết Sản Phẩm</li>
                                 </ul>
@@ -38,14 +38,14 @@
                                     <div class="product-large-slider">
                                         <?php foreach ($listAnhSanPham as $key => $anhSanPham): ?>
                                             <div class="pro-large-img img-zoom">
-                                                <img src="<?= BASE_URL . $anhSanPham['link_hinh_anh'] ?>" alt="product-details" />
+                                                <img src="<?php echo BASE_URL . $anhSanPham['link_hinh_anh']?>" alt="product-details" />
                                             </div>
                                         <?php endforeach; ?>
                                     </div>
                                     <div class="pro-nav slick-row-10 slick-arrow-style">
                                         <?php foreach ($listAnhSanPham as $key => $anhSanPham): ?>
                                             <div class="pro-nav-thumb">
-                                                <img src="<?= BASE_URL . $anhSanPham['link_hinh_anh'] ?>" alt="product-details" />
+                                                <img src="<?php echo BASE_URL . $anhSanPham['link_hinh_anh']?>" alt="product-details" />
                                             </div>
                                         <?php endforeach; ?>
                                     </div>
@@ -53,21 +53,21 @@
                                 <div class="col-lg-7">
                                     <div class="product-details-des">
                                         <div class="manufacturer-name">
-                                            <a href="#"><?= $sanPham['ten_danh_muc'] ?></a>
+                                            <a href="#"><?php echo $sanPham['ten_danh_muc']?></a>
                                         </div>
-                                        <h3 class="product-name"><?= $sanPham['ten_san_pham'] ?></h3>
+                                        <h3 class="product-name"><?php echo $sanPham['ten_san_pham']?></h3>
                                         <div class="ratings d-flex">
                                             <div class="pro-review">
                                                 <?php $countComment = count($listBinhLuan); ?>
-                                                <span><?= $countComment ?> Bình Luận</span>
+                                                <span><?php echo $countComment?> Bình Luận</span>
                                             </div>
                                         </div>
                                         <div class="price-box">
                                                 <?php if ($sanPham['gia_khuyen_mai']) {?>
-                                                    <span class="price-regular"><?= formatPrice($sanPham['gia_khuyen_mai']) ?></span>
-                                                    <span class="price-old"><del><?= formatPrice($sanPham['gia_san_pham']) ?></del></span>
+                                                    <span class="price-regular"><?php echo formatPrice($sanPham['gia_khuyen_mai'])?></span>
+                                                    <span class="price-old"><del><?php echo formatPrice($sanPham['gia_san_pham'])?></del></span>
                                                 <?php } else {?>
-                                                    <span class="price-regular"><?= formatPrice($sanPham['gia_san_pham']) ?></span>
+                                                    <span class="price-regular"><?php echo formatPrice($sanPham['gia_san_pham'])?></span>
                                                 <?php }?>
                                             <!-- <span class="price-regular">$70.00</span>
                                             <span class="price-old"><del>$90.00</del></span> -->
@@ -76,20 +76,24 @@
                                         <div class="product-countdown" data-countdown="2022/12/20"></div> -->
                                         <div class="availability">
                                             <i class="fa fa-check-circle"></i>
-                                            <span><?= $sanPham['trang_thai'] . ' Sản Phẩm trong Kho' ?></span>
+                                            <span><?php echo $sanPham['trang_thai'] . ' Sản Phẩm trong Kho'?></span>
                                         </div>
-                                        <p class="pro-desc">
-                                            <?= $sanPham['mo_ta'] ?>
-                                        </p>
-                                        <div class="quantity-cart-box d-flex align-items-center">
-                                            <h6 class="option-title">Số Lượng: </h6>
-                                            <div class="quantity">
-                                                <div class="pro-qty"><input type="text" value="1"></div>
+                                        <p class="pro-desc"> <?php echo $sanPham['mo_ta']?> </p>
+                                        <form action="<?php echo BASE_URL . '?act=them-gio-hang'?>" method="post">
+                                            <div class="quantity-cart-box d-flex align-items-center">
+                                                <h6 class="option-title">Số Lượng: </h6>
+                                                <div class="quantity">
+                                                    <input type="hidden" name="san_pham_id" value="<?php echo $sanPham['id']?>">
+                                                    <div class="pro-qty">
+                                                        <input type="text" value="1" name="so_luong">
+                                                    </div>
+                                                </div>
+                                                <div class="action_link">
+                                                    <button class="btn btn-cart2" >Thêm giỏ hàng</button>
+                                                </div>
                                             </div>
-                                            <div class="action_link">
-                                                <a class="btn btn-cart2" href="#">Thêm giỏ hàng</a>
-                                            </div>
-                                        </div>
+                                        </form>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -109,7 +113,7 @@
                                                 <a data-bs-toggle="tab" href="#tab_two">information</a>
                                             </li> -->
                                             <li>
-                                                <a class="active" data-bs-toggle="tab" href="#tab_three">Bình luận (<?= count($listBinhLuan) ?>)</a>
+                                                <a class="active" data-bs-toggle="tab" href="#tab_three">Bình luận (<?php echo count($listBinhLuan)?>)</a>
                                             </li>
                                         </ul>
                                         <div class="tab-content reviews-tab">
@@ -145,14 +149,14 @@
                                                     <?php foreach ($listBinhLuan as $binhLuan): ?>
                                                     <div class="total-reviews">
                                                         <div class="rev-avatar">
-                                                            <img src="<?= $binhLuan['anh_dai_dien'] ?>" alt="">
+                                                            <img src="<?php echo $binhLuan['anh_dai_dien']?>" alt="">
                                                         </div>
                                                         <div class="review-box">
                                                             <div class="post-author">
-                                                                <p><span><?= $binhLuan['ho_ten'] ?> - <?= $binhLuan['ngay_dang'] ?></span>
+                                                                <p><span><?php echo $binhLuan['ho_ten']?> - <?php echo $binhLuan['ngay_dang']?></span>
                                                             </div>
                                                             <p>
-                                                                <?= $binhLuan['noi_dung'] ?>
+                                                                <?php echo $binhLuan['noi_dung']?>
                                                             </p>
                                                         </div>
                                                     </div>
@@ -202,9 +206,9 @@
                                <?php foreach ($listSanPhamCungDanhMuc as $key => $sanPhamCungDanhMuc): ?>
                                         <div class="product-item">
                                             <figure class="product-thumb">
-                                                <a href="<?= BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPhamCungDanhMuc['id'] ?>">
-                                                    <img class="pri-img" src="<?= BASE_URL . $sanPhamCungDanhMuc['hinh_anh'] ?>" alt="product">
-                                                    <img class="sec-img" src="<?= BASE_URL . $sanPhamCungDanhMuc['hinh_anh'] ?>" alt="product">
+                                                <a href="<?php echo BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPhamCungDanhMuc['id']?>">
+                                                    <img class="pri-img" src="<?php echo BASE_URL . $sanPhamCungDanhMuc['hinh_anh']?>" alt="product">
+                                                    <img class="sec-img" src="<?php echo BASE_URL . $sanPhamCungDanhMuc['hinh_anh']?>" alt="product">
                                                 </a>
                                                 <div class="product-badge">
                                                     <?php
@@ -233,15 +237,15 @@
                                             </figure>
                                             <div class="product-caption text-center">
                                                 <h6 class="product-name">
-                                                    <a href="<?= BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPhamCungDanhMuc['id'] ?>"><?= $sanPhamCungDanhMuc['ten_san_pham'] ?></a>
+                                                    <a href="<?php echo BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPhamCungDanhMuc['id']?>"><?php echo $sanPhamCungDanhMuc['ten_san_pham']?></a>
                                                 </h6>
                                                 <div class="price-box">
 
                                                 <?php if ($sanPhamCungDanhMuc['gia_khuyen_mai']) {?>
-                                                    <span class="price-regular"><?= formatPrice($sanPhamCungDanhMuc['gia_khuyen_mai']) ?></span>
-                                                    <span class="price-old"><del><?= formatPrice($sanPhamCungDanhMuc['gia_san_pham']) ?></del></span>
+                                                    <span class="price-regular"><?php echo formatPrice($sanPhamCungDanhMuc['gia_khuyen_mai'])?></span>
+                                                    <span class="price-old"><del><?php echo formatPrice($sanPhamCungDanhMuc['gia_san_pham'])?></del></span>
                                                 <?php } else {?>
-                                                    <span class="price-regular"><?= formatPrice($sanPhamCungDanhMuc['gia_san_pham']) ?></span>
+                                                    <span class="price-regular"><?php echo formatPrice($sanPhamCungDanhMuc['gia_san_pham'])?></span>
                                                 <?php }?>
 
                                                 </div>
@@ -258,83 +262,6 @@
     </main>
 
 
-    <!-- offcanvas mini cart start -->
-    <div class="offcanvas-minicart-wrapper">
-        <div class="minicart-inner">
-            <div class="offcanvas-overlay"></div>
-            <div class="minicart-inner-content">
-                <div class="minicart-close">
-                    <i class="pe-7s-close"></i>
-                </div>
-                <div class="minicart-content-box">
-                    <div class="minicart-item-wrapper">
-                        <ul>
-                            <li class="minicart-item">
-                                <div class="minicart-thumb">
-                                    <a href="product-details.html">
-                                        <img src="assets/img/cart/cart-1.jpg" alt="product">
-                                    </a>
-                                </div>
-                                <div class="minicart-content">
-                                    <h3 class="product-name">
-                                        <a href="product-details.html">Dozen White Botanical Linen Dinner Napkins</a>
-                                    </h3>
-                                    <p>
-                                        <span class="cart-quantity">1 <strong>&times;</strong></span>
-                                        <span class="cart-price">$100.00</span>
-                                    </p>
-                                </div>
-                                <button class="minicart-remove"><i class="pe-7s-close"></i></button>
-                            </li>
-                            <li class="minicart-item">
-                                <div class="minicart-thumb">
-                                    <a href="product-details.html">
-                                        <img src="assets/img/cart/cart-2.jpg" alt="product">
-                                    </a>
-                                </div>
-                                <div class="minicart-content">
-                                    <h3 class="product-name">
-                                        <a href="product-details.html">Dozen White Botanical Linen Dinner Napkins</a>
-                                    </h3>
-                                    <p>
-                                        <span class="cart-quantity">1 <strong>&times;</strong></span>
-                                        <span class="cart-price">$80.00</span>
-                                    </p>
-                                </div>
-                                <button class="minicart-remove"><i class="pe-7s-close"></i></button>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="minicart-pricing-box">
-                        <ul>
-                            <li>
-                                <span>sub-total</span>
-                                <span><strong>$300.00</strong></span>
-                            </li>
-                            <li>
-                                <span>Eco Tax (-2.00)</span>
-                                <span><strong>$10.00</strong></span>
-                            </li>
-                            <li>
-                                <span>VAT (20%)</span>
-                                <span><strong>$60.00</strong></span>
-                            </li>
-                            <li class="total">
-                                <span>total</span>
-                                <span><strong>$370.00</strong></span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="minicart-button">
-                        <a href="cart.html"><i class="fa fa-shopping-cart"></i> View Cart</a>
-                        <a href="cart.html"><i class="fa fa-share"></i> Checkout</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- offcanvas mini cart end -->
+   <?php require_once 'layout/miniCart.php'; ?>
 
    <?php require_once 'layout/footer.php'; ?>

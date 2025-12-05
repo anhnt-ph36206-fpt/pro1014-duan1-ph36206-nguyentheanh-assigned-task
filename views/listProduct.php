@@ -9,7 +9,7 @@
     <ul>
         <?php foreach($listProduct as $key => $product):?>
             <li><?php echo $product['ten_san_pham'];?> </li>
-            <?php endforeach?>
+        <?php endforeach?>
     </ul>
 </body>
 </html>

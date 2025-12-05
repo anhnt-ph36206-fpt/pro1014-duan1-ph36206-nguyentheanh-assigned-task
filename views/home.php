@@ -2,7 +2,6 @@
 <?php require_once 'layout/menu.php'; ?>
 
 
-
     <main>
         <!-- hero slider area start -->
         <section class="slider-area">
@@ -151,29 +150,29 @@
                                          <?php foreach ($listSanPham as $key => $sanPham): ?>
                                         <div class="product-item">
                                             <figure class="product-thumb">
-                                                <a href="<?= BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id'] ?>">
-                                                    <img class="pri-img" src="<?= BASE_URL . $sanPham['hinh_anh']?>" alt="product">
-                                                    <img class="sec-img" src="<?= BASE_URL . $sanPham['hinh_anh']?>" alt="product">
+                                                <a href="<?php echo BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id']?>">
+                                                    <img class="pri-img" src="<?php echo BASE_URL . $sanPham['hinh_anh']?>" alt="product">
+                                                    <img class="sec-img" src="<?php echo BASE_URL . $sanPham['hinh_anh']?>" alt="product">
                                                 </a>
                                                 <div class="product-badge">
                                                     <?php
-                                                        $ngayNhap = new DateTime($sanPham['ngay_nhap']);
+                                                        $ngayNhap    = new DateTime($sanPham['ngay_nhap']);
                                                         $ngayHienTai = new DateTime();
-                                                        $tinhNgay = $ngayHienTai->diff($ngayNhap);
+                                                        $tinhNgay    = $ngayHienTai->diff($ngayNhap);
 
                                                         if ($tinhNgay->days <= 7) {
                                                         ?>
                                                             <div class="product-label new">
                                                         <span>Mới</span>
                                                     </div>
-                                                    <?php } ?>
+                                                    <?php }?>
 
-                                                    <?php if ($sanPham['gia_khuyen_mai']) { ?>
+                                                    <?php if ($sanPham['gia_khuyen_mai']) {?>
 
                                                         <div class="product-label discount">
                                                             <span>Giảm Giá</span>
-                                                        </div> 
-                                                     
+                                                        </div>
+
                                                     <?php }?>
                                                 </div>
                                                 <div class="cart-hover">
@@ -182,17 +181,17 @@
                                             </figure>
                                             <div class="product-caption text-center">
                                                 <h6 class="product-name">
-                                                    <a href="<?= BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id'] ?>"><?=$sanPham['ten_san_pham']?></a>
+                                                    <a href="<?php echo BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id']?>"><?php echo $sanPham['ten_san_pham']?></a>
                                                 </h6>
                                                 <div class="price-box">
 
-                                                <?php if ($sanPham['gia_khuyen_mai']) { ?>
-                                                    <span class="price-regular"><?= formatPrice($sanPham['gia_khuyen_mai'])?></span>
-                                                    <span class="price-old"><del><?= formatPrice($sanPham['gia_san_pham'])?></del></span>
-                                                <?php } else { ?>
-                                                    <span class="price-regular"><?= formatPrice($sanPham['gia_san_pham'])?></span>
+                                                <?php if ($sanPham['gia_khuyen_mai']) {?>
+                                                    <span class="price-regular"><?php echo formatPrice($sanPham['gia_khuyen_mai'])?></span>
+                                                    <span class="price-old"><del><?php echo formatPrice($sanPham['gia_san_pham'])?></del></span>
+                                                <?php } else {?>
+                                                    <span class="price-regular"><?php echo formatPrice($sanPham['gia_san_pham'])?></span>
                                                 <?php }?>
-                                                    
+
                                                 </div>
                                             </div>
                                         </div>
@@ -1462,83 +1461,7 @@
     </main>
 
 
-    <!-- offcanvas mini cart start -->
-    <div class="offcanvas-minicart-wrapper">
-        <div class="minicart-inner">
-            <div class="offcanvas-overlay"></div>
-            <div class="minicart-inner-content">
-                <div class="minicart-close">
-                    <i class="pe-7s-close"></i>
-                </div>
-                <div class="minicart-content-box">
-                    <div class="minicart-item-wrapper">
-                        <ul>
-                            <li class="minicart-item">
-                                <div class="minicart-thumb">
-                                    <a href="product-details.html">
-                                        <img src="assets/img/cart/cart-1.jpg" alt="product">
-                                    </a>
-                                </div>
-                                <div class="minicart-content">
-                                    <h3 class="product-name">
-                                        <a href="product-details.html">Dozen White Botanical Linen Dinner Napkins</a>
-                                    </h3>
-                                    <p>
-                                        <span class="cart-quantity">1 <strong>&times;</strong></span>
-                                        <span class="cart-price">$100.00</span>
-                                    </p>
-                                </div>
-                                <button class="minicart-remove"><i class="pe-7s-close"></i></button>
-                            </li>
-                            <li class="minicart-item">
-                                <div class="minicart-thumb">
-                                    <a href="product-details.html">
-                                        <img src="assets/img/cart/cart-2.jpg" alt="product">
-                                    </a>
-                                </div>
-                                <div class="minicart-content">
-                                    <h3 class="product-name">
-                                        <a href="product-details.html">Dozen White Botanical Linen Dinner Napkins</a>
-                                    </h3>
-                                    <p>
-                                        <span class="cart-quantity">1 <strong>&times;</strong></span>
-                                        <span class="cart-price">$80.00</span>
-                                    </p>
-                                </div>
-                                <button class="minicart-remove"><i class="pe-7s-close"></i></button>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="minicart-pricing-box">
-                        <ul>
-                            <li>
-                                <span>sub-total</span>
-                                <span><strong>$300.00</strong></span>
-                            </li>
-                            <li>
-                                <span>Eco Tax (-2.00)</span>
-                                <span><strong>$10.00</strong></span>
-                            </li>
-                            <li>
-                                <span>VAT (20%)</span>
-                                <span><strong>$60.00</strong></span>
-                            </li>
-                            <li class="total">
-                                <span>total</span>
-                                <span><strong>$370.00</strong></span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="minicart-button">
-                        <a href="cart.html"><i class="fa fa-shopping-cart"></i> View Cart</a>
-                        <a href="cart.html"><i class="fa fa-share"></i> Checkout</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- offcanvas mini cart end -->
+   
+   <?php require_once 'layout/miniCart.php'; ?>
 
    <?php require_once 'layout/footer.php'; ?>
