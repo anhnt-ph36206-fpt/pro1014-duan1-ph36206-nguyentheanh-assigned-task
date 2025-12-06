@@ -35,6 +35,6 @@ match ($act) {
     //  Giỏ hàng
     'them-gio-hang'      => (new HomeController())->addGioHang(),
     'gio-hang'           => (new HomeController())->gioHang(),
-    // 'thanh-toan'           => (new HomeController())->thanhToan(),
+    'thanh-toan'           => (new HomeController())->thanhToan(),
     // 'test-path'          => (new HomeController())->testPath()
 };

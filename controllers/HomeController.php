@@ -117,6 +117,7 @@ class HomeController
                 //  Lấy id của người dùn
                 $san_pham_id = $_POST['san_pham_id'];
                 $so_luong    = $_POST['so_luong'];
+                
 
                 $checkSanPham = false;
                 foreach ($chiTietGioHang as $detail) {
@@ -142,29 +143,47 @@ class HomeController
     public function gioHang()
     {
         if (isset($_SESSION['user_client'])) {
-                $mail = $this->modelTaiKhoan->getTaiKhoanFromEmail($_SESSION['user_client']);
-                //  Lấy dữ liệu giỏ hàng của người dùng
-                // var_dump($mail['id']);die();
+            $mail = $this->modelTaiKhoan->getTaiKhoanFromEmail($_SESSION['user_client']);
+            //  Lấy dữ liệu giỏ hàng của người dùng
+            // var_dump($mail['id']);die();
 
-                $gioHang = $this->modelGioHang->getGioHangFromUser($mail['id']);
-                if (! $gioHang) {
-                    $gioHangId      = $this->modelGioHang->addGioHang($mail['id']);
-                    $gioHang        = ['id' => $gioHangId];
-                    $chiTietGioHang = $this->modelGioHang->getDetailGioHang($gioHang['id']);
-                } else {
-                    $chiTietGioHang = $this->modelGioHang->getDetailGioHang($gioHang['id']);
-                }
-                
-                
-                // var_dump($chiTietGioHang);die()
-                ;require_once './views/gioHang.php';
+            $gioHang = $this->modelGioHang->getGioHangFromUser($mail['id']);
+            if (! $gioHang) {
+                $gioHangId      = $this->modelGioHang->addGioHang($mail['id']);
+                $gioHang        = ['id' => $gioHangId];
+                $chiTietGioHang = $this->modelGioHang->getDetailGioHang($gioHang['id']);
             } else {
-                var_dump('Chưa đăng nhập');die();
+                $chiTietGioHang = $this->modelGioHang->getDetailGioHang($gioHang['id']);
             }
+
+            // var_dump($chiTietGioHang);die();
+            require_once './views/gioHang.php';
+        } else {
+            var_dump('Chưa đăng nhập');die();
+        }
     }
 
-    public function testPath()
+    public function thanhToan()
     {
-        require_once './views/home.php';
+        if (isset($_SESSION['user_client'])) {
+            $user = $this->modelTaiKhoan->getTaiKhoanFromEmail($_SESSION['user_client']);
+            //  Lấy dữ liệu giỏ hàng của người dùng
+            // var_dump($mail['id']);die();
+
+            $gioHang = $this->modelGioHang->getGioHangFromUser($user['id']);
+            if (! $gioHang) {
+                $gioHangId      = $this->modelGioHang->addGioHang($user['id']);
+                $gioHang        = ['id' => $gioHangId];
+                $chiTietGioHang = $this->modelGioHang->getDetailGioHang($gioHang['id']);
+            } else {
+                $chiTietGioHang = $this->modelGioHang->getDetailGioHang($gioHang['id']);
+            }
+            require_once './views/thanhToan.php';
+
+        } else {
+            var_dump('Chưa đăng nhập');die();
+        }
+
     }
+    
 }

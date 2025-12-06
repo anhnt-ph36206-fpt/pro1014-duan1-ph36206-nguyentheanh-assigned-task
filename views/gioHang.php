@@ -35,7 +35,7 @@
                                         <tr>
                                             <th class="pro-thumbnail">Ảnh Sản Phẩm</th>
                                             <th class="pro-title">Tên Sản Phẩm</th>
-                                            <th class="pro-price">Gia Tiền</th>
+                                            <th class="pro-price">Giá Tiền</th>
                                             <th class="pro-quantity">Số Lượng</th>
                                             <th class="pro-subtotal">Tổng Tiền</th>
                                             <th class="pro-remove">Thao Tác</th>
@@ -118,7 +118,7 @@
                                         </table>
                                     </div>
                                 </div>
-                                <a href="checkout.html" class="btn btn-sqr d-block">Tiến hành đặt hàng</a>
+                                <a href="<?php echo BASE_URL .  '?act=thanh-toan'?>" class="btn btn-sqr d-block">Tiến hành đặt hàng</a>
                             </div>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
             </div>
         </div>
         <!-- cart main wrapper end -->
-    </main>
+</main>
 
 
 <?php require_once 'layout/miniCart.php'; ?>
