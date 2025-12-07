@@ -1,107 +1,191 @@
-    <!-- Scroll to top start -->
-    <div class="scroll-top not-visible">
+<!-- Scroll to top button -->
+    <div class="scroll-top">
         <i class="fa fa-angle-up"></i>
     </div>
-    <!-- Scroll to Top End -->
 
-    <!-- footer area start -->
-    <footer class="footer-widget-area">
-        <div class="footer-top section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="widget-item">
-                            <div class="widget-title">
-                                <div class="widget-logo">
-                                    <a href="index.html">
-                                        <img src="assets/img/logo/logo.png" alt="brand logo">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="widget-body">
-                                <p>We are a team of designers and developers that create high quality wordpress, shopify, Opencart </p>
-                            </div>
-                        </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <!-- Column 1: Hotline + Payment + Newsletter -->
+                <div class="footer-col">
+                    <h3>Tổng đài hỗ trợ miễn phí</h3>
+                    <p>Mua hàng - bảo hành <strong>1800.2097</strong> (7h30 - 22h00)</p>
+                    <p>Khiếu nại <strong>1800.2063</strong> (8h00 - 21h30)</p>
+                    <br>
+                    <h3>Phương thức thanh toán</h3>
+                    <div class="payment-methods">
+                        <img src="https://cellphones.com.vn/media/logo/payment/alepay-logo.png" alt="Alepay">
+                        <img src="https://cellphones.com.vn/media/logo/payment/zalopay-logo.png" alt="ZaloPay">
+                        <img src="https://cellphones.com.vn/media/logo/payment/vnpay-logo.png" alt="VNPAY">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLx-s66Qoj09gGB9Mng19noaKXPNtkTO6SPQ&s" alt="Momo">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpX5ww3ekUvdKye9gI77RQXmxiKzAlO3xI9A&s" alt="MuaDee">
+                        <img src="https://cellphones.com.vn/media/logo/payment/kredivo-logo.png" alt="Kredivo">
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="widget-item">
-                            <h6 class="widget-title">Contact Us</h6>
-                            <div class="widget-body">
-                                <address class="contact-block">
-                                    <ul>
-                                        <li><i class="pe-7s-home"></i> 4710-4890 Breckinridge USA</li>
-                                        <li><i class="pe-7s-mail"></i> <a href="mailto:demo@plazathemes.com">demo@yourdomain.com </a></li>
-                                        <li><i class="pe-7s-call"></i> <a href="tel:(012)800456789987">(012) 800 456 789-987</a></li>
-                                    </ul>
-                                </address>
+
+                    <div class="newsletter">
+                        <h3>Đăng ký nhận tin khuyến mãi</h3>
+                        <p class="newsletter-desc">Nhận ngay voucher 10%</p>
+                        <p class="newsletter-note">*Voucher sẽ được gửi sau 24h, chỉ áp dụng cho khách hàng mới</p>
+                        <form>
+                            <input type="email" placeholder="Địa chỉ email của bạn" required>
+                            <input type="text" placeholder="Số điện thoại của bạn" required>
+                            <div class="checkbox-agree">
+                                <input type="checkbox" id="agree" required>
+                                <label for="agree">Tôi đồng ý nhận thông tin khuyến mãi từ CellphoneS</label>
                             </div>
-                        </div>
+                            <button type="submit">Đăng ký ngay</button>
+                        </form>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="widget-item">
-                            <h6 class="widget-title">Information</h6>
-                            <div class="widget-body">
-                                <ul class="info-list">
-                                    <li><a href="#">about us</a></li>
-                                    <li><a href="#">Delivery Information</a></li>
-                                    <li><a href="#">privet policy</a></li>
-                                    <li><a href="#">Terms & Conditions</a></li>
-                                    <li><a href="#">contact us</a></li>
-                                    <li><a href="#">site map</a></li>
-                                </ul>
+                </div>
+
+                <!-- Column 2: Policies -->
+                <div class="footer-col">
+                    <h3>Thông tin và chính sách</h3>
+                    <ul>
+                        <li><a href="#">Mua hàng và thanh toán Online</a></li>
+                        <li><a href="#">Mua hàng trả góp Online</a></li>
+                        <li><a href="#">Mua hàng trả góp bằng thẻ tín dụng</a></li>
+                        <li><a href="#">Chính sách giao hàng</a></li>
+                        <li><a href="#">Tra điểm Smember</a></li>
+                        <li><a href="#">Xem ưu đãi Smember</a></li>
+                        <li><a href="#">Tra thông tin bảo hành</a></li>
+                        <li><a href="#">Tra cứu hoá đơn điện tử</a></li>
+                        <li><a href="#">Thông tin hoá đơn mua hàng</a></li>
+                        <li><a href="#">Trung tâm bảo hành chính hãng</a></li>
+                        <li><a href="#">Quy định về việc sao lưu dữ liệu</a></li>
+                        <li><a href="#">Chính sách khui hộp sản phẩm Apple</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Services & App -->
+                <div class="footer-col">
+                    <h3>Dịch vụ và thông tin khác</h3>
+                    <ul>
+                        <li><a href="#">Khách hàng doanh nghiệp (B2B)</a></li>
+                        <li><a href="#">Ưu đãi thanh toán</a></li>
+                        <li><a href="#">Quy chế hoạt động</a></li>
+                        <li><a href="#">Chính sách bảo mật thông tin cá nhân</a></li>
+                        <li><a href="#">Chính sách Bảo hành</a></li>
+                        <li><a href="#">Liên hệ hợp tác kinh doanh</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                        <li><a href="#">Dịch vụ bảo hành mở rộng</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                    </ul>
+
+                    <div class="app-download">
+                        <h3>Tải ứng dụng CellphoneS</h3>
+                        <div class="qr-app">
+                            <div class="qr-code">
+                                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://cellphones.com.vn" alt="QR Code">
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="widget-item">
-                            <h6 class="widget-title">Follow Us</h6>
-                            <div class="widget-body social-link">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                                <a href="#"><i class="fa fa-youtube"></i></a>
+                            <div class="app-buttons">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row align-items-center mt-20">
-                    <div class="col-md-6">
-                        <div class="newsletter-wrapper">
-                            <h6 class="widget-title-text">Signup for newsletter</h6>
-                            <form class="newsletter-inner" id="mc-form">
-                                <input type="email" class="news-field" id="mc-email" autocomplete="off" placeholder="Enter your email address">
-                                <button class="news-btn" id="mc-submit">Subscribe</button>
-                            </form>
-                            <!-- mail-chimp-alerts Start -->
-                            <div class="mailchimp-alerts">
-                                <div class="mailchimp-submitting"></div><!-- mail-chimp-submitting end -->
-                                <div class="mailchimp-success"></div><!-- mail-chimp-success end -->
-                                <div class="mailchimp-error"></div><!-- mail-chimp-error end -->
-                            </div>
-                            <!-- mail-chimp-alerts end -->
-                        </div>
+
+                <!-- Column 4: Social & Member Sites -->
+                <div class="footer-col">
+                    <h3>Kết nối với CellphoneS</h3>
+                    <div class="social-links">
+                        <a href="#" title="Youtube"><img src="https://cellphones.com.vn/media/logo/social/cellphones-youtube.png" alt="Youtube"></a>
+                        <a href="#" title="Facebook"><img src="https://cellphones.com.vn/media/logo/social/cellphones-facebook.png" alt="Facebook"></a>
+                        <a href="#" title="Instagram"><img src="https://cellphones.com.vn/media/logo/social/cellphones-instagram.png" alt="Instagram"></a>
+                        <a href="#" title="Tiktok"><img src="https://cellphones.com.vn/media/logo/social/cellphones-tiktok.png" alt="Tiktok"></a>
+                        <a href="#" title="Zalo"><img src="https://cellphones.com.vn/media/logo/social/cellphones-zalo.png" alt="Zalo"></a>
                     </div>
-                    <div class="col-md-6">
-                        <div class="footer-payment">
-                            <img src="assets/img/payment.png" alt="payment method">
+
+                    <h3>Website thành viên</h3>
+                    <div class="member-sites">
+                        <div class="member-site-item">
+                            <p>Hệ thống bảo hành sửa chữa Điện thoại - Máy tính</p>
+                            <a href="#" class="site-badge dienthoaivui">dienthoaivui.com</a>
+                        </div>
+
+                        <div class="member-site-item">
+                            <p>Trung tâm bảo hành uỷ quyền Apple</p>
+                            <a href="#" class="site-badge cares">CareS.vn</a>
+                        </div>
+
+                        <div class="member-site-item">
+                            <p>Kênh thông tin giải trí công nghệ</p>
+                            <a href="#" class="site-badge schannel">S Channel</a>
+                        </div>
+
+                        <div class="member-site-item">
+                            <p>Trang thông tin công nghệ</p>
+                            <a href="#" class="site-badge sforum">Sforum</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="copyright-text text-center">
-                            <p>&copy; 2022 <b>Corano</b> Made with <i class="fa fa-heart text-danger"></i> by <a href="https://hasthemes.com/"><b>HasThemes</b></a></p>
-                        </div>
-                    </div>
+
+            <!-- Footer Bottom: Product Links & Company Info -->
+            <div class="footer-bottom">
+                <div class="footer-links-group">
+                   <div class="f-links">
+                       <span>Điện thoại:</span>
+                       <a href="#">iPhone 15 Pro Max</a>
+                       <a href="#">iPhone 15</a>
+                       <a href="#">Samsung S24 Ultra</a>
+                       <a href="#">Xiaomi 14</a>
+                       <a href="#">OPPO Reno11</a>
+                   </div>
+                   <div class="f-links">
+                       <span>Laptop:</span>
+                       <a href="#">Macbook Air M3</a>
+                       <a href="#">Laptop Gaming</a>
+                       <a href="#">Laptop Văn phòng</a>
+                       <a href="#">Laptop Dell</a>
+                   </div>
+                   <div class="f-links">
+                       <span>Tablet:</span>
+                       <a href="#">iPad Pro M2</a>
+                       <a href="#">iPad Air</a>
+                       <a href="#">Samsung Tab S9</a>
+                   </div>
+                </div>
+
+                <div class="footer-company-info">
+                   <p>Công ty TNHH Thương Mại và Dịch Vụ Kỹ Thuật DIỆU PHÚC - GPĐKKD: 0316172372 do Sở KH & ĐT TP. HCM cấp ngày 02/03/2020.</p>
+                   <p>Địa chỉ văn phòng: 350-352 Võ Văn Kiệt, Phường Cầu Ông Lãnh, Quận 1, Thành phố Hồ Chí Minh, Việt Nam. Điện thoại: 028.7108.9666.</p>
+                </div>
+
+                <div class="verification-badges">
+                    <a href="#"><img src="http://cdn2.cellphones.com.vn/80x,webp/media/logo/logoSaleNoti.png" alt="Đã thông báo Bộ Công Thương"></a>
+                    <a href="#"><img src="https://www.dmca.com/PP2020/images/status/logo-b.png" alt="DMCA Protected"></a>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- footer area end -->
+
+    <script>
+        // Scroll to top functionality
+        const scrollTop = document.querySelector('.scroll-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollTop.classList.remove('not-visible');
+            } else {
+                scrollTop.classList.add('not-visible');
+            }
+        });
+
+        scrollTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Newsletter form submit
+        document.querySelector('.newsletter form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Cảm ơn bạn đã đăng ký! Chúng tôi sẽ gửi voucher đến bạn trong 24h.');
+        });
+    </script>
 
     <!-- JS
     ============================================ -->
@@ -135,7 +219,4 @@
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
 </body>
-
-
-<!-- Mirrored from htmldemo.net/corano/corano/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jun 2024 09:53:43 GMT -->
 </html>

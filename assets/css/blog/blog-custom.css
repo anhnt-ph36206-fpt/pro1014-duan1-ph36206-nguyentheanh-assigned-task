@@ -1,0 +1,124 @@
+/* Blog Custom Styles */
+
+:root {
+  --blog-card-bg: #ffffff;
+  --blog-text-title: #333333;
+  --blog-text-meta: #888888;
+  --blog-primary-color: #d70018; /* Matching CellphoneS Red */
+}
+
+/* Section Title */
+.section-title .title {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #333;
+}
+.section-title .sub-title {
+  color: #666;
+  font-style: italic;
+}
+
+/* Blog Card Item */
+.blog-post-item {
+  background-color: var(--blog-card-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px; /* Spacing for shadow */
+  height: 100%; /* Full height for flex alignment */
+  border: 1px solid #eee;
+}
+
+.blog-post-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog Thumbnail */
+.blog-thumb {
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.blog-thumb a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.blog-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.blog-post-item:hover .blog-thumb img {
+  transform: scale(1.05); /* Subtle zoom on hover */
+}
+
+/* Blog Content */
+.blog-content {
+  padding: 20px;
+}
+
+/* Meta Data */
+.blog-meta {
+  font-size: 12px;
+  color: var(--blog-text-meta);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.blog-meta a {
+  color: var(--blog-text-meta);
+  transition: color 0.2s;
+}
+.blog-meta a:hover {
+  color: var(--blog-primary-color);
+}
+
+/* Blog Title */
+.blog-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limit to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.blog-title a {
+  color: var(--blog-text-title);
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.blog-title a:hover {
+  color: var(--blog-primary-color);
+}
+
+/* View More Button (Optional, if we add it) */
+.blog-read-more {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--blog-primary-color);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+.blog-read-more:hover {
+  border-bottom-color: var(--blog-primary-color);
+}

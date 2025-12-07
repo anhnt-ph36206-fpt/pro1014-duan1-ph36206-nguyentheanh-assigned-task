@@ -7,6 +7,9 @@
                     <i class="pe-7s-close"></i>
                 </div>
                 <div class="minicart-content-box">
+                    <div class="minicart-heading">
+                        Giỏ hàng của bạn
+                    </div>
                     <div class="minicart-item-wrapper">
                         <ul>
                             <li class="minicart-item">

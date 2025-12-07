@@ -1,0 +1,88 @@
+/* CellphoneS Specific Header Styles */
+
+:root {
+  --cps-red: #d70018;
+  --cps-btn-bg: rgba(255, 255, 255, 0.2);
+  --cps-text-white: #ffffff;
+}
+
+/* Base resets for header area to ensure full width backgrounds work cleanly */
+.header-area {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Top Bar Links */
+.header-top-bar {
+  background-color: #e9efff; /* Light blue-ish top bar */
+  padding: 5px 0;
+  font-size: 11px;
+}
+.small-text-links a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.small-text-links a:hover {
+  color: var(--cps-red);
+}
+
+/* Main Red Header */
+.header-main-area {
+  background-color: var(--cps-red);
+  padding: 10px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Logo Text */
+.logo h2 {
+  font-size: 24px;
+  letter-spacing: -1px;
+}
+
+/* Custom Buttons (Category / Location) */
+.cps-group-btn {
+  background-color: var(--cps-btn-bg);
+  border: none;
+  color: white;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  transition: background 0.3s;
+}
+.cps-group-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.cps-group-btn i {
+  color: white;
+}
+
+/* Search Bar */
+.header-search-box {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.header-search-field::placeholder {
+  font-size: 13px;
+  color: #888;
+}
+
+/* Right Actions */
+.minicart-btn:hover {
+  color: #eee;
+}
+.cps-login-btn {
+  transition: background 0.3s;
+}
+.cps-login-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Mobile adjustments handled by bootstrap classes, but specific tweaks: */
+@media (max-width: 991px) {
+  .header-main-area {
+    padding: 10px 0 15px;
+  }
+}

@@ -1,0 +1,73 @@
+/* Slider Area */
+.slider-area {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+/* Carousel */
+#heroCarousel {
+    max-width: 100%;
+}
+
+/* Cố định chiều cao cho tất cả slides */
+.carousel-inner {
+    height: 450px;
+}
+
+.carousel-item {
+    height: 450px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Giữ tỷ lệ ảnh, crop nếu cần */
+    object-position: center;
+}
+
+/* Tùy chỉnh arrows */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    opacity: 0.8;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+/* Tùy chỉnh indicators/dots */
+.carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+
+    .carousel-inner,
+    .carousel-item {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .carousel-inner,
+    .carousel-item {
+        height: 250px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .carousel-inner,
+    .carousel-item {
+        height: 200px;
+    }
+}

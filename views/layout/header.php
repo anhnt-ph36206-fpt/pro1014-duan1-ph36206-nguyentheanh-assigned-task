@@ -6,12 +6,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Website Bán Thú Cưng</title>
+    <title>CellphoneS - Điện thoại, laptop, table, phụ kiện chính hãng</title>
     <meta name="robots" content="noindex, follow" />
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/dog.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo-icon-cellphones.png">
 
     <!-- CSS
 	============================================ -->
@@ -33,6 +33,19 @@
     <link rel="stylesheet" href="assets/css/plugins/jqueryui.min.css">
     <!-- main style css -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/slider/slider.css">
+    <link rel="stylesheet" href="assets/css/banner/banner.css">     
+    <link rel="stylesheet" href="assets/css/services-css/service.css">
+    <link rel="stylesheet" href="assets/css/banner/product-banner/product-sub-banner.css">
+    <link rel="stylesheet" href="assets/css/product/list-product.css">
+    <link rel="stylesheet" href="assets/css/header/header-custom.css">
+    <link rel="stylesheet" href="assets/css/header/header.css">
+    <link rel="stylesheet" href="assets/css/blog/blog-custom.css">
+    <link rel="stylesheet" href="assets/css/brand/brand-custom.css">
+    <link rel="stylesheet" href="assets/css/footer/footer-custom.css">
 
+    <link rel="stylesheet" href="assets/css/cart/minicart-custom.css">
+    <link rel="stylesheet" href="assets/css/product/group-product.css">
+    
 </head>
 <body>
