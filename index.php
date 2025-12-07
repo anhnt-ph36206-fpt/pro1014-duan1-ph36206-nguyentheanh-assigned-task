@@ -19,23 +19,26 @@ $act = $_GET['act'] ?? '/';
 // Để bảo bảo tính chất chỉ gọi 1 hàm Controller để xử lý request thì mình sử dụng match
 
 match ($act) {
-                                           // route
-    '/' => (new HomeController())->home(), //trường hợp đặc biệt
-    'trangchu' => (new HomeController())->trangchu(),
+                                                            // route
+    '/'                  => (new HomeController())->home(), //trường hợp đặc biệt
+    'trangchu'           => (new HomeController())->trangchu(),
     //BASE_URL/?act=trangchu
     'danh-sach-san-pham' => (new HomeController())->danhSachSanPham(),
 
     //  Chi tiết sản phẩm
-    'chi-tiet-san-pham' => (new HomeController())->chiTietSanPham(),
+    'chi-tiet-san-pham'  => (new HomeController())->chiTietSanPham(),
 
     //  Authen
-    'login' => (new HomeController())->formLogin(),
-    'check-login' => (new HomeController())->postLogin(),
+    'login'              => (new HomeController())->formLogin(),
+    'check-login'        => (new HomeController())->postLogin(),
 
     //  Giỏ hàng
-    'them-gio-hang' => (new HomeController())->addGioHang(),
-    'gio-hang' => (new HomeController())->gioHang(),
-    'thanh-toan' => (new HomeController())->thanhToan(),
-    'xu-ly-thanh-toan' => (new HomeController())->postThanhToan(),
-    // 'test-path'          => (new HomeController())->testPath()
+    'them-gio-hang'      => (new HomeController())->addGioHang(),
+    'gio-hang'           => (new HomeController())->gioHang(),
+    'thanh-toan'         => (new HomeController())->thanhToan(),
+    'xu-ly-thanh-toan'   => (new HomeController())->postThanhToan(),
+    'lich-su-mua-hang'   => (new HomeController())->lichSuMuaHang(),
+    'chi-tiet-mua-hang'  => (new HomeController())->chiTietMuaHang(),
+    'huy-don-hang'       => (new HomeController())->huyDonHang(),
+
 };

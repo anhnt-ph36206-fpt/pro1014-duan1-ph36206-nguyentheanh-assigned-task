@@ -263,4 +263,103 @@ class HomeController
 
         }
     }
+
+     public function lichSuMuaHang()
+    {
+        if (isset($_SESSION['user_client'])) {
+            // Lấy ra thông tin tài khoản đăng nhập
+            $user = $this->modelTaiKhoan->getTaiKhoanFromEmail($_SESSION['user_client']);
+            $tai_khoan_id = $user['id'];
+
+            // Lấy ra danh sách trạng thái đơn hàng
+            $arrTrangThaiDonHang = $this->modelDonHang->getTrangThaiDonHang();
+            $trangThaiDonHang = array_column($arrTrangThaiDonHang, 'ten_trang_thai', 'id');
+
+
+            // Lấy ra danh sách trạng thái thanh toán
+            $arrPhuongThucThanhToan = $this->modelDonHang->getPhuongThucThanhToan();
+            $phuongThucThanhToan = array_column($arrPhuongThucThanhToan, 'ten_phuong_thuc', 'id');
+
+            // Lấy ra danh sách tất cả đơn hàng của tài khoản
+            $donHangs = $this->modelDonHang->getDonHangFromUser($tai_khoan_id);
+            require_once "./views/lichSuMuaHang.php";
+        } else {
+            var_dump('Bạn chưa đăng nhập');
+            die;
+        }
+    }
+
+    public function chiTietMuaHang()
+    {
+        if (isset($_SESSION['user_client'])) {
+            // Lấy ra thông tin tài khoản đăng nhập
+            $user = $this->modelTaiKhoan->getTaiKhoanFromEmail($_SESSION['user_client']);
+            $tai_khoan_id = $user['id'];
+
+            // Lấy id đơn hàng truyền từ url
+            $donHangId = $_GET['id'];
+
+            // Lấy ra danh sách trạng thái đơn hàng
+            $arrTrangThaiDonHang = $this->modelDonHang->getTrangThaiDonHang();
+            $trangThaiDonHang = array_column($arrTrangThaiDonHang, 'ten_trang_thai', 'id');
+
+
+            // Lấy ra danh sách trạng thái thanh toán
+            $arrPhuongThucThanhToan = $this->modelDonHang->getPhuongThucThanhToan();
+            $phuongThucThanhToan = array_column($arrPhuongThucThanhToan, 'ten_phuong_thuc', 'id');
+
+            // Lấy ra thông tin đơn hàng theo ID
+            $donHang = $this->modelDonHang->getDonHangById($donHangId);
+
+            // Lấy thông tin sản phẩm của đơn hàng trong bảng chi tiết đơn hàng
+            $chiTietDonHang = $this->modelDonHang->getChiTietDonHangByDonHangId($donHangId);
+
+            // echo "<pre>";
+            // print_r($donHang);
+            // print_r($chiTietDonHang);
+
+            if ($donHang['tai_khoan_id'] != $tai_khoan_id) {
+                echo "Bạn không có quyền truy cập đơn hàng này";
+                exit;
+            }
+
+            require_once "./views/chiTietMuaHang.php";
+        } else {
+            var_dump('Bạn chưa đăng nhập');
+            die;
+        }
+    }
+
+    public function huyDonHang()
+    {
+        if (isset($_SESSION['user_client'])) {
+            // Lấy ra thông tin tài khoản đăng nhập
+            $user = $this->modelTaiKhoan->getTaiKhoanFromEmail($_SESSION['user_client']);
+            $tai_khoan_id = $user['id'];
+
+            // Lấy id đơn hàng truyền từ url
+            $donHangId = $_GET['id'];
+
+            // Kiểm tra đơn hàng
+            $donHang = $this->modelDonHang->getDonHangById($donHangId);
+
+            if ($donHang['tai_khoan_id'] != $tai_khoan_id) {
+                echo "Bạn không có quyền hủy đơn hàng này";
+                exit;
+            }
+
+            if ($donHang['trang_thai_id'] != 1) {
+                echo "Chỉ đơn hàng ở trạng thái 'Chưa xác nhận' mới có thể hủy";
+                exit;
+            }
+
+            // Hủy đơn hàng
+            $this->modelDonHang->updateTrangThaiDonHang($donHangId, 11);
+            header("Location: " . BASE_URL . '?act=lich-su-mua-hang');
+            exit;
+        } else {
+            var_dump('Bạn chưa đăng nhập');
+            die;
+        }
+    }
 }

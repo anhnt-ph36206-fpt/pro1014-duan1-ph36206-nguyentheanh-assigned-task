@@ -1,5 +1,5 @@
 # Phân chia công việc làm dự án 1 (PRO1014) 
-- Xong: 2, 3.1 - 3.2, 4.1 - 4.2, 5.1 - 5.2 - 5.3, 6.1 - 6.2 - 6.3 - 6.4 - 6.5 - 6.6, 7.1 - 7.2 - 7.3 - 7.4 - 7.5 - 7.6, 8,1
+- Hoàn thành các video: 2, 3.1 - 3.2, 4.1 - 4.2, 5.1 - 5.2 - 5.3, 6.1 - 6.2 - 6.3 - 6.4 - 6.5 - 6.6, 7.1 - 7.2 - 7.3 - 7.4 - 7.5 - 7.6, 8,1, 8.2, 8.3
 -   Thịnh (Trưởng nhóm): 
     +   Đã làm xong video 2, 3.2, 4.1, 4.2
     +   Đã xong video 6.1, 6.2, 6.3 
@@ -8,7 +8,7 @@
 
 -   Trung: 
     +   Làm xong video 3.1 và xong từ video 5.1 đến 5.3
-    +   Đang làm 8.2, 8.3
+    +   Đã làm xong 8.2, 8.3
     +   Đang làm báo cáo
 
 -   Vũ: 
@@ -19,12 +19,12 @@
 -   Thế Anh: 
     +   Làm xong từ video 7.1,7.2, 7.3, 7.4, 7.5
     +   Ghép code xong, fix giao diện của admin + client 6.1, 6.2, 6.3
-    +   Fix xong code 6.4 phần Login/Logout của Thịnh
-    +   Fix giúp Vũ 7.6
+    +   Đang hoàn thành database, chủ đề, ảnh sản phẩm, danh mục, giao diện client và admin, gắn link các trang mới
+
     +   Đang làm báo cáo
 
 
-## Sắp xong các video: (Buổi 7 - 21 video)
+## Đã xong các video: (Buổi 8 - 23 video)
 -   Video 2     
     + (Giới thiệu dựng base, cắt giao diện dự án 1) - ``Đã xong``
 
@@ -89,15 +89,14 @@
 -   Video 8.1   
     + (Thêm Sản Phẩm vào Đơn Hàng)      -  ``Đã xong``
 
-##   Đang làm 8.2 - 8.3 (Trung)
 
 -   Video 8.2   
-    + (Lịch sử mua hàng, Huỷ đơn hàng)  - ``Đang làm`` 
+    + (Lịch sử mua hàng, Huỷ đơn hàng)  - ``Đã xong`` 
 
 -   Video 8.3   
-    + (Chi Tiết Đơn Hàng)               - ``Đang làm``
+    + (Chi Tiết Đơn Hàng)               - ``Đã xong``
 
 
 **TỔNG 23 VIDEO**
 
-- **Hoàn thành 21 video**
+- **Hoàn thành 23 video**
