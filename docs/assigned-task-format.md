@@ -40,5 +40,5 @@
 
 ---
 
-# 🔢 **TỔNG: 23 VIDEO**
--   **Hoàn thành 23 video**
+## 🔢 **TỔNG: 23 VIDEO**
+-   **Hoàn thành tất cả 23 video**
