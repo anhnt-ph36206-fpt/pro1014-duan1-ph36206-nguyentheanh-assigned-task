@@ -1,4 +1,6 @@
-# pro1014-duan1-ph36206-nguyentheanh-assigned-task
+# Môn Dự Án 1 (PRO1014) - Được giảng dạy bởi thầy Nguyễn Đức Anh - Anhnd120
+
+## pro1014-duan1-ph36206-nguyentheanh-assigned-task 
 
 - Clone project từ github về gốc www laragon:
 ```

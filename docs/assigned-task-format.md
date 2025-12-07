@@ -4,13 +4,13 @@
 
 | Thành viên | Vai trò | Nhiệm vụ |
 |-----------|---------|----------|
-| **Thịnh** | Trưởng nhóm | - Hoàn thành ``video 2``<br> - Hoàn thành ``video 6.1,6.2`` <br> - Đã hoàn thành ``video 6.3``,  <br> - Hoàn thành formLogin và logout ```video 6.4``` <br> - Đang ghép code ``video 6.5 - 6.6`` và fix bug|
-| **Trung** | Thành viên | - Hoàn thành ``video 3.1`` <br> - Hoàn thành ``video 5.1, 5.2, 5.3`` |
-| **Vũ** | Thành viên | - Hoàn thành ``video 3.2``<br> - Hoàn thành ``video 3.2``  <br> - Hoàn thành ``video 4.2`` |
-| **Thế Anh** | Thành viên | - Hoàn thành ``video 7.1, 7.2, 7.3, 7.4`` <br>- Fix  giúp  Vũ ``video 3.2 và 4.1`` <br>- Fix giúp Thịnh ``video 6.3, 6.4`` |
+| **Thịnh** | Trưởng nhóm | - Hoàn thành ``video 2``<br> - Hoàn thành ``video 6.1,6.2`` <br> - Đã hoàn thành ``video 6.3``,  <br> - Hoàn thành ```video 6.4``` <br> - Hoàn thành ``video 6.5 - 6.6``|
+| **Trung** | Thành viên | - Hoàn thành ``video 3.1`` <br> - Hoàn thành ``video 5.1, 5.2, 5.3`` <br> - Đang hoàn thiện ``video 8.2, 8.3``|
+| **Vũ** | Thành viên | - Hoàn thành ``video 3.2``<br> - Hoàn thành ``video 3.2``  <br> - Hoàn thành ``video 4.2`` <br> - Hoàn thành ``video 7.6`` <br> - Hoàn thành ``video 8.1`` |
+| **Thế Anh** | Thành viên | - Hoàn thành ``video 7.1, 7.2, 7.3, 7.4, 7.5`` <br>- Fix  xong giúp  Vũ ``video 3.2, 4.1, 7.6`` <br>- Fix xong giúp Thịnh ``video 6.3, 6.4`` |
 --- | 
 
-# ✅ Tiến độ các video (Buổi 4 – 17 video)
+# ✅ Tiến độ các video (Buổi 7 – 21 video)
 
 | Video | Nội dung | Trạng thái |
 |-------|----------|------------|
@@ -32,20 +32,19 @@
 | **7.2** | Chi tiết sản phẩm | ✔ Đã xong |
 | **7.3** | Đăng nhập client | ✔ Đã xong |
 | **7.4** | Giỏ hàng | ✔ Đã xong |
-
+| **7.5** | Giao diện Client – Giới thiệu | ✔ Đã xong|
+| **7.6** | Giao diện Client – Liên hệ | ✔ Đã xong|
+| **8.1** | Thêm sản phẩm vào đơn hàng | ✔ Đã xong|
 ---
 
-# 📌 Các video đang phân chia (Buổi tiếp theo – 6 video)
+# 📌 Các video đang phân chia (Buổi tiếp theo – 2 video)
 
 | Video | Nội dung | Trạng thái |
 |--------|----------|-------------|
-| **7.5** | Giao diện Client – Giới thiệu | ⏳ Đang phân chia -> Thế Anh đang làm |
-| **7.6** | Giao diện Client – Liên hệ | ⏳ Đang phân chia  - Vũ làm|
-| **8.1** | Thêm sản phẩm vào đơn hàng | ⏳ Đang phân chia - Thịnh làm|
 | **8.2** | Lịch sử mua hàng, huỷ đơn hàng | ⏳ Đang phân chia -> Nguyễn Hữu Trung đang làm |
 | **8.3** | Chi tiết đơn hàng | ⏳ Đang phân chia -> Nguyễn Hữu Trung đang làm |
 
 ---
 
 # 🔢 **TỔNG: 23 VIDEO**
--   **Hoàn thành 18 video**
+-   **Hoàn thành 21 video**

@@ -49,21 +49,24 @@
                         <!-- Checkout Login Coupon Accordion End -->
                     </div>
                 </div>
+                <form action="<?= BASE_URL.'?act=xu-ly-thanh-toan' ?>" method="POST">
                 <div class="row">
                     <!-- Checkout Billing Details -->
                     <div class="col-lg-6">
                         <div class="checkout-billing-details-wrap">
                             <h5 class="checkout-title">Thông tin người nhận</h5>
                             <div class="billing-form-wrap">
-                                <form action="#">
+                                
+
+                                    
                                     <div class="single-input-item">
                                         <label for="ten_nguoi_nhan" class="required"> Tên người nhận</label>
                                         <input type="text" id="ten_nguoi_nhan" name="ten_nguoi_nhan" value="<?php echo $user['ho_ten']?>" placeholder="Nhập tên người nhận" required />
                                     </div>
 
                                     <div class="single-input-item">
-                                        <label for="email" class="required">Địa chỉ email</label>
-                                        <input type="email" id="email_guoi_nhan" name="email_nguoi_nhan" value="<?php echo $user['email']?>" placeholder="Email Address" required />
+                                        <label for="email_nguoi_nhan" class="required">Địa chỉ email</label>
+                                        <input type="email" id="email_nguoi_nhan" name="email_nguoi_nhan" value="<?php echo $user['email']?>" placeholder="Email Address" required />
                                     </div>
 
                                     <div class="single-input-item">
@@ -77,10 +80,10 @@
                                     </div>
 
                                     <div class="single-input-item">
-                                        <label for="ordernote">Ghi chú </label>
-                                        <textarea name="ordernote" id="ordernote" cols="30" rows="3" placeholder="Vui lòng nhập ghi chú đơn hàng của bạn."></textarea>
+                                        <label for="ghi_chu">Ghi chú </label>
+                                        <textarea name="ghi_chu" id="ordernote" cols="30" rows="3" placeholder="Vui lòng nhập ghi chú đơn hàng của bạn."></textarea>
                                     </div>
-                                </form>
+                                
                             </div>
                         </div>
                     </div>
@@ -100,8 +103,10 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                        <?php $tongGioHang = 0; ?>
-                                        <?php foreach ($chiTietGioHang as $key => $sanPham):
+                                        
+                                        <?php 
+                                            $tongGioHang = 0;
+                                            foreach ($chiTietGioHang as $key => $sanPham):
                                         ?>
                                         <tr>
                                             <td><a href=""><?php echo $sanPham['ten_san_pham']; ?> <strong> x<?php echo $sanPham['so_luong']; ?></strong></a></td>
@@ -136,6 +141,7 @@
                                             </tr>
                                             <tr>
                                                 <td>Tổng đơn hàng</td>
+                                                <input type="hidden" name="tong_tien" value="<?php echo $tongGioHang + 30000; ?>">
                                                 <td><strong><?php echo formatPrice($tongGioHang + 30000); ?></strong></td>
                                             </tr>
                                         </tfoot>
@@ -146,18 +152,18 @@
                                     <div class="single-payment-method show">
                                         <div class="payment-method-name">
                                             <div class="custom-control custom-radio">
-                                                <input type="radio" id="cashon" name="paymentmethod" value="cash" class="custom-control-input" checked />
+                                                <input type="radio" id="cashon"  value="1" name="phuong_thuc_thanh_toan_id" class="custom-control-input" checked />
                                                 <label class="custom-control-label" for="cashon">Thanh toán khi nhận hàng</label>
                                             </div>
                                         </div>
                                         <div class="payment-method-details" data-method="cash">
-                                            <p>Khách hàng có thể thanh toán sau khi nhận hàng thành công</p>
+                                            <p>Khách hàng có thể thanh toán sau khi nhận hàng thành công(Cần xác nhận đơn hàng).</p>
                                         </div>
                                     </div>
                                     <div class="single-payment-method">
                                         <div class="payment-method-name">
                                             <div class="custom-control custom-radio">
-                                                <input type="radio" id="directbank" name="paymentmethod" value="bank" class="custom-control-input" />
+                                                <input type="radio" id="directbank" name="phuong_thuc_thanh_toan_id" value="2" class="custom-control-input" />
                                                 <label class="custom-control-label" for="directbank">
                                                     Thanh toán online
                                                 </label>
@@ -179,6 +185,7 @@
                         </div>
                     </div>
                 </div>
+                </form>
             </div>
         </div>
         <!-- checkout main wrapper end -->
