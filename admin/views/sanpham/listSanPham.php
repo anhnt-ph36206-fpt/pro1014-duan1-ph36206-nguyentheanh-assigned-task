@@ -81,9 +81,9 @@
                         <td>
                           <div class="btn-group">
                             <a href="<?= BASE_URL_ADMIN . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id'] ?>" class="btn btn-warning btn-sm">
-                              <i class="fas fa-warning"></i> <i class="far fa-eye"></i>
+                              <i class="fas fa-warning"></i><i class="far fa-eye"></i>Chi tiết
                               </a>
-                              <a href="<?= BASE_URL_ADMIN . '?act=form-sua-san-pham&id_san_pham=' . $sanPham['id'] ?>" class="btn btn-warning btn-sm">
+                              <a href="<?= BASE_URL_ADMIN . '?act=form-sua-san-pham&id_san_pham=' . $sanPham['id'] ?>" class="btn btn-primary btn-sm">
                                 <i class="fas fa-edit"></i> Sửa
                               </a>
                               <a href="<?= BASE_URL_ADMIN . '?act=xoa-san-pham&id_san_pham=' . $sanPham['id'] ?>"

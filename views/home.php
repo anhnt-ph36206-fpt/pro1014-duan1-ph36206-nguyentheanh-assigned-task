@@ -178,32 +178,32 @@
                                 <div class="tab-pane fade show active" id="tab1">
                                     <div class="product-carousel-4_2 slick-row-10 slick-arrow-style">
                                     <!-- product item start -->
-                                    <?php foreach ($listSanPham as $key => $sanPham) { ?>
+                                    <?php foreach ($listSanPham as $key => $sanPham) {?>
                                     <div class="product-item">
                                         <figure class="product-thumb">
-                                            <a href="<?php echo BASE_URL.'?act=chi-tiet-san-pham&id_san_pham='.$sanPham['id'] ?>">
-                                                <img class="pri-img" src="<?php echo BASE_URL.$sanPham['hinh_anh'] ?>" alt="product">
-                                                <img class="sec-img" src="<?php echo BASE_URL.$sanPham['hinh_anh'] ?>" alt="product">
+                                            <a href="<?php echo BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id'] ?>">
+                                                <img class="pri-img" src="<?php echo BASE_URL . $sanPham['hinh_anh'] ?>" alt="product">
+                                                <img class="sec-img" src="<?php echo BASE_URL . $sanPham['hinh_anh'] ?>" alt="product">
                                             </a>
 
                                             <div class="product-badge">
                                                 <?php
-                                                    $ngayNhap = new DateTime($sanPham['ngay_nhap']);
-                                        $ngayHienTai = new DateTime;
-                                        $tinhNgay = $ngayHienTai->diff($ngayNhap);
+                                                    $ngayNhap    = new DateTime($sanPham['ngay_nhap']);
+                                                        $ngayHienTai = new DateTime;
+                                                        $tinhNgay    = $ngayHienTai->diff($ngayNhap);
 
-                                        if ($tinhNgay->days <= 7) {
-                                            ?>
+                                                        if ($tinhNgay->days <= 7) {
+                                                        ?>
                                                         <div class="product-label new">
                                                             <span>Mới</span>
                                                         </div>
                                                     <?php }?>
 
                                                     <?php if ($sanPham['gia_khuyen_mai']) {
-                                                        $phanTramGiam = round((($sanPham['gia_san_pham'] - $sanPham['gia_khuyen_mai']) / $sanPham['gia_san_pham']) * 100);
-                                                        ?>
+                                                                $phanTramGiam = round((($sanPham['gia_san_pham'] - $sanPham['gia_khuyen_mai']) / $sanPham['gia_san_pham']) * 100);
+                                                            ?>
                                                         <div class="product-label discount">
-                                                            <span>Giảm                                                                         <?php echo $phanTramGiam ?>%</span>
+                                                            <span>Giảm                                                                                                                                                 <?php echo $phanTramGiam ?>%</span>
                                                         </div>
                                                     <?php }?>
                                                 </div>
@@ -215,7 +215,7 @@
 
                                         <div class="product-caption">
                                             <h6 class="product-name">
-                                                <a href="<?php echo BASE_URL.'?act=chi-tiet-san-pham&id_san_pham='.$sanPham['id'] ?>">
+                                                <a href="<?php echo BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id'] ?>">
                                                     <?php echo $sanPham['ten_san_pham'] ?>
                                                 </a>
                                             </h6>
@@ -246,7 +246,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <?php } ?>
+                                    <?php }?>
                                     </div>
                                 </div>
                             </div>
@@ -434,32 +434,32 @@
                                 <div class="tab-pane fade show active" id="tab_suggest">
                                     <div class="product-carousel-4_2 slick-row-10 slick-arrow-style">
                                     <!-- product item start -->
-                                    <?php foreach ($listSanPham as $key => $sanPham) { ?>
+                                    <?php foreach ($listSanPham as $key => $sanPham) {?>
                                     <div class="product-item">
                                         <figure class="product-thumb">
-                                            <a href="<?php echo BASE_URL.'?act=chi-tiet-san-pham&id_san_pham='.$sanPham['id'] ?>">
-                                                <img class="pri-img" src="<?php echo BASE_URL.$sanPham['hinh_anh'] ?>" alt="product">
-                                                <img class="sec-img" src="<?php echo BASE_URL.$sanPham['hinh_anh'] ?>" alt="product">
+                                            <a href="<?php echo BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id'] ?>">
+                                                <img class="pri-img" src="<?php echo BASE_URL . $sanPham['hinh_anh'] ?>" alt="product">
+                                                <img class="sec-img" src="<?php echo BASE_URL . $sanPham['hinh_anh'] ?>" alt="product">
                                             </a>
 
                                             <div class="product-badge">
                                                 <?php
-                                                    $ngayNhap = new DateTime($sanPham['ngay_nhap']);
-                                        $ngayHienTai = new DateTime;
-                                        $tinhNgay = $ngayHienTai->diff($ngayNhap);
+                                                    $ngayNhap    = new DateTime($sanPham['ngay_nhap']);
+                                                        $ngayHienTai = new DateTime;
+                                                        $tinhNgay    = $ngayHienTai->diff($ngayNhap);
 
-                                        if ($tinhNgay->days <= 7) {
-                                            ?>
+                                                        if ($tinhNgay->days <= 7) {
+                                                        ?>
                                                         <div class="product-label new">
                                                             <span>Mới</span>
                                                         </div>
                                                     <?php }?>
 
                                                     <?php if ($sanPham['gia_khuyen_mai']) {
-                                                        $phanTramGiam = round((($sanPham['gia_san_pham'] - $sanPham['gia_khuyen_mai']) / $sanPham['gia_san_pham']) * 100);
-                                                        ?>
+                                                                $phanTramGiam = round((($sanPham['gia_san_pham'] - $sanPham['gia_khuyen_mai']) / $sanPham['gia_san_pham']) * 100);
+                                                            ?>
                                                         <div class="product-label discount">
-                                                            <span>Giảm <?php echo $phanTramGiam ?>%</span>
+                                                            <span>Giảm                                                                         <?php echo $phanTramGiam ?>%</span>
                                                         </div>
                                                     <?php }?>
                                                 </div>
@@ -471,7 +471,7 @@
 
                                         <div class="product-caption">
                                             <h6 class="product-name">
-                                                <a href="<?php echo BASE_URL.'?act=chi-tiet-san-pham&id_san_pham='.$sanPham['id'] ?>">
+                                                <a href="<?php echo BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id'] ?>">
                                                     <?php echo $sanPham['ten_san_pham'] ?>
                                                 </a>
                                             </h6>
@@ -502,7 +502,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <?php } ?>
+                                    <?php }?>
                                     </div>
                                 </div>
                             </div>
@@ -513,22 +513,28 @@
             </div>
         </section>
         <!-- suggested product area end -->
-        
+
         <!-- group product start -->
         <?php
-        $listDienThoai = [];
-        $listLaptop = [];
-        foreach ($listSanPham as $sp) {
-             // Basic text matching for categories. Adjust if database values differ.
-            if (isset($sp['ten_danh_muc']) && (stripos($sp['ten_danh_muc'], 'Điện Thoại') !== false || stripos($sp['ten_danh_muc'], 'Phone') !== false)) {
-                $listDienThoai[] = $sp;
-            } elseif (isset($sp['ten_danh_muc']) && stripos($sp['ten_danh_muc'], 'Laptop') !== false) {
-                $listLaptop[] = $sp;
+            $listDienThoai = [];
+            $listLaptop    = [];
+            foreach ($listSanPham as $sp) {
+                // Basic text matching for categories. Adjust if database values differ.
+                if (isset($sp['ten_danh_muc']) && (stripos($sp['ten_danh_muc'], 'Điện Thoại') !== false || stripos($sp['ten_danh_muc'], 'Phone') !== false)) {
+                    $listDienThoai[] = $sp;
+                } elseif (isset($sp['ten_danh_muc']) && stripos($sp['ten_danh_muc'], 'Laptop') !== false) {
+                    $listLaptop[] = $sp;
+                }
             }
-        }
-        // Fallback if empty (e.g. if category names don't match exactly)
-         if (empty($listDienThoai)) $listDienThoai = array_slice($listSanPham, 0, 8);
-         if (empty($listLaptop)) $listLaptop = array_reverse($listSanPham);
+            // Fallback if empty (e.g. if category names don't match exactly)
+            if (empty($listDienThoai)) {
+                $listDienThoai = array_slice($listSanPham, 0, 8);
+            }
+
+            if (empty($listLaptop)) {
+                $listLaptop = array_reverse($listSanPham);
+            }
+
         ?>
 
         <section class="smartwatch-section py-5 section-padding">
@@ -564,7 +570,7 @@
                     </div>
                     <a href="?act=list-product" class="btn btn-primary w-100 rounded-2 fw-bold">XEM NGAY</a>
                     </div>
-                    
+
                 </div>
 
                 <!-- Right: Products -->
@@ -600,26 +606,26 @@
                                         <div class="product-image mb-2 position-relative">
                                             <?php if ($sanPham['gia_khuyen_mai']): ?>
                                                 <?php $percent = round((($sanPham['gia_san_pham'] - $sanPham['gia_khuyen_mai']) / $sanPham['gia_san_pham']) * 100); ?>
-                                                <span class="badge bg-danger position-absolute top-2 start-2">Giảm <?= $percent ?>%</span>
+                                                <span class="badge bg-danger position-absolute top-2 start-2">Giảm <?php echo $percent?>%</span>
                                             <?php endif; ?>
-                                            <a href="<?= BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id'] ?>">
-                                                <img src="<?= BASE_URL . $sanPham['hinh_anh'] ?>" class="w-100 rounded-2" alt="<?= $sanPham['ten_san_pham'] ?>">
+                                            <a href="<?php echo BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id']?>">
+                                                <img src="<?php echo BASE_URL . $sanPham['hinh_anh']?>" class="w-100 rounded-2" alt="<?php echo $sanPham['ten_san_pham']?>">
                                             </a>
                                         </div>
                                         <h6 class="fw-bold small mb-2 product-name-truncate">
-                                            <a href="<?= BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id'] ?>" class="text-dark text-decoration-none">
-                                                <?= $sanPham['ten_san_pham'] ?>
+                                            <a href="<?php echo BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id']?>" class="text-dark text-decoration-none">
+                                                <?php echo $sanPham['ten_san_pham']?>
                                             </a>
                                         </h6>
                                         <div class="price-box">
                                             <?php if ($sanPham['gia_khuyen_mai']): ?>
-                                                <p class="text-danger fw-bold mb-1"><?= formatPrice($sanPham['gia_khuyen_mai']) ?></p>
-                                                <small class="text-muted text-decoration-line-through"><?= formatPrice($sanPham['gia_san_pham']) ?></small>
+                                                <p class="text-danger fw-bold mb-1"><?php echo formatPrice($sanPham['gia_khuyen_mai'])?></p>
+                                                <small class="text-muted text-decoration-line-through"><?php echo formatPrice($sanPham['gia_san_pham'])?></small>
                                             <?php else: ?>
-                                                <p class="text-danger fw-bold mb-1"><?= formatPrice($sanPham['gia_san_pham']) ?></p>
+                                                <p class="text-danger fw-bold mb-1"><?php echo formatPrice($sanPham['gia_san_pham'])?></p>
                                             <?php endif; ?>
                                         </div>
-                                        
+
                                         <div class="product-benefits">
                                                 <div class="benefit-item">
                                                     <span class="benefit-label">Siêu thành viên giảm đến 10%</span>
@@ -644,35 +650,47 @@
                         <!-- Laptop Tab -->
                         <div class="tab-pane fade" id="laptop" role="tabpanel">
                             <div class="row g-3">
-                                <?php foreach (array_slice($listLaptop, 0, 8) as $sanPham): ?>
+                                   <?php foreach (array_slice($listSanPham, 0, 8) as $sanPham): ?>
                                 <div class="col-md-6 col-lg-3">
                                     <div class="product-card h-100 bg-white rounded p-2">
                                         <div class="product-image mb-2 position-relative">
                                             <?php if ($sanPham['gia_khuyen_mai']): ?>
                                                 <?php $percent = round((($sanPham['gia_san_pham'] - $sanPham['gia_khuyen_mai']) / $sanPham['gia_san_pham']) * 100); ?>
-                                                <span class="badge bg-danger position-absolute top-2 start-2">Giảm <?= $percent ?>%</span>
+                                                <span class="badge bg-danger position-absolute top-2 start-2">Giảm <?php echo $percent?>%</span>
                                             <?php endif; ?>
-                                            <a href="<?= BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id'] ?>">
-                                                <img src="<?= BASE_URL . $sanPham['hinh_anh'] ?>" class="w-100 rounded-2" alt="<?= $sanPham['ten_san_pham'] ?>">
+                                            <a href="<?php echo BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id']?>">
+                                                <img src="<?php echo BASE_URL . $sanPham['hinh_anh']?>" class="w-100 rounded-2" alt="<?php echo $sanPham['ten_san_pham']?>">
                                             </a>
                                         </div>
                                         <h6 class="fw-bold small mb-2 product-name-truncate">
-                                            <a href="<?= BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id'] ?>" class="text-dark text-decoration-none">
-                                                <?= $sanPham['ten_san_pham'] ?>
+                                            <a href="<?php echo BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id']?>" class="text-dark text-decoration-none">
+                                                <?php echo $sanPham['ten_san_pham']?>
                                             </a>
                                         </h6>
                                         <div class="price-box">
                                             <?php if ($sanPham['gia_khuyen_mai']): ?>
-                                                <p class="text-danger fw-bold mb-1"><?= formatPrice($sanPham['gia_khuyen_mai']) ?></p>
-                                                <small class="text-muted text-decoration-line-through"><?= formatPrice($sanPham['gia_san_pham']) ?></small>
+                                                <p class="text-danger fw-bold mb-1"><?php echo formatPrice($sanPham['gia_khuyen_mai'])?></p>
+                                                <small class="text-muted text-decoration-line-through"><?php echo formatPrice($sanPham['gia_san_pham'])?></small>
                                             <?php else: ?>
-                                                <p class="text-danger fw-bold mb-1"><?= formatPrice($sanPham['gia_san_pham']) ?></p>
+                                                <p class="text-danger fw-bold mb-1"><?php echo formatPrice($sanPham['gia_san_pham'])?></p>
                                             <?php endif; ?>
                                         </div>
-                                        <div class="mt-2 d-flex justify-content-between align-items-center">
-                                            <span class="badge bg-warning text-dark">⭐ 4.9</span>
-                                            <button class="btn btn-sm btn-outline-danger">❤️</button>
-                                        </div>
+
+                                        <div class="product-benefits">
+                                                <div class="benefit-item">
+                                                    <span class="benefit-label">Siêu thành viên giảm đến 10%</span>
+                                                </div>
+                                                <div class="benefit-item">
+                                                    <span class="benefit-label">Trả góp 0% - Ốp phụ thu - Ốd trả trước</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="product-footer">
+                                                <div class="product-rating">
+                                                    <span class="star-rating">★ 4.9</span>
+                                                </div>
+                                                <button class="btn-favorite">♥ Yêu thích</button>
+                                            </div>
                                     </div>
                                 </div>
                                 <?php endforeach; ?>
@@ -701,7 +719,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="blog-carousel-active slick-row-10 slick-arrow-style">
-                            
+
                             <!-- blog post item start -->
                             <div class="blog-post-item">
                                 <figure class="blog-thumb">

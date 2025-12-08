@@ -82,19 +82,20 @@ class SanPham
                     FROM binh_luans
                     INNER JOIN tai_khoans 
                     ON binh_luans.tai_khoan_id = tai_khoans.id
-                    WHERE binh_luans.san_pham_id = :id';
+                    WHERE binh_luans.san_pham_id = :id
+                    AND binh_luans.trang_thai = 1
+                    ORDER BY binh_luans.id DESC';
 
             $stmt = $this->conn->prepare($sql);
-
             $stmt->execute([':id' => $id]);
 
             return $stmt->fetchAll();
 
         } catch (Exception $e) {
             echo "Lỗi: " . $e->getMessage();
-            // return []; // Trả về mảng rỗng nếu lỗi
         }
     }
+
 
     // Viết hàm lấy sản phẩm cùng danh mục
     public function getListSanPhamDanhMuc($danh_muc_id) {

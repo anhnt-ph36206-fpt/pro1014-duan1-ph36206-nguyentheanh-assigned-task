@@ -46,6 +46,8 @@
 
     <link rel="stylesheet" href="assets/css/cart/minicart-custom.css">
     <link rel="stylesheet" href="assets/css/product/group-product.css">
+    <link rel="stylesheet" href="assets/css/product/detail-product.css">
+    <link rel="stylesheet" href="assets/css/phone-product/phone-product.css">
     
 </head>
 <body>

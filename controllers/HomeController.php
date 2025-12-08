@@ -255,10 +255,16 @@ class HomeController
                 // Chuyển hướng về trang lịch sử mua hàng
                 // header("Location: " . BASE_URL . '?act=lich-su-mua-hang');
                 // var_dump('Thêm đơn hàng thành công');die();
+                echo "<script>
+                    alert('Đặt hàng thành công!');
+                    window.location.href = '" . BASE_URL . "?act=lich-su-mua-hang';
+                </script>";
                 exit;
             } else {
-                var_dump('Lỗi đặt hàng. Vui lòng thử lại sau');
-                die;
+                echo "<script>
+                    alert('Lỗi đặt hàng: Tổng tiền không hợp lệ!');
+                    window.location.href = '" . BASE_URL . "?act=thanh-toan';
+                </script>";
             }
 
         }
@@ -361,5 +367,39 @@ class HomeController
             var_dump('Bạn chưa đăng nhập');
             die;
         }
+    }
+
+    public function dienThoai()
+    {
+        $listSanPham = $this->modelSanPham->getAllSanPham();
+        // echo '<pre>';
+        // var_dump($listSanPham);
+        // echo '</pre>';
+        require_once './views/trangDienThoai.php';
+    }
+
+     public function laptop()
+    {
+        $listSanPham = $this->modelSanPham->getAllSanPham();
+        // echo '<pre>';
+        // var_dump($listSanPham);
+        // echo '</pre>';
+        require_once './views/trangLaptop.php';
+    }
+
+     public function tablet()
+    {
+        $listSanPham = $this->modelSanPham->getAllSanPham();
+        // echo '<pre>';
+        // var_dump($listSanPham);
+        // echo '</pre>';
+        require_once './views/trangTablet.php';
+    }
+
+
+    public function phuKien()
+    {
+        $listSanPham = $this->modelSanPham->getAllSanPham();
+        require_once './views/trangPhuKien.php';
     }
 }

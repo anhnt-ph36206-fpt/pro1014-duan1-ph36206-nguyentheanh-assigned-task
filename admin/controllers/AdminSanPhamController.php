@@ -345,9 +345,10 @@ class AdminSanPhamController
         $listSanPham    = $this->modelSanPham->getListAnhSanPham($id);
         $listAnhSanPham = $this->modelSanPham->getListAnhSanPham($id);
         $listBinhLuan   = $this->modelSanPham->getBinhLuanFromSanPham($id);
-        // var_dump($listAnhSanPham);
         // echo '<pre>';
+        // var_dump($listAnhSanPham);
         // var_dump($listDanhMuc);
+        // var_dump($listBinhLuan);
 
         if ($sanPham) {
             require_once './views/sanpham/detailSanPham.php';

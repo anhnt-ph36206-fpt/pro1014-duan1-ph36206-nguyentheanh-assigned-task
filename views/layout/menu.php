@@ -27,16 +27,16 @@
                                         <span>Danh mục</span>
                                     </a>
                                     <ul class="category-dropdown">
-                                        <li><a href="<?php echo BASE_URL . '?category=dienthoai' ?>">
+                                        <li><a href="<?php echo BASE_URL . '?act=dien-thoai' ?>">
                                             <i class="fa fa-mobile"></i> Điện Thoại
                                         </a></li>
-                                        <li><a href="<?php echo BASE_URL . '?category=laptop' ?>">
+                                        <li><a href="<?php echo BASE_URL . '?act=laptop' ?>">
                                             <i class="fa fa-laptop"></i> Laptop
                                         </a></li>
-                                        <li><a href="<?php echo BASE_URL . '?category=tablet' ?>">
+                                        <li><a href="<?php echo BASE_URL . '?act=tablet' ?>">
                                             <i class="fa fa-tablet"></i> Tablet
                                         </a></li>
-                                        <li><a href="<?php echo BASE_URL . '?category=phukien' ?>">
+                                        <li><a href="<?php echo BASE_URL . '?act=phu-kien' ?>">
                                             <i class="fa fa-headphones"></i> Phụ Kiện
                                         </a></li>
                                     </ul>

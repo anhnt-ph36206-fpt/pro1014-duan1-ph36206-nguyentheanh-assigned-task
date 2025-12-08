@@ -228,6 +228,8 @@ class AdminTaiKhoanController
         $listDonHang   = $this->modelDonHang->getDonHangFromKhachHang($id_khach_hang);
         $listBinhLuan  = $this->modelSanPham->getBinhLuanFromKhachHang($id_khach_hang);
         // var_dump($listBinhLuan);
+        // var_dump($khachHang);
+
         require_once './views/taikhoan/khachhang/detailKhachHang.php';
     }
 

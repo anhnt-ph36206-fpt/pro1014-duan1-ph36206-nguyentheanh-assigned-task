@@ -41,4 +41,16 @@ match ($act) {
     'chi-tiet-mua-hang'  => (new HomeController())->chiTietMuaHang(),
     'huy-don-hang'       => (new HomeController())->huyDonHang(),
 
+    //   Trang điện thoại
+    'dien-thoai'         => (new HomeController())->dienThoai(),
+
+    //   Trang laptop
+    'laptop'             => (new HomeController())->laptop(),
+
+    //   Trang tablet
+    'tablet'             => (new HomeController())->tablet(),
+
+    //   Trang phụ kiện
+    'phu-kien'           => (new HomeController())->phuKien(),
+
 };
