@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 08, 2025 at 12:13 AM
+-- Generation Time: Dec 07, 2025 at 02:34 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.4.14
 
@@ -79,16 +79,7 @@ INSERT INTO `chi_tiet_don_hangs` (`id`, `don_hang_id`, `san_pham_id`, `don_gia`,
 (5, 5, 3, '3432432.00', 1, '3432432.00'),
 (6, 6, 4, '5000000.00', 2, '10000000.00'),
 (7, 8, 3, '3432432.00', 10, '34324320.00'),
-(8, 9, 8, '6500000.00', 6, '39000000.00'),
-(9, 10, 3, '3432432.00', 1, '3432432.00'),
-(10, 11, 3, '3432432.00', 1, '3432432.00'),
-(11, 12, 6, '5000000.00', 1, '5000000.00'),
-(12, 13, 1, '9000000.00', 1, '9000000.00'),
-(13, 14, 3, '3432432.00', 1, '3432432.00'),
-(14, 14, 4, '5000000.00', 1, '5000000.00'),
-(15, 14, 5, '4600000.00', 1, '4600000.00'),
-(16, 36, 1, '420000.00', 6, '2520000.00'),
-(17, 36, 3, '19500000.00', 1, '19500000.00');
+(8, 9, 8, '6500000.00', 6, '39000000.00');
 
 -- --------------------------------------------------------
 
@@ -139,10 +130,10 @@ CREATE TABLE `danh_mucs` (
 --
 
 INSERT INTO `danh_mucs` (`id`, `ten_danh_muc`, `mo_ta`) VALUES
-(4, 'Điện Thoại', 'Điện Thoại là sản phẩm rất được ưa chuộng để nghe, gọi, chơi game,chụp ảnh, quay video,... nhỏ gọn cầm tay, sạc nhanh, thích hợp cầm đi chơi mà không to hay cồng kềnh'),
-(5, 'Laptop', 'Laptop là các dòng máy tính màn hình và bàn phím, thích hợp làm việc'),
-(6, 'Tablet', 'Table là dòng bản phẩm giống điện thoại nhưng to hơn, thường dùng có kèm bút cảm ứng, rất thích hợp takenote, vẽ vời,...'),
-(10, 'Phụ Kiện', 'Các phụ kiện ăn theo sản phẩm như sạc, hub usb, tai nghe, ...');
+(4, 'Áo 123', 'Áo Bomber\r\n'),
+(5, 'Quần ', 'Quần âu\r\n'),
+(6, 'Áo Quần 123', 'Áo đẹp'),
+(10, 'Áo Quần 123456', '123215432');
 
 -- --------------------------------------------------------
 
@@ -174,38 +165,11 @@ INSERT INTO `don_hangs` (`id`, `ma_don_hang`, `tai_khoan_id`, `ten_nguoi_nhan`, 
 (2, 'DH-1234', 1, 'Nguyễn Hữu Trung', 'huutrung1234@gmail.com', '0123456788', 'Nam Từ Liêm - Hà Nộiiii', '2025-12-01', '100000.00', 'Thanh toán tiền mặt hay chuyển khoản', 1, 2),
 (3, 'DH-12345', 24, 'Nguyễn Hữu Trung 12345', 'huutrung12345@gmail.com', '0123456787', 'Nam Từ Liêm - Hà Nội', '2025-12-01', '800000.00', 'Giao hàng nhanh', 1, 3),
 (4, 'DH - 1', 23, 'Nguyễn T.Anhhh', 'tanh123@gmail.com', '0945353843', 'Nam Từ Liêm - Hà Nội', '2025-12-01', '500000.00', 'Giao hàng nhanh ship COD', 1, 4),
-(5, 'DH-1226', 18, 'theAnhDev', 'theanhdev324324@gmail.com', '0954654654', 'hn ntl', '2025-12-07', '3462432.00', '', 1, 1),
+(5, 'DH-1226', 18, 'theAnhDev', 'theanhdev324324@gmail.com', '0954654654', 'hn ntl', '2025-12-07', '3462432.00', '', 2, 1),
 (6, 'DH-4536', 18, 'theAnhDev', 'theanhdev324324@gmail.com', '0954654654', 'hn ntl', '2025-12-07', '10030000.00', 'Vui lòng ship COD', 1, 1),
 (7, 'DH-1721', 18, 'theAnhDev', 'theanhdev324324@gmail.com', '0954654654', 'hn ntl', '2025-12-07', '30000.00', 'Vui lòng ship COD', 1, 1),
-(8, 'DH-8756', 18, 'theAnhDev', 'theanhdev324324@gmail.com', '0954654654', 'hn ntl', '2025-12-07', '34354320.00', '34 củ \r\n:V', 2, 11),
-(9, 'DH-2990', 18, 'theAnhDev', 'theanhdev324324@gmail.com', '0954654654', 'hn ntl', '2025-12-07', '39030000.00', 'HHEHEHEHE\r\n', 1, 11),
-(10, 'DH-2812', 18, 'theAnhDev', 'theanhdev324324@gmail.com', '0954654654', 'hn ntl', '2025-12-07', '3462432.00', '', 1, 11),
-(11, 'DH-7759', 26, 'Nguyễn Hữu Trung', 'trung321@gmail.com', '0347892617', 'Hà Nội', '2025-12-07', '3462432.00', '', 1, 1),
-(12, 'DH-6191', 26, 'Nguyễn Hữu Trung', 'trung321@gmail.com', '0347892617', 'Hà Nội', '2025-12-07', '5030000.00', '', 1, 11),
-(13, 'DH-2077', 26, 'Nguyễn Hữu Trung', 'trung321@gmail.com', '0347892617', 'Hà Nội', '2025-12-07', '9030000.00', '', 1, 10),
-(14, 'DH-7013', 26, 'Nguyễn Hữu Trung', 'trung321@gmail.com', '0347892617', 'Hà Nội', '2025-12-07', '13062432.00', 'alo alo', 1, 1),
-(36, 'DH-5218', 18, 'theAnhDev', 'theanhdev324324@gmail.com', '0954654654', 'hn ntl', '2025-12-08', '22050000.00', '', 1, 1),
-(37, 'DH-203', 8, 'Nguyễn Thế Anh', 'anhh11@gmail.com', '095439650', 'Nam Từ Liêm - Hà Nội', '2025-12-31', '500000.00', 'SHIP COD', 4, 2),
-(38, '3', 2, 'Trần Minh Hoàng', 'hoangtm@gmail.com', '0934123456', 'Cầu Giấy - Hà Nội', '2025-12-07', '1500000.00', 'Giao giờ hành chính', 1, 1),
-(39, '4', 3, 'Phạm Thu Trang', 'trangpham@gmail.com', '0987654321', 'Hai Bà Trưng - Hà Nội', '2025-12-06', '820000.00', 'Gói cẩn thận giúp', 2, 2),
-(40, '5', 1, 'Nguyễn Văn Nam', 'namnv2024@gmail.com', '0912345678', 'Thanh Xuân - Hà Nội', '2025-12-05', '2450000.00', 'Ship nhanh', 1, 3),
-(41, '6', 4, 'Vũ Ngọc Anh', 'anhvu@gmail.com', '0945123123', 'Đống Đa - Hà Nội', '2025-12-04', '990000.00', 'COD', 2, 1),
-(42, '7', 5, 'Hoàng Hải Đăng', 'danghaigg@gmail.com', '0977332211', 'Hà Đông - Hà Nội', '2025-12-03', '1800000.00', 'Không gọi khi giao', 1, 4),
-(43, '8', 2, 'Lê Mai Hương', 'huongle@gmail.com', '0932156790', 'Ba Đình - Hà Nội', '2025-12-02', '530000.00', 'Giao buổi sáng', 2, 2),
-(44, '9', 3, 'Nguyễn Hữu Tài', 'taihht@gmail.com', '0923123456', 'Tây Hồ - Hà Nội', '2025-12-01', '1120000.00', 'Nhẹ tay giúp', 1, 1),
-(45, '10', 6, 'Đỗ Minh Thư', 'thudominh@gmail.com', '0967123456', 'Long Biên - Hà Nội', '2025-11-30', '760000.00', 'Ưu tiên giao nhanh', 2, 3),
-(46, '11', 4, 'Phan Quang Dũng', 'dungphan@gmail.com', '0909887766', 'Yên Hoà - Hà Nội', '2025-11-29', '2190000.00', 'Thanh toán chuyển khoản', 1, 4),
-(47, '12', 1, 'Ngô Phương Lan', 'lanngo@gmail.com', '0932456123', 'Cầu Giấy - Hà Nội', '2025-11-28', '430000.00', 'Ship COD', 2, 2),
-(48, '13', 5, 'Trịnh Đức Mạnh', 'manhtrinh@gmail.com', '0912334455', 'Hưng Yên', '2025-11-27', '1520000.00', 'Liên hệ trước khi giao', 1, 1),
-(49, '14', 3, 'Lương Hồng Nhung', 'nhungluong@gmail.com', '0977223344', 'Bắc Từ Liêm - Hà Nội', '2025-11-26', '670000.00', 'Hàng dễ vỡ', 2, 3),
-(50, '15', 6, 'Đỗ Văn Khánh', 'khanhdovan@gmail.com', '0955667788', 'Hoàn Kiếm - Hà Nội', '2025-11-25', '3040000.00', 'Chuyển khoản', 1, 4),
-(51, '16', 2, 'Trần Hải Yến', 'yentran@gmail.com', '0988112233', 'Hải Phòng', '2025-11-24', '540000.00', 'COD', 2, 1),
-(52, '17', 4, 'Lê Hữu Phước', 'phuocle@gmail.com', '0911223344', 'Nam Từ Liêm - Hà Nội', '2025-11-23', '1200000.00', 'Giao buổi chiều', 1, 2),
-(53, '18', 1, 'Hoàng Ngọc Tú', 'tuhoang@gmail.com', '0922345566', 'Bắc Giang', '2025-11-22', '890000.00', 'Nhắn shipper gọi trước', 2, 1),
-(54, '19', 3, 'Bùi Gia Hưng', 'hungbg@gmail.com', '0944332211', 'Ninh Bình', '2025-11-21', '1990000.00', 'Giao tận nhà', 1, 3),
-(55, '20', 5, 'Tạ Phương Thảo', 'thaotaphuong@gmail.com', '0933124556', 'Thái Bình', '2025-11-20', '450000.00', 'Miễn phí ship?', 2, 1),
-(56, '21', 6, 'Phùng Hải Nam', 'namphung@gmail.com', '0965223344', 'Quảng Ninh', '2025-11-19', '3200000.00', 'Thanh toán online', 1, 4),
-(57, '22', 2, 'Nguyễn Minh Khang', 'khangnguyen@gmail.com', '0923445566', 'Lào Cai', '2025-11-18', '740000.00', 'Giao nhanh giúp', 2, 1);
+(8, 'DH-8756', 18, 'theAnhDev', 'theanhdev324324@gmail.com', '0954654654', 'hn ntl', '2025-12-07', '34354320.00', '34 củ \r\n:V', 2, 1),
+(9, 'DH-2990', 18, 'theAnhDev', 'theanhdev324324@gmail.com', '0954654654', 'hn ntl', '2025-12-07', '39030000.00', 'HHEHEHEHE\r\n', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -235,9 +199,9 @@ CREATE TABLE `hinh_anh_san_phams` (
 --
 
 INSERT INTO `hinh_anh_san_phams` (`id`, `san_pham_id`, `link_hinh_anh`) VALUES
-(1, 1, './uploads/1765151866-iphone-17-pro-max-cam-1-638947383255964450-750x500 (1).jpg'),
-(2, 2, './uploads/1765152118-laptop_acer_aspire_lite_14_al14-71m-52gq_-_3.png'),
-(3, 3, './uploads/1765152253-ipad-a16-11-inch_3__1.webp'),
+(1, 1, './uploads/product-1.jpg'),
+(2, 2, './uploads/1764626056-instagram-5.jpg'),
+(3, 3, './uploads/product-3.jpg'),
 (4, 4, './uploads/product-4.jpg'),
 (5, 5, './uploads/product-5.jpg'),
 (6, 6, './uploads/product-6.jpg'),
@@ -245,32 +209,23 @@ INSERT INTO `hinh_anh_san_phams` (`id`, `san_pham_id`, `link_hinh_anh`) VALUES
 (8, 8, './uploads/product-8.jpg'),
 (9, 9, './uploads/product-9.jpg'),
 (10, 10, './uploads/product-10.jpg'),
-(11, 1, './uploads/1765151866-iphone-17-pro-max-cam-1-638947383255964450-750x500.jpg'),
-(12, 2, './uploads/1765152118-text_ng_n_1__8_27.webp'),
-(13, 1, './uploads/1765151866-iphone-17-pro-max-cam-2-638947383212278277-750x500.jpg'),
-(14, 1, './uploads/1765151866-iphone-17-pro-max-cam-4-638947383197941667-750x500.jpg'),
-(15, 1, './uploads/1765151866-iphone-17-pro-max-cam-7-638947383167025902-750x500.jpg'),
-(16, 1, './uploads/1765151866-iphone-17-pro-max-cam-9-638947383148725067-750x500 (1).jpg'),
-(17, 1, './uploads/1765151866-iphone-17-pro-max-cam-9-638947383148725067-750x500.jpg'),
-(18, 1, './uploads/1765151866-iphone-17-pro-max-cam-12-638947383232300582-750x500.jpg'),
-(19, 1, './uploads/1765151866-iphone-17-pro-max-cam-13-638947383223664403-750x500.jpg'),
-(20, 1, './uploads/1765151866-iphone-17-pro-max-cam-1-638947383255964450-750x500 (1).jpg'),
+(11, 1, './uploads/1764734350-cpc.png'),
+(12, 2, './uploads/product-3.jpg'),
+(13, 1, './uploads/product-3.jpg'),
+(14, 1, './uploads/product-4.jpg'),
+(15, 1, './uploads/product-5.jpg'),
+(16, 1, './uploads/product-6.jpg'),
+(17, 1, './uploads/product-7.jpg'),
+(18, 1, './uploads/1764734350-cpc.png'),
+(19, 1, './uploads/1764734350-cpc.png'),
+(20, 1, './uploads/1764734350-cpc.png'),
 (21, 26, './uploads/1764628535-instagram-1.jpg'),
 (22, 26, './uploads/1764628535-instagram-2.jpg'),
 (23, 26, './uploads/1764628535-instagram-3.jpg'),
 (24, 26, './uploads/1764628535-instagram-4.jpg'),
 (25, 26, './uploads/1764628535-instagram-5.jpg'),
-(36, 1, './uploads/1765151866-iphone-17-pro-max-cam-4-638947383197941667-750x500.jpg'),
-(37, 1, './uploads/1765151866-iphone-17-pro-max-cam-4-638947383197941667-750x500.jpg'),
-(38, 2, './uploads/1765152118-text_ng_n_2__7_61.webp'),
-(39, 2, './uploads/1765152118-laptop_acer_aspire_lite_14_al14-71m-52gq_-_2.webp'),
-(40, 2, './uploads/1765152118-text_ng_n_14_8.webp'),
-(41, 3, './uploads/1765152253-ipad-a16-11-inch_4__1.webp'),
-(42, 3, './uploads/1765152253-ipad-a16-11-inch_6__1.webp'),
-(43, 3, './uploads/1765152253-ipad-a16-11-inch_7__1.webp'),
-(44, 3, './uploads/1765152253-ipad-a16-11-inch_8__1.webp'),
-(45, 3, './uploads/1765152253-ipad-a16-11-inch_9_.webp'),
-(46, 3, './uploads/1765152253-ipad-a16-11-inch_10_.webp');
+(36, 1, './uploads/1764731818-cpc.png'),
+(37, 1, './uploads/1764731818-cpc.png');
 
 -- --------------------------------------------------------
 
@@ -316,9 +271,9 @@ CREATE TABLE `san_phams` (
 --
 
 INSERT INTO `san_phams` (`id`, `ten_san_pham`, `gia_san_pham`, `gia_khuyen_mai`, `hinh_anh`, `so_luong`, `luot_xem`, `ngay_nhap`, `mo_ta`, `danh_muc_id`, `trang_thai`) VALUES
-(1, 'Iphone 17 Promax 256 GB', '430000.00', '420000.00', './uploads/1765151935-vi-vn-iphone-17-pro-max-1.jpg', 10, 10, '2025-12-07', 'Iphone 17 Promax với cấu hình siêu khủng, màn đẹp, pin trâu, camera sắc nét,...', 4, 1),
-(2, 'Laptop Acer Aspire Lite 14 AL14-71M-52GQ', '24000000.00', '23000000.00', './uploads/1765152155-laptop_acer_aspire_lite_14_al14-71m-52gq_-_3.png', 12, 22, '2025-12-07', 'Laptop Acer Aspire Lite 14 AL14-71M-52GQ là dòng laptop văn phòng đẹp', 5, 1),
-(3, 'iPad A16 Wifi 128GB 2025  Chính hãng Apple Việt Nam ', '22000000.00', '19500000.00', './uploads/1765152285-ipad-a16-11-inch_2__1.webp', 10, 10, '2025-12-07', 'iPad A16 Wifi 128GB 2025  Chính hãng Apple Việt Nam là dòng Ipad rất được ưa chuộng ở Việt Nam', 6, 1),
+(1, 'Chó phú quốc 1234', '10000000.00', '9000000.00', './uploads/1764734356-cpc.png', 100, 10, '2025-11-26', 'Chó phú quốc siêu đẹp,siêu hấp dẫn.ádasd', 5, 1),
+(2, 'Mèo anh lông dài', '23432432.00', '12454354.00', NULL, 23, 22, '2025-11-25', 'Mèo anh lông dài thuần chủng. 4324324', 4, 2),
+(3, 'Mèo Lông Dài Phú Quốc', '5000000.00', '3432432.00', './uploads/1764626451-instagram-1.jpg', 10, 10, '2025-11-29', 'Mèo Lông Dài Siêu Đẹp, Đắt Tiền', 4, 1),
 (4, 'Mèo Lông Dài Phú Quốc Xám', '5000000.00', NULL, 'assets/img/product/product-4.jpg', 19, 8, '2025-11-01', 'Mèo Lông Dài Siêu Đẹp, Đắt Tiền xám', 6, 1),
 (5, 'Mèo Lông Dài Phú Quốc Đen', '6000000.00', '4600000.00', 'assets/img/product/product-5.jpg', 16, 9, '2025-11-01', 'Mèo Lông Dài Siêu Đẹp, Đắt Tiền đen', 5, 1),
 (6, 'Mèo Lông Dài Phú Quốc Hồng', '7000000.00', '5000000.00', 'assets/img/product/product-6.jpg', 50, 21, '2025-11-02', 'Mèo Lông Dài Siêu Đẹp, Đắt Tiền hồng', 4, 1),
@@ -377,9 +332,7 @@ INSERT INTO `tai_khoans` (`id`, `ho_ten`, `anh_dai_dien`, `ngay_sinh`, `email`, 
 (19, 'Đỗ Đình Thịnhhhhh', NULL, NULL, 'adad@gmail.com', '0890980757', 1, NULL, '$2y$12$luCO6qAMIHpKm.zD7s8csOTfFnL7HFrm0bPYaLlekoCdrco9ezbWG', 1, 1),
 (22, 'theAnhDev42432', './uploads/product-2.jpg', NULL, 'theanhdev34324324@gmail.com', NULL, 1, NULL, '$2y$12$xVb9kdvWMzyoMvq17uIzR.b1zpawxcvxlsLwrFrmTQxJmgsoB1raC', 1, 2),
 (23, 'Nguyễn Thế Anh', './uploads/product-3.jpg', '2025-12-25', 'anhhh112233@gmail.com', '096234728', 1, 'Nam Từ Liêm - Hà Nội', '$2y$12$9yDC/v1TOS1NigM4jXYogemss5tCLdObmSF/.32Nog9W11mWSZ.qa', 1, 1),
-(24, 'trungHIu', NULL, NULL, 'trunghieu123@gmail.com', NULL, 1, NULL, '$2y$12$eoqa6AfFNXGvvxkVC.zcRutF5NCCJts3kjFUb.a6ZR2GQFML0U0rS', 1, 1),
-(25, 'Nguyễn Hữu Trung', NULL, NULL, 'trung123@gmail.com', NULL, 1, NULL, '$2y$10$X.0gXVjmvtJteKSd7RUZnuPldYg2kVYYM8lexyLtfzfJ9KBvHGz4y', 1, 1),
-(26, 'Nguyễn Hữu Trung', NULL, '2004-02-03', 'trung321@gmail.com', '0347892617', 1, 'Hà Nội', '$2y$10$1Km5S2kUNWMVGAsG1bKuQeGHjyUjDLl6RI4b4.eWpAfzhO1uCzzbW', 2, 1);
+(24, 'trungHIu', NULL, NULL, 'trunghieu123@gmail.com', NULL, 1, NULL, '$2y$12$eoqa6AfFNXGvvxkVC.zcRutF5NCCJts3kjFUb.a6ZR2GQFML0U0rS', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -500,13 +453,13 @@ ALTER TABLE `binh_luans`
 -- AUTO_INCREMENT for table `chi_tiet_don_hangs`
 --
 ALTER TABLE `chi_tiet_don_hangs`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `chi_tiet_gio_hangs`
 --
 ALTER TABLE `chi_tiet_gio_hangs`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `chuc_vus`
@@ -524,19 +477,19 @@ ALTER TABLE `danh_mucs`
 -- AUTO_INCREMENT for table `don_hangs`
 --
 ALTER TABLE `don_hangs`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `gio_hangs`
 --
 ALTER TABLE `gio_hangs`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `hinh_anh_san_phams`
 --
 ALTER TABLE `hinh_anh_san_phams`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT for table `phuong_thuc_thanh_toans`
@@ -554,7 +507,7 @@ ALTER TABLE `san_phams`
 -- AUTO_INCREMENT for table `tai_khoans`
 --
 ALTER TABLE `tai_khoans`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `trang_thai_don_hangs`
