@@ -37,6 +37,125 @@ class SanPham
         }
     }
 
+
+    public function getAllSanPhamDienThoai()
+    {
+        try {
+            // $sql = 'SELECT san_phams.*, danh_mucs.ten_danh_muc
+            //         FROM san_phams
+            //         INNER JOIN danh_mucs 
+            //         ON san_phams.danh_muc_id = danh_mucs.id
+            //         ';
+
+            $sql = 'SELECT san_phams.*, danh_mucs.ten_danh_muc
+                    FROM san_phams
+                    INNER JOIN danh_mucs 
+                    ON san_phams.danh_muc_id = danh_mucs.id
+                    WHERE danh_mucs.ten_danh_muc = :ten_danh_muc';
+
+            // $sql = 'SELECT * FROM san_phams';
+            $stmt = $this->conn->prepare($sql);
+
+            $stmt->execute(['ten_danh_muc' => 'Điện thoại']);
+
+            return $stmt->fetchAll(); // Thêm PDO::FETCH_ASSOC cho đẹp
+
+
+        } catch (Exception $e) {
+            echo "Lỗi: " . $e->getMessage();
+            // return []; // Trả về mảng rỗng nếu lỗi
+        }
+    }
+
+    public function getAllSanPhamLaptop()
+    {
+        try {
+            // $sql = 'SELECT san_phams.*, danh_mucs.ten_danh_muc
+            //         FROM san_phams
+            //         INNER JOIN danh_mucs 
+            //         ON san_phams.danh_muc_id = danh_mucs.id
+            //         ';
+
+            $sql = 'SELECT san_phams.*, danh_mucs.ten_danh_muc
+                    FROM san_phams
+                    INNER JOIN danh_mucs 
+                    ON san_phams.danh_muc_id = danh_mucs.id
+                    WHERE danh_mucs.ten_danh_muc = :ten_danh_muc';
+
+            // $sql = 'SELECT * FROM san_phams';
+            $stmt = $this->conn->prepare($sql);
+
+            $stmt->execute(['ten_danh_muc' => 'Laptop']);
+
+            return $stmt->fetchAll(); 
+
+
+        } catch (Exception $e) {
+            echo "Lỗi: " . $e->getMessage();
+            // return []; // Trả về mảng rỗng nếu lỗi
+        }
+    }
+
+    public function getAllSanPhamTablet()
+    {
+        try {
+            // $sql = 'SELECT san_phams.*, danh_mucs.ten_danh_muc
+            //         FROM san_phams
+            //         INNER JOIN danh_mucs 
+            //         ON san_phams.danh_muc_id = danh_mucs.id
+            //         ';
+
+            $sql = 'SELECT san_phams.*, danh_mucs.ten_danh_muc
+                    FROM san_phams
+                    INNER JOIN danh_mucs 
+                    ON san_phams.danh_muc_id = danh_mucs.id
+                    WHERE danh_mucs.ten_danh_muc = :ten_danh_muc';
+
+            // $sql = 'SELECT * FROM san_phams';
+            $stmt = $this->conn->prepare($sql);
+
+            $stmt->execute(['ten_danh_muc' => 'Tablet']);
+
+            return $stmt->fetchAll(); 
+
+
+        } catch (Exception $e) {
+            echo "Lỗi: " . $e->getMessage();
+            // return []; // Trả về mảng rỗng nếu lỗi
+        }
+    }
+
+     public function getAllSanPhamPhuKien()
+    {
+        try {
+            // $sql = 'SELECT san_phams.*, danh_mucs.ten_danh_muc
+            //         FROM san_phams
+            //         INNER JOIN danh_mucs 
+            //         ON san_phams.danh_muc_id = danh_mucs.id
+            //         ';
+
+            $sql = 'SELECT san_phams.*, danh_mucs.ten_danh_muc
+                    FROM san_phams
+                    INNER JOIN danh_mucs 
+                    ON san_phams.danh_muc_id = danh_mucs.id
+                    WHERE danh_mucs.ten_danh_muc = :ten_danh_muc';
+
+            // $sql = 'SELECT * FROM san_phams';
+            $stmt = $this->conn->prepare($sql);
+
+            $stmt->execute(['ten_danh_muc' => 'Phụ Kiện']);
+
+            return $stmt->fetchAll(); 
+
+
+        } catch (Exception $e) {
+            echo "Lỗi: " . $e->getMessage();
+            // return []; // Trả về mảng rỗng nếu lỗi
+        }
+    }
+
+
+
     // Viết hàm lấy ảnh sản phẩm
     public function getListAnhSanPham($id){
         try {

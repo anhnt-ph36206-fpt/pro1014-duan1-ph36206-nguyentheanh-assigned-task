@@ -371,7 +371,7 @@ class HomeController
 
     public function dienThoai()
     {
-        $listSanPham = $this->modelSanPham->getAllSanPham();
+        $listSanPham = $this->modelSanPham->getAllSanPhamDienThoai();
         // echo '<pre>';
         // var_dump($listSanPham);
         // echo '</pre>';
@@ -380,7 +380,7 @@ class HomeController
 
      public function laptop()
     {
-        $listSanPham = $this->modelSanPham->getAllSanPham();
+        $listSanPham = $this->modelSanPham->getAllSanPhamLaptop();
         // echo '<pre>';
         // var_dump($listSanPham);
         // echo '</pre>';
@@ -389,7 +389,7 @@ class HomeController
 
      public function tablet()
     {
-        $listSanPham = $this->modelSanPham->getAllSanPham();
+        $listSanPham = $this->modelSanPham->getAllSanPhamTablet();
         // echo '<pre>';
         // var_dump($listSanPham);
         // echo '</pre>';
@@ -399,7 +399,7 @@ class HomeController
 
     public function phuKien()
     {
-        $listSanPham = $this->modelSanPham->getAllSanPham();
+        $listSanPham = $this->modelSanPham->getAllSanPhamPhuKien();
         require_once './views/trangPhuKien.php';
     }
 }

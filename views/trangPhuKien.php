@@ -13,7 +13,7 @@
                                 <a href="<?php echo BASE_URL?>"><i class="fa fa-home"></i> Trang chủ</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo BASE_URL . '?act=dien-thoai'?>"> Điện thoại</a>
+                                    <a href="<?php echo BASE_URL . '?act=dien-thoai'?>"> Phụ kiện</a>
                                 </li>
                             </ul>
                         </nav>
@@ -26,7 +26,7 @@
                     <div class="col-12">
                         <!-- section title start -->
                         <div class="section-title text-center">
-                            <h2 class="title">Danh Sách Các Sản Phẩm Điện Thoại Bán Chạy Và Mới Nhất</h2>
+                            <h2 class="title">Danh Sách Các Sản Phẩm Phụ Kiện Bán Chạy Cho Các Thiết Bị Công Nghệ</h2>
                             <p class="sub-title">Các Sản Phẩm Luôn Được Cập Nhật Liên Tục</p>
                         </div>
                         <!-- section title start -->
@@ -290,16 +290,26 @@
 
                     <!-- Tabs: Phone / Laptop -->
                     <ul class="nav nav-tabs mb-4" id="deviceTabs" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active fw-bold" id="phone-tab" data-bs-toggle="tab" data-bs-target="#phone" type="button" role="tab">
-                        Điện Thoại
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active fw-bold" id="charge-tab" data-bs-toggle="tab" data-bs-target="#charge" type="button" role="tab">
+                            Sạc
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link fw-bold" id="phonecase-tab" data-bs-toggle="tab" data-bs-target="#phonecase" type="button" role="tab">
+                            Ốp lưng
+                            </button>
+                        </li>
+                            <li class="nav-item" role="presentation">
+                            <button class="nav-link fw-bold" id="temperedglass-tab" data-bs-toggle="tab" data-bs-target="#temperedglass" type="button" role="tab">
+                            Kính Cường Lực
                         </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link fw-bold" id="laptop-tab" data-bs-toggle="tab" data-bs-target="#laptop" type="button" role="tab">
-                        Laptop
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link fw-bold" id="another-tab" data-bs-toggle="tab" data-bs-target="#another" type="button" role="tab">
+                            Khác
                         </button>
-                    </li>
+                        </li>
                     </ul>
 
                     <!-- Tab Content -->
@@ -354,7 +364,7 @@
                             </div>
                         </div>
 
-                        <!-- Laptop Tab -->
+                        <!-- S -->
                         <div class="tab-pane fade" id="laptop" role="tabpanel">
                             <div class="row g-3">
                                    <?php foreach (array_slice($listSanPham, 0, 8) as $sanPham): ?>

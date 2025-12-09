@@ -13,7 +13,7 @@
                                 <a href="<?php echo BASE_URL?>"><i class="fa fa-home"></i> Trang chủ</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo BASE_URL . '?act=dien-thoai'?>"> Điện thoại</a>
+                                    <a href="<?php echo BASE_URL . '?act=dien-thoai'?>"> Laptop</a>
                                 </li>
                             </ul>
                         </nav>
