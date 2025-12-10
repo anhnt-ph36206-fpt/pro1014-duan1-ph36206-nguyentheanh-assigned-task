@@ -31,7 +31,7 @@
                             <input type="text" placeholder="Số điện thoại của bạn" required>
                             <div class="checkbox-agree">
                                 <input type="checkbox" id="agree" required>
-                                <label for="agree">Tôi đồng ý nhận thông tin khuyến mãi từ CellphoneS</label>
+                                <label for="agree">Tôi đồng ý nhận thông tin khuyến mãi từ SpaceLink</label>
                             </div>
                             <button type="submit">Đăng ký ngay</button>
                         </form>
@@ -73,7 +73,7 @@
                     </ul>
 
                     <div class="app-download">
-                        <h3>Tải ứng dụng CellphoneS</h3>
+                        <h3>Tải ứng dụng SpaceLink</h3>
                         <div class="qr-app">
                             <div class="qr-code">
                                 <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://cellphones.com.vn" alt="QR Code">
@@ -88,7 +88,7 @@
 
                 <!-- Column 4: Social & Member Sites -->
                 <div class="footer-col">
-                    <h3>Kết nối với CellphoneS</h3>
+                    <h3>Kết nối với SpaceLink</h3>
                     <div class="social-links">
                         <a href="#" title="Youtube"><img src="https://cellphones.com.vn/media/logo/social/cellphones-youtube.png" alt="Youtube"></a>
                         <a href="#" title="Facebook"><img src="https://cellphones.com.vn/media/logo/social/cellphones-facebook.png" alt="Facebook"></a>
@@ -218,5 +218,22 @@
     <script src="assets/js/plugins/google-map.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    'space-red': '#dc2626',
+                    'space-red-light': '#ef4444',
+                    'space-black': '#0a0a0a',
+                    'space-gray': '#1a1a1a',
+                }
+            }
+        }
+    }
+    </script>
+    
 </body>
 </html>

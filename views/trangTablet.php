@@ -1,7 +1,7 @@
 <?php require_once 'layout/header.php'; ?>
 <?php require_once 'layout/menu.php'; ?>
 
-    <main style="padding-top: 100px;">
+    <main style="padding-top: 20px;">
 
         <!-- product area start -->
         <section class="product-area section-padding">

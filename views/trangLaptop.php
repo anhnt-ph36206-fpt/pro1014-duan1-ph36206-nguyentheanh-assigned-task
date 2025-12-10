@@ -1,7 +1,7 @@
 <?php require_once 'layout/header.php'; ?>
 <?php require_once 'layout/menu.php'; ?>
 
-    <main style="padding-top: 100px;">
+    <main style="padding-top: 20px;">
 
         <!-- product area start -->
         <section class="product-area section-padding">
@@ -10,10 +10,10 @@
                     <nav>
                         <ul class="cb-list">
                             <li>
-                                <a href="<?php echo BASE_URL?>"><i class="fa fa-home"></i> Trang chủ</a>
+                                <a href="<?php echo BASE_URL ?>"><i class="fa fa-home"></i> Trang chủ</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo BASE_URL . '?act=dien-thoai'?>"> Laptop</a>
+                                    <a href="<?php echo BASE_URL . '?act=dien-thoai' ?>"> Laptop</a>
                                 </li>
                             </ul>
                         </nav>
@@ -65,7 +65,7 @@
                                                                 $phanTramGiam = round((($sanPham['gia_san_pham'] - $sanPham['gia_khuyen_mai']) / $sanPham['gia_san_pham']) * 100);
                                                             ?>
                                                         <div class="product-label discount">
-                                                            <span>Giảm                                                                                                                                                                                                                         <?php echo $phanTramGiam ?>%</span>
+                                                            <span>Giảm                                                                                                                                                                                                                                                                                                 <?php echo $phanTramGiam ?>%</span>
                                                         </div>
                                                     <?php }?>
                                                 </div>
@@ -166,7 +166,7 @@
                                                                 $phanTramGiam = round((($sanPham['gia_san_pham'] - $sanPham['gia_khuyen_mai']) / $sanPham['gia_san_pham']) * 100);
                                                             ?>
                                                         <div class="product-label discount">
-                                                            <span>Giảm                                                                                                                                                 <?php echo $phanTramGiam ?>%</span>
+                                                            <span>Giảm                                                                                                                                                                                                                         <?php echo $phanTramGiam ?>%</span>
                                                         </div>
                                                     <?php }?>
                                                 </div>
@@ -417,8 +417,8 @@
                     <div class="col-12">
                         <!-- section title start -->
                         <div class="section-title text-center">
-                            <h2 class="title">latest blogs</h2>
-                            <p class="sub-title">There are latest blog posts</p>
+                            <h2 class="title">Các bài viết nổi bật</h2>
+                            <p class="sub-title">Chúng tôi sẽ liên tục cập nhật các thông tin mới nhất</p>
                         </div>
                         <!-- section title start -->
                     </div>

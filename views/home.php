@@ -1,7 +1,7 @@
 <?php require_once 'layout/header.php'; ?>
 <?php require_once 'layout/menu.php'; ?>
 
-    <main style="padding-top: 100px;">
+    <main style="padding-top: 20px;">
         <!-- hero slider area start -->
         <section class="slider-area py-3">
             <div class="container">
@@ -203,13 +203,13 @@
                                                                 $phanTramGiam = round((($sanPham['gia_san_pham'] - $sanPham['gia_khuyen_mai']) / $sanPham['gia_san_pham']) * 100);
                                                             ?>
                                                         <div class="product-label discount">
-                                                            <span>Giảm                                                                                                                                                 <?php echo $phanTramGiam ?>%</span>
+                                                            <span>Giảm                                                                                                                                                                                                                         <?php echo $phanTramGiam ?>%</span>
                                                         </div>
                                                     <?php }?>
                                                 </div>
 
                                             <div class="cart-hover">
-                                                <button class="btn btn-cart">Xem Chi Tiết</button>
+                                                <a href="<?php echo BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id'] ?>" class="btn btn-cart" type="button">Xem Chi Tiết</a>
                                             </div>
                                         </figure>
 
@@ -459,7 +459,7 @@
                                                                 $phanTramGiam = round((($sanPham['gia_san_pham'] - $sanPham['gia_khuyen_mai']) / $sanPham['gia_san_pham']) * 100);
                                                             ?>
                                                         <div class="product-label discount">
-                                                            <span>Giảm                                                                         <?php echo $phanTramGiam ?>%</span>
+                                                            <span>Giảm                                                                                                                                                 <?php echo $phanTramGiam ?>%</span>
                                                         </div>
                                                     <?php }?>
                                                 </div>
@@ -606,23 +606,23 @@
                                         <div class="product-image mb-2 position-relative">
                                             <?php if ($sanPham['gia_khuyen_mai']): ?>
                                                 <?php $percent = round((($sanPham['gia_san_pham'] - $sanPham['gia_khuyen_mai']) / $sanPham['gia_san_pham']) * 100); ?>
-                                                <span class="badge bg-danger position-absolute top-2 start-2">Giảm <?php echo $percent?>%</span>
+                                                <span class="badge bg-danger position-absolute top-2 start-2">Giảm<?php echo $percent ?>%</span>
                                             <?php endif; ?>
-                                            <a href="<?php echo BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id']?>">
-                                                <img src="<?php echo BASE_URL . $sanPham['hinh_anh']?>" class="w-100 rounded-2" alt="<?php echo $sanPham['ten_san_pham']?>">
+                                            <a href="<?php echo BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id'] ?>">
+                                                <img src="<?php echo BASE_URL . $sanPham['hinh_anh'] ?>" class="w-100 rounded-2" alt="<?php echo $sanPham['ten_san_pham'] ?>">
                                             </a>
                                         </div>
                                         <h6 class="fw-bold small mb-2 product-name-truncate">
-                                            <a href="<?php echo BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id']?>" class="text-dark text-decoration-none">
-                                                <?php echo $sanPham['ten_san_pham']?>
+                                            <a href="<?php echo BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id'] ?>" class="text-dark text-decoration-none">
+                                                <?php echo $sanPham['ten_san_pham'] ?>
                                             </a>
                                         </h6>
                                         <div class="price-box">
                                             <?php if ($sanPham['gia_khuyen_mai']): ?>
-                                                <p class="text-danger fw-bold mb-1"><?php echo formatPrice($sanPham['gia_khuyen_mai'])?></p>
-                                                <small class="text-muted text-decoration-line-through"><?php echo formatPrice($sanPham['gia_san_pham'])?></small>
+                                                <p class="text-danger fw-bold mb-1"><?php echo formatPrice($sanPham['gia_khuyen_mai']) ?></p>
+                                                <small class="text-muted text-decoration-line-through"><?php echo formatPrice($sanPham['gia_san_pham']) ?></small>
                                             <?php else: ?>
-                                                <p class="text-danger fw-bold mb-1"><?php echo formatPrice($sanPham['gia_san_pham'])?></p>
+                                                <p class="text-danger fw-bold mb-1"><?php echo formatPrice($sanPham['gia_san_pham']) ?></p>
                                             <?php endif; ?>
                                         </div>
 
@@ -656,23 +656,23 @@
                                         <div class="product-image mb-2 position-relative">
                                             <?php if ($sanPham['gia_khuyen_mai']): ?>
                                                 <?php $percent = round((($sanPham['gia_san_pham'] - $sanPham['gia_khuyen_mai']) / $sanPham['gia_san_pham']) * 100); ?>
-                                                <span class="badge bg-danger position-absolute top-2 start-2">Giảm <?php echo $percent?>%</span>
+                                                <span class="badge bg-danger position-absolute top-2 start-2">Giảm<?php echo $percent ?>%</span>
                                             <?php endif; ?>
-                                            <a href="<?php echo BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id']?>">
-                                                <img src="<?php echo BASE_URL . $sanPham['hinh_anh']?>" class="w-100 rounded-2" alt="<?php echo $sanPham['ten_san_pham']?>">
+                                            <a href="<?php echo BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id'] ?>">
+                                                <img src="<?php echo BASE_URL . $sanPham['hinh_anh'] ?>" class="w-100 rounded-2" alt="<?php echo $sanPham['ten_san_pham'] ?>">
                                             </a>
                                         </div>
                                         <h6 class="fw-bold small mb-2 product-name-truncate">
-                                            <a href="<?php echo BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id']?>" class="text-dark text-decoration-none">
-                                                <?php echo $sanPham['ten_san_pham']?>
+                                            <a href="<?php echo BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id'] ?>" class="text-dark text-decoration-none">
+                                                <?php echo $sanPham['ten_san_pham'] ?>
                                             </a>
                                         </h6>
                                         <div class="price-box">
                                             <?php if ($sanPham['gia_khuyen_mai']): ?>
-                                                <p class="text-danger fw-bold mb-1"><?php echo formatPrice($sanPham['gia_khuyen_mai'])?></p>
-                                                <small class="text-muted text-decoration-line-through"><?php echo formatPrice($sanPham['gia_san_pham'])?></small>
+                                                <p class="text-danger fw-bold mb-1"><?php echo formatPrice($sanPham['gia_khuyen_mai']) ?></p>
+                                                <small class="text-muted text-decoration-line-through"><?php echo formatPrice($sanPham['gia_san_pham']) ?></small>
                                             <?php else: ?>
-                                                <p class="text-danger fw-bold mb-1"><?php echo formatPrice($sanPham['gia_san_pham'])?></p>
+                                                <p class="text-danger fw-bold mb-1"><?php echo formatPrice($sanPham['gia_san_pham']) ?></p>
                                             <?php endif; ?>
                                         </div>
 
@@ -710,8 +710,8 @@
                     <div class="col-12">
                         <!-- section title start -->
                         <div class="section-title text-center">
-                            <h2 class="title">latest blogs</h2>
-                            <p class="sub-title">There are latest blog posts</p>
+                            <h2 class="title">Các bài viết nổi bật</h2>
+                            <p class="sub-title">Chúng tôi sẽ liên tục cập nhật các thông tin mới nhất</p>
                         </div>
                         <!-- section title start -->
                     </div>
@@ -824,7 +824,7 @@
                     <div class="col-12">
                          <!-- section title start -->
                          <div class="section-title text-center">
-                            <h2 class="title" style="color: #d70018;">ĐỐI TÁC & NHÀ TÀI TRỢ</h2>
+                            <h2 class="title">ĐỐI TÁC & NHÀ TÀI TRỢ</h2>
                             <p class="sub-title">Các đối tác uy tín đồng hành cùng chúng tôi</p>
                         </div>
                         <!-- section title start -->
