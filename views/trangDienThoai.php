@@ -70,7 +70,7 @@
                                                 </div>
 
                                             <div class="cart-hover">
-                                                <button class="btn btn-cart">Xem Chi Tiết</button>
+                                                <a href="<?php echo BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id'] ?>" class="btn btn-cart" type="button">Xem Chi Tiết</a>
                                             </div>
                                         </figure>
 
@@ -171,7 +171,7 @@
                                                 </div>
 
                                             <div class="cart-hover">
-                                                <button class="btn btn-cart">Xem Chi Tiết</button>
+                                                <a href="<?php echo BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id'] ?>" class="btn btn-cart" type="button">Xem Chi Tiết</a>
                                             </div>
                                         </figure>
 

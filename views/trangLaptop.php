@@ -26,7 +26,7 @@
                     <div class="col-12">
                         <!-- section title start -->
                         <div class="section-title text-center">
-                            <h2 class="title">Danh Sách Các Sản Phẩm Điện Thoại Bán Chạy Và Mới Nhất</h2>
+                            <h2 class="title">Danh Sách Các Sản Phẩm Laptop Bán Chạy Và Mới Nhất</h2>
                             <p class="sub-title">Các Sản Phẩm Luôn Được Cập Nhật Liên Tục</p>
                         </div>
                         <!-- section title start -->
@@ -71,7 +71,7 @@
                                                 </div>
 
                                             <div class="cart-hover">
-                                                <button class="btn btn-cart">Xem Chi Tiết</button>
+                                                <a href="<?php echo BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id'] ?>" class="btn btn-cart" type="button">Xem Chi Tiết</a>
                                             </div>
                                         </figure>
 
@@ -172,7 +172,7 @@
                                                 </div>
 
                                             <div class="cart-hover">
-                                                <button class="btn btn-cart">Xem Chi Tiết</button>
+                                                <a href="<?php echo BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id'] ?>" class="btn btn-cart" type="button">Xem Chi Tiết</a>
                                             </div>
                                         </figure>
 
