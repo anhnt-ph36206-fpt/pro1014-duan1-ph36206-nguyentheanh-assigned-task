@@ -77,7 +77,6 @@
                             <div class="row">
                                 <div class="col-12">
                                     <h4>
-                                        <i class="fas fa-cat"></i> Shop thú cưng.
                                         <small class="float-right">Ngày đặt: <?= formatDate($donHang['ngay_dat']) ?></small>
                                     </h4>
                                 </div>
@@ -91,11 +90,12 @@
                                         <strong><?= $donHang['ho_ten'] ?></strong><br>
                                         Email: <?= $donHang['email'] ?><br>
                                         Số điện thoại: <?= $donHang['so_dien_thoai'] ?><br>
+                                        
                                     </address>
                                 </div>
                                 <!-- /.col -->
                                 <div class="col-sm-4 invoice-col">
-                                    Người nhận
+                                    Thông tin người nhận
                                     <address>
                                         <strong><?= $donHang['ten_nguoi_nhan'] ?></strong><br>
                                         Email: <?= $donHang['email_nguoi_nhan'] ?><br>
@@ -107,7 +107,7 @@
                                 <div class="col-sm-4 invoice-col">
                                     <b>Mã đơn hàng: <?= $donHang['ma_don_hang'] ?><br>
                                         <br>
-                                        <b>Tổng tiền: <?= $donHang['tong_tien'] ?><br>
+                                        <b>Tổng tiền: <?= formatPrice($donHang['tong_tien']) ?><br>
                                             <b>Ghi chú: <?= $donHang['ghi_chu'] ?><br>
                                                 <b>Thanh toán: <?= $donHang['ten_phuong_thuc'] ?>
                                 </div>
@@ -134,9 +134,9 @@
                                                 <tr>
                                                     <td><?= $key + 1 ?></td>
                                                     <td><?= $sanPham['ten_san_pham'] ?></td>
-                                                    <td><?= $sanPham['don_gia'] ?></td>
+                                                    <td><?= formatPrice($sanPham['don_gia']) ?></td>
                                                     <td><?= $sanPham['so_luong'] ?></td>
-                                                    <td><?= $sanPham['thanh_tien'] ?></td>
+                                                    <td><?= formatPrice($sanPham['thanh_tien']) ?></td>
                                                 </tr>
                                                 <?php $tong_tien += $sanPham['thanh_tien']; ?>
                                             <?php endforeach; ?>
@@ -159,16 +159,16 @@
                                             <tr>
                                                 <th style="width:50%">Thành tiền:</th>
                                                 <td>
-                                                    <?= $tong_tien ?>
+                                                    <?= formatPrice($tong_tien) ?>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <th>Vận chuyển:</th>
-                                                <td>200.000</td>
+                                                <td>200.000 VNĐ</td>
                                             </tr>
                                             <tr>
                                                 <th>Tổng tiền:</th>
-                                                <td><?= $tong_tien + 200000 ?></td>
+                                                <td><?= formatPrice($tong_tien + 200000) ?></td>
                                             </tr>
                                         </table>
                                     </div>

@@ -94,4 +94,7 @@ match ($act) {
 
     // Route đăng xuất
     'logout-admin'         => (new AdminTaiKhoanController())->logout(),
+
+    // Route báo cáo thống kê
+    'bao-cao-thong-ke'    => (new AdminBaoCaoThongKeController())->home(),
 };
