@@ -15,6 +15,7 @@ class AdminDonHang
             FROM don_hangs
             INNER JOIN trang_thai_don_hangs 
             ON don_hangs.trang_thai_id = trang_thai_don_hangs.id
+            ORDER BY don_hangs.id DESC
             ';
 
             // $sql = 'SELECT * FROM don_hangs';

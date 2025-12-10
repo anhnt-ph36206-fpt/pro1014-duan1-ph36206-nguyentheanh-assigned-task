@@ -1,0 +1,53 @@
+<svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="120" fill="#0a0a0a"/>
+  
+  <!-- Orbital rings inspired by Starlink -->
+  <g opacity="0.3">
+    <ellipse cx="60" cy="60" rx="45" ry="15" fill="none" stroke="#dc2626" stroke-width="1.5" transform="rotate(-20 60 60)"/>
+    <ellipse cx="60" cy="60" rx="45" ry="15" fill="none" stroke="#dc2626" stroke-width="1.5" transform="rotate(20 60 60)"/>
+    <ellipse cx="60" cy="60" rx="45" ry="15" fill="none" stroke="#dc2626" stroke-width="1.5" transform="rotate(60 60 60)"/>
+  </g>
+  
+  <!-- Central connecting nodes (satellites) -->
+  <circle cx="60" cy="35" r="3" fill="#ef4444"/>
+  <circle cx="85" cy="50" r="3" fill="#ef4444"/>
+  <circle cx="60" cy="85" r="3" fill="#ef4444"/>
+  <circle cx="35" cy="50" r="3" fill="#ef4444"/>
+  <circle cx="75" cy="70" r="2.5" fill="#dc2626"/>
+  <circle cx="45" cy="70" r="2.5" fill="#dc2626"/>
+  
+  <!-- Central hub/planet -->
+  <circle cx="60" cy="60" r="8" fill="#dc2626"/>
+  <circle cx="60" cy="60" r="6" fill="#0a0a0a"/>
+  <circle cx="60" cy="60" r="3" fill="#ef4444"/>
+  
+  <!-- SpaceLink Text - Futuristic font style -->
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&amp;display=swap');
+      .logo-text {
+        font-family: 'Orbitron', sans-serif;
+        font-weight: 900;
+        letter-spacing: 2px;
+      }
+      .logo-subtext {
+        font-family: 'Orbitron', sans-serif;
+        font-weight: 700;
+        letter-spacing: 8px;
+        font-size: 11px;
+      }
+    </style>
+  </defs>
+  
+  <!-- Main text -->
+  <text x="130" y="65" class="logo-text" fill="#ffffff" font-size="42">SPACE</text>
+  <text x="270" y="65" class="logo-text" fill="#dc2626" font-size="42">LINK</text>
+  
+  <!-- Underline accent -->
+  <line x1="130" y1="75" x2="370" y2="75" stroke="#dc2626" stroke-width="2"/>
+  <line x1="130" y1="78" x2="220" y2="78" stroke="#ef4444" stroke-width="1" opacity="0.6"/>
+  
+  <!-- Tagline -->
+  <text x="132" y="95" class="logo-subtext" fill="#666666" font-size="10">CONNECT  THE  WORLD</text>
+</svg>

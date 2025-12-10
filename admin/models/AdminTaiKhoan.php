@@ -11,7 +11,9 @@ class AdminTaiKhoan
     public function getAllTaiKhoan($chuc_vu_id)
     {
         try {
-            $sql = 'SELECT * FROM tai_khoans WHERE chuc_vu_id = :chuc_vu_id';
+            $sql = 'SELECT * FROM tai_khoans 
+                    WHERE chuc_vu_id = :chuc_vu_id
+                    ORDER BY tai_khoans.id DESC';
 
             $stmt = $this->conn->prepare($sql);
 

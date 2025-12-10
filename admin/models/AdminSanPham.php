@@ -16,7 +16,8 @@ class AdminSanPham
             $sql = 'SELECT san_phams.*, danh_mucs.ten_danh_muc
                     FROM san_phams
                     JOIN danh_mucs
-                    ON san_phams.danh_muc_id = danh_mucs.id';
+                    ON san_phams.danh_muc_id = danh_mucs.id
+                    ORDER BY san_phams.id DESC';
 
             $stmt = $this->conn->prepare($sql);
 
