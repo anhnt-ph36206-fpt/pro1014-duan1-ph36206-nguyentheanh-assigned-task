@@ -234,7 +234,7 @@
                                                     <span class="benefit-label">Siêu thành viên giảm đến 10%</span>
                                                 </div>
                                                 <div class="benefit-item">
-                                                    <span class="benefit-label">Trả góp 0% - Ốp phụ thu - Ốd trả trước</span>
+                                                    <span class="benefit-label">Trả góp 0đ - 0Đ phụ thu - 0đ trả trước - Kỳ hạn đến 6 tháng</span>
                                                 </div>
                                             </div>
 
@@ -490,7 +490,7 @@
                                                     <span class="benefit-label">Siêu thành viên giảm đến 10%</span>
                                                 </div>
                                                 <div class="benefit-item">
-                                                    <span class="benefit-label">Trả góp 0% - Ốp phụ thu - Ốd trả trước</span>
+                                                    <span class="benefit-label">Trả góp 0đ - 0Đ phụ thu - 0đ trả trước - Kỳ hạn đến 6 tháng</span>
                                                 </div>
                                             </div>
 
@@ -600,7 +600,7 @@
                         <!-- Phone Tab -->
                         <div class="tab-pane fade show active" id="phone" role="tabpanel">
                             <div class="row g-3">
-                                <?php foreach (array_slice($listSanPham, 0, 8) as $sanPham): ?>
+                                <?php foreach (array_slice($listSanPhamDienThoai, 0, 8) as $sanPham): ?>
                                 <div class="col-md-6 col-lg-3">
                                     <div class="product-card h-100 bg-white rounded p-2">
                                         <div class="product-image mb-2 position-relative">
@@ -631,7 +631,7 @@
                                                     <span class="benefit-label">Siêu thành viên giảm đến 10%</span>
                                                 </div>
                                                 <div class="benefit-item">
-                                                    <span class="benefit-label">Trả góp 0% - Ốp phụ thu - Ốd trả trước</span>
+                                                    <span class="benefit-label">Trả góp 0đ - 0Đ phụ thu - 0đ trả trước - Kỳ hạn đến 6 tháng</span>
                                                 </div>
                                             </div>
 
@@ -650,7 +650,7 @@
                         <!-- Laptop Tab -->
                         <div class="tab-pane fade" id="laptop" role="tabpanel">
                             <div class="row g-3">
-                                   <?php foreach (array_slice($listSanPham, 0, 8) as $sanPham): ?>
+                                   <?php foreach (array_slice($listSanPhamLaptop, 0, 8) as $sanPham): ?>
                                 <div class="col-md-6 col-lg-3">
                                     <div class="product-card h-100 bg-white rounded p-2">
                                         <div class="product-image mb-2 position-relative">
@@ -681,7 +681,7 @@
                                                     <span class="benefit-label">Siêu thành viên giảm đến 10%</span>
                                                 </div>
                                                 <div class="benefit-item">
-                                                    <span class="benefit-label">Trả góp 0% - Ốp phụ thu - Ốd trả trước</span>
+                                                    <span class="benefit-label">Trả góp 0đ - 0Đ phụ thu - 0đ trả trước - Kỳ hạn đến 6 tháng</span>
                                                 </div>
                                             </div>
 

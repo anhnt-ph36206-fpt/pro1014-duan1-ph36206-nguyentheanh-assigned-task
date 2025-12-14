@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Quản lý danh mục sản phẩm</title>
+  <title>Quản lý tài khoản khách hàng</title>
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -47,7 +47,7 @@
           <div class="col-12">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Danh sách danh mục sản phẩm</h3>
+                <h3 class="card-title">Danh sách Tài Khoản Khách Hàng</h3>
               </div>
               <div class="card-body">
                 <table id="example1" class="table table-bordered table-striped">

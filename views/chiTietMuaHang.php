@@ -254,9 +254,9 @@
                                     <a href="javascript:history.back()" class="btn btn-outline-primary rounded-pill py-2 fw-semibold">
                                         <i class="fa fa-arrow-left me-2"></i>Quay lại danh sách
                                     </a>
-                                    <button onclick="window.print()" class="btn btn-info text-black rounded-pill py-2 fw-semibold">
+                                    <!-- <button onclick="window.print()" class="btn btn-info text-black rounded-pill py-2 fw-semibold">
                                         <i class="fa fa-print me-2"></i>In đơn hàng
-                                    </button>
+                                    </button> -->
                                 </div>
                             </div>
                         </div>

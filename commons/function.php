@@ -50,7 +50,7 @@ function uploadFile($file, $folderUpload) {
 
     $from = $file['tmp_name'];
     $to = PATH_ROOT . $pathStorage;
-
+    // var_dump(PATH_ROOT);die();
     if (move_uploaded_file($from, $to)) {
         # return path storage
         return $pathStorage;

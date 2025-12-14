@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 10, 2025 at 10:54 PM
+-- Generation Time: Dec 14, 2025 at 11:21 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.4.14
 
@@ -42,16 +42,117 @@ CREATE TABLE `binh_luans` (
 --
 
 INSERT INTO `binh_luans` (`id`, `san_pham_id`, `tai_khoan_id`, `noi_dung`, `ngay_dang`, `trang_thai`, `anh_dai_dien`) VALUES
-(1, 1, 23, 'Bao giờ hàng giao đến ạ ?', '2025-11-30', 1, './uploads/avatar/avatar-cute-3.jpg'),
-(2, 2, 23, 'Ship hoả tốc bao h có ?', '2025-11-30', 2, './uploads/avatar/avatar-cute-3.jpg'),
-(3, 1, 1, 'Hay hay hay', '2025-11-30', 1, ''),
-(4, 9, 9, 'hay', '2025-11-30', 2, ''),
-(5, 9, 9, 'hay', '2025-11-30', 1, ''),
-(6, 9, 9, 'hay hay hay', '2025-11-30', 1, ''),
-(7, 9, 9, 'hay hay hay hay hay hay ha', '2025-11-30', 1, ''),
-(8, 9, 9, 'hay hay hay hay hay hay hay hay hay', '2025-11-30', 1, ''),
-(9, 3, 23, 'sản phẩm này còn k shop', '2025-12-10', 2, ''),
-(10, 4, 23, 'Shop ơi rep tin nhắn em', '2025-12-01', 1, '');
+(1, 1, 1, 'Bao giờ hàng giao đến ạ ?', '2025-11-30', 1, './uploads/avatar/avatar-cute-3.jpg'),
+(2, 33, 2, 'Ship hoả tốc bao h có ?', '2025-11-30', 1, './uploads/avatar/avatar-cute-3.jpg'),
+(3, 3, 3, 'Có được kiểm tra hàng trước khi thanh toán k', '2025-11-30', 1, './uploads/avatar/avatar-cute-3.jpg'),
+(4, 4, 4, 'Bình luận cho có', '2025-11-30', 1, './uploads/avatar/avatar1.jpg'),
+(5, 5, 5, 'Quá rẻ', '2025-11-30', 1, './uploads/avatar/avatar2.png'),
+(6, 33, 6, 'Có voucher ưu đãi sinh viên k shop', '2025-11-30', 1, './uploads/avatar/avatar3.jpg'),
+(7, 33, 7, 'Có giảm giá không ạ, đắt quá', '2025-11-30', 1, './uploads/avatar/avatar4.jpg'),
+(8, 8, 8, 'Giá cao thế shop', '2025-11-30', 1, './uploads/avatar/avatar4.png'),
+(9, 9, 9, 'Sản phẩm này còn k shop ei', '2025-12-10', 1, './uploads/avatar/avatar5.jpg'),
+(10, 10, 10, 'Shop ơi rep tin nhắn em với ?', '2025-12-01', 1, './uploads/avatar/avatar6.jpg'),
+(11, 11, 11, 'Sản phẩm này phải đặt trước hả shop ?', '2025-12-01', 1, './uploads/avatar/avatar7.jpg'),
+(12, 1, 12, 'Sản phẩm có bảo hành không shop?', '2024-11-15', 1, './uploads/avatar/avatar5.jpg'),
+(13, 1, 13, 'Chất lượng thế nào ạ?', '2024-11-20', 1, './uploads/avatar/avatar6.jpg'),
+(14, 2, 14, 'Còn hàng không shop ơi?', '2024-11-22', 1, './uploads/avatar/avatar7.jpg'),
+(15, 2, 15, 'Giá này có giảm thêm không shop?', '2024-11-25', 1, './uploads/avatar/avatar9.jpg'),
+(16, 3, 16, 'Sản phẩm này phải đặt trước hả shop?', '2024-12-01', 1, './uploads/avatar/avatar5.jpg'),
+(17, 3, 1, 'Ship hỏa tốc được không ạ?', '2024-12-02', 1, './uploads/avatar/avatar6.jpg'),
+(18, 31, 2, 'Mình ở Hà Nội đặt bao lâu nhận được?', '2024-12-03', 1, './uploads/avatar/avatar7.jpg'),
+(19, 30, 3, 'Sản phẩm có nhiều màu không shop?', '2024-12-04', 1, './uploads/avatar/avatar9.jpg'),
+(20, 20, 4, 'Shop có hỗ trợ đổi trả không?', '2024-12-05', 1, './uploads/avatar/avatar5.jpg'),
+(21, 29, 5, 'Chất liệu có tốt không ạ?', '2024-12-06', 1, './uploads/avatar/avatar6.jpg'),
+(22, 28, 6, 'Mình muốn mua số lượng lớn có giảm không?', '2024-12-07', 1, './uploads/avatar/avatar7.jpg'),
+(23, 26, 7, 'Sản phẩm này đúng như hình không?', '2024-12-08', 1, './uploads/avatar/avatar9.jpg'),
+(24, 27, 8, 'Có freeship không shop?', '2024-12-09', 1, './uploads/avatar/avatar5.jpg'),
+(25, 25, 9, 'Màu này có sẵn không ạ?', '2024-12-10', 0, './uploads/avatar/avatar6.jpg'),
+(26, 24, 10, 'Shop ơi cho mình xem thêm ảnh thật được không?', '2024-12-11', 1, './uploads/avatar/avatar7.jpg'),
+(27, 23, 11, 'Sản phẩm có tặng kèm gì không?', '2024-12-12', 1, './uploads/avatar/avatar9.jpg'),
+(28, 22, 12, 'Giá này đã bao gồm VAT chưa?', '2024-12-13', 1, './uploads/avatar/avatar5.jpg'),
+(29, 21, 13, 'Mình đặt hôm nay khi nào nhận được?', '2024-12-14', 1, './uploads/avatar/avatar6.jpg'),
+(30, 20, 14, 'Sản phẩm có dễ vệ sinh không?', '2024-11-18', 1, './uploads/avatar/avatar7.jpg'),
+(31, 19, 15, 'Mình có thể xem trực tiếp không shop?', '2024-11-19', 1, './uploads/avatar/avatar9.jpg'),
+(32, 16, 16, 'Có chương trình khuyến mãi gì không?', '2024-11-21', 0, './uploads/avatar/avatar5.jpg'),
+(33, 15, 16, 'Shop ship COD được không ạ?', '2024-11-23', 1, './uploads/avatar/avatar6.jpg'),
+(34, 14, 15, 'Sản phẩm này có size nào ạ?', '2024-11-24', 1, './uploads/avatar/avatar7.jpg'),
+(35, 12, 14, 'Chất lượng có tốt như mô tả không?', '2024-11-26', 1, './uploads/avatar/avatar9.jpg'),
+(36, 11, 13, 'Shop có bán buôn không?', '2024-11-27', 1, './uploads/avatar/avatar5.jpg'),
+(37, 1, 12, 'Sản phẩm này phải đặt trước hả shop?', '2024-11-28', 1, './uploads/avatar/avatar6.jpg'),
+(38, 2, 11, 'Có voucher giảm giá không shop?', '2024-11-29', 1, './uploads/avatar/avatar7.jpg'),
+(39, 2, 10, 'Thanh toán online có ưu đãi không?', '2024-11-30', 1, './uploads/avatar/avatar9.jpg'),
+(40, 1, 9, 'Sản phẩm có thơm không ạ?', '2024-12-01', 0, './uploads/avatar/avatar5.jpg'),
+(41, 2, 8, 'Xuất xứ từ đâu vậy shop?', '2024-12-02', 1, './uploads/avatar/avatar6.jpg'),
+(42, 3, 7, 'Mình đặt 2 cái có được giảm không?', '2024-12-03', 1, './uploads/avatar/avatar7.jpg'),
+(43, 4, 6, 'Giao hàng tận nhà không shop?', '2024-12-04', 1, './uploads/avatar/avatar9.jpg'),
+(44, 5, 5, 'Có mẫu mới hơn không ạ?', '2024-12-05', 1, './uploads/avatar/avatar5.jpg'),
+(45, 6, 4, 'Sản phẩm này hot không shop?', '2024-12-06', 1, './uploads/avatar/avatar6.jpg'),
+(46, 7, 3, 'Có thể đặt hàng qua Zalo không?', '2024-12-07', 1, './uploads/avatar/avatar7.jpg'),
+(47, 8, 2, 'Shop có showroom không ạ?', '2024-12-08', 1, './uploads/avatar/avatar9.jpg'),
+(48, 9, 1, 'Sản phẩm này phải đặt trước hả shop?', '2024-12-09', 0, './uploads/avatar/avatar5.jpg'),
+(49, 6, 2, 'Mình muốn mua số lượng nhiều được giảm bao nhiêu?', '2024-12-10', 1, './uploads/avatar/avatar6.jpg'),
+(50, 11, 8, 'Có chính sách bảo hành lâu dài không?', '2024-12-11', 1, './uploads/avatar/avatar7.jpg'),
+(51, 22, 16, 'Đổi trả trong bao lâu ạ?', '2024-12-12', 1, './uploads/avatar/avatar9.jpg'),
+(52, 8, 2, 'Sản phẩm an toàn không shop?', '2024-12-13', 1, './uploads/avatar/avatar5.jpg'),
+(53, 17, 15, 'Có giấy chứng nhận không?', '2024-12-14', 1, './uploads/avatar/avatar6.jpg'),
+(54, 13, 10, 'Mình ở tỉnh xa có ship không?', '2024-11-16', 1, './uploads/avatar/avatar7.jpg'),
+(55, 26, 5, 'Phí ship bao nhiêu vậy shop?', '2024-11-17', 1, './uploads/avatar/avatar9.jpg'),
+(56, 11, 8, 'Sản phẩm có bền không ạ?', '2024-11-18', 0, './uploads/avatar/avatar5.jpg'),
+(57, 11, 16, 'Dùng được bao lâu vậy shop?', '2024-11-19', 1, './uploads/avatar/avatar6.jpg'),
+(58, 12, 2, 'Có combo nào tiết kiệm hơn không?', '2024-11-20', 1, './uploads/avatar/avatar7.jpg'),
+(59, 12, 4, 'Mua nhiều có tặng quà không shop?', '2024-11-21', 1, './uploads/avatar/avatar9.jpg'),
+(60, 12, 6, 'Sản phẩm này phải đặt trước hả shop?', '2024-11-22', 1, './uploads/avatar/avatar5.jpg'),
+(61, 23, 8, 'Có ship nhanh trong ngày không?', '2024-11-23', 1, './uploads/avatar/avatar6.jpg'),
+(62, 16, 10, 'Giá có còn thương lượng không shop?', '2024-11-24', 1, './uploads/avatar/avatar7.jpg'),
+(63, 9, 12, 'Thanh toán khi nhận hàng được không?', '2024-11-25', 0, './uploads/avatar/avatar9.jpg'),
+(64, 3, 12, 'Sản phẩm có đúng chuẩn không?', '2024-11-26', 1, './uploads/avatar/avatar5.jpg'),
+(65, 27, 14, 'Shop có cam kết gì về chất lượng không?', '2024-11-27', 1, './uploads/avatar/avatar6.jpg'),
+(66, 22, 16, 'Có thể đặt trước và nhận sau không?', '2024-11-28', 1, './uploads/avatar/avatar7.jpg'),
+(67, 4, 12, 'Sản phẩm này phải đặt trước hả shop?', '2024-11-29', 1, './uploads/avatar/avatar9.jpg'),
+(68, 10, 8, 'Màu sắc có giống hình không?', '2024-11-30', 1, './uploads/avatar/avatar5.jpg'),
+(69, 18, 7, 'Có bị phai màu không ạ?', '2024-12-01', 1, './uploads/avatar/avatar6.jpg'),
+(70, 43, 7, 'Sản phẩm có mùi lạ không shop?', '2024-12-02', 0, './uploads/avatar/avatar7.jpg'),
+(71, 12, 6, 'Đóng gói có cẩn thận không?', '2024-12-03', 1, './uploads/avatar/avatar9.jpg'),
+(72, 7, 6, 'Shop nhận order số lượng lớn không?', '2024-12-04', 1, './uploads/avatar/avatar5.jpg'),
+(73, 31, 7, 'Có hỗ trợ in logo không ạ?', '2024-12-05', 1, './uploads/avatar/avatar6.jpg'),
+(74, 30, 7, 'Sản phẩm có nặng không shop?', '2024-12-06', 1, './uploads/avatar/avatar7.jpg'),
+(75, 8, 5, 'Kích thước chính xác là bao nhiêu?', '2024-12-07', 1, './uploads/avatar/avatar9.jpg'),
+(76, 32, 5, 'Có thể trả góp không shop?', '2024-12-08', 1, './uploads/avatar/avatar5.jpg'),
+(77, 34, 8, 'Sản phẩm này phải đặt trước hả shop?', '2024-12-09', 0, './uploads/avatar/avatar6.jpg'),
+(78, 34, 10, 'Shop có bán hàng qua livestream không?', '2024-12-10', 1, './uploads/avatar/avatar7.jpg'),
+(79, 34, 10, 'Có flash sale không ạ?', '2024-12-11', 1, './uploads/avatar/avatar9.jpg'),
+(80, 35, 13, 'Sản phẩm có nhiều người mua không?', '2024-12-12', 1, './uploads/avatar/avatar5.jpg'),
+(81, 36, 11, 'Review thế nào vậy shop?', '2024-12-13', 1, './uploads/avatar/avatar6.jpg'),
+(82, 12, 9, 'Có video demo không shop?', '2024-12-14', 1, './uploads/avatar/avatar7.jpg'),
+(83, 12, 8, 'Hướng dẫn sử dụng có dễ không?', '2024-11-15', 1, './uploads/avatar/avatar9.jpg'),
+(84, 12, 7, 'Sản phẩm có chống nước không?', '2024-11-16', 1, './uploads/avatar/avatar5.jpg'),
+(85, 8, 8, 'Có chịu nhiệt tốt không ạ?', '2024-11-17', 0, './uploads/avatar/avatar6.jpg'),
+(86, 8, 8, 'Shop có tư vấn tận tình không?', '2024-11-18', 1, './uploads/avatar/avatar7.jpg'),
+(87, 9, 7, 'Sản phẩm này phải đặt trước hả shop?', '2024-11-19', 1, './uploads/avatar/avatar9.jpg'),
+(88, 9, 2, 'Có thể mua làm quà tặng không?', '2024-11-20', 1, './uploads/avatar/avatar5.jpg'),
+(89, 10, 1, 'Shop có gói quà đẹp không?', '2024-11-21', 1, './uploads/avatar/avatar6.jpg'),
+(90, 11, 1, 'Giá có bao gồm thuế chưa ạ?', '2024-11-22', 1, './uploads/avatar/avatar7.jpg'),
+(91, 12, 2, 'Có xuất hóa đơn đỏ không shop?', '2024-11-23', 1, './uploads/avatar/avatar9.jpg'),
+(92, 13, 3, 'Sản phẩm có nhập khẩu không?', '2024-11-24', 1, './uploads/avatar/avatar5.jpg'),
+(93, 14, 3, 'Xuất xứ rõ ràng không shop?', '2024-11-25', 0, './uploads/avatar/avatar6.jpg'),
+(94, 15, 1, 'Có thể đổi size không ạ?', '2024-11-26', 1, './uploads/avatar/avatar7.jpg'),
+(95, 16, 9, 'Sản phẩm này phải đặt trước hả shop?', '2024-11-27', 1, './uploads/avatar/avatar9.jpg'),
+(96, 17, 11, 'Shop có chăm sóc khách hàng sau bán không?', '2024-11-28', 1, './uploads/avatar/avatar5.jpg'),
+(97, 18, 12, 'Có hotline tư vấn không ạ?', '2024-11-29', 1, './uploads/avatar/avatar6.jpg'),
+(98, 19, 14, 'Thời gian giao hàng bao lâu?', '2024-11-30', 1, './uploads/avatar/avatar7.jpg'),
+(99, 28, 17, 'Có đóng gói kín đáo không shop?', '2024-12-01', 1, './uploads/avatar/avatar9.jpg'),
+(100, 22, 9, 'Sản phẩm có dễ vỡ không ạ?', '2024-12-02', 1, './uploads/avatar/avatar5.jpg'),
+(101, 34, 2, 'Shop đóng gói chắc chắn chứ?', '2024-12-03', 1, './uploads/avatar/avatar6.jpg'),
+(102, 35, 8, 'Có bảo hành tại nhà không?', '2024-12-04', 0, './uploads/avatar/avatar7.jpg'),
+(103, 10, 6, 'Sản phẩm này phải đặt trước hả shop?', '2024-12-05', 1, './uploads/avatar/avatar9.jpg'),
+(104, 36, 4, 'Shop có giao hàng miễn phí không?', '2024-12-06', 1, './uploads/avatar/avatar5.jpg'),
+(105, 37, 7, 'Đơn từ bao nhiêu thì freeship?', '2024-12-07', 1, './uploads/avatar/avatar6.jpg'),
+(106, 38, 3, 'Có thể thanh toán chuyển khoản không?', '2024-12-08', 1, './uploads/avatar/avatar7.jpg'),
+(107, 39, 6, 'Shop nhận thẻ tín dụng không ạ?', '2024-12-09', 1, './uploads/avatar/avatar9.jpg'),
+(108, 40, 1, 'Sản phẩm có độc hại không shop?', '2024-12-10', 1, './uploads/avatar/avatar5.jpg'),
+(109, 41, 2, 'An toàn cho trẻ em không?', '2024-12-11', 1, './uploads/avatar/avatar6.jpg'),
+(110, 42, 8, 'Có khuyến mãi gì hấp dẫn không?', '2024-12-12', 0, './uploads/avatar/avatar7.jpg'),
+(111, 43, 15, 'Sản phẩm này phải đặt trước hả shop?', '2024-12-13', 1, './uploads/avatar/avatar9.jpg');
 
 -- --------------------------------------------------------
 
@@ -88,9 +189,11 @@ INSERT INTO `chi_tiet_don_hangs` (`id`, `don_hang_id`, `san_pham_id`, `don_gia`,
 (13, 14, 3, '3432432.00', 1, '3432432.00'),
 (14, 14, 4, '5000000.00', 1, '5000000.00'),
 (15, 14, 5, '4600000.00', 1, '4600000.00'),
-(16, 36, 1, '420000.00', 6, '2520000.00'),
+(16, 12, 1, '420000.00', 6, '2520000.00'),
 (17, 36, 3, '19500000.00', 1, '19500000.00'),
-(18, 58, 1, '420000.00', 3, '1260000.00');
+(18, 58, 1, '420000.00', 3, '1260000.00'),
+(19, 59, 6, '19000000.00', 1, '19000000.00'),
+(20, 60, 19, '23500000.00', 1, '23500000.00');
 
 -- --------------------------------------------------------
 
@@ -110,7 +213,9 @@ CREATE TABLE `chi_tiet_gio_hangs` (
 --
 
 INSERT INTO `chi_tiet_gio_hangs` (`id`, `gio_hang_id`, `san_pham_id`, `so_luong`) VALUES
-(15, 14, 12, 4);
+(15, 14, 12, 4),
+(16, 15, 1, 3),
+(17, 15, 8, 1);
 
 -- --------------------------------------------------------
 
@@ -148,10 +253,10 @@ CREATE TABLE `danh_mucs` (
 --
 
 INSERT INTO `danh_mucs` (`id`, `ten_danh_muc`, `mo_ta`) VALUES
-(4, 'Điện Thoại', 'Điện Thoại là sản phẩm rất được ưa chuộng để nghe, gọi, chơi game,chụp ảnh, quay video,... nhỏ gọn cầm tay, sạc nhanh, thích hợp cầm đi chơi mà không to hay cồng kềnh'),
-(5, 'Laptop', 'Laptop là các dòng máy tính màn hình và bàn phím, thích hợp làm việc'),
-(6, 'Tablet', 'Table là dòng bản phẩm giống điện thoại nhưng to hơn, thường dùng có kèm bút cảm ứng, rất thích hợp takenote, vẽ vời,...'),
-(10, 'Phụ Kiện', 'Các phụ kiện ăn theo sản phẩm như sạc, hub usb, tai nghe, ...');
+(1, 'Điện Thoại', 'Điện thoại là sản phẩm rất được ưa chuộng để nghe gọi, chơi game, chụp ảnh, quay video,... \r\nvới thiết kế nhỏ gọn, dễ cầm tay, sạc nhanh và phù hợp mang theo khi đi chơi mà không cồng kềnh.'),
+(2, 'Laptop', 'Laptop là các dòng máy tính có màn hình và bàn phím tích hợp, rất thích hợp cho công việc văn phòng, học tập, và các tác vụ chuyên môn. Với thiết kế gọn nhẹ, dễ di chuyển, laptop mang lại sự tiện lợi tối đa cho người dùng khi làm việc ở mọi nơ'),
+(3, 'Tablet', 'Tablet là thiết bị tương tự điện thoại nhưng có màn hình lớn hơn, thường đi kèm bút cảm ứng, rất phù hợp để ghi chú, vẽ vời và làm việc sáng tạo.\r\n'),
+(4, 'Phụ Kiện', 'Các phụ kiện đi kèm sản phẩm như sạc, hub USB, tai nghe,... giúp nâng cao trải nghiệm sử dụng, hỗ trợ kết nối và tiện ích cho các thiết bị điện tử.\r\n');
 
 -- --------------------------------------------------------
 
@@ -179,23 +284,25 @@ CREATE TABLE `don_hangs` (
 --
 
 INSERT INTO `don_hangs` (`id`, `ma_don_hang`, `tai_khoan_id`, `ten_nguoi_nhan`, `email_nguoi_nhan`, `sdt_nguoi_nhan`, `dia_chi_nguoi_nhan`, `ngay_dat`, `tong_tien`, `ghi_chu`, `phuong_thuc_thanh_toan_id`, `trang_thai_id`) VALUES
-(1, 'DH-123', 2, 'Nguyễn Hữu Trungg', 'huutrung123456@gmail.com', '012345678910', 'Nam Từ Liêm - Hà Nộii', '2025-12-01', '900000.00', 'Thanh toán tiền mặt hay chuyển khoảnnn', 1, 9),
-(2, 'DH-1234', 1, 'Nguyễn Hữu Trung', 'huutrung1234@gmail.com', '0123456788', 'Nam Từ Liêm - Hà Nộiiii', '2025-12-01', '100000.00', 'Thanh toán tiền mặt hay chuyển khoản', 1, 2),
-(3, 'DH-12345', 24, 'Nguyễn Hữu Trung 12345', 'huutrung12345@gmail.com', '0123456787', 'Nam Từ Liêm - Hà Nội', '2025-12-01', '800000.00', 'Giao hàng nhanh', 1, 3),
-(4, 'DH - 1', 23, 'Nguyễn T.Anhhh', 'tanh123@gmail.com', '0945353843', 'Nam Từ Liêm - Hà Nội', '2025-12-01', '500000.00', 'Giao hàng nhanh ship COD', 1, 5),
-(5, 'DH-1226', 18, 'theAnhDev', 'theanhdev324324@gmail.com', '0954654654', 'hn ntl', '2025-12-07', '3462432.00', '', 1, 1),
-(6, 'DH-4536', 18, 'theAnhDev', 'theanhdev324324@gmail.com', '0954654654', 'hn ntl', '2025-12-07', '10030000.00', 'Vui lòng ship COD', 1, 1),
-(7, 'DH-1721', 18, 'theAnhDev', 'theanhdev324324@gmail.com', '0954654654', 'hn ntl', '2025-12-07', '30000.00', 'Vui lòng ship COD', 1, 1),
-(8, 'DH-8756', 18, 'theAnhDev', 'theanhdev324324@gmail.com', '0954654654', 'hn ntl', '2025-12-07', '34354320.00', '34 củ \r\n:V', 2, 11),
-(9, 'DH-2990', 18, 'theAnhDev', 'theanhdev324324@gmail.com', '0954654654', 'hn ntl', '2025-12-07', '39030000.00', 'HHEHEHEHE\r\n', 1, 11),
-(10, 'DH-2812', 18, 'theAnhDev', 'theanhdev324324@gmail.com', '0954654654', 'hn ntl', '2025-12-07', '3462432.00', '', 1, 11),
-(11, 'DH-7759', 26, 'Nguyễn Hữu Trung', 'trung321@gmail.com', '0347892617', 'Hà Nội', '2025-12-07', '3462432.00', '', 1, 1),
-(12, 'DH-6191', 26, 'Nguyễn Hữu Trung', 'trung321@gmail.com', '0347892617', 'Hà Nội', '2025-12-07', '5030000.00', '', 1, 11),
-(13, 'DH-2077', 26, 'Nguyễn Hữu Trung', 'trung321@gmail.com', '0347892617', 'Hà Nội', '2025-12-07', '9030000.00', '', 1, 10),
-(14, 'DH-7013', 26, 'Nguyễn Hữu Trung', 'trung321@gmail.com', '0347892617', 'Hà Nội', '2025-12-07', '13062432.00', 'alo alo', 1, 1),
-(36, 'DH-5218', 18, 'theAnhDev', 'theanhdev324324@gmail.com', '0954654654', 'hn ntl', '2025-12-08', '22050000.00', '', 1, 1),
-(37, 'DH-203', 8, 'Nguyễn Thế Anh', 'anhh11@gmail.com', '095439650', 'Nam Từ Liêm - Hà Nội', '2025-12-31', '500000.00', 'SHIP COD', 4, 2),
-(58, 'DH-2230', 18, 'Nguyễn Thế Anh', 'theanh324324@gmail.com', '0954654654', 'Cầu Diễn - Hà Nội', '2025-12-10', '1290000.00', 'Hello', 1, 1);
+(1, 'DH-1', 2, 'Nguyễn Hữu Trungg', 'huutrung123456@gmail.com', '012345678910', 'Nam Từ Liêm - Hà Nộii', '2025-12-01', '900000.00', 'Thanh toán tiền mặt hay chuyển khoảnnn', 1, 9),
+(2, 'DH-2', 1, 'Nguyễn Hữu Trung', 'huutrung1234@gmail.com', '0123456788', 'Nam Từ Liêm - Hà Nộiiii', '2025-12-01', '100000.00', 'Thanh toán tiền mặt hay chuyển khoản', 1, 2),
+(3, 'DH-3', 6, 'Nguyễn Hữu Trung 12345', 'huutrung12345@gmail.com', '0123456787', 'Nam Từ Liêm - Hà Nội', '2025-12-01', '800000.00', 'Giao hàng nhanh', 1, 3),
+(4, 'DH-4', 7, 'Nguyễn T.Anhhh', 'tanh123@gmail.com', '0945353843', 'Nam Từ Liêm - Hà Nội', '2025-12-01', '500000.00', 'Giao hàng nhanh ship COD', 1, 5),
+(5, 'DH-5', 8, 'theAnhDev', 'theanhdev324324@gmail.com', '0954654654', 'hn ntl', '2025-12-07', '3462432.00', '', 1, 1),
+(6, 'DH-6', 12, 'theAnhDev', 'theanhdev324324@gmail.com', '0954654654', 'hn ntl', '2025-12-07', '10030000.00', 'Vui lòng ship COD', 1, 1),
+(7, 'DH-7', 2, 'theAnhDev', 'theanhdev324324@gmail.com', '0954654654', 'hn ntl', '2025-12-07', '30000.00', 'Vui lòng ship COD', 1, 1),
+(8, 'DH-8', 12, 'theAnhDev', 'theanhdev324324@gmail.com', '0954654654', 'hn ntl', '2025-12-07', '34354320.00', '34 củ \r\n:V', 2, 11),
+(9, 'DH-9', 12, 'theAnhDev', 'theanhdev324324@gmail.com', '0954654654', 'hn ntl', '2025-12-07', '39030000.00', 'HHEHEHEHE\r\n', 1, 11),
+(10, 'DH-10', 12, 'theAnhDev', 'theanhdev324324@gmail.com', '0954654654', 'hn ntl', '2025-12-07', '3462432.00', '', 1, 11),
+(11, 'DH-11', 15, 'Nguyễn Hữu Trung', 'trung321@gmail.com', '0347892617', 'Hà Nội', '2025-12-07', '3462432.00', '', 1, 1),
+(12, 'DH-12', 15, 'Nguyễn Hữu Trung', 'trung321@gmail.com', '0347892617', 'Hà Nội', '2025-12-07', '5030000.00', '', 1, 11),
+(13, 'DH-13', 15, 'Nguyễn Hữu Trung', 'trung321@gmail.com', '0347892617', 'Hà Nội', '2025-12-07', '9030000.00', '', 1, 10),
+(14, 'DH-14', 15, 'Nguyễn Hữu Trung', 'trung321@gmail.com', '0347892617', 'Hà Nội', '2025-12-07', '13062432.00', 'alo alo', 1, 1),
+(15, 'DH-15', 14, 'theAnhDev', 'theanhdev324324@gmail.com', '0954654654', 'hn ntl', '2025-12-08', '22050000.00', '', 1, 1),
+(16, 'DH-16', 1, 'Nguyễn Thế Anh', 'ahhh11@gmail.com', '093487543', 'Hà Nội', '2025-12-02', '200000.00', 'Ship COD', 1, 1),
+(17, 'DH-17', 13, 'Nguyễn Thế Anh', 'theanh324324@gmail.com', '0954654654', 'Cầu Diễn - Hà Nội', '2025-12-10', '1290000.00', 'Hello', 1, 1),
+(18, 'DH-18', 9, 'Đỗ Đình Đức', 'dodinhduc77@gmail.com', '0965765765', 'Cầu Giấy - Hà Nội', '2025-12-13', '19030000.00', 'Hello', 2, 11),
+(19, 'DH-19', 9, 'Đỗ Đình Đức', 'dodinhduc77@gmail.com', '0965765765', 'Cầu Giấy - Hà Nội', '2025-12-13', '23530000.00', 'Hello', 2, 1);
 
 -- --------------------------------------------------------
 
@@ -207,13 +314,6 @@ CREATE TABLE `gio_hangs` (
   `id` int NOT NULL,
   `tai_khoan_id` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `gio_hangs`
---
-
-INSERT INTO `gio_hangs` (`id`, `tai_khoan_id`) VALUES
-(14, 18);
 
 -- --------------------------------------------------------
 
@@ -238,7 +338,7 @@ INSERT INTO `hinh_anh_san_phams` (`id`, `san_pham_id`, `link_hinh_anh`) VALUES
 (4, 4, './uploads/1765165610-iphone-13-4-1-750x500.jpg'),
 (5, 5, './uploads/1765165880-iphone-13-1-2-750x500.jpg'),
 (6, 6, './uploads/1765194675-iphone-16-plus-trang-1-638639096584067146-750x500.jpg'),
-(7, 7, './uploads/product-7.jpg'),
+(7, 7, './uploads/1765691783-iphone-16e-128gb_4_.webp'),
 (8, 8, './uploads/1765194756-iphone-16-pro-titan-sa-mac-1-638638979065595000-750x500.jpg'),
 (9, 9, './uploads/1765194908-iphone-16-pro-max.webp'),
 (10, 10, './uploads/1765195041-iphone-16e-mohop-638798120629473642.jpg'),
@@ -250,11 +350,6 @@ INSERT INTO `hinh_anh_san_phams` (`id`, `san_pham_id`, `link_hinh_anh`) VALUES
 (18, 1, './uploads/1765151866-iphone-17-pro-max-cam-12-638947383232300582-750x500.jpg'),
 (19, 1, './uploads/1765151866-iphone-17-pro-max-cam-13-638947383223664403-750x500.jpg'),
 (20, 1, './uploads/1765151866-iphone-17-pro-max-cam-1-638947383255964450-750x500 (1).jpg'),
-(21, 26, './uploads/1764628535-instagram-1.jpg'),
-(22, 26, './uploads/1764628535-instagram-2.jpg'),
-(23, 26, './uploads/1764628535-instagram-3.jpg'),
-(24, 26, './uploads/1764628535-instagram-4.jpg'),
-(25, 26, './uploads/1764628535-instagram-5.jpg'),
 (37, 1, './uploads/1765207998-iphone-17-pro-max-cam-7-638947383167025902-750x500.jpg'),
 (38, 2, './uploads/1765152118-text_ng_n_2__7_61.webp'),
 (39, 2, './uploads/1765152118-laptop_acer_aspire_lite_14_al14-71m-52gq_-_2.webp'),
@@ -579,7 +674,28 @@ INSERT INTO `hinh_anh_san_phams` (`id`, `san_pham_id`, `link_hinh_anh`) VALUES
 (358, 43, './uploads/1765199456-de-sac-khong-day-aukey-magfusion-qi2-2-lc-mc111-1x-25w_8_.webp'),
 (359, 43, './uploads/1765199456-de-sac-khong-day-aukey-magfusion-qi2-2-lc-mc111-1x-25w_10_.png'),
 (360, 43, './uploads/1765199456-de-sac-khong-day-aukey-magfusion-qi2-2-lc-mc111-1x-25w_11_.webp'),
-(361, 43, './uploads/1765199456-group_647_-_2025-10-23t150139.291.webp');
+(361, 43, './uploads/1765199456-group_647_-_2025-10-23t150139.291.webp'),
+(364, 14, './uploads/1765692153-600_crop_iphone-17-pro-max-512gb-new-ll-a-thumb-didongmy.jpg'),
+(365, 7, './uploads/1765692282-iphone-16e-black-1-638798117516373571-750x500.jpg'),
+(366, 7, './uploads/1765692282-iphone-16e-black-2-638798117522039768-750x500.jpg'),
+(367, 7, './uploads/1765692282-iphone-16e-black-3-638798117528089375-750x500.jpg'),
+(368, 7, './uploads/1765692282-vi-vn-iphone-16e-thumbvideo.jpg'),
+(369, 26, './uploads/1765696911-11-12.jpg'),
+(370, 26, './uploads/1765696911-12.jpg'),
+(371, 26, './uploads/1765696911-34.jpg'),
+(372, 26, './uploads/1765696911-56.jpg'),
+(373, 26, './uploads/1765696911-78.jpg'),
+(374, 26, './uploads/1765696911-910.jpg'),
+(375, 27, './uploads/1765697336-op-lung-ip17.webp'),
+(376, 27, './uploads/1765697336-ol2.webp'),
+(377, 27, './uploads/1765697336-ol1.webp'),
+(378, 27, './uploads/1765697336-ol3.webp'),
+(379, 27, './uploads/1765697336-ol4.webp'),
+(380, 27, './uploads/1765697336-ol-5.webp'),
+(381, 28, './uploads/1765697556-op-m2.webp'),
+(382, 28, './uploads/1765697556-op-m3.webp'),
+(383, 28, './uploads/1765697556-op-m4.webp'),
+(384, 28, './uploads/1765697574-ol1.webp');
 
 -- --------------------------------------------------------
 
@@ -625,47 +741,49 @@ CREATE TABLE `san_phams` (
 --
 
 INSERT INTO `san_phams` (`id`, `ten_san_pham`, `gia_san_pham`, `gia_khuyen_mai`, `hinh_anh`, `so_luong`, `luot_xem`, `ngay_nhap`, `mo_ta`, `danh_muc_id`, `trang_thai`) VALUES
-(1, 'Iphone 17 Promax 256 GB', '430000.00', '420000.00', './uploads/1765203745-vi-vn-iphone-17-pro-max-1.jpg', 10, 10, '2024-12-07', 'Iphone 17 Promax với cấu hình siêu khủng, màn đẹp, pin trâu, camera sắc nét,...', 4, 1),
-(2, 'Laptop Acer Aspire Lite 14 AL14-71M-52GQ', '24000000.00', '23000000.00', './uploads/1765152155-laptop_acer_aspire_lite_14_al14-71m-52gq_-_3.png', 12, 22, '2025-12-07', 'Laptop Acer Aspire Lite 14 AL14-71M-52GQ là dòng laptop văn phòng đẹp', 5, 1),
-(3, 'iPad A16 Wifi 128GB 2025  Chính hãng Apple Việt Nam ', '22000000.00', '19500000.00', './uploads/1765152285-ipad-a16-11-inch_2__1.webp', 10, 10, '2025-12-07', 'iPad A16 Wifi 128GB 2025  Chính hãng Apple Việt Nam là dòng Ipad rất được ưa chuộng ở Việt Nam', 6, 1),
-(4, 'Phone 13 128GB ', '15000000.00', '12900000.00', './uploads/1765200446-iphone-13-1-2-750x500.jpg', 19, 8, '2025-12-08', 'iPhone 13 128GB \nMột chiếc iPhone “ngon-bổ-rẻ” nhất định phải có trong năm 2025 nếu bạn muốn máy chính hãng Apple giá hợp lý!', 4, 1),
-(5, 'iPhone 13 256GB', '6000000.00', '4600000.00', './uploads/1765200476-iphone-13-4-1-750x500.jpg', 16, 9, '2025-12-08', 'iPhone 13 256GB\nMột chiếc iPhone “ngon-bổ-rẻ” nhất định phải có trong năm 2025 nếu bạn muốn máy chính hãng Apple giá hợp lý!', 4, 1),
-(6, 'Điện thoại iPhone 16 Plus 128GB', '23000000.00', '19000000.00', './uploads/1765194623-iphone-16-plus-trang-1-638639096584067146-750x500.jpg', 50, 21, '2025-12-08', 'Siêu phẩm iPhone 16 Plus – màn lớn, camera đỉnh cao, AI đột phá, hoàn hảo cho năm 2025 với giá trị vượt trội từ Apple!', 4, 1),
-(7, 'Iphone 16e 256GB', '8000000.00', '5500000.00', 'assets/img/product/product-7.jpg', 70, 43, '2025-11-29', '\niPhone 16e 256gb– \"người anh em giá rẻ\" của dòng iPhone 16, mang Apple Intelligence vào tầm tay với giá khởi điểm 599 USD, lựa chọn thông minh cho năm 2025 nếu bạn muốn iPhone hiện đại mà không tốn kém!', 9, 1),
-(8, 'Điện thoại iPhone 16 Pro 128GB', '19800000.00', '16999999.00', './uploads/1765194859-iphone-16-pro-titan-sa-mac-1-638638979065595000-750x500.jpg', 56, 88, '2025-12-08', 'iPhone 16 Pro 128GB – Mô tả ngắn gọn:\r\n\r\nMàn hình Super Retina XDR OLED 6.3 inch, độ phân giải 2622 x 1206 (460 ppi), Dynamic Island, ProMotion 120Hz, sáng tối đa 2000 nits, hỗ trợ HDR10, Always-On Display\r\nChip A18 Pro siêu mạnh với CPU 6 lõi, GPU 6 lõi, Neural Engine 16 lõi – tích hợp Apple Intelligence cho AI thông minh, bảo mật cao, hỗ trợ Wi-Fi 7\r\nHệ thống camera ba 48MP Fusion chính (OIS, zoom quang 5x) + 48MP siêu rộng (120°) + 12MP tele (5x), camera trước 12MP; hỗ trợ Photonic Engine, Deep Fusion, Smart HDR 5, Night mode, quay video 4K 120fps Dolby Vision, Spatial video\r\nThiết kế titanium cao cấp, Ceramic Shield thế hệ mới (gấp 2 lần bền), chống nước/bụi IP68 (sâu 6m/30 phút); nút Camera Control chuyên dụng và Action Button tùy chỉnh\r\nPin 3582mAh \"khủng\" lên đến 27 giờ xem video, sạc nhanh 50% trong 30 phút (20W+), sạc không dây MagSafe 25W, USB-C\r\nDung lượng 128GB phù hợp cho người dùng cơ bản đến nâng cao, hỗ trợ eSIM, 5G, Face ID, iOS 18 mượt mà (cập nhật lên iOS 19/20)\r\n\r\nSiêu phẩm iPhone 16 Pro – camera chuyên nghiệp, hiệu năng đỉnh cao, AI đột phá, lựa chọn hoàn hảo cho năm 2025 với thiết kế titanium sang trọng từ Apple!', 4, 1),
-(9, 'Điện thoại iPhone 16 Pro Max 256GB', '26000000.00', '21499000.00', './uploads/1765194984-iphone-16-pro-max.webp', 26, 10, '2025-12-05', 'iPhone 16 Pro Max 256GB – Mô tả ngắn gọn (2025):\r\n\r\nMàn hình lớn nhất: Super Retina XDR OLED 6.9 inch, độ phân giải 2868 x 1320 (460 ppi), ProMotion 120Hz mượt như lụa, Always-On Display, sáng tối đa 2000 nits (ngoài trời rõ nét), Ceramic Shield thế hệ mới bền gấp đôi\r\nChip A18 Pro khủng nhất Apple hiện tại: CPU 6 lõi nhanh hơn 20%, GPU 6 lõi mạnh hơn 20% so với A17 Pro, Neural Engine 16 lõi – tối ưu Apple Intelligence (AI viết văn bản, tạo ảnh, Siri thông minh hơn…)\r\nCamera “Pro” thực thụ:\r\n• Chính 48MP Fusion (cảm biến lớn hơn, OIS thế hệ 2)\r\n• Siêu rộng 48MP (120°)\r\n• Tele 12MP zoom quang 5x (120mm)\r\n• Quay video 4K 120fps Dolby Vision, ProRes, Spatial Video cho Vision Pro\r\n• Nút Camera Control cảm ứng lực + cảm biến chạm – chụp ảnh siêu nhanh và chuyên nghiệp\r\nPin “trâu” nhất dòng iPhone từ trước đến nay: ~4680 mAh\r\n• Thời lượng thực tế: 29–33 giờ xem video, dùng nặng cả ngày vẫn dư 20–30%\r\n• Sạc nhanh 45W (50% trong ~30 phút), MagSafe 25W\r\nThiết kế titanium cao cấp, nhẹ và bền hơn thép không gỉ cũ, chống nước IP68 (6m/30 phút), màu mới Desert Titanium cực đẹp\r\nDung lượng 256GB – lý tưởng cho người quay 4K ProRes, chụp RAW, dùng lâu dài 4–5 năm không lo hết bộ nhớ\r\niOS 18 + cập nhật phần mềm ít nhất tới 2030–2031\r\n\r\nKết luận một câu: iPhone 16 Pro Max 256GB hiện là chiếc iPhone “đỉnh nhất” Apple từng làm – màn to, pin khủng, camera chuyên nghiệp, AI thông minh và đáng tiền nhất để dùng dài hạn trong năm 2025–2030!Fast', 4, 1),
-(10, 'Điện thoại iPhone 16e 128GB', '21000000.00', '21599000.00', './uploads/1765195105-iphone-16e-white-1-638756438035819151-750x500.jpg', 50, 20, '2025-12-08', '\niPhone 16e 128GB – \"người anh em giá rẻ\" của dòng iPhone 16, mang Apple Intelligence vào tầm tay với giá khởi điểm 599 USD, lựa chọn thông minh cho năm 2025 nếu bạn muốn iPhone hiện đại mà không tốn kém!', 4, 1),
-(11, 'iPhone 14 Pro 128GB  Chính hãng VNA', '27000000.00', '24999999.00', './uploads/1765195368-x_m_16.webp', 178, 0, '2025-12-08', 'iPhone 14 Pro 128GB chính hãng VN/A – flagship \"huyền thoại\" với camera đỉnh cao và Dynamic Island đầu tiên, vẫn \"chiến\" tốt năm 2025, lựa chọn tiết kiệm so với dòng 16 nếu bạn muốn giá trị lâu dài từ Apple!', 4, 1),
-(12, 'iPhone 15 128GB  Chính hãng VNA', '23000000.00', '21499000.00', './uploads/1765195481-iphone-15-plus_1__1.webp', 12, 0, '2025-12-01', 'iPhone 15 128GB chính hãng VN/A – flagship \"cân bằng\" với camera 48MP sắc nét, Dynamic Island đầu tiên cho dòng thường, USB-C và hiệu năng \"trâu\" – vẫn đáng mua năm 2025 nếu bạn muốn iPhone hiện đại giá \"mềm\" hơn dòng 16!', 4, 1),
-(13, 'iPhone 17 256GB  Chính hãng', '34000000.00', '31500000.00', './uploads/1765195627-iphone_17_256gb-3_2.webp', 12, 0, '2025-12-09', 'iPhone 17 256GB chính hãng – flagship \"tiết kiệm\" với storage gấp đôi, camera sắc nét, AI đột phá và pin bền bỉ – lựa chọn hoàn hảo năm 2025 nếu bạn muốn iPhone hiện đại giá $799 (khoảng 20 triệu VND) mà không cần Pro!', 4, 1),
-(14, 'Iphone 17 512GB', '500000.00', '400000.00', NULL, 12, 50, '2025-12-02', 'Đẹp', 1, 1),
-(15, 'iPhone Air 256GB  Chính hãng', '24000000.00', '22999999.00', './uploads/1765195746-iphone_air-3_2.webp', 432, 0, '2025-12-08', 'iPhone Air 256GB chính hãng – \"siêu mỏng, siêu nhẹ\" thay thế dòng Plus, với thiết kế titanium đột phá và hiệu năng Pro – lựa chọn \"bay bổng\" năm 2025 cho ai muốn iPhone hiện đại giá $999 mà vẫn đỉnh cao từ Apple!1,3 giâyFast', 4, 1),
-(16, 'iPad Air 5 10.9 inch (2022) WiFi 64GB Chính hãng Apple Việt Nam', '19000000.00', '17500000.00', './uploads/1765195976-5_158_3.webp', 123, 0, '2025-12-02', 'iPad Air 5 10.9\" WiFi 64GB chính hãng – \"Air\" thực thụ với thiết kế mỏng nhẹ, chip A15 \"trâu\" và màn đẹp, vẫn đáng mua năm 2025 nếu bạn cần iPad giá rẻ cho học tập/giải trí cơ bản từ Apple!', 6, 1),
-(17, 'iPad Air 6 M2 13 inch Wifi 128GB I Chính hãng Apple Việt Nam', '21000000.00', '18500000.00', './uploads/1765196105-ipad-air-6-m2-13-inch.webp', 132, 0, '2025-12-08', 'iPad Air 6 M2 13\" WiFi 128GB chính hãng – \"siêu phẩm mỏng nhẹ\" với màn lớn, chip M2 \"trâu\" và AI thông minh, vẫn đáng mua năm 2025 cho sáng tạo/học tập/giải trí từ Apple, dù có tin đồn M3 sắp ra!', 6, 1),
-(18, 'iPad Air 11 inch M3 Wifi 128GB 2025  Chính hãng Apple Việt Nam', '25000000.00', '23999999.00', './uploads/1765196208-ipad-air-11-wifi-1.webp', 10, 0, '2025-12-03', '\niPad Air 11\" M3 WiFi 128GB chính hãng – \"siêu phẩm mỏng nhẹ\" với chip M3 \"khủng\" và AI thông minh, đáng mua cuối 2025 cho sáng tạo/học tập/giải trí từ Apple, giá khởi điểm 599 USD!', 6, 1),
-(19, 'iPad Pro chip M5 11 inch Wifi 256GB  Chính hãng Apple Việt Nam', '27000000.00', '23500000.00', './uploads/1765196384-ipad-pro-m5.webp', 23, 0, '2025-12-08', 'Điện thoại iPhone 13 128GB......... mô tả sản phẩm ngắniPhone 13 128GB – Mô tả ngắn gọn:\n\nMàn hình Super Retina XDR OLED 6.1 inch, sáng hơn 28%, độ phân giải 2532 x 1170\nChip A15 Bionic siêu mạnh, nhanh hơn 50% so với đối thủ\nHệ thống camera kép 12MP (góc rộng + siêu rộng), chế độ Cinematic Mode quay video xóa phông 1080p, Night Mode, Photographic Styles\nThiết kế bền bỉ với Ceramic Shield mặt trước, chống nước IP68\nPin trâu hơn đáng kể so với iPhone 12 (dùng cả ngày thoải mái)\nHỗ trợ 5G, Face ID, iOS mượt mà (hiện tại lên được iOS 18/19)\nDung lượng 128GB phù hợp cho người dùng cơ bản đến trung bình\n\nMột chiếc iPhone “ngon-bổ-rẻ” nhất định phải có trong năm 2025 nếu bạn muốn máy chính hãng Apple giá hợp lý!Điện thoại iPhone 16 Plus 128GB moo ta san phamiPhone 16 Plus 128GB – Mô tả ngắn gọn:\n\nMàn hình Super Retina XDR OLED 6.7 inch, độ phân giải 2796 x 1290 (460 ppi), Dynamic Island, sáng tối đa 2000 nits, hỗ trợ HDR và True Tone\nChip A18 mạnh mẽ với CPU 6 lõi, GPU 5 lõi, Neural Engine 16 lõi – tích hợp Apple Intelligence cho AI thông minh, bảo mật cao\nHệ thống camera kép 48MP Fusion chính (OIS, zoom quang 2x) + 12MP siêu rộng (120°), camera trước 12MP; hỗ trợ Photonic Engine, Deep Fusion, Smart HDR 5, Night mode, quay video 4K Dolby Vision, Spatial photos\nThiết kế nhôm cao cấp, Ceramic Shield chống xước, kính màu sau, chống nước/bụi IP68 (sâu 6m/30 phút); nút Action tùy chỉnh và Camera Control mới\nPin \"khủng\" lên đến 27 giờ xem video, sạc nhanh 50% trong 30 phút (20W+), sạc không dây MagSafe 25W, USB-C\nDung lượng 128GB lý tưởng cho nhu cầu hàng ngày, hỗ trợ eSIM, 5G, Face ID, iOS 18 mượt mà (cập nhật lâu dài)\n\nSiêu phẩm iPhone 16 Plus – màn lớn, camera đỉnh cao, AI đột phá, hoàn hảo cho năm 2025 với giá trị vượt trội từ Apple!1,7 giâyFastĐiện thoại iPhone 16 Pro 128GBiPhone 16 Pro 128GB – Mô tả ngắn gọn:\n\nMàn hình Super Retina XDR OLED 6.3 inch, độ phân giải 2622 x 1206 (460 ppi), Dynamic Island, ProMotion 120Hz, sáng tối đa 2000 nits, hỗ trợ HDR10, Always-On Display\nChip A18 Pro siêu mạnh với CPU 6 lõi, GPU 6 lõi, Neural Engine 16 lõi – tích hợp Apple Intelligence cho AI thông minh, bảo mật cao, hỗ trợ Wi-Fi 7\nHệ thống camera ba 48MP Fusion chính (OIS, zoom quang 5x) + 48MP siêu rộng (120°) + 12MP tele (5x), camera trước 12MP; hỗ trợ Photonic Engine, Deep Fusion, Smart HDR 5, Night mode, quay video 4K 120fps Dolby Vision, Spatial video\nThiết kế titanium cao cấp, Ceramic Shield thế hệ mới (gấp 2 lần bền), chống nước/bụi IP68 (sâu 6m/30 phút); nút Camera Control chuyên dụng và Action Button tùy chỉnh\nPin 3582mAh \"khủng\" lên đến 27 giờ xem video, sạc nhanh 50% trong 30 phút (20W+), sạc không dây MagSafe 25W, USB-C\nDung lượng 128GB phù hợp cho người dùng cơ bản đến nâng cao, hỗ trợ eSIM, 5G, Face ID, iOS 18 mượt mà (cập nhật lên iOS 19/20)\n\nSiêu phẩm iPhone 16 Pro – camera chuyên nghiệp, hiệu năng đỉnh cao, AI đột phá, lựa chọn hoàn hảo cho năm 2025 với thiết kế titanium sang trọng từ Apple!1,3 giâyFastSo sánh iPhone 16 Pro với 15 ProSo sánh iPhone 16 Pro và iPhone 15 Pro (128GB)\nDưới đây là bảng so sánh chi tiết các thông số chính giữa iPhone 16 Pro và iPhone 15 Pro, dựa trên dữ liệu từ Apple và các nguồn đánh giá uy tín. Cả hai đều là flagship cao cấp của Apple, nhưng iPhone 16 Pro mang đến những nâng cấp tinh tế về kích thước, camera, hiệu năng và pin, trong khi iPhone 15 Pro vẫn là lựa chọn tiết kiệm hơn với hiệu suất gần tương đương.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTiêu chíiPhone 16 ProiPhone 15 ProSự khác biệt chínhThiết kế & Kích thước- Chất liệu: Titanium\n- Kích thước: 149.6 x 71.5 x 8.25 mm, nặng 199g\n- Màu: Black Titanium, White Titanium, Natural Titanium, Desert Titanium\n- Nút mới: Camera Control (chuyên dụng cho camera), Action Button- Chất liệu: Titanium\n- Kích thước: 146.6 x 70.6 x 8.25 mm, nặng 187g\n- Màu: Black Titanium, White Titanium, Blue Titanium, Natural Titanium\n- Nút: Action Button16 Pro lớn hơn nhẹ (dễ cầm hơn cho một số người), nặng hơn 12g, thêm nút Camera Control tiện lợi cho nhiếp ảnh. Ceramic Shield thế hệ mới bền hơn.Màn hình- 6.3 inch Super Retina XDR OLED\n- ĐộBị gián đoạnĐiện thoại iPhone 16 Pro Max 256GBiPhone 16 Pro Max 256GB – Mô tả ngắn gọn (2025):\n\nMàn hình lớn nhất: Super Retina XDR OLED 6.9 inch, độ phân giải 2868 x 1320 (460 ppi), ProMotion 120Hz mượt như lụa, Always-On Display, sáng tối đa 2000 nits (ngoài trời rõ nét), Ceramic Shield thế hệ mới bền gấp đôi\nChip A18 Pro khủng nhất Apple hiện tại: CPU 6 lõi nhanh hơn 20%, GPU 6 lõi mạnh hơn 20% so với A17 Pro, Neural Engine 16 lõi – tối ưu Apple Intelligence (AI viết văn bản, tạo ảnh, Siri thông minh hơn…)\nCamera “Pro” thực thụ:\n• Chính 48MP Fusion (cảm biến lớn hơn, OIS thế hệ 2)\n• Siêu rộng 48MP (120°)\n• Tele 12MP zoom quang 5x (120mm)\n• Quay video 4K 120fps Dolby Vision, ProRes, Spatial Video cho Vision Pro\n• Nút Camera Control cảm ứng lực + cảm biến chạm – chụp ảnh siêu nhanh và chuyên nghiệp\nPin “trâu” nhất dòng iPhone từ trước đến nay: ~4680 mAh\n• Thời lượng thực tế: 29–33 giờ xem video, dùng nặng cả ngày vẫn dư 20–30%\n• Sạc nhanh 45W (50% trong ~30 phút), MagSafe 25W\nThiết kế titanium cao cấp, nhẹ và bền hơn thép không gỉ cũ, chống nước IP68 (6m/30 phút), màu mới Desert Titanium cực đẹp\nDung lượng 256GB – lý tưởng cho người quay 4K ProRes, chụp RAW, dùng lâu dài 4–5 năm không lo hết bộ nhớ\niOS 18 + cập nhật phần mềm ít nhất tới 2030–2031\n\nKết luận một câu: iPhone 16 Pro Max 256GB hiện là chiếc iPhone “đỉnh nhất” Apple từng làm – màn to, pin khủng, camera chuyên nghiệp, AI thông minh và đáng tiền nhất để dùng dài hạn trong năm 2025–2030!FastĐiện thoại iPhone 16e 128GBiPhone 16e 128GB – Mô tả ngắn gọn (2025):\n\nMàn hình Super Retina XDR OLED 6.1 inch, độ phân giải 2532 x 1170 (457 ppi), notch Face ID cổ điển (không Dynamic Island), sáng tối đa 1200 nits, hỗ trợ HDR, True Tone, Ceramic Shield chống xước\nChip A18 (phiên bản tiết kiệm) với CPU 6 lõi, GPU 4 lõi, Neural Engine 16 lõi – hỗ trợ Apple Intelligence (AI thông minh như viết văn bản, tạo ảnh, Siri nâng cao), hiệu năng mạnh mẽ cho đa nhiệm và game\nHệ thống camera đơn 48MP Fusion chính (OIS, zoom quang 2x tích hợp), camera trước 12MP TrueDepth; hỗ trợ Night mode, Portrait mode, Photographic Styles, quay video 4K Dolby Vision 60fps\nThiết kế nhôm aluminum cao cấp, mỏng 7.8mm, nặng 167g, màu Black/White; nút Action tùy chỉnh, chống nước/bụi IP68 (sâu 6m/30 phút), modem Apple C1 đầu tiên cho kết nối 5G sub-6GHz ổn định\nPin 4005mAh \"trâu\" lên đến 26 giờ xem video (dài hơn 12 giờ so với iPhone SE cũ), sạc nhanh 20W (50% trong 30 phút), sạc không dây MagSafe 15W, USB-C\nDung lượng 128GB phù hợp cho người dùng cơ bản, hỗ trợ eSIM, Face ID, iOS 18.3 (cập nhật lên iOS 26+), kết nối vệ tinh khẩn cấp\n\niPhone 16e 128GB – \"người anh em giá rẻ\" của dòng iPhone 16, mang Apple Intelligence vào tầm tay với giá khởi điểm 599 USD, lựa chọn thông minh cho năm 2025 nếu bạn muốn iPhone hiện đại mà không tốn kém!1,6 giâyFastiPhone 14 Pro 128GB Chính hãng VNAiPhone 14 Pro 128GB Chính hãng VN/A – Mô tả ngắn gọn (2025):\n\nMàn hình Super Retina XDR OLED 6.1 inch, độ phân giải 2556 x 1179 (460 ppi), ProMotion 120Hz mượt mà, Always-On Display, Dynamic Island thông minh, sáng tối đa 2000 nits, Ceramic Shield bền bỉ\nChip A16 Bionic mạnh mẽ với CPU 6 lõi, GPU 5 lõi, Neural Engine 16 lõi – hiệu năng đỉnh cao cho game nặng, chỉnh sửa video 4K, hỗ trợ iOS 18+ (cập nhật đến iOS 26+)\nHệ thống camera ba \"Pro\": 48MP chính (OIS, cảm biến lớn hơn), 12MP siêu rộng (120°), 12MP tele zoom quang 3x; camera trước 12MP; Night mode, Cinematic 4K HDR, Photonic Engine, quay ProRes/Log\nThiết kế thép không gỉ cao cấp, mỏng 7.85mm, nặng 206g, màu Space Black/Silver/Gold/Deep Purple; chống nước/bụi IP68 (sâu 6m/30 phút), Lightning port, nút Action tùy chỉnh\nPin 3200mAh dùng thoải mái 20–23 giờ xem video, sạc nhanh 50% trong 30 phút (20W), sạc không dây MagSafe 15W\nDung lượng 128GB phù hợp cho người dùng trung bình, hỗ trợ 5G, Face ID, Emergency SOS via satellite, Crash Detection, eSIM + SIM vật lý (VN/A)\nGiá chính hãng VN/A hiện tại khoảng 22–25 triệu VND (tùy cửa hàng như Di Động Việt, CellphoneS), bảo hành 12 tháng Apple\n\niPhone 14 Pro 128GB chính hãng VN/A – flagship \"huyền thoại\" với camera đỉnh cao và Dynamic Island đầu tiên, vẫn \"chiến\" tốt năm 2025, lựa chọn tiết kiệm so với dòng 16 nếu bạn muốn giá trị lâu dài từ Apple!1,9 giâyFastiPhone 15 128GB Chính hãng VNAiPhone 15 128GB Chính hãng VN/A – Mô tả ngắn gọn (2025):\n\nMàn hình Super Retina XDR OLED 6.1 inch, độ phân giải 2556 x 1179 (460 ppi), Dynamic Island thông minh, sáng tối đa 2000 nits, hỗ trợ HDR10, Dolby Vision, Ceramic Shield bền bỉ\nChip A16 Bionic mạnh mẽ với CPU 6 lõi, GPU 5 lõi, Neural Engine 16 lõi – hiệu năng vượt trội cho game nặng, chỉnh sửa video, hỗ trợ iOS 18+ (cập nhật đến iOS 26+)\nHệ thống camera kép: 48MP chính (OIS, zoom quang 2x), 12MP siêu rộng (120°); camera trước 12MP; Night mode, Portrait, Cinematic 4K HDR, Smart HDR 5, quay video 4K 60fps Dolby Vision\nThiết kế nhôm aluminum cao cấp, mỏng 7.8mm, nặng 171g, màu Black/Blue/Green/Yellow/Pink; chống nước/bụi IP68 (sâu 6m/30 phút), USB-C tiện lợi, nút Action tùy chỉnh\nPin 3349mAh dùng thoải mái 20–23 giờ xem video, sạc nhanh 50% trong 30 phút (20W), sạc không dây MagSafe 15W\nDung lượng 128GB phù hợp cho người dùng trung bình, hỗ trợ 5G, Face ID, Emergency SOS via satellite, Crash Detection, eSIM + SIM vật lý (VN/A)\nGiá chính hãng VN/A hiện tại khoảng 15.8–16.9 triệu VND (tùy cửa hàng như Di Động Việt, CellphoneS, Hoàng Hà Mobile), bảo hành 12 tháng Apple\n\niPhone 15 128GB chính hãng VN/A – flagship \"cân bằng\" với camera 48MP sắc nét, Dynamic Island đầu tiên cho dòng thường, USB-C và hiệu năng \"trâu\" – vẫn đáng mua năm 2025 nếu bạn muốn iPhone hiện đại giá \"mềm\" hơn dòng 16!2,1 giâyFastiPhone 17 256GB Chính hãngiPhone 17 256GB Chính hãng – Mô tả ngắn gọn (2025):\n\nMàn hình Super Retina XDR OLED 6.3 inch, độ phân giải 2622 x 1206 (460 ppi), Dynamic Island thông minh, sáng tối đa 2000 nits, hỗ trợ HDR10, Dolby Vision, Always-On Display, Ceramic Shield thế hệ mới bền hơn\nChip A19 mạnh mẽ với CPU 6 lõi, GPU 5 lõi, Neural Engine 16 lõi – hiệu năng vượt trội cho game nặng, AI Apple Intelligence nâng cao (Live Translation, tạo ảnh, Siri siêu thông minh), hỗ trợ iOS 26 (cập nhật đến iOS 34+)\nHệ thống camera kép: 48MP Fusion chính (OIS, zoom quang 2x), 12MP siêu rộng (120°); camera trước 12MP TrueDepth nâng cấp Center Stage; Night mode, Portrait, Cinematic 4K HDR 60fps, Smart HDR 5, Photonic Engine\nThiết kế nhôm aluminum cao cấp, mỏng 8mm, nặng 177g, màu Lavender/Mist Blue/Sage/Black/White; chống nước/bụi IP68 (sâu 6m/30 phút), USB-C, nút Action tùy chỉnh\nPin 3692mAh \"trâu\" lên đến 26 giờ xem video (cải thiện 10% so với iPhone 16), sạc nhanh 50% trong 30 phút (25W), sạc không dây MagSafe 25W\nDung lượng 256GB (base storage mới, gấp đôi iPhone 16) lý tưởng cho người dùng trung bình đến nặng, hỗ trợ 5G sub-6GHz, Face ID, Emergency SOS via satellite, Crash Detection, eSIM toàn cầu (VN/A)\nGiá chính hãng VN/A hiện tại khoảng 22–24 triệu VND (tùy cửa hàng như FPT Shop, The Gioi Di Dong), bảo hành 12 tháng Apple; ra mắt 19/9/2025\n\niPhone 17 256GB chính hãng – flagship \"tiết kiệm\" với storage gấp đôi, camera sắc nét, AI đột phá và pin bền bỉ – lựa chọn hoàn hảo năm 2025 nếu bạn muốn iPhone hiện đại giá $799 (khoảng 20 triệu VND) mà không cần Pro!1,6 giâyFastiPhone Air 256GB Chính hãngiPhone Air 256GB Chính hãng – Mô tả ngắn gọn (2025):\n\nMàn hình Super Retina XDR OLED 6.5 inch, độ phân giải 2736 x 1260 (460 ppi), Dynamic Island thông minh, ProMotion 120Hz mượt mà, Always-On Display, sáng tối đa 2000 nits, Ceramic Shield 2 thế hệ mới (bền gấp đôi, chống phản chiếu)\nChip A19 Pro mạnh mẽ với CPU 6 lõi, GPU 5 lõi, Neural Engine 16 lõi – tối ưu Apple Intelligence (AI tạo ảnh, dịch live, Siri nâng cao), hỗ trợ iOS 26 (cập nhật đến iOS 34+)\nHệ thống camera đơn \"Air\": 48MP Fusion chính (OIS, zoom quang 2x, cảm biến lớn); camera trước 12MP Center Stage nâng cấp; Night mode, Portrait, Cinematic 4K HDR 60fps, Smart HDR 5, Photonic Engine\nThiết kế titanium mỏng nhất từ trước (5.6mm, nặng chỉ 165g – nhẹ hơn iPhone 16 Plus 30%), màu Sky Blue/Light Gold/Cloud White/Space Black; chống nước/bụi IP68 (sâu 6m/30 phút), eSIM-only toàn cầu, USB-C, nút Action tùy chỉnh\nPin 3149mAh \"trâu\" lên đến 27 giờ xem video (cải thiện 15% so với thế hệ trước), sạc nhanh 50% trong 30 phút (25W), sạc không dây MagSafe 25W\nDung lượng 256GB (base mới, lý tưởng cho người dùng nặng như quay 4K, ảnh RAW), hỗ trợ 5G sub-6GHz/mmWave, Face ID, Emergency SOS via satellite, Crash Detection, modem C1X tự thiết kế\nGiá chính hãng VN/A hiện tại khoảng 24–26 triệu VND (tùy cửa hàng như FPT Shop, The Gioi Di Dong), bảo hành 12 tháng Apple; ra mắt 19/9/2025, model A3517 (International)\n\niPhone Air 256GB chính hãng – \"siêu mỏng, siêu nhẹ\" thay thế dòng Plus, với thiết kế titanium đột phá và hiệu năng Pro – lựa chọn \"bay bổng\" năm 2025 cho ai muốn iPhone hiện đại giá $999 mà vẫn đỉnh cao từ Apple!1,3 giâyFastiPad Air 5 10.9 inch (2022) WIFI 64GB I Chính hãng Apple Việt NamiPad Air 5 10.9 inch (2022) WiFi 64GB Chính hãng Apple Việt Nam – Mô tả ngắn gọn (2025):\n\nMàn hình Liquid Retina IPS 10.9 inch, độ phân giải 2360 x 1640 (264 ppi), True Tone, P3 wide color, sáng tối đa 500 nits, chống phản chiếu, hỗ trợ Apple Pencil (thế hệ 2) và Magic Keyboard\nChip A15 Bionic (5 lõi CPU, 4 lõi GPU, Neural Engine 16 lõi) – hiệu năng mạnh mẽ cho chỉnh sửa video 4K, game nặng, đa nhiệm mượt mà, hỗ trợ iPadOS 18+ (cập nhật đến iPadOS 26+)\nCamera sau 12MP (góc rộng, ƒ/1.8, 4K video 60fps, Center Stage), camera trước 12MP Ultra Wide (landscape-oriented, Center Stage tự động); hỗ trợ Smart HDR 3, Night mode\nThiết kế nhôm aluminum cao cấp, mỏng 6.1mm, nặng 461g, màu Space Gray/Blue/Purple/Starlight; chống nước/bụi IP0 (không chính thức), Touch ID trong nút nguồn, USB-C (sạc nhanh 20W)\nPin 28.6Wh dùng thoải mái 10 giờ web/video, sạc đầy ~2 giờ (20W adapter)\nDung lượng 64GB cơ bản (phù hợp người dùng nhẹ, lưu ảnh/video cơ bản), WiFi 6 (802.11ax), Bluetooth 5.0, eSIM không hỗ trợ (chỉ WiFi), không 5G\nGiá chính hãng VN/A hiện tại khoảng 10.5–11.5 triệu VND (tùy cửa hàng như FPT Shop, The Gioi Di Dong, CellphoneS), bảo hành 12 tháng Apple\n\niPad Air 5 10.9\" WiFi 64GB chính hãng – \"Air\" thực thụ với thiết kế mỏng nhẹ, chip A15 \"trâu\" và màn đẹp, vẫn đáng mua năm 2025 nếu bạn cần iPad giá rẻ cho học tập/giải trí cơ bản từ Apple!1 / 21,5 giâyiPad Air 6 M2 13 inch Wifi 128GB I Chính hãng Apple Việt NamiPad Air 6 M2 13 inch WiFi 128GB Chính hãng Apple Việt Nam – Mô tả ngắn gọn (2025):\n\nMàn hình Liquid Retina IPS LED-backlit 13 inch, độ phân giải 2732 x 2048 (264 ppi), True Tone, P3 wide color, sáng tối đa 600 nits, chống phản chiếu, hỗ trợ Apple Pencil Pro và Apple Pencil (USB-C), Magic Keyboard\nChip M2 mạnh mẽ với CPU 8 lõi, GPU 10 lõi, Neural Engine 16 lõi – hiệu năng vượt trội cho chỉnh sửa video 4K, game nặng, đa nhiệm mượt mà, hỗ trợ Apple Intelligence (AI Writing Tools, Image Wand), iPadOS 18+ (cập nhật đến iPadOS 26+)\nCamera sau 12MP (góc rộng, ƒ/1.8, 4K video 60fps, Center Stage), camera trước 12MP Ultra Wide (landscape-oriented, Center Stage); hỗ trợ Smart HDR 4, Night mode, panorama\nThiết kế nhôm aluminum cao cấp, mỏng 6.1mm, nặng 617g, màu Blue/Purple/Space Gray/Starlight; Touch ID trong nút nguồn, USB-C (Thunderbolt/USB 4 tốc độ 10Gbps, hỗ trợ DisplayPort), WiFi 6E (802.11ax), Bluetooth 5.3\nPin 36.6Wh dùng thoải mái 10 giờ web/video, sạc nhanh ~2 giờ (20W adapter)\nDung lượng 128GB phù hợp người dùng trung bình (lưu ảnh/video, app cơ bản), chỉ WiFi (không 5G)\nGiá chính hãng VN/A hiện tại khoảng 18.5–19.9 triệu VND (tùy cửa hàng như FPT Shop, The Gioi Di Dong, CellphoneS), bảo hành 12 tháng Apple\n\niPad Air 6 M2 13\" WiFi 128GB chính hãng – \"siêu phẩm mỏng nhẹ\" với màn lớn, chip M2 \"trâu\" và AI thông minh, vẫn đáng mua năm 2025 cho sáng tạo/học tập/giải trí từ Apple, dù có tin đồn M3 sắp ra!1,5 giâyFastiPad Air 11 inch M3 Wifi 128GB 2025 Chính hãng Apple Việt NamiPad Air 11 inch M3 WiFi 128GB (2025) Chính hãng Apple Việt Nam – Mô tả ngắn gọn (Tháng 12/2025):\n\nMàn hình Liquid Retina IPS LED-backlit 11 inch, độ phân giải 2360 x 1640 (264 ppi), True Tone, P3 wide color, sáng tối đa 600 nits, chống phản chiếu, hỗ trợ Apple Pencil Pro và Apple Pencil (USB-C), Magic Keyboard mới (giá 269 USD cho 11 inch)\nChip M3 mạnh mẽ với CPU 8 lõi, GPU 10 lõi, Neural Engine 16 lõi – hiệu năng vượt trội cho chỉnh sửa video 4K, game nặng, đa nhiệm mượt mà, hỗ trợ Apple Intelligence (AI Writing Tools, Image Wand, Clean Up), iPadOS 18.3.2+ (cập nhật đến iPadOS 26.1+)\nCamera sau 12MP (góc rộng, ƒ/1.8, 4K video 60fps, Center Stage), camera trước 12MP Ultra Wide (landscape-oriented, Center Stage); hỗ trợ Smart HDR 4, Night mode, panorama\nThiết kế nhôm aluminum cao cấp, mỏng 6.1mm, nặng 460g, màu Blue/Purple/Space Gray/Starlight; Touch ID trong nút nguồn, USB-C (Thunderbolt/USB 4 tốc độ 10Gbps, hỗ trợ DisplayPort), WiFi 6E (802.11ax), Bluetooth 5.3\nPin 28.6Wh dùng thoải mái 10 giờ web/video, sạc nhanh ~2 giờ (20W adapter)\nDung lượng 128GB phù hợp người dùng trung bình (lưu ảnh/video, app cơ bản), chỉ WiFi (không 5G)\nGiá chính hãng VN/A hiện tại khoảng 15.4–16.5 triệu VND (tùy cửa hàng như FPT Shop, The Gioi Di Dong, CellphoneS, Apple Store), bảo hành 12 tháng Apple; ra mắt 4/3/2025, phát hành 12/3/2025\n\niPad Air 11\" M3 WiFi 128GB chính hãng – \"siêu phẩm mỏng nhẹ\" với chip M3 \"khủng\" và AI thông minh, đáng mua cuối 2025 cho sáng tạo/học tập/giải trí từ Apple, giá khởi điểm 599 USD!1,9 giâyFastiPad Pro chip M5 11 inch Wifi 256GB Chính hãng Apple Việt NamiPad Pro M5 11 inch WiFi 256GB Chính hãng Apple Việt Nam – Mô tả ngắn gọn (Tháng 12/2025):\n\nMàn hình Ultra Retina XDR Tandem OLED 11 inch, độ phân giải 2420 x 1668 (264 ppi), ProMotion 120Hz thích ứng (10-120Hz), Always-On Display, sáng tối đa 1000 nits SDR / 1600 nits XDR full screen / 2000 nits peak (HDR), chống phản chiếu nano-texture tùy chọn, hỗ trợ Apple Pencil Pro và Magic Keyboard\nChip M5 \"khủng\" với CPU 9 lõi (3 performance + 6 efficiency), GPU 10 lõi, Neural Engine 16 lõi – hiệu năng vượt trội cho chỉnh sửa video 8K, game ray tracing, AI Apple Intelligence (LLM token generation, generative imagery), iPadOS 26 (cập nhật đến iPadOS 26.1+), RAM 12GB LPDDR5X-7500\nCamera sau 12MP (góc rộng, ƒ/1.8, 4K video 120fps, Center Stage), camera trước 12MP Ultra Wide (landscape-oriented, Center Stage); hỗ trợ Smart HDR 5, Night mode, LiDAR Scanner cho AR\nThiết kế nhôm aluminum cao cấp, siêu mỏng 5.3mm, nặng 444g, màu Silver/Space Black; Touch ID trong nút nguồn, USB-C (Thunderbolt/USB 4 tốc độ 40Gbps, hỗ trợ DisplayPort), WiFi 7 (802.11be), Bluetooth 5.3\nPin 31.29Wh dùng thoải mái 10 giờ web/video, sạc nhanh ~2 giờ (40W adapter, hỗ trợ 70W)\nDung lượng 256GB phù hợp người dùng trung bình đến nặng (lưu video 4K, app sáng tạo), chỉ WiFi (không 5G), model A3357 (VN/A)\nGiá chính hãng VN/A hiện tại khoảng 26–27 triệu VND (tương đương $999 USD, tùy cửa hàng như FPT Shop, The Gioi Di Dong, CellphoneS, Apple Store), bảo hành 12 tháng Apple; ra mắt 15/10/2025, phát hành 22/10/2025\n\niPad Pro M5 11\" WiFi 256GB chính hãng – \"siêu phẩm mỏng nhất thế giới\" với OLED đỉnh cao, chip M5 \"bay\" và AI đột phá, đáng mua cuối 2025 cho sáng tạo chuyên nghiệp từ Apple!', 6, 1),
-(20, 'Máy tính bảng iPad mini 7 WiFi 128GB', '26500000.00', '22999999.00', './uploads/1765196521-ipad-mini-7-wifi-purple-1-638651174600667416-750x500.jpg', 21, 0, '2025-12-08', 'iPad mini 7 WiFi 128GB chính hãng – \"siêu phẩm nhỏ gọn\" với chip A17 Pro \"khủng\", AI thông minh và thiết kế mỏng nhẹ, đáng mua cuối 2025 cho đọc sách/du lịch/giải trí từ Apple!', 6, 1),
-(21, 'Máy tính bảng Masstel Tab 11 Ultra 4G 4GB128GB', '30000000.00', '27999999.00', './uploads/1765196682-masstel-tab-11-ultra-4gb-128gb-xanh-1-638883685424010773-750x500.jpg', 100, 0, '2025-12-08', 'Masstel Tab 11 Ultra 4G 4GB/128GB là tablet giá rẻ “đỉnh” cho học sinh, sinh viên với pin “khủng”, màn lớn, kết nối 4G và hiệu năng mượt mà trong tầm giá dưới 4 triệu VND năm 2025!', 6, 1),
-(22, 'Máy tính bảng OPPO Pad 3 8GB256GB', '23000000.00', '21000000.00', './uploads/1765196793-oppo-pad-3-bac-1-638752291535045860-750x500.jpg', 12, 0, '2025-12-08', 'OPPO Pad 3 8GB/256GB – tablet \"mid-range đỉnh cao\" với màn lớn mượt mà, pin trâu và hiệu năng cân bằng, đáng mua cuối 2025 cho giải trí/sáng tạo giá \"ngon\" từ OPPO!', 6, 1),
-(23, 'Máy tính bảng Samsung Galaxy Tab S10+ WiFi 12GB256GB', '22000000.00', '19999999.00', './uploads/1765197062-samsung-galaxy-tab-s10-plus-gray-2-638629870745557501-750x500.jpg', 1, 0, '2025-12-08', 'Samsung Galaxy Tab S10+ WiFi 12GB/256GB – tablet \"flagship mỏng nhẹ\" với màn AMOLED đỉnh cao, AI thông minh và pin trâu, đáng mua cuối 2025 cho giải trí/sáng tạo giá \"ngon\" từ Samsung!', 6, 1),
-(24, 'Máy tính bảng Xiaomi Redmi Pad 2 WiFi 4GB128GB', '28900000.00', '26999999.00', './uploads/1765197163-xiaomi-redmi-pad-2-wifi-xam-1-638889722791105651-750x500.jpg', 4, 0, '2025-12-08', 'Xiaomi Redmi Pad 2 WiFi 4GB/128GB – tablet \"giá rẻ đỉnh cao\" với màn lớn sắc nét, pin trâu và thiết kế mỏng nhẹ, đáng mua cuối 2025 cho học tập/giải trí cơ bản từ Xiaomi!', 6, 1),
-(25, 'Laptop Acer Aspire Lite 14 AL14-71M-52GQ', '25699000.00', '24999999.00', './uploads/1765197321-text_ng_n_14_8.webp', 12, 0, '2025-12-08', 'Laptop Acer Aspire Lite 14 AL14-71M-52GQ – \"siêu mỏng nhẹ hiệu năng cao\" với i5 H-series \"khủng\" trong tầm giá dưới 15 triệu, đáng mua cuối 2025 cho sinh viên/dân văn phòng cần máy mạnh mẽ, di động từ Acer!', 5, 1),
-(26, 'Laptop ASUS Gaming V16 V3607VM-RP044W', '23500000.00', '20999999.00', './uploads/1765197436-text_ng_n_15_15_1.webp', 56, 0, '2025-12-08', 'Laptop ASUS Gaming V16 V3607VM-RP044W – \"gaming mỏng nhẹ AI\" với Core 7 \"khủng\" và RTX 5060 đỉnh cao, đáng mua cuối 2025 cho game thủ/sinh viên cần máy mạnh mẽ, di động từ ASUS!', 5, 1),
-(29, 'Laptop ASUS Vivobook S16 S3607QA-SH040WS', '29999999.00', '25999999.00', './uploads/1765197586-text_ng_n_2__9_252.webp', 23, 0, '2025-12-08', 'Laptop ASUS Vivobook S16 S3607QA-SH040WS – \"Copilot+ PC mỏng nhẹ AI\" với Snapdragon X \"khủng\", pin \"trâu\" và màn lớn, đáng mua cuối 2025 cho sinh viên/dân văn phòng cần máy thông minh, di động từ ASUS!', 5, 1),
-(30, 'Laptop Dell 15 DC15255 DC5R5802W1', '23000000.00', '21500000.00', './uploads/1765197745-text_ng_n_2__10_145.webp', 23, 0, '2025-12-08', 'Laptop Dell 15 DC15255 DC5R5802W1 – \"doanh nhân mỏng nhẹ giá rẻ\" với Ryzen 5 \"trâu\" và màn 120Hz hiếm có, đáng mua cuối 2025 cho sinh viên/dân văn phòng cần máy ổn định, di động từ Dell!', 5, 1),
-(31, 'Laptop Dell Inspiron 15 3530 J9XFD - Nhập khẩu chính hãng', '18000000.00', '16500000.00', './uploads/1765197828-text_ng_n_7__4_161.webp', 65, 0, '2025-12-08', 'Laptop Dell Inspiron 15 3530 J9XFD nhập khẩu chính hãng – \"doanh nhân mỏng nhẹ giá tốt\" với i5-13th Gen \"trâu\", màn 120Hz cảm ứng và thiết kế thanh lịch, đáng mua cuối 2025 cho sinh viên/dân văn phòng cần máy ổn định, di động từ Dell!', 5, 1),
-(32, 'Laptop Gaming Acer Nitro V 15 ProPanel ANV15-41-R7AP', '35000000.00', '33500000.00', './uploads/1765197893-text_ng_n_1__6_108.webp', 45, 0, '2025-12-08', 'Laptop Gaming Acer Nitro V 15 ProPanel ANV15-41-R7AP – \"gaming entry mạnh mẽ\" với Ryzen 5 \"trâu\", RTX 2050 mượt và màn 180Hz đỉnh cao, đáng mua cuối 2025 cho game thủ mới/budget dưới 23 triệu từ Acer!', 5, 1),
-(33, 'Laptop Lenovo LOQ 15IAX9E 83LK0079VN', '27000000.00', '25500000.00', './uploads/1765197962-text_ng_n_6__4_24.webp', 45, 0, '2025-12-08', 'Laptop Lenovo LOQ 15IAX9E 83LK0079VN – \"gaming tầm trung đỉnh cao\" với i5 HX \"khủng\", RTX 3050 mượt và màn 144Hz sắc nét, đáng mua cuối 2025 cho game thủ mới/budget dưới 22 triệu từ Lenovo!', 5, 1),
-(34, 'Laptop MSI Modern 14 F13MG-240VNCP', '36000000.00', '29000000.00', './uploads/1765198033-text_ng_n_2__9_297.webp', 24, 0, '2025-12-08', 'Laptop MSI Modern 14 F13MG-240VNCP – \"doanh nhân mỏng nhẹ thanh lịch\" với i5-13th Gen \"trâu\", thiết kế sang trọng và hiệu năng ổn định, đáng mua cuối 2025 cho sinh viên/dân văn phòng cần máy di động giá \"ngon\" từ MSI!', 5, 1),
-(35, 'MacBook Air 15 inch M4 (10 core GPU  16GB RAM  512GB SSD)', '26500000.00', '22999999.00', './uploads/1765198165-0036015_midnight_550.jpeg.webp', 55, 0, '2025-12-08', 'MacBook Air 15 inch M4 16GB/512GB là chiếc laptop “mỏng nhẹ, pin trâu, màn lớn” hoàn hảo năm 2025 cho sinh viên, dân văn phòng và sáng tạo nội dung – dùng 5–6 năm vẫn mượt, đáng tiền từng đồng!', 5, 1),
-(36, 'MacBook Pro 14 M5 10CPU 10GPU 16GB 512GB  Chính hãng Apple Việt Nam', '37000000.00', '35999999.00', './uploads/1765198321-text_ng_n_2__11.webp', 554, 0, '2025-12-08', 'MacBook Pro M5 14\" 16GB/512GB chính hãng – \"siêu phẩm mỏng nhẹ đỉnh cao\" với chip M5 \"bay\" và màn XDR sống động, đáng mua cuối 2025 cho sáng tạo chuyên nghiệp từ Apple!', 5, 1),
-(37, 'Điện thoại Samsung Galaxy A17 5G 8GB128GB', '26000000.00', '23500000.00', './uploads/1765198478-samsung-galaxy-a17-5g-gray-1-638925131547875229-750x500.jpg', 55, 0, '2025-12-08', 'Samsung Galaxy A17 5G 8GB/128GB – \"mid-range giá rẻ bền bỉ\" với camera OIS đầu tiên dòng A1x, pin trâu và cập nhật dài hạn, đáng mua cuối 2025 cho học sinh/sinh viên cần máy 5G ổn định từ Samsung!', 4, 1),
-(38, 'Điện thoại Samsung Galaxy A56 5G 12GB256GB', '24000000.00', '21500000.00', './uploads/1765198688-samsung-galaxy-a56-xam-01-638802400999449896-750x500.jpg', 34, 0, '2025-12-08', 'Samsung Galaxy A56 5G 12GB/256GB – \"mid-range đỉnh cao\" với Exynos 1580 \"khủng\", camera AI thông minh và sạc 45W đầu tiên dòng A5x, đáng mua cuối 2025 cho người dùng cần máy mạnh mẽ, bền bỉ từ Samsung!', 4, 1),
-(39, 'Điện thoại Samsung Galaxy Z Flip7 5G 12GB256GB', '26500000.00', '24500000.00', './uploads/1765198826-samsung-galaxy-z-flip7-do-1-638889695868366654-750x500.jpg', 45, 0, '2025-12-08', 'Samsung Galaxy Z Flip7 5G 12GB/256GB – \"flip phone mỏng nhẹ đỉnh cao\" với camera selfie 50MP, AI thông minh và thiết kế bền bỉ, đáng mua cuối 2025 cho ai yêu kiểu dáng gập thời thượng từ Samsung!', 4, 1),
-(40, 'Cáp Baseus Crystal Shine USB-C to Lightning 1.2M', '500000.00', '350000.00', './uploads/1765199244-cap-type-c-to-lightning-baseus-crystal-shine-1-2m_1_.webp', 444, 0, '2025-12-08', 'Cáp Baseus Crystal Shine USB-C to Lightning 1.2M – phụ kiện \"đẹp bền nhanh\" thay thế lý tưởng cho cáp Apple gốc, đáng mua cuối 2025 nếu bạn cần sạc PD 20W giá rẻ mà chất lượng cao!', 10, 1),
-(41, 'Dán kính cường lực màn hình Apple iPhone 16e141313 Pro Zagg full cao cấp', '650000.00', '500000.00', './uploads/1765199325-kinh-cuong-luc-iphone-13-14-13-pro-se-40-zagg-full_1_.webp', 646, 0, '2025-12-08', 'Miếng dán Zagg Plus Edge Full cho iPhone 16 Pro – \"cao cấp chống nhìn trộm/ánh sáng xanh\" bảo vệ màn hình đỉnh cao mà vẫn mỏng mượt, đáng mua cuối 2025 nếu bạn muốn phụ kiện Apple chính hãng chất lượng từ Zagg!', 10, 1),
-(42, 'Dán kính cường lực màn hình Apple iPhone 17 Pro Max Invisibleshield XTR5 Đen (Không Viền)', '780000.00', '630000.00', './uploads/1765199391-text_ng_n_-_2025-09-11t174008.138_1.webp', 55, 0, '2025-12-08', 'Miếng dán InvisibleShield Glass XTR5 Đen (Không Viền) cho iPhone 17 Pro Max – \"cao cấp Graphene + lọc xanh\" bảo vệ màn hình đỉnh cao mà vẫn mỏng mượt, đáng mua cuối 2025 nếu bạn muốn phụ kiện Apple chính hãng chất lượng từ ZAGG!', 10, 1),
-(43, 'Đế sạc không dây Aukey Magfushion 1X LC-MC111 Qi2.2 25W', '460000.00', '399999.00', './uploads/1765199456-de-sac-khong-day-aukey-magfusion-qi2-2-lc-mc111-1x-25w_2_.webp', 654, 0, '2025-12-08', 'Đế sạc Aukey MagFusion 1X LC-MC111 Qi2.2 25W – \"siêu nhanh mỏng nhẹ giá rẻ\" cho iPhone MagSafe, đáng mua cuối 2025 nếu bạn cần phụ kiện sạc từ tính chất lượng cao từ Aukey!', 10, 1);
+(1, 'Iphone 17 Promax 256 GB', '43000000.00', '41000000.00', './uploads/1765691242-1765151866-iphone-17-pro-max-cam-1-638947383255964450-750x500 (1).jpg', 10, 10, '2024-12-07', 'iPhone 17 Pro Max sở hữu cấu hình mạnh mẽ, màn hình sắc nét, pin lâu dài và camera chụp ảnh cực kỳ chi tiết.', 1, 1),
+(2, 'Laptop Acer Aspire Lite 14 AL14-71M-52GQ', '23000000.00', '22000000.00', './uploads/1765152155-laptop_acer_aspire_lite_14_al14-71m-52gq_-_3.png', 12, 22, '2025-12-07', 'Laptop Acer Aspire Lite 14 AL14-71M-52GQ là dòng laptop văn phòng đẹp', 2, 1),
+(3, 'iPad A16 Wifi 128GB 2025 ', '21000000.00', '19500000.00', './uploads/1765692668-1765151866-iphone-17-pro-max-cam-13-638947383223664403-750x500.jpg', 10, 10, '2025-12-07', 'iPad A16 Wifi 128GB 2025  Chính hãng Apple Việt Nam là dòng Ipad rất được ưa chuộng ở Việt Nam', 3, 1),
+(4, 'Phone 13 128GB ', '15000000.00', '12900000.00', './uploads/1765200446-iphone-13-1-2-750x500.jpg', 19, 8, '2025-12-08', 'iPhone 13 128GB \nMột chiếc iPhone “ngon-bổ-rẻ” nhất định phải có trong năm 2025 nếu bạn muốn máy chính hãng Apple giá hợp lý!', 1, 1),
+(5, 'iPhone 13 256GB', '6000000.00', '4600000.00', './uploads/1765200476-iphone-13-4-1-750x500.jpg', 16, 9, '2025-12-08', 'iPhone 13 256GB\nMột chiếc iPhone “ngon-bổ-rẻ” nhất định phải có trong năm 2025 nếu bạn muốn máy chính hãng Apple giá hợp lý!', 1, 1),
+(6, 'Điện thoại iPhone 16 Plus 128GB', '23000000.00', '19000000.00', './uploads/1765194623-iphone-16-plus-trang-1-638639096584067146-750x500.jpg', 50, 21, '2025-12-08', 'Siêu phẩm iPhone 16 Plus – màn lớn, camera đỉnh cao, AI đột phá, hoàn hảo cho năm 2025 với giá trị vượt trội từ Apple!', 1, 1),
+(7, 'Iphone 16e 256GB', '8000000.00', '5500000.00', './uploads/1765692319-iphone-16e-128gb_4_.webp', 70, 43, '2025-12-07', 'iPhone 16e 256GB – \"người anh em giá rẻ\" của iPhone 16, mang Apple Intelligence với giá từ 599 USD. Lựa chọn tuyệt vời cho năm 2025 nếu bạn muốn sở hữu iPhone hiện đại mà không phải chi quá nhiều!\r\n', 1, 1),
+(8, 'Điện thoại iPhone 16 Pro 128GB', '19800000.00', '16999999.00', './uploads/1765194859-iphone-16-pro-titan-sa-mac-1-638638979065595000-750x500.jpg', 56, 88, '2025-12-08', 'Siêu phẩm iPhone 16 Pro – camera chuyên nghiệp, hiệu năng đỉnh cao, AI đột phá, lựa chọn hoàn hảo cho năm 2025 với thiết kế titanium sang trọng từ Apple!', 1, 1),
+(9, 'Điện thoại iPhone 16 Pro Max 256GB', '26000000.00', '21499000.00', './uploads/1765194984-iphone-16-pro-max.webp', 26, 10, '2025-12-05', 'Phone 16 Pro Max 256GB hiện là chiếc iPhone “đỉnh nhất” Apple từng làm – màn to, pin khủng, camera chuyên nghiệp, AI thông minh và đáng tiền nhất để dùng dài hạn trong năm 2025–2030!Fast', 1, 1),
+(10, 'Điện thoại iPhone 16e 128GB', '21000000.00', '21599000.00', './uploads/1765195105-iphone-16e-white-1-638756438035819151-750x500.jpg', 50, 20, '2025-12-08', '\niPhone 16e 128GB – \"người anh em giá rẻ\" của dòng iPhone 16, mang Apple Intelligence vào tầm tay với giá khởi điểm 599 USD, lựa chọn thông minh cho năm 2025 nếu bạn muốn iPhone hiện đại mà không tốn kém!', 1, 1),
+(11, 'iPhone 14 Pro 128GB  Chính hãng VNA', '27000000.00', '24999999.00', './uploads/1765195368-x_m_16.webp', 178, 0, '2025-12-08', 'iPhone 14 Pro 128GB chính hãng VN/A – flagship \"huyền thoại\" với camera đỉnh cao và Dynamic Island đầu tiên, vẫn \"chiến\" tốt năm 2025, lựa chọn tiết kiệm so với dòng 16 nếu bạn muốn giá trị lâu dài từ Apple!', 1, 1),
+(12, 'iPhone 15 128GB  Chính hãng VNA', '23000000.00', '21499000.00', './uploads/1765195481-iphone-15-plus_1__1.webp', 12, 0, '2025-12-01', 'iPhone 15 128GB chính hãng VN/A – flagship \"cân bằng\" với camera 48MP sắc nét, Dynamic Island đầu tiên cho dòng thường, USB-C và hiệu năng \"trâu\" – vẫn đáng mua năm 2025 nếu bạn muốn iPhone hiện đại giá \"mềm\" hơn dòng 16!', 1, 1),
+(13, 'iPhone 17 256GB  Chính hãng', '34000000.00', '31500000.00', './uploads/1765195627-iphone_17_256gb-3_2.webp', 12, 0, '2025-12-09', 'iPhone 17 256GB chính hãng – flagship \"tiết kiệm\" với storage gấp đôi, camera sắc nét, AI đột phá và pin bền bỉ – lựa chọn hoàn hảo năm 2025 nếu bạn muốn iPhone hiện đại giá $799 (khoảng 20 triệu VND) mà không cần Pro!', 1, 1),
+(14, 'Iphone 17 512GB', '500000.00', '400000.00', './uploads/1765692177-600_crop_iphone-17-pro-max-512gb-new-ll-a-thumb-didongmy.jpg', 12, 50, '2025-12-02', 'iPhone 17 512GB là mẫu smartphone cao cấp mới nhất của Apple, sở hữu thiết kế tinh tế, hiệu năng vượt trội cùng dung lượng lưu trữ lớn, đáp ứng hoàn hảo nhu cầu học tập, làm việc và giải trí chuyên sâu.', 1, 1),
+(15, 'iPhone Air 256GB  Chính hãng', '24000000.00', '22999999.00', './uploads/1765195746-iphone_air-3_2.webp', 432, 0, '2025-12-08', 'iPhone Air 256GB chính hãng – \"siêu mỏng, siêu nhẹ\" thay thế dòng Plus, với thiết kế titanium đột phá và hiệu năng Pro – lựa chọn \"bay bổng\" năm 2025 cho ai muốn iPhone hiện đại giá $999 mà vẫn đỉnh cao từ Apple!1,3 giâyFast', 1, 1),
+(16, 'iPad Air 5 10.9 inch (2022) WiFi 64GB Chính hãng Apple Việt Nam', '19000000.00', '17500000.00', './uploads/1765195976-5_158_3.webp', 123, 0, '2025-12-02', 'iPad Air 5 10.9\" WiFi 64GB chính hãng – \"Air\" thực thụ với thiết kế mỏng nhẹ, chip A15 \"trâu\" và màn đẹp, vẫn đáng mua năm 2025 nếu bạn cần iPad giá rẻ cho học tập/giải trí cơ bản từ Apple!', 3, 1),
+(17, 'iPad Air 6 M2 13 inch Wifi 128GB I Chính hãng Apple Việt Nam', '21000000.00', '18500000.00', './uploads/1765196105-ipad-air-6-m2-13-inch.webp', 132, 0, '2025-12-08', 'iPad Air 6 M2 13\" WiFi 128GB chính hãng – \"siêu phẩm mỏng nhẹ\" với màn lớn, chip M2 \"trâu\" và AI thông minh, vẫn đáng mua năm 2025 cho sáng tạo/học tập/giải trí từ Apple, dù có tin đồn M3 sắp ra!', 3, 1),
+(18, 'iPad Air 11 inch M3 Wifi 128GB 2025  Chính hãng Apple Việt Nam', '25000000.00', '23999999.00', './uploads/1765196208-ipad-air-11-wifi-1.webp', 10, 0, '2025-12-03', '\niPad Air 11\" M3 WiFi 128GB chính hãng – \"siêu phẩm mỏng nhẹ\" với chip M3 \"khủng\" và AI thông minh, đáng mua cuối 2025 cho sáng tạo/học tập/giải trí từ Apple, giá khởi điểm 599 USD!', 3, 1),
+(19, 'iPad Pro chip M5 11 inch Wifi 256GB  Chính hãng Apple Việt Nam', '27000000.00', '23500000.00', './uploads/1765196384-ipad-pro-m5.webp', 23, 0, '2025-12-08', 'iPad Pro M5 11\" WiFi 256GB chính hãng – \"siêu phẩm mỏng nhất thế giới\" với OLED đỉnh cao, chip M5 \"bay\" và AI đột phá, đáng mua cuối 2025 cho sáng tạo chuyên nghiệp từ Apple!', 3, 1),
+(20, 'Máy tính bảng iPad mini 7 WiFi 128GB', '26500000.00', '22999999.00', './uploads/1765196521-ipad-mini-7-wifi-purple-1-638651174600667416-750x500.jpg', 21, 0, '2025-12-08', 'iPad mini 7 WiFi 128GB chính hãng – \"siêu phẩm nhỏ gọn\" với chip A17 Pro \"khủng\", AI thông minh và thiết kế mỏng nhẹ, đáng mua cuối 2025 cho đọc sách/du lịch/giải trí từ Apple!', 3, 1),
+(21, 'Máy tính bảng Masstel Tab 11 Ultra 4G 4GB128GB', '30000000.00', '27999999.00', './uploads/1765196682-masstel-tab-11-ultra-4gb-128gb-xanh-1-638883685424010773-750x500.jpg', 100, 0, '2025-12-08', 'Masstel Tab 11 Ultra 4G 4GB/128GB là tablet giá rẻ “đỉnh” cho học sinh, sinh viên với pin “khủng”, màn lớn, kết nối 4G và hiệu năng mượt mà trong tầm giá dưới 4 triệu VND năm 2025!', 3, 1),
+(22, 'Máy tính bảng OPPO Pad 3 8GB256GB', '23000000.00', '21000000.00', './uploads/1765196793-oppo-pad-3-bac-1-638752291535045860-750x500.jpg', 12, 0, '2025-12-08', 'OPPO Pad 3 8GB/256GB – tablet \"mid-range đỉnh cao\" với màn lớn mượt mà, pin trâu và hiệu năng cân bằng, đáng mua cuối 2025 cho giải trí/sáng tạo giá \"ngon\" từ OPPO!', 3, 1),
+(23, 'Máy tính bảng Samsung Galaxy Tab S10+ WiFi 12GB256GB', '22000000.00', '19999999.00', './uploads/1765197062-samsung-galaxy-tab-s10-plus-gray-2-638629870745557501-750x500.jpg', 1, 0, '2025-12-08', 'Samsung Galaxy Tab S10+ WiFi 12GB/256GB – tablet \"flagship mỏng nhẹ\" với màn AMOLED đỉnh cao, AI thông minh và pin trâu, đáng mua cuối 2025 cho giải trí/sáng tạo giá \"ngon\" từ Samsung!', 3, 1),
+(24, 'Máy tính bảng Xiaomi Redmi Pad 2 WiFi 4GB128GB', '28900000.00', '26999999.00', './uploads/1765197163-xiaomi-redmi-pad-2-wifi-xam-1-638889722791105651-750x500.jpg', 4, 0, '2025-12-08', 'Xiaomi Redmi Pad 2 WiFi 4GB/128GB – tablet \"giá rẻ đỉnh cao\" với màn lớn sắc nét, pin trâu và thiết kế mỏng nhẹ, đáng mua cuối 2025 cho học tập/giải trí cơ bản từ Xiaomi!', 3, 1),
+(25, 'Laptop Acer Aspire Lite 14 AL14-71M-52GQ', '25699000.00', '24999999.00', './uploads/1765197321-text_ng_n_14_8.webp', 12, 0, '2025-12-08', 'Laptop Acer Aspire Lite 14 AL14-71M-52GQ – \"siêu mỏng nhẹ hiệu năng cao\" với i5 H-series \"khủng\" trong tầm giá dưới 15 triệu, đáng mua cuối 2025 cho sinh viên/dân văn phòng cần máy mạnh mẽ, di động từ Acer!', 2, 1),
+(26, 'Laptop ASUS Gaming V16 V3607VM-RP044W', '23500000.00', '20999999.00', './uploads/1765696917-acer-main.jpg', 56, 0, '2025-12-08', 'Laptop ASUS Gaming V16 V3607VM-RP044W – \"gaming mỏng nhẹ AI\" với Core 7 \"khủng\" và RTX 5060 đỉnh cao, đáng mua cuối 2025 cho game thủ/sinh viên cần máy mạnh mẽ, di động từ ASUS!', 2, 1),
+(27, 'Ốp lưng iPhone 17 Pro Max Apple Techwoven With Magsafe', '1670000.00', '1550000.00', './uploads/1765697347-op-lung-ip17.webp', 10, 15, '2025-12-10', 'Ốp lưng iPhone 17 Pro Max Apple Techwoven With MagSafe có thiết kế tinh tế với chất liệu vải dệt polyester tái chế cùng khung TPU, giúp bảo vệ toàn diện. Sản phẩm nổi bật với kết cấu Jacquard nhiều màu, giữ cho bề mặt luôn bền đẹp theo thời gian. Ốp lưng cũng tích hợp nam châm MagSafe, giúp sạc không dây dễ dàng và tháo lắp thuận tiện.', 4, 1),
+(28, 'Ốp lưng iPhone 17 Pro Max Apple With Magsafe Clear - MGFW4FE/A', '1400000.00', '1300000.00', './uploads/1765697615-op-m1.webp', 11, 18, '2025-12-11', 'Ốp lưng iPhone 17 Pro Max Apple With Magsafe Clear MGFW4FE/A nổi bật với khả năng bảo vệ vượt trội và thiết kế trong suốt vừa khít sang trọng cho thiết bị. Thiết bị sở hữu công nghệ hiện đại, lớp bảo vệ kháng xước kép và điều khiển camera tiện lợi. Chất liệu polycarbonate với khả năng hạn chế ngả vàng giúp duy trì vẻ đẹp trong suốt theo thời gian.', 4, 1),
+(29, 'Laptop ASUS Vivobook S16 S3607QA-SH040WS', '29999999.00', '25999999.00', './uploads/1765197586-text_ng_n_2__9_252.webp', 23, 0, '2025-12-08', 'Laptop ASUS Vivobook S16 S3607QA-SH040WS – \"Copilot+ PC mỏng nhẹ AI\" với Snapdragon X \"khủng\", pin \"trâu\" và màn lớn, đáng mua cuối 2025 cho sinh viên/dân văn phòng cần máy thông minh, di động từ ASUS!', 2, 1),
+(30, 'Laptop Dell 15 DC15255 DC5R5802W1', '23000000.00', '21500000.00', './uploads/1765197745-text_ng_n_2__10_145.webp', 23, 0, '2025-12-08', 'Laptop Dell 15 DC15255 DC5R5802W1 – \"doanh nhân mỏng nhẹ giá rẻ\" với Ryzen 5 \"trâu\" và màn 120Hz hiếm có, đáng mua cuối 2025 cho sinh viên/dân văn phòng cần máy ổn định, di động từ Dell!', 2, 1),
+(31, 'Laptop Dell Inspiron 15 3530 J9XFD - Nhập khẩu chính hãng', '18000000.00', '16500000.00', './uploads/1765197828-text_ng_n_7__4_161.webp', 65, 0, '2025-12-08', 'Laptop Dell Inspiron 15 3530 J9XFD nhập khẩu chính hãng – \"doanh nhân mỏng nhẹ giá tốt\" với i5-13th Gen \"trâu\", màn 120Hz cảm ứng và thiết kế thanh lịch, đáng mua cuối 2025 cho sinh viên/dân văn phòng cần máy ổn định, di động từ Dell!', 2, 1),
+(32, 'Laptop Gaming Acer Nitro V 15 ProPanel ANV15-41-R7AP', '35000000.00', '33500000.00', './uploads/1765197893-text_ng_n_1__6_108.webp', 45, 0, '2025-12-08', 'Laptop Gaming Acer Nitro V 15 ProPanel ANV15-41-R7AP – \"gaming entry mạnh mẽ\" với Ryzen 5 \"trâu\", RTX 2050 mượt và màn 180Hz đỉnh cao, đáng mua cuối 2025 cho game thủ mới/budget dưới 23 triệu từ Acer!', 2, 1),
+(33, 'Laptop Lenovo LOQ 15IAX9E 83LK0079VN', '27000000.00', '25500000.00', './uploads/1765197962-text_ng_n_6__4_24.webp', 45, 0, '2025-12-08', 'Laptop Lenovo LOQ 15IAX9E 83LK0079VN – \"gaming tầm trung đỉnh cao\" với i5 HX \"khủng\", RTX 3050 mượt và màn 144Hz sắc nét, đáng mua cuối 2025 cho game thủ mới/budget dưới 22 triệu từ Lenovo!', 2, 1),
+(34, 'Laptop MSI Modern 14 F13MG-240VNCP', '36000000.00', '29000000.00', './uploads/1765198033-text_ng_n_2__9_297.webp', 24, 0, '2025-12-08', 'Laptop MSI Modern 14 F13MG-240VNCP – \"doanh nhân mỏng nhẹ thanh lịch\" với i5-13th Gen \"trâu\", thiết kế sang trọng và hiệu năng ổn định, đáng mua cuối 2025 cho sinh viên/dân văn phòng cần máy di động giá \"ngon\" từ MSI!', 2, 1),
+(35, 'MacBook Air 15 inch M4 (10 core GPU  16GB RAM  512GB SSD)', '26500000.00', '22999999.00', './uploads/1765198165-0036015_midnight_550.jpeg.webp', 55, 0, '2025-12-08', 'MacBook Air 15 inch M4 16GB/512GB là chiếc laptop “mỏng nhẹ, pin trâu, màn lớn” hoàn hảo năm 2025 cho sinh viên, dân văn phòng và sáng tạo nội dung – dùng 5–6 năm vẫn mượt, đáng tiền từng đồng!', 2, 1),
+(36, 'MacBook Pro 14 M5 10CPU 10GPU 16GB 512GB  Chính hãng Apple Việt Nam', '37000000.00', '35999999.00', './uploads/1765198321-text_ng_n_2__11.webp', 554, 0, '2025-12-08', 'MacBook Pro M5 14\" 16GB/512GB chính hãng – \"siêu phẩm mỏng nhẹ đỉnh cao\" với chip M5 \"bay\" và màn XDR sống động, đáng mua cuối 2025 cho sáng tạo chuyên nghiệp từ Apple!', 2, 1),
+(37, 'Điện thoại Samsung Galaxy A17 5G 8GB128GB', '26000000.00', '23500000.00', './uploads/1765198478-samsung-galaxy-a17-5g-gray-1-638925131547875229-750x500.jpg', 55, 0, '2025-12-08', 'Samsung Galaxy A17 5G 8GB/128GB – \"mid-range giá rẻ bền bỉ\" với camera OIS đầu tiên dòng A1x, pin trâu và cập nhật dài hạn, đáng mua cuối 2025 cho học sinh/sinh viên cần máy 5G ổn định từ Samsung!', 1, 1),
+(38, 'Điện thoại Samsung Galaxy A56 5G 12GB256GB', '24000000.00', '21500000.00', './uploads/1765198688-samsung-galaxy-a56-xam-01-638802400999449896-750x500.jpg', 34, 0, '2025-12-08', 'Samsung Galaxy A56 5G 12GB/256GB – \"mid-range đỉnh cao\" với Exynos 1580 \"khủng\", camera AI thông minh và sạc 45W đầu tiên dòng A5x, đáng mua cuối 2025 cho người dùng cần máy mạnh mẽ, bền bỉ từ Samsung!', 1, 1),
+(39, 'Điện thoại Samsung Galaxy Z Flip7 5G 12GB256GB', '26500000.00', '24500000.00', './uploads/1765198826-samsung-galaxy-z-flip7-do-1-638889695868366654-750x500.jpg', 45, 0, '2025-12-08', 'Samsung Galaxy Z Flip7 5G 12GB/256GB – \"flip phone mỏng nhẹ đỉnh cao\" với camera selfie 50MP, AI thông minh và thiết kế bền bỉ, đáng mua cuối 2025 cho ai yêu kiểu dáng gập thời thượng từ Samsung!', 1, 1),
+(40, 'Cáp Baseus Crystal Shine USB-C to Lightning 1.2M', '500000.00', '350000.00', './uploads/1765199244-cap-type-c-to-lightning-baseus-crystal-shine-1-2m_1_.webp', 444, 0, '2025-12-08', 'Cáp Baseus Crystal Shine USB-C to Lightning 1.2M – phụ kiện \"đẹp bền nhanh\" thay thế lý tưởng cho cáp Apple gốc, đáng mua cuối 2025 nếu bạn cần sạc PD 20W giá rẻ mà chất lượng cao!', 4, 1),
+(41, 'Dán kính cường lực màn hình Apple iPhone 16e141313 Pro Zagg full cao cấp', '650000.00', '500000.00', './uploads/1765199325-kinh-cuong-luc-iphone-13-14-13-pro-se-40-zagg-full_1_.webp', 646, 0, '2025-12-08', 'Miếng dán Zagg Plus Edge Full cho iPhone 16 Pro – \"cao cấp chống nhìn trộm/ánh sáng xanh\" bảo vệ màn hình đỉnh cao mà vẫn mỏng mượt, đáng mua cuối 2025 nếu bạn muốn phụ kiện Apple chính hãng chất lượng từ Zagg!', 4, 1),
+(42, 'Dán kính cường lực màn hình Apple iPhone 17 Pro Max Invisibleshield XTR5 Đen (Không Viền)', '780000.00', '630000.00', './uploads/1765199391-text_ng_n_-_2025-09-11t174008.138_1.webp', 55, 0, '2025-12-08', 'Miếng dán InvisibleShield Glass XTR5 Đen (Không Viền) cho iPhone 17 Pro Max – \"cao cấp Graphene + lọc xanh\" bảo vệ màn hình đỉnh cao mà vẫn mỏng mượt, đáng mua cuối 2025 nếu bạn muốn phụ kiện Apple chính hãng chất lượng từ ZAGG!', 4, 1),
+(43, 'Đế sạc không dây Aukey Magfushion 1X LC-MC111 Qi2.2 25W', '460000.00', '399999.00', './uploads/1765199456-de-sac-khong-day-aukey-magfusion-qi2-2-lc-mc111-1x-25w_2_.webp', 654, 0, '2025-12-08', 'Đế sạc Aukey MagFusion 1X LC-MC111 Qi2.2 25W – \"siêu nhanh mỏng nhẹ giá rẻ\" cho iPhone MagSafe, đáng mua cuối 2025 nếu bạn cần phụ kiện sạc từ tính chất lượng cao từ Aukey!', 4, 1);
 
 -- --------------------------------------------------------
 
@@ -694,20 +812,20 @@ CREATE TABLE `tai_khoans` (
 INSERT INTO `tai_khoans` (`id`, `ho_ten`, `anh_dai_dien`, `ngay_sinh`, `email`, `so_dien_thoai`, `gioi_tinh`, `dia_chi`, `mat_khau`, `chuc_vu_id`, `trang_thai`) VALUES
 (1, 'Đỗ Đình Thịnh', './uploads/avatar/avatar-cute-3.jpg', '2022-11-02', 'dodinhthinh123@gmail.com', '038888888', 1, 'Số 1 Hà Nội - Trịnh Văn Bô', '$2y$12$WZjnN3vYqACgoiONCxlSb.alMXm7jeRJH3hORknWHcjLSoxlOzeWW', 1, 1),
 (2, 'Nguyễn Thế Thịnh', './uploads/product-2.jpg', '2025-11-19', 'thethinh22@gmail.com', '089485385', 1, 'Bắc Từ Liêm', '$2y$12$Ncbr/eTF1mSHKeQM41avfOYTxoLoDlao62fHh4eP5j9tfqiWbWhoe', 1, 2),
-(9, 'Đỗ Đình Đức', './uploads/product-3.jpg', '2025-12-20', 'dodinhduc77@gmail.com', '0965765765', 1, 'Cầu Giấy - Hà Nội', '$2y$12$bHXcoQcw969XMuoQ6MpwFea6Vg9eH00PhofO7Oki4qSUDKQy4hJSi', 2, 2),
-(10, 'Nguyễn Tuấn Anh', NULL, '2025-12-01', 'tanh99@gmail.com', '0974574352', 1, 'Minh Khai - Hà Nội', '123', 1, 1),
-(13, 'Trần Đức Chiến', NULL, NULL, 'ducchien123@gmail.com', '0920980757', 1, 'Hoàng Mai - Hà Nội', '$2y$12$cf7yD1XSCsT10Tmr61gBbuRXs4Jf3hnzmkmsy12guxBPoGw.VUGUq', 1, 1),
-(18, 'Nguyễn Thế Anh', './uploads/product-2.jpg', '2025-12-25', 'theanh324324@gmail.com', '0954654654', 1, 'Cầu Diễn - Hà Nội', '$2y$12$gBUAtqO12sX.gBBOtfWaAusmDSmOeooRnGzxBT873yvceOLjRl47S', 2, 1),
-(19, 'Đoàn Huy Vũ', NULL, NULL, 'vuhd31@gmail.com', '0890980757', 1, 'Kiều Mai - Hà Nội', '$2y$12$luCO6qAMIHpKm.zD7s8csOTfFnL7HFrm0bPYaLlekoCdrco9ezbWG', 1, 1),
-(22, 'Nguyễn Hoàng Anh', './uploads/product-2.jpg', NULL, 'anhhoangqwerty@gmail.com', '0987347541', 1, 'Quảng Ninh', '$2y$12$xVb9kdvWMzyoMvq17uIzR.b1zpawxcvxlsLwrFrmTQxJmgsoB1raC', 1, 2),
-(23, 'Nguyễn Thanh Bình', './uploads/avatar/avatar-cute-3.jpg', '2025-12-25', 'anhhh112233@gmail.com', '096234728', 1, 'Nam Từ Liêm - Hà Nội', '$2y$12$9yDC/v1TOS1NigM4jXYogemss5tCLdObmSF/.32Nog9W11mWSZ.qa', 1, 1),
-(24, 'Ngô Trung Hiếu', NULL, NULL, 'trunghieu123@gmail.com', '0977234124', 1, 'Nam Từ Liêm - Hà Nội', '$2y$12$eoqa6AfFNXGvvxkVC.zcRutF5NCCJts3kjFUb.a6ZR2GQFML0U0rS', 1, 1),
-(25, 'Nguyễn Hữu Trung', NULL, NULL, 'trung123@gmail.com', '0324837245', 1, 'Hoàng Hoa Thám - Hà Nội', '$2y$10$X.0gXVjmvtJteKSd7RUZnuPldYg2kVYYM8lexyLtfzfJ9KBvHGz4y', 1, 1),
-(26, 'Nguyễn Hữu Trung Đức', NULL, '2004-02-03', 'trung321@gmail.com', '0347892617', 1, 'Hà Nội', '$2y$10$1Km5S2kUNWMVGAsG1bKuQeGHjyUjDLl6RI4b4.eWpAfzhO1uCzzbW', 1, 1),
-(27, 'Nguyễn Thế Hoàng Anh Tuấn', NULL, '2025-12-01', 'nthat999@gmail.com', '0977630988', 1, 'Ba Đình - Hà Nội', '123@123ab', 1, 1),
-(28, 'Nguyễn Thế Hoàng Anh Tuấn', NULL, '2025-12-08', 'nthat998@gmail.com', '0977632988', 1, 'Thăng Long - Hà Nội', '$2y$12$3Davr5TNeMhfliZvopbHo.F64JgMFb4jERMLE9GhYFln.O9TFATwq', 1, 2),
-(29, 'Nguyễn Thế Hoàng Anh Tuấn', NULL, '2025-12-02', 'nthat997@gmail.com', '0977632948', 1, 'Hoà Lạc- Hà Nội', '123@123ab', 2, 2),
-(30, 'Nguyễn Thế Hoàng Anh Tuấn', NULL, '2025-12-03', 'nthat996@gmail.com', '0972632948', 1, 'Hoàn Kiếm - Hà Nội', '123@123ab', 2, 1);
+(3, 'Đỗ Đình Đức', './uploads/avatar/avatar2.png', '2025-12-20', 'dodinhduc77@gmail.com', '0965765765', 1, 'Cầu Giấy - Hà Nội', '$2y$12$bHXcoQcw969XMuoQ6MpwFea6Vg9eH00PhofO7Oki4qSUDKQy4hJSi', 2, 1),
+(4, 'Nguyễn Tuấn Anh', './uploads/avatar/avatar3.jpg', '2025-12-01', 'tanh99@gmail.com', '0974574352', 1, 'Minh Khai - Hà Nội', '123', 2, 2),
+(5, 'Trần Đức Chiến', './uploads/avatar/avatar4.png', '2024-12-04', 'ducchien123@gmail.com', '0920980757', 1, 'Hoàng Mai - Hà Nội', '$2y$12$cf7yD1XSCsT10Tmr61gBbuRXs4Jf3hnzmkmsy12guxBPoGw.VUGUq', 1, 1),
+(6, 'Nguyễn Thế Anh', './uploads/avatar/avatar-cute-3.jpg', '2025-12-25', 'theanh324324@gmail.com', '0954654654', 1, 'Cầu Diễn - Hà Nội', '$2y$12$gBUAtqO12sX.gBBOtfWaAusmDSmOeooRnGzxBT873yvceOLjRl47S', 2, 1),
+(7, 'Đoàn Huy Vũ', './uploads/avatar/avatar4.png', '2025-01-01', 'vuhd31@gmail.com', '0890980757', 1, 'Kiều Mai - Hà Nội', '$2y$12$luCO6qAMIHpKm.zD7s8csOTfFnL7HFrm0bPYaLlekoCdrco9ezbWG', 1, 1),
+(8, 'Nguyễn Hoàng Anh', './uploads/product-2.jpg', '2025-01-03', 'anhhoangqwerty@gmail.com', '0987347541', 1, 'Quảng Ninh', '$2y$12$xVb9kdvWMzyoMvq17uIzR.b1zpawxcvxlsLwrFrmTQxJmgsoB1raC', 1, 2),
+(9, 'Nguyễn Thanh Bình', './uploads/avatar/avatar-cute-3.jpg', '2025-12-25', 'anhhh112233@gmail.com', '096234728', 1, 'Nam Từ Liêm - Hà Nội', '$2y$12$9yDC/v1TOS1NigM4jXYogemss5tCLdObmSF/.32Nog9W11mWSZ.qa', 1, 1),
+(10, 'Ngô Trung Hiếu', './uploads/avatar/avatar-cute-3.jpg', '2025-01-01', 'trunghieu123@gmail.com', '0977234124', 1, 'Nam Từ Liêm - Hà Nội', '$2y$12$eoqa6AfFNXGvvxkVC.zcRutF5NCCJts3kjFUb.a6ZR2GQFML0U0rS', 1, 1),
+(11, 'Nguyễn Hữu Trung', './uploads/avatar/avatar4.png', '2025-01-03', 'trung123@gmail.com', '0324837245', 1, 'Hoàng Hoa Thám - Hà Nội', '$2y$10$X.0gXVjmvtJteKSd7RUZnuPldYg2kVYYM8lexyLtfzfJ9KBvHGz4y', 1, 1),
+(12, 'Nguyễn Hữu Trung Đức', './uploads/avatar/avatar5.jpg', '2004-02-03', 'trung321@gmail.com', '0347892617', 1, 'Hà Nội', '$2y$10$1Km5S2kUNWMVGAsG1bKuQeGHjyUjDLl6RI4b4.eWpAfzhO1uCzzbW', 1, 1),
+(13, 'Nguyễn Thế Hoàng Anh Tuấn', './uploads/avatar/avatar9.jpg', '2025-12-01', 'nthat999@gmail.com', '0977630988', 1, 'Ba Đình - Hà Nội', '123@123ab', 1, 1),
+(14, 'Nguyễn Thế Anh', './uploads/avatar/avatar7.jpg', '2025-12-08', 'ngtheanh998@gmail.com', '0977632988', 1, 'Thăng Long - Hà Nội', '$2y$12$3Davr5TNeMhfliZvopbHo.F64JgMFb4jERMLE9GhYFln.O9TFATwq', 1, 1),
+(15, 'Nguyễn Thế Hoàng Anh Tuấn', './uploads/avatar/avatar9.jpg', '2025-12-02', 'nthat997@gmail.com', '0977632948', 1, 'Hoà Lạc- Hà Nội', '123@123ab', 2, 2),
+(16, 'Nguyễn Thế Hoàng Anh Tuấn', './uploads/avatar/avatar9.jpg', '2025-12-03', 'nthat996@gmail.com', '0972632948', 1, 'Hoàn Kiếm - Hà Nội', '123@123ab', 2, 1);
 
 -- --------------------------------------------------------
 
@@ -729,7 +847,7 @@ INSERT INTO `trang_thai_don_hangs` (`id`, `ten_trang_thai`) VALUES
 (2, 'Đã xác nhận'),
 (3, 'Chưa thanh toán'),
 (4, 'Đã thanh toán'),
-(5, 'Đang chuẩn bị hàngn'),
+(5, 'Đang chuẩn bị hàng'),
 (6, 'Đang giao'),
 (7, 'Đa giao'),
 (8, 'Đã nhận'),
@@ -822,19 +940,19 @@ ALTER TABLE `trang_thai_don_hangs`
 -- AUTO_INCREMENT for table `binh_luans`
 --
 ALTER TABLE `binh_luans`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=112;
 
 --
 -- AUTO_INCREMENT for table `chi_tiet_don_hangs`
 --
 ALTER TABLE `chi_tiet_don_hangs`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `chi_tiet_gio_hangs`
 --
 ALTER TABLE `chi_tiet_gio_hangs`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `chuc_vus`
@@ -852,19 +970,19 @@ ALTER TABLE `danh_mucs`
 -- AUTO_INCREMENT for table `don_hangs`
 --
 ALTER TABLE `don_hangs`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 
 --
 -- AUTO_INCREMENT for table `gio_hangs`
 --
 ALTER TABLE `gio_hangs`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `hinh_anh_san_phams`
 --
 ALTER TABLE `hinh_anh_san_phams`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=362;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=385;
 
 --
 -- AUTO_INCREMENT for table `phuong_thuc_thanh_toans`
@@ -876,7 +994,7 @@ ALTER TABLE `phuong_thuc_thanh_toans`
 -- AUTO_INCREMENT for table `san_phams`
 --
 ALTER TABLE `san_phams`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT for table `tai_khoans`

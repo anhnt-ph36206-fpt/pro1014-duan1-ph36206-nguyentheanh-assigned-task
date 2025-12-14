@@ -19,6 +19,8 @@ class HomeController
     {
         // echo "Đây là trang chủ 1234";
         $listSanPham = $this->modelSanPham->getAllSanPham();
+        $listSanPhamDienThoai = $this->modelSanPham->getAllSanPhamDienThoai();
+        $listSanPhamLaptop = $this->modelSanPham->getAllSanPhamLaptop();
         // echo '<pre>';
         // var_dump($listSanPham);
         // echo '</pre>';
@@ -400,6 +402,8 @@ class HomeController
     public function phuKien()
     {
         $listSanPham = $this->modelSanPham->getAllSanPhamPhuKien();
+        // echo '<pre>';
+        // var_dump($listSanPham);die();
         require_once './views/trangPhuKien.php';
     }
 }

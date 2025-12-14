@@ -27,7 +27,7 @@
                      <a href="<?= BASE_URL_ADMIN ?>" class="nav-link">
                          <i class="nav-icon fas fa-tachometer-alt"></i>
                          <p>
-                             Trang chủ Admin
+                             Trang Chủ Admin
                          </p>
                      </a>
                  </li>
@@ -35,7 +35,7 @@
                      <a href="<?= BASE_URL?>" class="nav-link">
                          <i class="nav-icon fas fa-tachometer-alt"></i>
                          <p>
-                             Trang chủ Client
+                             Trang Chủ Client
                          </p>
                      </a>
                  </li>
@@ -43,7 +43,7 @@
                      <a href="<?= BASE_URL_ADMIN . '?act=bao-cao-thong-ke' ?>" class="nav-link">
                          <i class="nav-icon fas fa-tachometer-alt"></i>
                          <p>
-                             Báo cáo thống kê
+                            Báo Cáo Thống Kê
                          </p>
                      </a>
                  </li>
@@ -61,7 +61,7 @@
                      <a href="<?= BASE_URL_ADMIN . '?act=san-pham' ?>" class="nav-link">
                          <i class="nav-icon fas fa-cat"></i>
                          <p>
-                             Danh sách Sản phẩm
+                            Danh Sách Sản Phẩm
                          </p>
                      </a>
                  </li>
@@ -70,7 +70,7 @@
                      <a href="<?= BASE_URL_ADMIN . '?act=don-hang' ?>" class="nav-link">
                          <i class="nav-icon fas fa-file-invoice-dollar"></i>
                          <p>
-                            Danh Sách Đơn hàng
+                            Danh Sách Đơn Hàng
                          </p>
                      </a>
                  </li>
@@ -78,7 +78,7 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-user"></i>
               <p>
-                Quản lý tài khoản
+                Quản Lý Tài Khoản
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -86,19 +86,19 @@
               <li class="nav-item">
                 <a href="<?= BASE_URL_ADMIN . '?act=tai-khoan-quan-tri' ?>" class="nav-link">
                   <i class="far fa-user nav-icon"></i>
-                  <p>Tài khoản quản trị</p>
+                  <p>Tài Khoản Quản Trị</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="<?= BASE_URL_ADMIN . '?act=tai-khoan-khach-hang' ?>" class="nav-link">
                   <i class="far fa-user nav-icon"></i>
-                  <p>Tài khoản khách hàng</p>
+                  <p>Tài Khoản Khách Hàng</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="<?= BASE_URL_ADMIN . '?act=form-sua-thong-tin-ca-nhan-quan-tri' ?>" class="nav-link">
                   <i class="far fa-user nav-icon"></i>
-                  <p>Tài khoản cá nhân</p>
+                  <p>Tài Khoản Cá Nhân</p>
                 </a>
               </li>
             </ul>
