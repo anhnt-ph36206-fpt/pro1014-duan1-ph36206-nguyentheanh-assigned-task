@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Quản lý sản phẩm</title>
+    <title>Quản lý Thêm Sản Phẩm</title>
 
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -30,7 +30,7 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1>Quản lý Thêm danh sách sản phẩm</h1>
+                        <h1>Quản lý Thêm Sản Phẩm Vào Danh Sách</h1>
                     </div>
                 </div>
             </div>

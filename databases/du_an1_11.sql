@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 15, 2025 at 01:37 PM
+-- Generation Time: Dec 14, 2025 at 11:21 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.4.14
 
@@ -695,113 +695,7 @@ INSERT INTO `hinh_anh_san_phams` (`id`, `san_pham_id`, `link_hinh_anh`) VALUES
 (381, 28, './uploads/1765697556-op-m2.webp'),
 (382, 28, './uploads/1765697556-op-m3.webp'),
 (383, 28, './uploads/1765697556-op-m4.webp'),
-(384, 28, './uploads/1765697574-ol1.webp'),
-(385, 45, './uploads/1765760569-12.jpg'),
-(386, 45, './uploads/1765760569-78.jpg'),
-(387, 45, './uploads/1765760569-910.jpg'),
-(388, 45, './uploads/1765760569-34.jpg'),
-(389, 45, './uploads/1765760569-56.jpg'),
-(390, 46, './uploads/1765761192-1.jpg'),
-(391, 46, './uploads/1765761192-1765552259-b11.webp'),
-(392, 46, './uploads/1765761192-1765552259-b11111.webp'),
-(393, 46, './uploads/1765761192-1765552327-b11.webp'),
-(394, 47, './uploads/1765761349-1765587338-c1.jpg'),
-(395, 47, './uploads/1765761429-1765587338-c11.webp'),
-(396, 47, './uploads/1765761429-1765587338-c12.webp'),
-(397, 47, './uploads/1765761429-1765587338-c15.webp'),
-(398, 48, './uploads/1765761546-1765587661-d1.jpg'),
-(399, 48, './uploads/1765761561-1765587661-d12.webp'),
-(400, 48, './uploads/1765761561-1765587661-d13.webp'),
-(401, 48, './uploads/1765761561-1765587661-d14.webp'),
-(402, 49, './uploads/1765761690-1765587926-e1.jpg'),
-(403, 49, './uploads/1765761723-1765587926-e11.webp'),
-(404, 49, './uploads/1765761723-1765587926-e12.webp'),
-(405, 49, './uploads/1765761723-1765587926-e13.webp'),
-(406, 49, './uploads/1765761729-1765587926-e14.webp'),
-(407, 50, './uploads/1765761836-1765703702-f1.jpg'),
-(408, 50, './uploads/1765761859-1765703702-f11.webp'),
-(409, 50, './uploads/1765761859-1765703702-f12.webp'),
-(410, 50, './uploads/1765761859-1765703702-f13.webp'),
-(411, 50, './uploads/1765761859-1765703702-f14.webp'),
-(412, 51, './uploads/1765761989-1765703872-g1.jpg'),
-(413, 51, './uploads/1765762012-1765703872-g11.webp'),
-(414, 51, './uploads/1765762012-1765703872-g12.webp'),
-(415, 51, './uploads/1765762012-1765703872-g13.webp'),
-(416, 51, './uploads/1765762012-1765703872-g14.webp'),
-(417, 52, './uploads/1765762149-1765705197-a61.jpg'),
-(418, 52, './uploads/1765762171-1765705197-a62.webp'),
-(419, 52, './uploads/1765762171-1765705197-a63.webp'),
-(420, 52, './uploads/1765762171-1765705197-a64.webp'),
-(421, 52, './uploads/1765762171-1765705197-a65.webp'),
-(422, 53, './uploads/1765762772-1765705410-a72.webp'),
-(423, 53, './uploads/1765762772-1765705410-a71.jpg'),
-(424, 53, './uploads/1765762772-1765705410-a73.webp'),
-(425, 53, './uploads/1765762772-1765705410-a74.webp'),
-(426, 53, './uploads/1765762772-1765705410-a75.webp'),
-(427, 54, './uploads/1765762868-1765705581-a81.jpg'),
-(428, 54, './uploads/1765762889-1765705581-a82.webp'),
-(429, 54, './uploads/1765762889-1765705581-a83.webp'),
-(430, 54, './uploads/1765762889-1765705581-a84.webp'),
-(431, 54, './uploads/1765762889-1765705581-a85.webp'),
-(432, 55, './uploads/1765762989-1765705720-a91.jpg'),
-(433, 55, './uploads/1765763011-1765705720-a92.webp'),
-(434, 55, './uploads/1765763011-1765705720-a93.webp'),
-(435, 55, './uploads/1765763011-1765705720-a94.webp'),
-(436, 55, './uploads/1765763011-1765705720-a95.webp'),
-(437, 56, './uploads/1765763357-1765704025-a11.jpg'),
-(438, 56, './uploads/1765763417-1765704025-a12.webp'),
-(439, 56, './uploads/1765763417-1765704025-a13.webp'),
-(440, 56, './uploads/1765763417-1765704025-a14.webp'),
-(441, 56, './uploads/1765763417-1765704025-a15.webp'),
-(442, 57, './uploads/1765763535-1765704752-a31.jpg'),
-(443, 57, './uploads/1765763553-1765704752-a32.webp'),
-(444, 57, './uploads/1765763553-1765704752-a33.webp'),
-(445, 57, './uploads/1765763553-1765704752-a34.webp'),
-(446, 57, './uploads/1765763553-1765704752-a35.webp'),
-(447, 58, './uploads/1765763667-1765704894-a41.jpg'),
-(448, 58, './uploads/1765763752-1765704894-a42.webp'),
-(449, 58, './uploads/1765763752-1765704894-a43.webp'),
-(450, 58, './uploads/1765763752-1765704894-a44.webp'),
-(451, 58, './uploads/1765763752-1765704894-a45.webp'),
-(452, 59, './uploads/1765763946-1765706643-b41.jpg'),
-(453, 59, './uploads/1765763967-1765706643-b42.webp'),
-(454, 59, './uploads/1765763967-1765706643-b43.webp'),
-(455, 59, './uploads/1765763967-1765706643-b44.webp'),
-(456, 59, './uploads/1765763967-1765706643-b45.webp'),
-(457, 60, './uploads/1765764096-1765706840-b46.jpg'),
-(458, 60, './uploads/1765764117-1765706840-b47.webp'),
-(459, 60, './uploads/1765764117-1765706840-b48.webp'),
-(460, 60, './uploads/1765764117-1765706840-b49.webp'),
-(461, 60, './uploads/1765764117-1765706840-b50.webp'),
-(462, 61, './uploads/1765764199-1765706998-b51.jpg'),
-(463, 61, './uploads/1765764226-1765706998-b53.webp'),
-(464, 61, './uploads/1765764226-1765706998-b54.webp'),
-(465, 61, './uploads/1765764226-1765706998-b55.webp'),
-(466, 61, './uploads/1765764226-1765706998-b52.webp'),
-(467, 62, './uploads/1765764335-1765707156-b56.jpg'),
-(468, 62, './uploads/1765764354-1765707156-b57.webp'),
-(469, 62, './uploads/1765764354-1765707156-b58.webp'),
-(470, 62, './uploads/1765764354-1765707156-b59.webp'),
-(471, 62, './uploads/1765764354-1765707156-b60.webp'),
-(472, 63, './uploads/1765764454-1765707301-b61.jpg'),
-(473, 63, './uploads/1765764479-1765707301-b63.webp'),
-(474, 63, './uploads/1765764479-1765707301-b64.webp'),
-(475, 63, './uploads/1765764479-1765707301-b65.webp'),
-(476, 63, './uploads/1765764479-1765707301-b62.webp'),
-(477, 64, './uploads/1765764557-1765707498-b68.webp'),
-(478, 64, './uploads/1765764571-1765707498-b69.webp'),
-(479, 64, './uploads/1765764571-1765707498-b70.webp'),
-(480, 64, './uploads/1765764578-1765707498-b66.jpg'),
-(481, 65, './uploads/1765764656-1765707655-b71.jpg'),
-(482, 65, './uploads/1765764691-1765707655-b72.webp'),
-(483, 65, './uploads/1765764691-1765707655-b73.webp'),
-(484, 65, './uploads/1765764691-1765707655-b74.webp'),
-(485, 65, './uploads/1765764699-1765707655-b75.webp'),
-(486, 66, './uploads/1765764833-1765710323-b76.jpg'),
-(487, 66, './uploads/1765764858-1765710323-b77.webp'),
-(488, 66, './uploads/1765764858-1765710323-b78.webp'),
-(489, 66, './uploads/1765764858-1765710323-b79.webp'),
-(490, 66, './uploads/1765764858-1765710323-b80.webp');
+(384, 28, './uploads/1765697574-ol1.webp');
 
 -- --------------------------------------------------------
 
@@ -889,29 +783,7 @@ INSERT INTO `san_phams` (`id`, `ten_san_pham`, `gia_san_pham`, `gia_khuyen_mai`,
 (40, 'Cáp Baseus Crystal Shine USB-C to Lightning 1.2M', '500000.00', '350000.00', './uploads/1765199244-cap-type-c-to-lightning-baseus-crystal-shine-1-2m_1_.webp', 444, 0, '2025-12-08', 'Cáp Baseus Crystal Shine USB-C to Lightning 1.2M – phụ kiện \"đẹp bền nhanh\" thay thế lý tưởng cho cáp Apple gốc, đáng mua cuối 2025 nếu bạn cần sạc PD 20W giá rẻ mà chất lượng cao!', 4, 1),
 (41, 'Dán kính cường lực màn hình Apple iPhone 16e141313 Pro Zagg full cao cấp', '650000.00', '500000.00', './uploads/1765199325-kinh-cuong-luc-iphone-13-14-13-pro-se-40-zagg-full_1_.webp', 646, 0, '2025-12-08', 'Miếng dán Zagg Plus Edge Full cho iPhone 16 Pro – \"cao cấp chống nhìn trộm/ánh sáng xanh\" bảo vệ màn hình đỉnh cao mà vẫn mỏng mượt, đáng mua cuối 2025 nếu bạn muốn phụ kiện Apple chính hãng chất lượng từ Zagg!', 4, 1),
 (42, 'Dán kính cường lực màn hình Apple iPhone 17 Pro Max Invisibleshield XTR5 Đen (Không Viền)', '780000.00', '630000.00', './uploads/1765199391-text_ng_n_-_2025-09-11t174008.138_1.webp', 55, 0, '2025-12-08', 'Miếng dán InvisibleShield Glass XTR5 Đen (Không Viền) cho iPhone 17 Pro Max – \"cao cấp Graphene + lọc xanh\" bảo vệ màn hình đỉnh cao mà vẫn mỏng mượt, đáng mua cuối 2025 nếu bạn muốn phụ kiện Apple chính hãng chất lượng từ ZAGG!', 4, 1),
-(43, 'Đế sạc không dây Aukey Magfushion 1X LC-MC111 Qi2.2 25W', '460000.00', '399999.00', './uploads/1765199456-de-sac-khong-day-aukey-magfusion-qi2-2-lc-mc111-1x-25w_2_.webp', 654, 0, '2025-12-08', 'Đế sạc Aukey MagFusion 1X LC-MC111 Qi2.2 25W – \"siêu nhanh mỏng nhẹ giá rẻ\" cho iPhone MagSafe, đáng mua cuối 2025 nếu bạn cần phụ kiện sạc từ tính chất lượng cao từ Aukey!', 4, 1),
-(45, 'Laptop ASUS Gaming V16 V3607VM-RP044W', '33999000.00', '32000000.00', './uploads/1765760585-acer-main.jpg', 3, 0, '2025-12-15', 'Laptop Asus Gaming V16 V3607VM-RP044W nổi bật với CPU Intel Core 7-240H và GPU NVIDIA® GeForce RTX™ 5060 giúp xử lý các tác vụ nặng một cách hiệu quả. Thiết bị sử dụng màn hình WUXGA 16 inch với tần số 144Hz mang đến trải nghiệm thị giác cực mượt. Ngoài ra, máy có trọng lượng chỉ 1.95kg, phù hợp cho người dùng cần di chuyển thường xuyên.', 2, 1),
-(46, 'Laptop MSI Gaming Katana A15 AI B8VE-402VN', '24990000.00', '23550000.00', './uploads/1765761197-1.jpg', 2, 0, '2025-12-15', 'Laptop MSI Gaming Katana A15 AI B8VE-402VN sở hữu sức mạnh hiệu năng ấn tượng ngoài mong đợi với bộ xử lý AMD Ryzen R7-8845HS, cùng card đồ họa RTX 4050. Nâng tầm hiển thị với màn hình 15.6 inch, Full HD kết hợp tần số làm tươi lên đến 144Hz. Bên cạnh đó, MSI Gaming Katana A15 hỗ trợ gaming mạnh mẽ với hệ thống MSI Cooler Boost 5 cùng bàn phím 4-Zone RGB Gaming.', 1, 1),
-(47, 'Laptop ASUS Vivobook S16 S3607QA-SH040WS', '1940000.00', '1880000.00', './uploads/1765761436-1765587338-c1.jpg', 32, 0, '2025-12-15', 'Laptop ASUS Vivobook S16 S3607QA SH040WS trang bị bộ xử lý Snapdragon® X X1 26 100 cùng RAM 16GB LPDDR5X và ổ cứng SSD 512GB PCIe® 4.0 cho hiệu suất cao. Đồng thời, laptop ASUS này sở hữu màn hình 16 inch WUXGA với tần số quét 60Hz tái hiện hình ảnh sắc nét. Thiết bị ASUS Vivobook còn tích hợp bộ xử lý AI giúp tối ưu hiệu suất cho mọi tác vụ chuyên nghiệp.', 1, 1),
-(48, 'Laptop Lenovo LOQ 15IAX9E 83LK0079VN', '20790000.00', '17970000.00', './uploads/1765761546-1765587661-d1.jpg', 3, 0, '2025-12-28', 'Laptop Lenovo LOQ 15IAX9E 83LK0079VN là dòng laptop gaming có hiệu năng mạnh mẽ với chip Intel Core i5-12450HX với 8 nhân 12 luồng, xung nhịp tối đa 4.4GHz. Laptop tích hợp card rời NVIDIA GeForce RTX 3050 6GB GDDR6 để tối ưu khả năng đồ họa. Máy sở hữu 16GB RAM DDR5-4800 và ổ cứng SSD 512GB PCIe 4.0x4 NVMe hỗ trợ nâng lên 1TB.', 2, 1),
-(49, 'Samsung Galaxy Z Fold7 12GB 256GB', '39000000.00', '37000000.00', './uploads/1765761690-1765587926-e1.jpg', 11, 0, '2025-12-15', 'Samsung Galaxy Z Fold 7 5G là điện thoại gập siêu mỏng mới nhất của Samsung. Đang có ưu đãi đến 13 triệu đồng. Nổi bật camera 200MP và chip Snapdragon 8 Elite 3nm tích hợp AI mạnh mẽ. One UI 8 tối ưu cá nhân hóa. Giá chỉ từ 43.990.000đ cho bản 256GB.', 1, 1),
-(50, 'Laptop HP 14-EP0112TU 8C5L1PA', '15490000.00', '13490000.00', './uploads/1765761836-1765703702-f1.jpg', 15, 0, '2025-12-15', 'Laptop HP 14-EP0112TU 8C5L1PA được thiết kế với chip Intel Core i5-1335U, RAM 16GB cùng ổ cứng 512GB tốc độ cao kết hợp card đồ hoạ Intel Iris Xe Graphics. Máy còn sở hữu kích thước màn hình 14 inch, độ phân giải FHD. Thêm vào đó, viên pin 41 Wh Li-ion cũng mang đến thời lượng lâu dài cho người dùng.', 2, 1),
-(51, 'Laptop MSI Modern 14 F13MG-240VNCP', '12900000.00', '11000000.00', './uploads/1765761989-1765703872-g1.jpg', 56, 0, '2025-12-15', 'Laptop MSI Modern 14 F13MG 240VNCP được trang bị vi xử lý Intel Core i5-1335U thế hệ thứ 13, bộ nhớ RAM 16GB DDR4 và ổ cứng 512GB cho hiệu suất ổn định. Máy tính MSI này có màn hình 14 inch Full HD mang lại chất lượng hiển thị rõ nét. Thiết bị có trọng lượng nhẹ, phù hợp cho người thường xuyên mang theo khi di chuyển.', 2, 1),
-(52, 'Laptop ASUS Vivobook 15 X1502VA-BQ885W', '15460000.00', '14490000.00', './uploads/1765762149-1765705197-a61.jpg', 12, 0, '2025-12-15', 'Laptop Asus Vivobook 15 X1502VA-BQ885W được trang bị ổ cứng SSD dung lượng 512GB và bộ vi xử lý Intel Core i5-13420H giúp xử lý tốt tác vụ đa nhiệm. Thiết bị có trọng lượng khoảng 1.7 kg và độ dày chỉ 1.99 cm, thuận tiện khi mang theo bên ngoài. Máy được trang bị màn hình 15.6 inch độ phân giải Full HD tích hợp tấm nền IPS, hỗ trợ hiển thị hình ảnh rõ nét hơn.', 2, 1),
-(53, 'MacBook Pro 14 M4 10CPU 10GPU 24GB 512GB | Chính hãng Apple Việt Nam', '44490000.00', '42000000.00', './uploads/1765762777-1765705410-a71.jpg', 88, 0, '2025-12-16', 'MacBook Pro M4 14 inch 10CPU 10GPU 24GB 512GB với chip M4 10 lõi CPU, 10 lõi GPU, 14 lõi Neural Engine cùng RAM 24GB, ổ cứng SSD 512GB cùng Apple Intelligence đem đến sức mạnh tiềm năng. MacBook Pro M4 cũng được cải tiến về pin nhờ quản lý năng lượng Apple Silicon cho pin kéo dài 24 giờ. Hiển thị đẳng cấp với màn hình ProMotion 120Hz, tấm nền Liquid Retina XDR cùng phân giải 3024 x 1964 pixels, kết hợp True Tone giảm mỏi mắt.', 2, 1),
-(54, 'MacBook Air M4 13 inch 2025 10CPU 10GPU 16GB 512GB Sạc 70W | Chính hãng Apple Việt Nam', '30990000.00', '29000000.00', './uploads/1765762895-1765705581-a81.jpg', 4, 0, '2025-12-15', 'Apple Macbook Air 13 M4 10CPU 10GPU 16GB 512GB 2025 sạc 70W được trang bị vi xử lý Apple M4 với cấu trúc 10 lõi CPU và 10 lõi GPU xử lý đa nhiệm mượt mà. Màn hình Liquid Retina 13,6 inch với công nghệ True Tone đem đến chất lượng hình ảnh sắc nét, chân thực. MacBook Air 13 M4 còn được trang bị pin có thể dùng lên đến 15 giờ.', 2, 1),
-(55, 'Laptop Lenovo IdeaPad Slim 3 15ABR8 82XM00MDVN', '12500000.00', '10490000.00', './uploads/1765762989-1765705720-a91.jpg', 98, 0, '2025-12-15', 'Laptop Lenovo Ideapad Slim 3 15ABR8 82XM00MDVN với con vi xử lý Ryzen 5 5625U, 16GB RAM và bộ nhớ 512GB sẽ phục vụ tốt cho các công việc văn phòng. Mẫu laptop Lenovo Ideapad này còn cung cấp không gian hiển thị lớn, sắc nét với màn hình 15.6 inch FHD. Sản phẩm laptop Lenovo Ideapad còn sở hữu vẻ ngoài tinh tế cùng tính cơ động để phù hợp sử dụng ở mọi nơi.', 2, 1),
-(56, 'Laptop Dell 15 DC15255 DC5R5802W1', '15990000.00', '13990000.00', './uploads/1765763423-1765704025-a11.jpg', 12, 0, '2025-12-16', 'Laptop Dell 15 DC15255 DC5R5802W1 mang đến sức mạnh xử lý đột phá nhờ trang bị CPU Ryzen 5 7530U kết hợp với card đồ hoạ AMD Radeon Graphics tân tiến. RAM 16GB và SSD dung lượng 512GB chuẩn giao tiếp PCIe cho phép chạy đa tác vụ mượt, hiệu quả. Màn hình IPS lớn 15.6 inch 120Hz phục vụ chất lượng hình ảnh bắt mắt, đầy sống động.', 2, 1),
-(57, 'Laptop Dell Inspiron 14 5440 D0F3W - Nhập khẩu chính hãng', '15790000.00', '15000000.00', './uploads/1765763558-1765704752-a31.jpg', 3, 0, '2025-12-15', 'Laptop Dell Inspiron 14 5440 D0F3W được trang bị vi xử lý Intel Core i5-1334U,24GB RAM DDR5 và ổ cứng SSD dung lượng 512GB cùng màn hình 1920 x 1200. Mẫu laptop Dell Inspiron 5440 này được trang bị viên pin 54Wh kèm công nghệ sạc nhanh ExpressCharge mạnh mẽ. Bên cạnh đó, trọng lượng 1.69kg cùng chất liệu vỏ nhựa giúp tăng tính di động cho người dùng.', 2, 1),
-(58, 'Laptop Dell Inspiron 15 3530 J9XFD - Nhập khẩu chính hãng', '14990000.00', '14500000.00', './uploads/1765763757-1765704894-a41.jpg', 5, 0, '2025-12-15', 'Laptop Dell Inspiron 15 3530 J9XFD được trang bị RAM 16GB DDR4 và ổ cứng SSD 512GB PCIe 4.0, mang lại tốc độ đọc ghi vượt trội. Với trọng lượng chỉ 1.62 kg và lớp vỏ nhựa bền bỉ, sản phẩm laptop Dell Inspiron dễ dàng đồng hành cùng bạn trong mọi hành trình. Bộ vi xử lý Intel Core i5-1334U cho hiệu năng ổn định khi làm việc và giải trí cơ bản.', 2, 1),
-(59, 'iPhone 17 256GB Hồng Bạch Kim | Chính hãng', '26780000.00', '26890000.00', './uploads/1765763946-1765706643-b41.jpg', 9, 0, '2025-12-15', 'Apple iPhone 17 thường nổi bật với thiết kế viền mỏng tinh tế, mặt trước Ceramic Shield 2 và màn hình Super Retina XDR 6.3 inch hỗ trợ ProMotion 120Hz. Máy được trang bị chip A19 với CPU 6 nhân và GPU 5 lõi, mang lại khả năng xử lý nhanh chóng các tác vụ nặng, từ giải trí đến làm việc. Ngoài ra, iPhone 17 còn được hỗ trợ Apple Intelligence, hỗ trợ các tác vụ thông thường thông minh, tiện lợi.', 1, 1),
-(60, 'Samsung Galaxy S25 Ultra 12GB 256GB', '29000000.00', '27900000.00', './uploads/1765764096-1765706840-b46.jpg', 8, 0, '2025-12-15', 'Samsung Galaxy S25 Ultra mạnh mẽ với chip Snapdragon 8 Elite For Galaxy mới nhất, RAM 12GB và bộ nhớ trong 256GB-1TB. Hệ thống 3 camera sau chất lượng gồm camera chính 200MP, camera tele 50MP và camera góc siêu rộng 50MP. Thiết kế kính cường lực Corning Gorilla Armor 2 và khung viền Titanium, màn hình Dynamic AMOLED 6.9 inch. Điện thoại này còn có viên pin 5000mAh, hỗ trợ 5G và Galaxy AI ấn tượng, nâng cao trải nghiệm người dùng!', 1, 1),
-(61, 'Samsung Galaxy Z Flip7 12GB 256GB', '26300000.00', '24000000.00', './uploads/1765764199-1765706998-b51.jpg', 5, 0, '2025-12-15', 'Samsung Galaxy Z Flip 7 là mẫu điện thoại gập dọc mỏng mới của Samsung. Giá tốt, ưu đãi đến 12 triệu đồng. Với màn hình chính 6.9 inch FHD+, phụ 4.1 inch super AMOLED, tần số quét 120Hz, vi xử lý Exynos 2500 tiết kiệm điện, camera, dung lượng 4300 mAh - nhanh 25W - sạc không dây 2.0. Hứa hẹn mang đến trải nghiệm di động thông minh, phòng cách và đầy cá tính.', 1, 1),
-(62, 'iPhone 15 128GB Màu Hồng| Chính hãng VN/A', '17000000.00', '16990000.00', './uploads/1765764358-1765707156-b56.jpg', 5, 0, '2025-12-15', 'iPhone 15 thường được trang bị màn hình Dynamic Island 6.1 inch với công nghệ Super Retina XDR mang đến trải nghiệm hiển thị sống động vượt trội. iPhone 15 128GB sở hữu camera chính 48MP cùng khả năng zoom 2x giúp ghi lại mọi khoảnh khắc với chất lượng rõ nét. Cổng Type-C của ip15 thường giúp cải thiện kết nối, đồng thời đem lại tiện ích khi dùng.', 1, 1),
-(63, 'OPPO Find X9 Pro 16GB 512GB', '32990000.00', '31000000.00', './uploads/1765764453-1765707301-b61.jpg', 7, 0, '2025-12-17', 'OPPO Find X9 Pro sở hữu màn hình AMOLED 6.78 inch độ phân giải 1.5K+ (1272 x 2772 pixel), hỗ trợ tần số quét 120Hz và độ sáng tối đa 1800 nits, mang đến trải nghiệm hiển thị sắc nét và mượt mà trong mọi điều kiện ánh sáng. Máy trang bị camera tiềm vọng 200MP OIS cho khả năng phóng to ấn tượng.', 1, 1),
-(64, 'Xiaomi 15T 5G 12GB 512GB', '15670000.00', '15220000.00', './uploads/1765764557-1765707498-b68.webp', 66, 0, '2025-12-15', 'Xiaomi 15T phù hợp với người dùng muốn sở hữu smartphone mỏng nhẹ nhưng vẫn cần màn hình 6,83 inch sắc nét để tối ưu trải nghiệm giải trí, công việc. Thiết bị dùng chip Dimensity 8400-Ultra giúp model này xử lý đa nhiệm mượt mà hơn. Cụm camera Leica trên máy hỗ trợ người dùng chụp ảnh trong nhiều bối cảnh linh hoạt.', 1, 1),
-(65, 'Xiaomi 14T Pro 12GB 512GB', '14350000.00', '14234000.00', './uploads/1765764656-1765707655-b71.jpg', 6, 0, '2025-12-16', 'Xiaomi 14T Pro là lựa chọn lý tưởng cho những ai muốn sở hữu khả năng nhiếp ảnh chuẩn Leica và hiệu năng ngang tầm flagship trong thiết kế cao cấp. Xiaomi tích hợp bộ xử lý MediaTek Dimensity 9300+ và màn hình AMOLED 144Hz 4000 nit. Sản phẩm tích hợp sạc HyperCharge 120W giúp nạp đầy pin 5000mAh trong 19 phút.', 1, 1),
-(66, 'iPhone 14 128GB | Chính hãng VN/A', '16660000.00', '14000000.00', './uploads/1765764833-1765710323-b76.jpg', 3, 0, '2025-12-15', 'iPhone 14 128GB sở hữu màn hình Retina XDR OLED kích thước 6.1 inch cùng độ sáng vượt trội lên đến 1200 nits. Máy cũng được trang bị camera kép 12 MP phía sau cùng cảm biến điểm ảnh lớn, đạt 1.9 micron giúp cải thiện khả năng chụp thiếu sáng. Mẫu iPhone 14 mới cũng mang trong mình con chip Apple A15 Bionic phiên bản 5 nhân mang lại hiệu suất vượt trội.', 1, 1);
+(43, 'Đế sạc không dây Aukey Magfushion 1X LC-MC111 Qi2.2 25W', '460000.00', '399999.00', './uploads/1765199456-de-sac-khong-day-aukey-magfusion-qi2-2-lc-mc111-1x-25w_2_.webp', 654, 0, '2025-12-08', 'Đế sạc Aukey MagFusion 1X LC-MC111 Qi2.2 25W – \"siêu nhanh mỏng nhẹ giá rẻ\" cho iPhone MagSafe, đáng mua cuối 2025 nếu bạn cần phụ kiện sạc từ tính chất lượng cao từ Aukey!', 4, 1);
 
 -- --------------------------------------------------------
 
@@ -1110,7 +982,7 @@ ALTER TABLE `gio_hangs`
 -- AUTO_INCREMENT for table `hinh_anh_san_phams`
 --
 ALTER TABLE `hinh_anh_san_phams`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=491;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=385;
 
 --
 -- AUTO_INCREMENT for table `phuong_thuc_thanh_toans`
@@ -1122,7 +994,7 @@ ALTER TABLE `phuong_thuc_thanh_toans`
 -- AUTO_INCREMENT for table `san_phams`
 --
 ALTER TABLE `san_phams`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT for table `tai_khoans`

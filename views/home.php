@@ -82,7 +82,7 @@
                                         </div> -->
 
                                         <div class="shop-bottom position-absolute bottom-0 start-50 translate-middle-x text-center pb-2">
-                                            <a href="shop.html" class="btn btn-light btn-sm px-4 rounded-pill">
+                                            <a href="<?php echo BASE_URL?>" class="btn btn-light btn-sm px-4 rounded-pill">
                                                 MUA NGAY
                                             </a>
                                         </div>
@@ -103,7 +103,7 @@
                                         </div> -->
 
                                         <div class="shop-bottom position-absolute bottom-0 start-50 translate-middle-x text-center pb-2">
-                                            <a href="shop.html" class="btn btn-light btn-sm px-4 rounded-pill">
+                                            <a href="<?php echo BASE_URL?>" class="btn btn-light btn-sm px-4 rounded-pill">
                                                 MUA NGAY
                                             </a>
                                         </div>
@@ -124,7 +124,7 @@
                                         </div> -->
 
                                         <div class="shop-bottom position-absolute bottom-0 start-50 translate-middle-x text-center pb-2">
-                                            <a href="shop.html" class="btn btn-light btn-sm px-4 rounded-pill">
+                                            <a href="<?php echo BASE_URL?>" class="btn btn-light btn-sm px-4 rounded-pill">
                                                 MUA NGAY
                                             </a>
                                         </div>
@@ -145,7 +145,7 @@
                                         </div> -->
 
                                         <div class="shop-bottom position-absolute bottom-0 start-50 translate-middle-x text-center pb-2">
-                                            <a href="shop.html" class="btn btn-light btn-sm px-4 rounded-pill">
+                                            <a href="<?php echo BASE_URL?>" class="btn btn-light btn-sm px-4 rounded-pill">
                                                 MUA NGAY
                                             </a>
                                         </div>
