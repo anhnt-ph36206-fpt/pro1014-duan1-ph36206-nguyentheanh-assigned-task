@@ -82,7 +82,7 @@
                                         </div> -->
 
                                         <div class="shop-bottom position-absolute bottom-0 start-50 translate-middle-x text-center pb-2">
-                                            <a href="<?php echo BASE_URL?>" class="btn btn-light btn-sm px-4 rounded-pill">
+                                            <a href="<?php echo BASE_URL ?>" class="btn btn-light btn-sm px-4 rounded-pill">
                                                 MUA NGAY
                                             </a>
                                         </div>
@@ -103,7 +103,7 @@
                                         </div> -->
 
                                         <div class="shop-bottom position-absolute bottom-0 start-50 translate-middle-x text-center pb-2">
-                                            <a href="<?php echo BASE_URL?>" class="btn btn-light btn-sm px-4 rounded-pill">
+                                            <a href="<?php echo BASE_URL ?>" class="btn btn-light btn-sm px-4 rounded-pill">
                                                 MUA NGAY
                                             </a>
                                         </div>
@@ -124,7 +124,7 @@
                                         </div> -->
 
                                         <div class="shop-bottom position-absolute bottom-0 start-50 translate-middle-x text-center pb-2">
-                                            <a href="<?php echo BASE_URL?>" class="btn btn-light btn-sm px-4 rounded-pill">
+                                            <a href="<?php echo BASE_URL ?>" class="btn btn-light btn-sm px-4 rounded-pill">
                                                 MUA NGAY
                                             </a>
                                         </div>
@@ -145,7 +145,7 @@
                                         </div> -->
 
                                         <div class="shop-bottom position-absolute bottom-0 start-50 translate-middle-x text-center pb-2">
-                                            <a href="<?php echo BASE_URL?>" class="btn btn-light btn-sm px-4 rounded-pill">
+                                            <a href="<?php echo BASE_URL ?>" class="btn btn-light btn-sm px-4 rounded-pill">
                                                 MUA NGAY
                                             </a>
                                         </div>
@@ -156,6 +156,12 @@
             </div>
         </div>
         <!-- banner statistics area end -->
+        <?php if (isset($_SESSION['error'])): ?>
+        <script>
+            alert("<?php echo $_SESSION['error'] ?>");
+        </script>
+        <?php unset($_SESSION['error']); ?>
+        <?php endif; ?>
 
         <!-- product area start -->
         <section class="product-area section-padding">
@@ -203,7 +209,7 @@
                                                                 $phanTramGiam = round((($sanPham['gia_san_pham'] - $sanPham['gia_khuyen_mai']) / $sanPham['gia_san_pham']) * 100);
                                                             ?>
                                                         <div class="product-label discount">
-                                                            <span>Giảm                                                                                                                                                                                                                         <?php echo $phanTramGiam ?>%</span>
+                                                            <span>Giảm                                                                                                                                                                                                                                                                                                                                                                         <?php echo $phanTramGiam ?>%</span>
                                                         </div>
                                                     <?php }?>
                                                 </div>
@@ -459,7 +465,7 @@
                                                                 $phanTramGiam = round((($sanPham['gia_san_pham'] - $sanPham['gia_khuyen_mai']) / $sanPham['gia_san_pham']) * 100);
                                                             ?>
                                                         <div class="product-label discount">
-                                                            <span>Giảm                                                                                                                                                 <?php echo $phanTramGiam ?>%</span>
+                                                            <span>Giảm                                                                                                                                                                                                                                                                                                 <?php echo $phanTramGiam ?>%</span>
                                                         </div>
                                                     <?php }?>
                                                 </div>
@@ -605,7 +611,7 @@
                                     <div class="product-card h-100 bg-white rounded p-2">
                                         <div class="product-image mb-2 position-relative">
                                             <?php if ($sanPham['gia_khuyen_mai']): ?>
-                                                <?php $percent = round((($sanPham['gia_san_pham'] - $sanPham['gia_khuyen_mai']) / $sanPham['gia_san_pham']) * 100); ?>
+<?php $percent = round((($sanPham['gia_san_pham'] - $sanPham['gia_khuyen_mai']) / $sanPham['gia_san_pham']) * 100); ?>
                                                 <span class="badge bg-danger position-absolute top-2 start-2">Giảm<?php echo $percent ?>%</span>
                                             <?php endif; ?>
                                             <a href="<?php echo BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id'] ?>">
@@ -655,7 +661,7 @@
                                     <div class="product-card h-100 bg-white rounded p-2">
                                         <div class="product-image mb-2 position-relative">
                                             <?php if ($sanPham['gia_khuyen_mai']): ?>
-                                                <?php $percent = round((($sanPham['gia_san_pham'] - $sanPham['gia_khuyen_mai']) / $sanPham['gia_san_pham']) * 100); ?>
+<?php $percent = round((($sanPham['gia_san_pham'] - $sanPham['gia_khuyen_mai']) / $sanPham['gia_san_pham']) * 100); ?>
                                                 <span class="badge bg-danger position-absolute top-2 start-2">Giảm<?php echo $percent ?>%</span>
                                             <?php endif; ?>
                                             <a href="<?php echo BASE_URL . '?act=chi-tiet-san-pham&id_san_pham=' . $sanPham['id'] ?>">

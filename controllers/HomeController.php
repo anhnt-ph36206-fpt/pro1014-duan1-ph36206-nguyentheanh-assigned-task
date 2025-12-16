@@ -18,9 +18,9 @@ class HomeController
     public function home()
     {
         // echo "Đây là trang chủ 1234";
-        $listSanPham = $this->modelSanPham->getAllSanPham();
+        $listSanPham          = $this->modelSanPham->getAllSanPham();
         $listSanPhamDienThoai = $this->modelSanPham->getAllSanPhamDienThoai();
-        $listSanPhamLaptop = $this->modelSanPham->getAllSanPhamLaptop();
+        $listSanPhamLaptop    = $this->modelSanPham->getAllSanPhamLaptop();
         // echo '<pre>';
         // var_dump($listSanPham);
         // echo '</pre>';
@@ -138,7 +138,13 @@ class HomeController
                 // var_dump('Thêm giỏ hàng thành công');die;
                 header("Location: " . BASE_URL . '?act=gio-hang');
             } else {
-                var_dump('Chưa đăng nhập');die();
+                // var_dump('Chưa đăng nhập');die();
+                $_SESSION['error'] = 'Vui lòng đăng nhập để thêm sản phẩm vào giỏ hàng';
+
+                
+                $san_pham_id = $_POST['san_pham_id'];
+                header("Location: " . BASE_URL . "?act=chi-tiet-san-pham&id=" . $san_pham_id);
+                exit;
             }
 
         }
@@ -244,7 +250,7 @@ class HomeController
                         $donGia,
                         $item['so_luong'],
                         $donGia * $item['so_luong']
-                    ); 
+                    );
                 }
 
                 // Sau khi thêm xong thì phải tiến hành xoá sản phẩm trong giỏ hàng
@@ -272,21 +278,20 @@ class HomeController
         }
     }
 
-     public function lichSuMuaHang()
+    public function lichSuMuaHang()
     {
         if (isset($_SESSION['user_client'])) {
             // Lấy ra thông tin tài khoản đăng nhập
-            $user = $this->modelTaiKhoan->getTaiKhoanFromEmail($_SESSION['user_client']);
+            $user         = $this->modelTaiKhoan->getTaiKhoanFromEmail($_SESSION['user_client']);
             $tai_khoan_id = $user['id'];
 
             // Lấy ra danh sách trạng thái đơn hàng
             $arrTrangThaiDonHang = $this->modelDonHang->getTrangThaiDonHang();
-            $trangThaiDonHang = array_column($arrTrangThaiDonHang, 'ten_trang_thai', 'id');
-
+            $trangThaiDonHang    = array_column($arrTrangThaiDonHang, 'ten_trang_thai', 'id');
 
             // Lấy ra danh sách trạng thái thanh toán
             $arrPhuongThucThanhToan = $this->modelDonHang->getPhuongThucThanhToan();
-            $phuongThucThanhToan = array_column($arrPhuongThucThanhToan, 'ten_phuong_thuc', 'id');
+            $phuongThucThanhToan    = array_column($arrPhuongThucThanhToan, 'ten_phuong_thuc', 'id');
 
             // Lấy ra danh sách tất cả đơn hàng của tài khoản
             $donHangs = $this->modelDonHang->getDonHangFromUser($tai_khoan_id);
@@ -301,7 +306,7 @@ class HomeController
     {
         if (isset($_SESSION['user_client'])) {
             // Lấy ra thông tin tài khoản đăng nhập
-            $user = $this->modelTaiKhoan->getTaiKhoanFromEmail($_SESSION['user_client']);
+            $user         = $this->modelTaiKhoan->getTaiKhoanFromEmail($_SESSION['user_client']);
             $tai_khoan_id = $user['id'];
 
             // Lấy id đơn hàng truyền từ url
@@ -309,12 +314,11 @@ class HomeController
 
             // Lấy ra danh sách trạng thái đơn hàng
             $arrTrangThaiDonHang = $this->modelDonHang->getTrangThaiDonHang();
-            $trangThaiDonHang = array_column($arrTrangThaiDonHang, 'ten_trang_thai', 'id');
-
+            $trangThaiDonHang    = array_column($arrTrangThaiDonHang, 'ten_trang_thai', 'id');
 
             // Lấy ra danh sách trạng thái thanh toán
             $arrPhuongThucThanhToan = $this->modelDonHang->getPhuongThucThanhToan();
-            $phuongThucThanhToan = array_column($arrPhuongThucThanhToan, 'ten_phuong_thuc', 'id');
+            $phuongThucThanhToan    = array_column($arrPhuongThucThanhToan, 'ten_phuong_thuc', 'id');
 
             // Lấy ra thông tin đơn hàng theo ID
             $donHang = $this->modelDonHang->getDonHangById($donHangId);
@@ -342,7 +346,7 @@ class HomeController
     {
         if (isset($_SESSION['user_client'])) {
             // Lấy ra thông tin tài khoản đăng nhập
-            $user = $this->modelTaiKhoan->getTaiKhoanFromEmail($_SESSION['user_client']);
+            $user         = $this->modelTaiKhoan->getTaiKhoanFromEmail($_SESSION['user_client']);
             $tai_khoan_id = $user['id'];
 
             // Lấy id đơn hàng truyền từ url
@@ -380,7 +384,7 @@ class HomeController
         require_once './views/trangDienThoai.php';
     }
 
-     public function laptop()
+    public function laptop()
     {
         $listSanPham = $this->modelSanPham->getAllSanPhamLaptop();
         // echo '<pre>';
@@ -389,7 +393,7 @@ class HomeController
         require_once './views/trangLaptop.php';
     }
 
-     public function tablet()
+    public function tablet()
     {
         $listSanPham = $this->modelSanPham->getAllSanPhamTablet();
         // echo '<pre>';
@@ -397,7 +401,6 @@ class HomeController
         // echo '</pre>';
         require_once './views/trangTablet.php';
     }
-
 
     public function phuKien()
     {
