@@ -142,8 +142,8 @@ class HomeController
                 $_SESSION['error'] = 'Vui lòng đăng nhập để thêm sản phẩm vào giỏ hàng';
 
                 
-                $san_pham_id = $_POST['san_pham_id'];
-                header("Location: " . BASE_URL . "?act=chi-tiet-san-pham&id=" . $san_pham_id);
+                // $san_pham_id = $_POST['san_pham_id'];
+                header("Location: " . BASE_URL);
                 exit;
             }
 
